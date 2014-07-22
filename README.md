@@ -12,6 +12,14 @@ Aqui temos um projeto para você nos mostrar todo o seu conhecimento para desenv
 - Mande um pull request, com o conteúdo do seu tema WordPress, até a data estipulada;
 - Supreenda-nos!
 
+## Explicando o layout
+
+Neste layout temos quatro tipos de listagem diferentes. Cada uma lista posts diferentes:
+
+- Mosáico: lista os últimos posts da categoria "Destaques";
+- Últimas: lista os últimos posts;
+- Lorem e Ipsum: lista os últimos posts de sua respectiva categoria.
+
 Se você ainda não passou pela fase de entrevista, [cadastre seu currículo aqui](http://www.mktvirtual.com.br/carreira/).
 
 ### Estamos torcendo por você!
