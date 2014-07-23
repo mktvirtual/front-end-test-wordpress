@@ -25,7 +25,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" rel="shortcut icon" />
-	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js"></script>
 	<![endif]-->
@@ -33,8 +33,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="container">
-		<header id="header" role="banner">
+	<header id="header" role="banner">
+		<div class="header_container">
 			
 				<div class="site-title h1">
 					<a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -76,15 +76,12 @@
 						);
 					?>
 
-					<form method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-						<label for="navbar-search" class="sr-only"><?php _e( 'Search:', 'odin' ); ?></label>
-						<div class="form-group">
-							<input type="text" class="form-control" name="s" id="navbar-search" />
-						</div>
-						<button type="submit" class="btn btn-default"><?php _e( 'Search', 'odin' ); ?></button>
-					</form>
+					
 				</div><!-- .navbar-collapse -->
 			</nav><!-- #main-menu -->
+		</div>
 		</header><!-- #header -->
+		<div class="container">
+		
 
-		<div id="main" class="site-main row">
+			<div id="main" class="site-main row">
