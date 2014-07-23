@@ -263,3 +263,58 @@ require_once get_template_directory() . '/inc/plugins-support.php';
  * Custom template tags.
  */
 require_once get_template_directory() . '/inc/template-tags.php';
+/**
+Opções do tema 
+**/
+//Função
+function add_global_custom_options(){
+    add_menu_page('Mkt options', 'Mkt options', 'manage_options', 'functions','global_custom_options',get_template_directory_uri().'/assets/images/menu.png',6);
+}
+
+function global_custom_options()
+{
+?>
+<div class="wrap">
+        <h2>Adicionar ou editar o Logo</h2>
+        <form method="post" action="options.php">
+            <?php wp_nonce_field('update-options') ?>
+            <?php 
+              if(function_exists( 'wp_enqueue_media' )){
+                  wp_enqueue_media();
+              }else{
+                  wp_enqueue_style('thickbox');
+                  wp_enqueue_script('media-upload');
+                  wp_enqueue_script('thickbox');
+              }
+            ?>
+            <p>
+              <strong><h3>logo:</h3></strong><br />
+              <input class="logo_url" type="text" name="logo" size="60" value="<?php echo get_option('logo'); ?>">
+              <a href="#" class="logo_upload">Upload</a>
+              <br>Preview: <br> <img style="" class="logo" src="<?php echo get_option('logo'); ?>"/>             
+            </p> 
+<script>
+jQuery(document).ready(function($) {
+	$('.logo_upload').click(function(e) {
+            e.preventDefault();
+
+            var custom_uploader = wp.media({
+                title: 'Custom Image',
+                button: {
+                    text: 'Upload Image'
+                },
+                multiple: false  // Set this to true to allow multiple files to be selected
+            })
+            .on('select', function() {
+                var attachment = custom_uploader.state().get('selection').first().toJSON();
+                $('.logo').attr('src', attachment.url);
+                $('.logo_url').val(attachment.url);
+
+            })
+            .open();
+        });
+});
+
+<?php
+}
+add_action('admin_menu', 'add_global_custom_options');
