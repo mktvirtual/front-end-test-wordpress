@@ -3282,6 +3282,7 @@ tbody.collapse.in {
 			transform: rotate (-0.0000000001deg);
 			text-shadow: 0 0 1px rgba(0,0,0,0.3);
 			font-smooth: always;
+
 	}
 	.navbar-nav>li>a {
 		padding-top:10px;
@@ -5658,4 +5659,17 @@ select {
 }
 header#header{
 	border-bottom: 5px solid #D9CB9E;
+}
+.mosaico{
+	position: relative;
+}
+.titulo_mosaico{
+	background-color: #2B2B2B;
+	opacity: 0.8;
+
+	top: 200px;
+	width: 33.333%;
+}
+.titulo_mosaico p{
+	color: white;
 }

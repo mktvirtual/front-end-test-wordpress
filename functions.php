@@ -314,7 +314,26 @@ jQuery(document).ready(function($) {
             .open();
         });
 });
-
-<?php
+</script>
+<?php 
 }
 add_action('admin_menu', 'add_global_custom_options');
+
+/**
+Mosaico
+**/
+function add_mosaico_posts(){
+	function novo_tamanho_do_resumo($length) {
+	return 8;
+}
+add_filter('excerpt_length', 'novo_tamanho_do_resumo');
+
+?>
+	<div class="mosaico">
+		<ul> <?php $recent = new WP_Query("cat=destaques&showposts=4&orderby=id"); while($recent->have_posts()) : $recent->the_post();?> <li><?php the_post_thumbnail();?><div class="titulo_mosaico"><a href="<?php the_permalink(); ?>"><?php the_title();?></a><?php the_excerpt();?></div></li> <?php endwhile; ?> </ul>
+
+
+	</div>
+<?php
+}
+add_shortcode('mosaico', 'add_mosaico_posts');
