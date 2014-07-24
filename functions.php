@@ -19,6 +19,110 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
+/**
+Redimensionar imagens 
+**/
+
+function wp_image_resize($url, $width = null, $height = null, $crop = null, $single = true, $upscale = false) {
+	// Validate inputs.
+	if ( ! $url || ( ! $width && ! $height ) ) return false;
+
+	// Caipt'n, ready to hook.
+	if ( true === $upscale ) add_filter( 'image_resize_dimensions', 'wp_image_upscale', 10, 6 );
+
+	// Define upload path & dir.
+	$upload_info = wp_upload_dir();
+	$upload_dir = $upload_info['basedir'];
+	$upload_url = $upload_info['baseurl'];
+	// Check if $img_url is local.
+	if ( false === strpos( $url, $upload_url ) ) return false;
+	// Define path of image.
+	$rel_path = str_replace( $upload_url, '', $url );
+	$img_path = $upload_dir . $rel_path;
+
+	// Check if img path exists, and is an image indeed.
+	if ( ! file_exists( $img_path ) or ! getimagesize( $img_path ) ) return false;
+
+	// Get image info.
+	$info = pathinfo( $img_path );
+	$ext = $info['extension'];
+	list( $orig_w, $orig_h ) = getimagesize( $img_path );
+
+	// Get image size after cropping.
+	$dims = image_resize_dimensions( $orig_w, $orig_h, $width, $height, $crop );
+	$dst_w = $dims[4];
+	$dst_h = $dims[5];
+
+	// Return the original image only if it exactly fits the needed measures.
+	if ( ! $dims && ( ( ( null === $height && $orig_w == $width ) xor ( null === $width && $orig_h == $height ) ) xor ( $height == $orig_h && $width == $orig_w ) ) ) {
+		$img_url = $url;
+		$dst_w = $orig_w;
+		$dst_h = $orig_h;
+	} else {
+		// Use this to check if cropped image already exists, so we can return that instead.
+		$suffix = "{$dst_w}x{$dst_h}";
+		$dst_rel_path = str_replace( '.' . $ext, '', $rel_path );
+		$destfilename = "{$upload_dir}{$dst_rel_path}-{$suffix}.{$ext}";
+
+		if ( ! $dims || ( true == $crop && false == $upscale && ( $dst_w < $width || $dst_h < $height ) ) ) {
+			// Can't resize, so return false saying that the action to do could not be processed as planned.
+			return false;
+		}
+		// Else check if cache exists.
+		elseif ( file_exists( $destfilename ) && getimagesize( $destfilename ) ) {
+			$img_url = "{$upload_url}{$dst_rel_path}-{$suffix}.{$ext}";
+		}
+		// Else, we resize the image and return the new resized image url.
+		else {
+
+			// Note: This pre-3.5 fallback check will edited out in subsequent version.
+			if ( function_exists( 'wp_get_image_editor' ) ) {
+
+				$editor = wp_get_image_editor( $img_path );
+
+				if ( is_wp_error( $editor ) || is_wp_error( $editor->resize( $width, $height, $crop ) ) )
+					return false;
+
+				$resized_file = $editor->save();
+
+				if ( ! is_wp_error( $resized_file ) ) {
+					$resized_rel_path = str_replace( $upload_dir, '', $resized_file['path'] );
+					$img_url = $upload_url . $resized_rel_path;
+				} else {
+					return false;
+				}
+
+			} else {
+
+				$resized_img_path = image_resize( $img_path, $width, $height, $crop ); // Fallback foo.
+				if ( ! is_wp_error( $resized_img_path ) ) {
+					$resized_rel_path = str_replace( $upload_dir, '', $resized_img_path );
+					$img_url = $upload_url . $resized_rel_path;
+				} else {
+					return false;
+				}
+
+			}
+		}
+	}
+
+	// Okay, leave the ship.
+	if ( true === $upscale ) remove_filter( 'image_resize_dimensions', 'wp_image_upscale' );
+
+	// Return the output.
+	if ( $single ) {
+		// str return.
+		$image = $img_url;
+	} else {
+		// array return.
+		$image = array (
+			0 => $img_url,
+			1 => $dst_w,
+			2 => $dst_h
+		);
+	}
+	return $image;
+}
 
 /**
  * Odin Classes.
@@ -264,6 +368,63 @@ require_once get_template_directory() . '/inc/plugins-support.php';
  */
 require_once get_template_directory() . '/inc/template-tags.php';
 /**
+Desabilitar comentários
+**/
+// Disable support for comments and trackbacks in post types
+function df_disable_comments_post_types_support() {
+	$post_types = get_post_types();
+	foreach ($post_types as $post_type) {
+		if(post_type_supports($post_type, 'comments')) {
+			remove_post_type_support($post_type, 'comments');
+			remove_post_type_support($post_type, 'trackbacks');
+		}
+	}
+}
+add_action('admin_init', 'df_disable_comments_post_types_support');
+
+// Close comments on the front-end
+function df_disable_comments_status() {
+	return false;
+}
+add_filter('comments_open', 'df_disable_comments_status', 20, 2);
+add_filter('pings_open', 'df_disable_comments_status', 20, 2);
+
+// Hide existing comments
+function df_disable_comments_hide_existing_comments($comments) {
+	$comments = array();
+	return $comments;
+}
+add_filter('comments_array', 'df_disable_comments_hide_existing_comments', 10, 2);
+
+// Remove comments page in menu
+function df_disable_comments_admin_menu() {
+	remove_menu_page('edit-comments.php');
+}
+add_action('admin_menu', 'df_disable_comments_admin_menu');
+
+// Redirect any user trying to access comments page
+function df_disable_comments_admin_menu_redirect() {
+	global $pagenow;
+	if ($pagenow === 'edit-comments.php') {
+		wp_redirect(admin_url()); exit;
+	}
+}
+add_action('admin_init', 'df_disable_comments_admin_menu_redirect');
+
+// Remove comments metabox from dashboard
+function df_disable_comments_dashboard() {
+	remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
+}
+add_action('admin_init', 'df_disable_comments_dashboard');
+
+// Remove comments links from admin bar
+function df_disable_comments_admin_bar() {
+	if (is_admin_bar_showing()) {
+		remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
+	}
+}
+add_action('init', 'df_disable_comments_admin_bar');
+/**
 Opções do tema 
 **/
 //Função
@@ -330,7 +491,29 @@ add_filter('excerpt_length', 'novo_tamanho_do_resumo');
 
 ?>
 	<div class="mosaico">
-		<ul> <?php $recent = new WP_Query("cat=destaques&showposts=4&orderby=id"); while($recent->have_posts()) : $recent->the_post();?> <li><?php the_post_thumbnail();?><div class="titulo_mosaico"><a href="<?php the_permalink(); ?>"><?php the_title();?></a><?php the_excerpt();?></div></li> <?php endwhile; ?> </ul>
+		<ul style="list-style: none;padding-left: 0;">
+		 <?php 
+		 $recent = new WP_Query("category_name=destaques&showposts=4&orderby=id"); 
+		 $contador = 1;
+		 while($recent->have_posts()) : $recent->the_post();
+		 ?> 
+		 	<li>
+		 		<div class="wrap">
+		 			<div class="wrap_thumbnail thumb<?php echo $contador++ . '';?>"style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>)">
+
+		 				<?php //the_post_thumbnail();?>
+		 				<div class="titulo_mosaico">
+
+		 					<a href="<?php the_permalink(); ?>">
+		 						<?php the_title();?>
+		 					</a>
+		 					<?php the_excerpt();?>
+		 				</div>
+		 			</div>
+		 					
+		 		</div>
+		 	</li> 
+		 	<?php endwhile; ?> </ul>
 
 
 	</div>
