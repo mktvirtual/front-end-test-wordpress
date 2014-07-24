@@ -1183,13 +1183,17 @@ pre {
 	}
 	@media (min-width:768px) {
 		.container {
-			width:550px
+			width:950px
 		}
+		
 	}
 	@media (min-width:992px) {
 		.container {
-			width:750px
+			width:950px;
+			margin: 0 auto; 
 		}
+
+}
 	}
 	@media (min-width:1200px) {
 		.container {
@@ -5412,6 +5416,7 @@ p img,.wp-caption {
 			display:none !important
 		}
 		@media (max-width:767px) {
+
 			.visible-xs {
 				display:block !important
 			}
@@ -5709,6 +5714,9 @@ h1.entry-title{
 .wrap_thumbnail{
 	width: 590px;
 	height: 350px;
+
+}
+.navbar-default .navbar-nav>li>a, .wrap_thumbnail, a{
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -5722,8 +5730,105 @@ background-color: #6DB3F2;
 .thumb2, .thumb3{
 	width: 350px
 }
-/**Fonts
-**/
+
+.linha{
+	position: absolute;
+	top: 129px;
+	height:5px;
+	width: 100%;
+	background:#D9CB9E
+
+}
+.mosaico_linha{
+	width: 26px;
+	height:1px;
+	background:#FFF;
+	color:#fff;
+
+}
+.site-info{
+	width: 950px;
+	margin: 0 auto;
+}
+.author_info, .social_info{
+	width: 475px;
+}
+.author_info{
+	float: right;
+	padding-top: 8px;
+}
+
+.social_info ul {
+	list-style: none;
+	float: left;
+	margin:0;
+	color: #25A595;
+	font-size: 18px;
+	padding-left: 0;
+}
+.social_info a{
+	color: rgba(37, 165, 149, 0.74);
+}
+.social_info a:hover{
+	color: #25A595;
+}
+.social_info li{
+	display: inline
+}
+.fa{
+	padding: 0px 10px;
+	font-size: 30px;
+}
+.ultimos_posts{
+	float: left;
+	width: 950px;
+	margin: 0 auto;
+}
+.ultimos_posts ul{
+	list-style: none;
+	float: left;
+	margin:0;
+	padding-left: 0;
+	padding-right: 0px;
+}
+.ultimos_posts li{
+	display: inline-block;
+	padding: 0 3px;
+}
+.post_thumbnail{
+	width: 230px;
+	height: 190px;
+
+}
+.post_content{
+	width: 230px;
+}
+.post_title,.post_excerpt ,.post_time{
+	font-family: 'Maven Pro';
+	text-transform: uppercase;
+
+}
+.post_title{
+	font-size: 13px;
+	color:#25a595;
+	margin-top: 10px
+}
+.post_content a{
+ text-decoration: none
+}
+.post_title {
+
+}
+.post_excerpt {
+	font-family: 'Maven Pro Bold';font-size: 17px;color:#303030;
+}
+.post_time{
+	font-size: 13px; color:#7c7c7c;
+}
+h2.titulo{
+	color:#25A595; font-size: 30px; font-family: 'Maven Pro Bold'
+}
+/**Fonts**/
 @font-face {
     font-family: 'Maven Pro';
     src: url('../fonts/mavenpro-regular-webfont.eot');
@@ -5778,20 +5883,5 @@ background-color: #6DB3F2;
          url('../fonts/mavenpro-black-webfont.svg#maven_problack') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-.linha{
-	position: absolute;
-	top: 129px;
-	height:5px;
-	width: 100%;
-	background:#D9CB9E
-
-}
-.mosaico_linha{
-	width: 26px;
-	height:1px;
-	background:#FFF;
-	color:#fff;
 
 }

@@ -508,7 +508,7 @@ add_filter('excerpt_length', 'novo_tamanho_do_resumo');
 		 ?> 
 		 	<li>
 		 		<div class="wrap">
-		 			<div class="wrap_thumbnail thumb<?php echo $contador++ . '';?>"style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>)">
+		 			<div class="wrap_thumbnail thumb<?php echo $contador++ . '';?>"style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>) no-repeat center center">
 
 		 				<?php //the_post_thumbnail();?>
 		 				<a href="<?php the_permalink(); ?>">
@@ -532,3 +532,102 @@ add_filter('excerpt_length', 'novo_tamanho_do_resumo');
 <?php
 }
 add_shortcode('mosaico', 'add_mosaico_posts');
+
+/**
+Últimos posts
+**/
+function add_ultimos_posts(){
+
+?>
+		<div class="ultimos_posts">
+			<h2 class="titulo">ÚLTIMAS</h2>
+			<?php 
+			$recent = new WP_Query("showposts=4"); 
+			while($recent->have_posts()) : $recent->the_post();
+			 ?>
+			 <ul>
+			 	<li>
+			 		<a href="<?php the_permalink(); ?>">
+			 		<div class="post_thumbnail" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>) no-repeat center center"></div>
+			 		</a>
+			 		<div class="post_content">
+			 			<a href="<?php the_permalink(); ?>">
+			 			<p class="post_title"><?php the_title();?></p></a>
+			 			<span class="post_excerpt"><?php the_excerpt();?></span>
+			 			<p class="post_time"><?php the_time('j \d\e F \d\e Y');?></p>
+			 		</div>
+			 		
+			 	</li>
+			 </ul>
+			 <?php endwhile;?>
+		</div>
+
+<?php
+}
+add_shortcode('ultimos', 'add_ultimos_posts');
+
+/**
+Lorem
+**/
+function add_lorem(){
+
+?>
+		<div class="ultimos_posts">
+			<h2 class="titulo">LOREM</h2>
+			<?php 
+			$recent = new WP_Query("category_name=lorem&showposts=4&orderby=id"); 
+			while($recent->have_posts()) : $recent->the_post();
+			 ?>
+			 <ul>
+			 	<li>
+			 		<a href="<?php the_permalink(); ?>">
+			 		<div class="post_thumbnail" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>) no-repeat center center"></div>
+			 		</a>
+			 		<div class="post_content">
+			 			<a href="<?php the_permalink(); ?>">
+			 			<p class="post_title"><?php the_title();?></p></a>
+			 			<span class="post_excerpt"><?php the_excerpt();?></span>
+			 			<p class="post_time"><?php the_time('j \d\e F \d\e Y');?></p>
+			 		</div>
+			 		
+			 	</li>
+			 </ul>
+			 <?php endwhile;?>
+		</div>
+
+<?php
+}
+add_shortcode('lorem', 'add_lorem');
+
+/**
+ipsum
+**/
+function add_ipsum(){
+
+?>
+		<div class="ultimos_posts">
+			<h2 class="titulo">IPSUM</h2>
+			<?php 
+			$recent = new WP_Query("category_name=ipsum&showposts=4&orderby=id"); 
+			while($recent->have_posts()) : $recent->the_post();
+			 ?>
+			 <ul>
+			 	<li>
+			 		<a href="<?php the_permalink(); ?>">
+			 		<div class="post_thumbnail" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>) no-repeat center center"></div>
+			 		</a>
+			 		<div class="post_content">
+			 			<a href="<?php the_permalink(); ?>">
+			 			<p class="post_title"><?php the_title();?></p></a>
+			 			<span class="post_excerpt"><?php the_excerpt();?></span>
+			 			<p class="post_time"><?php the_time('j \d\e F \d\e Y');?></p>
+			 		</div>
+			 		
+			 	</li>
+			 </ul>
+			 <?php endwhile;?>
+		</div>
+
+<?php
+}
+add_shortcode('ipsum', 'add_ipsum');

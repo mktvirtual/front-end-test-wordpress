@@ -13,8 +13,21 @@
 			</div><!-- #main -->
 	</div><!-- .container -->
 		<footer id="footer" role="contentinfo">
+
 			<div class="site-info">
-				<span>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'odin' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'odin' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?></span>
+				<div class="social_info">
+					<ul>
+						<a href="https://www.facebook.com/mktvirtual" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+						<a href="https://twitter.com/mktvirtual" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
+						<a href="http://instagram.com/mktvirtual" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
+						<a href="http://youtube.com/mktvirtual" target="_blank"><li><i class="fa fa-youtube"></i></li></a>
+						<a href="http://www.mktvirtual.com.br/novidades/feed/" target="_blank"><li><i class="fa fa-rss"></i></li></a>
+					</ul>
+				</div>
+				<div class="author_info">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/assinatura.png" align="right">
+				</div>
+				
 			</div><!-- .site-info -->
 		</footer><!-- #footer -->
 	
