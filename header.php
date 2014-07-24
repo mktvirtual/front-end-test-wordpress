@@ -34,6 +34,7 @@
 
 <body <?php body_class(); ?>>
 	<header id="header" role="banner">
+		<div class="linha"></div>
 		<div class="header_container">
 			
 				<div class="site-title h1">

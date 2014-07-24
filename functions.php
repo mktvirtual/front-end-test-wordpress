@@ -483,14 +483,23 @@ add_action('admin_menu', 'add_global_custom_options');
 /**
 Mosaico
 **/
+
 function add_mosaico_posts(){
+	function new_excerpt_more($more) {
+       global $post;
+	return ' <a href="'. get_permalink($post->ID) . '"></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 	function novo_tamanho_do_resumo($length) {
+
 	return 8;
+
 }
 add_filter('excerpt_length', 'novo_tamanho_do_resumo');
 
 ?>
 	<div class="mosaico">
+
 		<ul style="list-style: none;padding-left: 0;">
 		 <?php 
 		 $recent = new WP_Query("category_name=destaques&showposts=4&orderby=id"); 
@@ -502,12 +511,15 @@ add_filter('excerpt_length', 'novo_tamanho_do_resumo');
 		 			<div class="wrap_thumbnail thumb<?php echo $contador++ . '';?>"style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>)">
 
 		 				<?php //the_post_thumbnail();?>
+		 				<a href="<?php the_permalink(); ?>">
 		 				<div class="titulo_mosaico">
 
-		 					<a href="<?php the_permalink(); ?>">
+		 					
 		 						<?php the_title();?>
-		 					</a>
+		 							<div class="mosaico_linha"></div>
+		 					
 		 					<?php the_excerpt();?>
+		 					</a>
 		 				</div>
 		 			</div>
 		 					
