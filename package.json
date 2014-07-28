@@ -1,0 +1,25 @@
+{
+  "name": "mkt",
+  "version": "0.0.0",
+  "description": "Front-end Test - WordPress ========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicholasess/front-end-test-wordpress"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholasess/front-end-test-wordpress/issues"
+  },
+  "homepage": "https://github.com/nicholasess/front-end-test-wordpress",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
