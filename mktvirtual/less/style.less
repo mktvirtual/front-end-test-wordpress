@@ -1,0 +1,286 @@
+/*
+Theme Name: Front-end Mkt Virtual
+Description: front-end-test-wordpress::entrevista MKT VIRTUAL
+Version: 1.0
+Author: Henrique Marques Fernandes
+Author URI: http://hmarques.net
+*/
+
+@font-face {
+    font-family: MavenProBold;
+    src: url(fonts/MavenPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MavenProMedium;
+    src: url(fonts/MavenPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: MavenProRegular;
+    src: url(fonts/MavenPro-Regular.ttf);
+}
+
+/* Fontes */
+.font-regular { font-family: MavenProRegular; }
+.font-medium { font-family: MavenProMedium; }
+.font-bold { font-family: MavenProBold; }
+
+/* Cores */
+@verde: #25a595;
+
+/* Body */
+body {
+    .font-regular !important;
+    background-color:#e3e4e6;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px !important;
+}
+::-webkit-scrollbar-thumb { 
+    background: @verde !important;
+    right: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000 !important;
+} 
+
+.logo {
+    padding:15px 0px;
+}
+
+/* Menu */
+.navbar .navbar-default {    
+    min-height: 0 !important;
+}
+.navbar-default {
+    min-height: 0 !important;   
+    background:none !important;
+    border-radius:0 !important;
+    border:0;    
+    padding-bottom:5px;
+    border-bottom:solid 5px #d9cb9e;       
+    ul {
+      padding:0;
+      float:left;
+      list-style:none;
+      margin:0;
+      li {
+          float:left;          
+          margin-right:45px;
+          &:last-child {
+              margin-right:0;
+          }
+      }
+      a {                
+          text-decoration:none;
+          padding:10px 0px;
+          float:left;
+          font-size:16px;
+          margin-bottom: -10px;
+          border-bottom:solid 5px #d9cb9e; 
+          transition:all ease-in 0.2s;
+          color:#303030;
+          .font-medium;
+          text-transform: uppercase;
+          &:hover {
+              color:@verde;
+              border-bottom:solid 5px @verde;
+          }
+      }      
+  }
+}
+
+@media (max-width:768px) {
+    .navbar-default {
+        ul {
+            li {
+                width:100%;
+                a {
+                    border:0;
+                    &:hover {
+                        border:0;
+                    }
+                }
+            }
+        }        
+    }
+}
+
+@media (min-width:769px) and (max-width: 991px) {
+    .navbar-default {
+        ul {
+            li {
+                margin-right:20px;
+            }
+        }        
+    }
+}
+
+/* Mosaico */
+.mosaico {
+    padding:20px 0px;
+    article {
+        position: relative;
+        height:300px;
+        background-repeat: no-repeat;
+        background-position: center 50%;
+        background-size: cover;
+        transition:all ease-in 0.3s;
+        opacity:0.8;
+        &:hover { 
+            opacity:1;
+        }
+    }
+    .row {
+        margin-bottom:15px;
+    }
+    .title-wrapper {
+        position:absolute;
+        background:rgba(0,0,0,0.8);
+        bottom:10px;
+        left:0;
+        width:70%;
+        padding:10px;
+        h3 {
+            margin-top:0;
+            margin:0;
+            font-size: 14px;
+            text-transform: uppercase;
+            width:100%;
+            float:left;
+            a {
+                color:#FFF;
+                .font-medium;
+                font-weight: bold;
+            }
+        }       
+    }
+    .category {
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+        float:left;
+        ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+            li {
+                float:left;
+                margin-right:10px;
+                display:none;
+                &:first-child {
+                    display:inline-block;
+                }
+                a {
+                    color:#FFF;
+                    font-size:12px;
+                    .font-regular;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .mosaico {
+        .col-md-7,.col-md-5 {
+            margin-bottom:30px;
+        }
+        .row {
+            margin:0;
+        }
+    }
+    .ultimas,.um-categoria {
+        .col-xs-6 {
+            margin-bottom:30px;
+        }
+    }
+}
+
+/* Ultimas */
+.ultimas,.um-categoria {
+    padding-bottom:40px;        
+    h2 {
+        color:@verde;
+        text-transform: uppercase;
+        .font-medium;
+        font-weight: bold;
+        font-size:25px;
+    }
+    .image-list {
+        height:213px;
+        background-position: center 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h3 {
+        margin:0;
+        float:left;
+        width:100%;
+        a {
+            font-size:13px;
+            float:left;
+            .font-bold;
+            text-transform: uppercase;
+            color:#303030;  
+        }
+    }
+    .category {
+        ul {
+            list-style:none;
+            padding:0;
+           
+            li {
+                float:left;
+                display: none;
+                &:first-child {
+                    display:inline-block;
+                }
+                a {
+                    color:@verde;
+                    float:left;
+                    margin-bottom:5px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .date {
+        font-size:12px;
+        .font-bold;
+        margin-top:5px;
+        float: left;
+        text-transform: uppercase;
+        color:#999;
+    }
+}
+.um-categoria {
+    h3 {
+        margin-top:10px !important;
+    }
+}
+
+/* Footer */
+.footer {        
+    background-color:#2b2b2b;
+    padding:10px 0px;
+    a {
+        float:left;
+        margin-right:10px;
+        color:@verde;
+        font-size: 24px;
+    }
+    a.mkt {
+        .font-bold;
+        float: right;
+        color:@verde;
+        font-size:16px;
+        padding:3px 0px;
+        margin:0;
+        text-transform:uppercase;
+    }
+}
