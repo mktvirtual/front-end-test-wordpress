@@ -1,0 +1,18 @@
+// PIXELS TO EMS
+// $target: the desired font size for the element
+// $parent: the targets parent element font size (default: 16)
+
+
+@function em($target, $context: 16) {
+  @return ($target / $context)+0em;
+}
+
+// // Default
+// .element {
+//   font-size:em(11);
+// }
+
+// // With custom $parent value
+// .element {
+//   font-size:em(11, 20);
+// }

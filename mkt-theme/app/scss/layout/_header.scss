@@ -1,0 +1,37 @@
+.header {
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    transition: top 0.4s ease-in-out;
+    width: 100%;
+    z-index: 9998;
+    background-color: $body-background-color;
+
+    img {
+        padding-left: 10px;
+    }
+}
+
+.nav-up {
+    top: -108px;
+}
+
+.header-margin-top {
+    margin-top: 120px;
+}
+
+@media only screen and (max-width: $small-device) {
+
+    .header {
+        padding: 10px;
+
+        img {
+            padding: 10px 0;
+        }
+    }
+
+    .header-margin-top {
+        margin-top: 80px;
+    }
+}
+

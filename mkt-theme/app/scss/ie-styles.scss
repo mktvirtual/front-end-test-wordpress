@@ -1,0 +1,48 @@
+/* Tools */
+@import "tools/_variables";
+@import "tools/_mixins";
+@import "tools/_grid";
+@import "tools/_helpers";
+
+/* Base */
+
+/* Layout */
+
+.header-margin-top {
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: $small-device) {
+
+    .header-margin-top {
+        margin-top: 50px;
+    }
+}
+
+// _header
+
+/* Components */
+@import "components/_browser-happy";
+
+// Custom styles
+
+// _highlights
+
+.highlights {
+
+    .article {
+        @include column(6);
+        margin-bottom: 10px!important;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .highlights {
+
+        .article {
+                @include column(12);
+        }
+    }
+}
