@@ -1,0 +1,332 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: "Maven Pro", Sans-serif;
+  color: black;
+  width: 100%;
+  height: auto !important;
+  background-color: #E3E4E6;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 950px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: red;*/
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----- TOPO / MENU ----- */
+
+.topo{
+  width: 100%;
+  height: 105px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-bottom: 5px solid #D9CB9E;
+  background: #E3E4E6;
+}
+
+.logo-mkt{
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.menu{
+  width: 100%;
+  display: inline;
+  list-style: none;
+}
+
+.menu li{
+  display: inline;
+  margin-right: 47px;
+  padding-bottom: 5px;
+}
+
+.menu li:last-child{
+  margin-right: 0px;
+}
+
+.menu li:hover{
+  color: #25A595;
+  border-bottom: 5px solid #25A595;
+}
+
+/* ----- FIM DO TOPO / MENU ----- */
+
+.margin-topo{
+  margin-top: 125px; /* margin para tirar o conteudo de baixo do topo */
+}
+
+/* ----- DESTAQUES EM MOSAICO ----- */
+
+.mosaico-destaques{
+  width: 100%;
+}
+
+.mosaico{
+  width: 576px;
+  height: 350px;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.mosaico:nth-child(2n){
+  margin-left: 8px;
+}
+
+.mosaico:nth-child(2),
+.mosaico:nth-child(3){
+  width: 350px;
+}
+
+.mosaico figure{
+  width: 100%;
+  height: 100%;
+}
+
+.mosaico .infos-post{
+  width: 300px;
+  margin-top: -120px;
+  position: absolute;
+  z-index: 1;
+  padding: 10px 0 10px 20px;
+  background-color: black;
+  opacity: .7;
+}
+
+.mosaico:hover .infos-post{
+  background-color: #25A595;
+  opacity: 1;
+}
+
+.mosaico .infos-post h2,
+.mosaico .infos-post h2 a,
+.mosaico .infos-post span{
+  color: white;
+}
+
+.mosaico .infos-post h2{
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.mosaico .infos-post span{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.mosaico-esquerda{
+  float: right;
+}
+
+/* ----- FIM DESTAQUES EM MOSAICO ----- */
+
+/* ----- POSTS ----- */
+
+h1,
+h1 a{
+  color: #25A595;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.ultimas{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.post-lista{
+  width: 22%;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.post-lista:last-child{
+  margin-right: 0; 
+}
+
+.post-lista figure{
+  width: 100%;
+  height: 190px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+       -o-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.post-lista:hover figure{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+       -o-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.post-lista figure img{
+  width: auto;
+  height: 100%;
+}
+
+.post-lista .categoria,
+.post-lista .categoria a{
+  color: #25A595;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.post-lista span{
+  float: left;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  clear: both;
+}
+
+.post-lista .data-post{
+  float: left;
+  font-size: 12px;
+  color: gray;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* ----- FIM DOS POSTS ----- */
+
+/* ----- AQUI COMEÇA O FOOTER ----- */
+
+footer{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2b2b2b;
+}
+
+.redes-sociais{
+  width: 160px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.youtube,
+.rss{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px; 
+  display: inline-block;
+  background: url(../images/sprite-redes-sociais.png) no-repeat;
+}
+
+.facebook{
+  width: 10px;
+  background-position: 0 0;
+}
+
+.twitter{
+  background-position: -23px 0;
+}
+
+.instagram{
+  background-position: -57px 0;
+}
+
+.youtube{
+  background-position: -89px 0;
+}
+
+.rss{
+  background-position: -122px 0;
+}
+
+.assinatura{
+  font-size: 9px;
+  color: #25A595;
+  vertical-align: middle;
+  float: right;
+}
