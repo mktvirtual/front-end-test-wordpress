@@ -1,0 +1,144 @@
+/*
+Theme Name: FRONTENDTEST
+Theme URI: http://frontendtest.esy.es/frontendtest/
+Description: FRONTENDTEST
+Author: DIOGO
+Author URI: http://frontendtest.esy.es/frontendtest/
+*/
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+
+body{
+	font-family:"Maven Pro";
+	background-color:#E3E4E6;
+	alignment-adjust:central;
+	margin:0px;
+}
+
+
+.ultimas table{
+margin-left:250px;
+}
+
+.ultimas h2{
+	margin-left:250px;
+	color:#25A595;
+}
+
+p1{
+	color:#25A595;
+	font-size:12px;
+}
+
+.data{
+	left:auto;
+	font-size:14px;
+	color:#999;
+}
+
+
+
+#foto{
+	text-align:center
+	width:		523px;
+	height:		331px;
+	position:	relative;
+}
+
+.icone1{
+	position: absolute;
+	left: 0px;
+	top: 207px;
+}
+.icone2{
+	position: absolute;
+	left: auto;
+	top: 355px;
+	width: 239px;
+	height: 91px;
+}
+
+.icone3{
+	position: absolute;
+	left: auto;
+	top: 685px;
+	width: 190px;
+}
+
+.icone4{
+	position: absolute;
+	left: 0px;
+	top: 154px;
+}
+	
+.titulo1{
+	position: absolute;
+	left: 22px;
+	top: 208px;
+	color: #FFF;
+	font-family: "Maven Pro";
+
+}
+
+.titulo2{
+	position: absolute;
+	left: auto;
+	top: 366px;
+	color: #FFF;
+	font-family: "Maven Pro";
+	width: 107px;
+
+}
+
+.titulo3{
+	position: absolute;
+	left: auto;
+	top: 689px;
+	color: #FFF;
+	font-family: "Maven Pro";
+
+}
+
+.titulo4{
+	position: absolute;
+	left: 1px;
+	top: 149px;
+	color: #FFF;
+	font-family: "Maven Pro";
+
+}
+.texto1{
+	position: absolute;
+	left: 20px;
+	top: 236px;
+	color: #FFF;
+	font-family: "Maven Pro";
+
+}
+
+.texto2{
+	position: absolute;
+	left: auto;
+	top: 390px;
+	color: #FFF;
+	font-family: "Maven Pro";
+	width: 201px;
+
+}
+
+.texto3{
+	position: absolute;
+	left: auto;
+	top: 700px;
+	color: #FFF;
+	font-family: "Maven Pro";
+
+}
+
+.texto4{
+	position: absolute;
+	left: 23px;
+	top: 175px;
+	color: #FFF;
+	font-family: "Maven Pro";
+
+}
