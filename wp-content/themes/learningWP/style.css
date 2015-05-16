@@ -1,0 +1,287 @@
+/*
+Theme Name: Learning Wordpress
+Author: Eric
+Author URI: http://
+Version:1.0
+*/
+
+html,body
+{
+	width:100%;
+	height: 100%;
+	margin: 0px;
+	padding:0px; 
+}
+
+body
+{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+
+@font-face
+{
+	font-family: MavenPro-Black;
+	src: url("/design/fonts/MavenPro-Black.ttf");
+}
+@font-face
+{
+	font-family: MavenPro-Bold;
+	src: url("/design/fonts/MavenPro-Bold.ttf");
+}
+@font-face
+{
+	font-family: MavenPro-Medium;
+	src: url("/design/fonts/MavenPro-Medium.ttf");
+}
+@font-face
+{
+	font-family: MavenPro-Regular;
+	src: url("/design/fonts/MavenPro-Regular.ttf");
+}
+
+a:link,
+a:visited
+{
+	font-family: "MavenPro-Regular";
+	color: #006EC3;
+}
+
+p
+{
+	line-height: 1.65em;
+}
+
+/* General Layout */
+div.container
+{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+/*header */
+.site-header
+{
+	border-bottom: 2px solid #999;
+}
+
+
+/*navi menus*/
+
+.site-nav li
+{
+	display: inline-block;	
+	margin-right: 5px;
+}
+.site-header
+{
+	border-bottom: 6px solid rgb(217,203,158);
+}
+
+.site-header nav a:link
+{
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+	border-bottom: 6px solid transparent;
+	color:rgb(48,48,48);
+}
+
+
+.site-header ul
+{
+	margin-bottom: -6px;
+}
+
+.site-header nav li.current-menu-item a:link,
+.site-header nav li.current-menu-item a:visited,
+.site-header nav li a:hover,
+.site-header nav a:focus
+{
+	border-bottom: 6px solid rgb(37,165,149);	
+	color:rgb(37,165,149);
+	font-family: "MavenPro-Bold";
+}
+
+.site-logo
+{
+	display: block;
+}
+
+/*MOSAICO*/
+.mosaic
+{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.mosaic figure
+{
+	height: 330px;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0px;
+}
+
+.mosaic figure:nth-child(n+2)
+{
+	width: 350px;
+}
+
+.mosaic figure:nth-child(1),
+.mosaic figure:nth-child(4)
+{
+	width: 610px;
+}
+
+.mosaic figcaption
+{
+	text-align: left;
+	padding: 0 20px;
+	margin-top: 0px;
+	display: block;
+	position: absolute;
+	width: 80%;
+	max-width: 250px;
+	bottom: 10px;
+	color: white;
+	background: rgba(0,0,0,0.5);
+}
+
+.mosaic h1
+{
+	font-family: "MavenPro-Regular";
+	font-size: 1em;
+}
+
+.mosaic p
+{
+	margin-top: 5px;
+	font-family: "MavenPro-Bold";
+	font-size: 1em;
+}
+
+.mosaic div
+{
+	text-align: left;
+	width: 30px;
+	padding: 0;
+	height: 0;
+}
+/*ULTIMOS POSTS*/
+.last-posts 
+{
+	text-align: center;
+}
+
+.last-post-card-title
+{
+	padding-left: 30px;
+	color: #25A595;
+	text-align: left;
+}
+.last-posts .last-post-card
+{
+	display: inline-block;
+	width: 230px;
+	margin: 0 5px;
+	text-align: left;
+}
+
+.last-post-card img
+{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 150px;
+}
+.last-post-cards-title,
+.last-post-card .date
+{
+	color:#25A595;
+	font-size: 0.8125em; /* 13/16 */
+}
+
+.last-post-card
+{
+	font-size: 1.0625em; /* 17/16 */
+}
+.last-post-card .date
+{
+	color: rgb(167,168,169);
+}
+
+
+/*ULTIMOS POSTS*/
+.last-posts 
+{
+	text-align: center;
+}
+
+.last-post-card-title
+{
+	padding-left: 30px;
+	color: #25A595;
+	text-align: left;
+}
+.last-posts .last-post-card
+{
+	display: inline-block;
+	width: 230px;
+	margin: 0 5px;
+	text-align: left;
+}
+
+.last-post-card img
+{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 150px;
+}
+.last-post-cards-title,
+.last-post-card .date
+{
+	color:#25A595;
+	font-size: 0.8125em; /* 13/16 */
+}
+
+.last-post-card
+{
+	font-size: 1.0625em; /* 17/16 */
+}
+.last-post-card .date
+{
+	color: rgb(167,168,169);
+}
+
+/*FOOTER*/
+footer
+{
+	background-color: rgb(40,40,40);
+	color: white;
+	height: 300px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.social-medias
+{
+	float: left;
+}
+.social-medias img
+{
+	height: 30px;
+	width: 30px;
+	padding-left: 10px;
+}
+
+.signature
+{
+	float: right;
+}
