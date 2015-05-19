@@ -1,0 +1,112 @@
+.list-categories {
+
+    @include column(12);
+
+    .title {
+        text-transform: uppercase;
+        font-size: em(30);
+        color: $color-title;
+        margin: 20px 0;
+    }
+
+    .article {
+        @include column(3);
+        display: inline-block;
+
+        .article-thumb {
+            width: 100%;
+            height: 190px;
+            background-color: #CCCED2;
+            overflow: hidden;
+
+            img {
+                display: block;
+                margin: 0 auto;
+
+                // width: 100%;
+                // height: 100%;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: $color-text-default;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-title;
+            }
+        }
+
+        .article-category {
+            margin: 5px 0 0;
+            color: $color-category-title;
+            text-transform: uppercase;
+
+            a {
+                color: $color-title;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .article-title {
+            font-size: em(17);
+            margin: em(10) 0;
+            text-transform: uppercase;
+        }
+
+        .article-date {
+            margin-bottom: 20px;
+            height: 16px;
+            color: #7c7c7c;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media only screen and (max-width: $medium-device) {
+
+    .list-categories {
+
+        .article {
+            @include column(6);
+            padding: 0 2%;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .list-categories {
+
+        .article {
+            @include column(12);
+            padding: 0 6%;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .list-categories {
+
+        .article {
+            @include column(12);
+            padding: 0 6%;
+        }
+    }
+}
+
+// // <article class="article">
+// //     <img src="img/mini.jpg" alt="">
+// //     <p class="article-category">Lorem</p>
+// //     <h4 class="article-title">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h4 class="article-title">
+// //     <p class="article-date">22 de Janeiro 2014</p>
+// // </article>

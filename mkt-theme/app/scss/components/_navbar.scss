@@ -1,0 +1,101 @@
+.navbar {
+
+    background-color: $body-background-color;
+
+    .nav {
+        margin: 6px 0 0;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 10px;
+
+            &.current_page_item a {
+                color: $color-text-hover;
+                border-bottom: 5px solid $color-border-link-hover;
+            }
+
+            a {
+                display: block;
+                color: $color-text-default;
+                padding-bottom: 10px;
+                text-decoration: none;
+                text-transform: uppercase;
+                border-bottom: 5px solid $color-border-link;
+
+                &:hover {
+                    color: $color-text-hover;
+                    border-bottom: 5px solid $color-border-link-hover;
+
+                }
+            }
+        }
+    }
+
+    .ruler {
+        width: 100%;
+        height: 5px;
+        margin-top: -5px;
+        background-color: $color-ruler;
+        display: block;
+    }
+}
+
+
+.burger {
+    float: right;
+    margin-top: 18px;
+    display: none;
+
+    .b {
+        width: 21px;
+        height: 4px;
+        display: block;
+        background-color: $color-burgers;
+        margin-bottom: 4px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar {
+
+        .nav {
+
+            li {
+                display: block;
+                padding: 0 10px;
+                text-align: right;
+
+                &.current_page_item a {
+                    border-width: 2px;
+                }
+
+                a {
+                    padding: 10px;
+                    border-width: 2px;
+
+                    &:hover {
+                        border-width: 2px;
+                    }
+                }
+            }
+
+            &.close {
+                display: none;
+            }
+
+            &.open {
+                display: block;
+            }
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger:hover .nav {
+        display: block;
+    }
+}
