@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-	<div id="contentLayer"></div>
-	<div class="content-page">
 	   	<section class="home-slider">
 	      	<div class="slider">
 	      		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -104,7 +102,7 @@
 
 		<section class="newsletter">
 			<div class="container">
-				<div class="signature">
+				<div class="signature col-md-6">
 					<div class="title">
 						<h6>assine a newsletter do logo</h6>
 					</div>
@@ -112,7 +110,7 @@
 						<form><input type="email" placeholder="Seu e-mail"><button type="submit" class="bt-newsletter">enviar</button></form>
 					</div>
 				</div>
-				<div class="socials">
+				<div class="socials col-md-6">
 					<div class="title">
 						<h6>Siga lojas logo nas redes sociais</h6>
 					</div>
@@ -124,6 +122,5 @@
 				</div>
 			</div>
 		</section>
-
 
 <?php get_footer(); ?>

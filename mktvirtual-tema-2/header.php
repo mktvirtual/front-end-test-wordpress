@@ -25,42 +25,36 @@
 
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/jquery-1.11.3.min.js';?>"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/hamburger.js';?>"></script>
+
 	
 	<?php wp_head(); ?>
 </head>
 <body>
 
-<div class="page-body">
-	<header class="site-header">
-	   	<div class="apoio">
+	<nav class="site-header navbar navbar-default" role="navigation">
+		<div class="apoio">
 	   		<div class="container">
-	   			<ul>
-	   				<li><a href="#">Peça seu Cartão de Cliente</a></li>
-	   				<li><a href="#"><img class="barcode-apoio " src="<?php echo get_template_directory_uri() . '/images/barcode-icon.png';?>" alt="barcode icon">Solicite a 2ª via do boleto</a></li>
-	   				<li><a href="#">Encontre uma loja</a></li>
-	   				<li><a href="#">Assine a newsletter</a></li>
-	   				<li>
-	   					<form method="get" id="search_form" action="<?php bloginfo('home'); ?>"/>
-					       <input type="text" class="text" name="s" value="Buscar" >
-					       <button type="submit" class="submit"/><i class="fa fa-search"></i></button>
-						</form>
-					</li>
-	   			</ul>
+	   			<div class="float-right">
+		   			<?php wp_nav_menu( array( 'theme_location' => 'apoio-menu' ) ); ?>
+		            <form method="get" id="search_form" action="<?php bloginfo('home'); ?>"/>
+		                   <input type="text" class="text" name="s" value="Buscar" >
+		                   <button type="submit" class="submit"/><i class="fa fa-search"></i></button>
+		              </form>
+	            </div>
 	   		</div>
 	   	</div>
-
-	   	<div class="nav">
-	   		<div class="container">
-	   			<div class="logo"><img src="<?php echo get_template_directory_uri() . '/images/logo/logo.png';?>" alt="logo image"></div>
-	   			<?php wp_nav_menu( array( 'theme_location' => 'nav-menu' ) ); ?>
+	   	<div class="container">
+	   		<div class="navbar-header">
+		   		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">Navegação</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"><div class="logo"><img src="<?php echo get_template_directory_uri() . '/images/logo/logo.png';?>" alt="logo image"></div></a>
 	   		</div>
+	   		<div class="main-menu navbar-collapse collapse" id="example-navbar-collapse"><?php wp_nav_menu( array( 'theme_location' => 'nav-menu' ) ); ?></div>
+		</div>
 	   	</div>
-		
-		<div id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+	</nav>
 
-	</header>

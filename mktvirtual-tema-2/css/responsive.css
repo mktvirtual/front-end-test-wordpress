@@ -1,0 +1,338 @@
+/*----------- RESPONSIVE CSS STYLECHEET -------------------*/
+/************************************************************
+************************************************************/
+@media only screen and (max-width: 1200px){
+	.site-header .apoio form input {
+		border: none;
+		color: #fff;
+		background: #c66223;
+		padding: 9px 47px 9px 10px;
+		max-width: 383px;
+		width: 260px;
+	}
+
+	.site-header .menu-nav-menu-container .menu .menu-item {
+		font-size: 14px;
+	}
+
+	.logo img{
+		width: 80%;
+	}
+	
+	.site-header .menu-nav-menu-container .menu .menu-item .sub-menu {
+		position: absolute;
+		display: none;
+		top: 38px;
+	}
+
+	.posts .bt-banner {
+		padding: 15px 31px;
+	}
+
+	.post-info h6{
+		font-size: 10px;
+	}
+	
+	.post-info h3{
+		font-size: 18px;
+	}
+
+	.posts .post-content .post-info p {
+  		font-size: 14px;
+  	}
+
+	footer {
+		background: url('../images/footer/footer-1.png') no-repeat 663px 0 #f47d31;
+		padding: 50px 0 0 0;
+		background-size: 45%;
+	}
+
+}
+
+@media only screen and (max-width: 991px){
+	.home-slider {
+		padding-top: 3px;
+	}
+	.site-header .apoio .menu .menu-item {
+		font-size: 10px;
+	}
+
+	.site-header .apoio form input {
+	  border: none;
+	  color: #fff;
+	  background: #c66223;
+	  padding: 9px 47px 9px 10px;
+	  max-width: 383px;
+	  width: 175px;
+	}
+	.site-header .menu-nav-menu-container .menu .menu-item {
+		padding: 10px 10px;
+		  font-size: 12px;
+	}
+
+	.site-header.headroom--unpinned .menu-nav-menu-container .menu li a {
+	  font-size: 12px;
+	  transition: all 0.1s ease-in-out;
+	  -moz-transition: all 0.1s ease-in-out;
+	  -webkit-transition: all 0.1s ease-in-out;
+	  -o-transition: all 0.1s ease-in-out;
+	}
+
+	.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu li a {
+	  font-size: 12px;
+	  transition: all 0.1s ease-in-out;
+	  -moz-transition: all 0.1s ease-in-out;
+	  -webkit-transition: all 0.1s ease-in-out;
+	  -o-transition: all 0.1s ease-in-out;
+	}
+
+	.logo img {
+	  width: 70%;
+	}
+
+	.supper-banner{
+		display: none;
+	} 
+
+	.box-padding .box {
+		background: #fff;
+		border: 1px solid #000;
+		padding: 30px 0;
+		top: 25%;
+		left: 30%;
+	}
+
+
+.footer-top .col-md-2, .footer-top .col-md-3{
+	display: block;
+	float: left;
+}
+
+.site-header.sticky .menu-nav-menu-container .menu li a{
+	font-size: 12px;
+}
+
+footer {
+  background: url('../images/footer/footer-1.png') no-repeat 473px 0 #f47d31;
+  padding: 50px 0 0 0;
+  background-size: 51%;
+}
+
+.site-header .logo {
+  padding: 10px 0;
+  width: 150px;
+}
+
+}
+
+@media only screen and (max-width: 767px){
+.site-header .apoio{
+	display: none;
+}
+
+.site-header .nav{
+	margin-top: 0px;
+}
+
+.home-slider {
+  padding-top: 0px;
+}
+
+.posts .post-content {
+	padding-left: 15px;
+}
+
+.posts .post-content:nth-child(1), .posts .post-content:nth-child(3){
+	padding-right: 7px;
+}
+.posts .post-content:nth-child(2), .posts .post-content:nth-child(4){
+	padding-left: 7px;
+}
+
+footer {
+  background: url('../images/footer/footer-1.png') no-repeat 360px 0 #f47d31;
+  padding: 50px 0 0 0;
+  background-size: 66%;
+}
+
+
+}
+
+/*@media only screen and (max-width: 782px){
+	.site-header{
+	position: fixed;
+    width: 100%;
+    z-index: 16;
+	}
+
+	.site-header {
+	  margin: 0;
+	  transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -webkit-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+}
+
+	.home-slider {
+  padding-top: 52px;
+}
+	.site-header .menu-nav-menu-container .menu .menu-item .sub-menu {
+  position: absolute;
+  display: none;
+  top: 39px;
+  background: #fff;
+  left: 0;
+  width: 221%;
+  padding: 20px 0;
+}
+
+}
+
+@media only screen and (max-width: 721px){
+	.site-header.headroom-top.headroom--pinned .logo img{
+	width: 50%;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+
+}
+
+.site-header.headroom-top.headroom--pinned .menu-nav-menu-container .menu{
+	padding: 14px 0;
+}
+
+.site-header.headroom-top.headroom--pinned .menu-nav-menu-container .menu li .sub-menu{
+	  top: 39px;
+	  border-top: 6px solid #fff;
+}
+
+.site-header.headroom-top.headroom--pinned .menu-nav-menu-container .menu li a{
+	font-size: 14px;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.site-header.headroom-top.headroom--pinned .menu-nav-menu-container .menu li:hover{
+	background: #F47D31;
+}
+.site-header.headroom-top.headroom--pinned .menu-nav-menu-container .menu li:hover .sub-menu{
+	background: #F47D31;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+.site-header.headroom-top.headroom--pinned .menu-nav-menu-container .menu li:hover a{
+	color: #fff;
+}
+
+.site-header.headroom--unpinned .menu-nav-menu-container .menu li .sub-menu {
+  top: 39px;
+  border-top: 3px solid #fff;
+}
+
+}*/
+@media only screen and (max-width: 767px){
+	.home-slider {
+  padding-top: 52px;
+}
+
+.site-header {
+  background: #fff;
+  border: none;
+  margin-bottom: 0;
+  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.navbar-brand {
+  padding: 0px 15px;
+}
+.site-header.headroom--not-top.headroom--pinned .logo img {
+  width: 70%;
+  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item .sub-menu {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item:hover .sub-menu {
+  display: block;
+  position: static;
+  background: transparent;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item:hover {
+  background: transparent;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item {
+  padding: 10px 10px;
+  font-size: 12px;
+  display: block;
+}
+
+.site-header.headroom--not-top.headroom--pinned .apoio {
+  display: none;
+  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  background: #d1d3d4;
+}
+
+.site-header.headroom--unpinned .logo img {
+  width: 70%;
+  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+}
+@media only screen and (max-width: 480px){
+	.posts .post-content {
+	  width: 100%;
+	  float: left;
+	  padding: 0 10px 15px 10px !important;
+	  position: relative;
+	}
+	.box-padding .box {
+	  background: #fff;
+	  border: 1px solid #000;
+	  padding: 30px 0px;
+	  top: 20%;
+	  left: 0%;
+	}
+	.main-menu.navbar-collapse.in {
+  background: #F37C30;
+  width: 111%;
+}
+.home-slider {
+  padding-top: 0px;
+}
+.newsletter .signature .mail {
+  position: relative;
+  width: 100%;
+    margin-bottom: 30px;
+}
+
+footer {
+  background:#f47d31;
+ }
+
+	.links-1, .links-2{
+		  padding-bottom: 15px;
+	}
+}
+
