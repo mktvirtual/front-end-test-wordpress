@@ -1,0 +1,728 @@
+/*
+Theme Name: Mkt Virtual - Theme Teste
+Author: Vitor Duarte
+Date: 17/05/2015
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic);
+
+body{
+	background: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	overflow-x:hidden;
+	  height: 0;
+}
+
+a, a:hover, a:focus, a:visited, a:active{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+.float-right{
+	float: right;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+/********************** HEADER *************************/
+/*******************************************************/
+
+.site-header{
+	width: 100%;
+	float: left;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+	background: transparent;
+  border: none;
+
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+
+.navbar-toggle {
+  background-color: rgb(243, 124, 48);
+}
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+.apoio{
+	background: #f47d31;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.apoio .menu .menu-item{
+	display: inline;
+		font-size: 12px;
+		padding: 0 10px 0 10px;
+}
+
+.menu-apoio-menu-container{
+	float: left;
+}
+
+.apoio .menu .menu-item a{
+	color: #fff;
+}
+
+.apoio .menu{
+	padding: 6px 0;
+}
+
+.apoio form{
+	display: inline;
+	font-size: 12px;
+	position: relative;
+	float: right;
+}
+
+.apoio form button{
+	position: absolute;
+	right: 0px;
+	top: 4px;
+	border-left: 1px solid #fff;
+	background: none;
+	border: none;
+}
+.apoio form button i{
+	  border-left: 1px solid #fff;
+  		padding: 6px 10px;
+  		color: #fff;
+}
+.apoio form input{
+	border: none;
+	color: #fff;
+	background: #c66223;
+	padding: 9px 10px;
+	max-width: 383px;
+  	width: 383px;
+}
+
+.apoio form input:active, .apoio form input:focus{
+	outline: none;
+}
+
+.navbar-brand{
+	float: left;
+  	height: 100%;
+  	padding: 15px 15px;
+  	font-size: 18px;
+  	line-height: 20px;
+}
+.site-header .apoio{
+	background: #f47d31;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+
+.site-header .nav{
+	margin: 30px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.site-header .menu-nav-menu-container{
+	display: block;
+}
+
+.navbar-collapse{
+	float: right;
+	margin-top: 5px;
+}
+
+.site-header .menu-nav-menu-container .menu{
+	padding: 20px 0;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item{
+	display: inline;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	position: relative;
+}
+.logo img{
+	  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  width: 80%;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item:hover{
+	background: #fff;
+}
+.navbar-default .navbar-toggle {
+  border-color: rgb(243, 124, 48);
+}
+.site-header .menu-nav-menu-container .menu .menu-item:hover .sub-menu{
+	display: block;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgb(218, 100, 24);
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item a{
+	color: #333132;
+}
+
+.main-menu.navbar-collapse.in{
+	  background: #F37C30;
+  width: 105%;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item .sub-menu{
+	position: absolute;
+	display: none;
+	top: 39px;
+	background: #fff;
+	left: 0;
+	width: 175%;
+	padding: 20px 0;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item .sub-menu img{
+	float: right;
+	position: absolute;
+	top: 0;
+	right: -120px;
+	width: 85.5%;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item .sub-menu li{
+	display: block;
+	padding: 5px 15px;
+	text-transform: none;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item .sub-menu li a{
+	font-size: 12px;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item .sub-menu li:hover{
+	background: none;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item-57:hover .sub-menu {
+  display: block;
+  background: url('images/feminino-submenu.png') no-repeat 130px 0 #fff;
+  max-width: 280px;
+  width: 280px;
+}
+
+
+.site-header .menu-nav-menu-container .menu .menu-item-63:hover .sub-menu {
+  display: block;
+  background: url('images/masculino-submenu.png') no-repeat 130px 0 #fff;
+  max-width: 280px;
+  width: 280px;
+}
+
+.site-header .menu-nav-menu-container .menu .menu-item-68:hover .sub-menu {
+  display: block;
+  background: url('images/kids-submenu.png') no-repeat 71px 0 #fff;
+  max-width: 270px;
+  width: 270px;
+}
+
+
+/*------------------------------------------------------------*/
+
+.site-header.headroom--unpinned .apoio{
+	display: none;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	  background: #d1d3d4;
+}
+
+.site-header.headroom--unpinned{
+	background: #fff;
+ 	margin: 0;
+ 	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.site-header.headroom--unpinned .logo img{
+	width: 50%;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+
+}
+
+.site-header.headroom--unpinned .menu-nav-menu-container .menu{
+	padding: 14px 0;
+
+}
+
+.site-header.headroom--unpinned .menu-nav-menu-container .menu li .sub-menu{
+	  top: 39px;
+	  border-top: 6px solid #fff;
+}
+
+.site-header.headroom--unpinned .menu-nav-menu-container .menu li a{
+	font-size: 14px;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.site-header.headroom--unpinned .menu-nav-menu-container .menu li:hover{
+	background: #F47D31;
+}
+.site-header.headroom--unpinned .menu-nav-menu-container .menu li:hover .sub-menu{
+	background: #F47D31;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+.site-header.headroom--unpinned .menu-nav-menu-container .menu li:hover a{
+	color: #fff;
+}
+
+/*************************************************************************************/
+
+
+.site-header.headroom--not-top.headroom--pinned .apoio{
+	display: block;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	background: #d1d3d4;
+}
+
+.site-header.headroom--not-top.headroom--pinned .apoio .menu .menu-item a {
+  color: #58595b;
+}
+.site-header.headroom--not-top.headroom--pinned{
+	background: #fff;
+ 	margin: 0;
+ 	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.site-header.headroom--not-top.headroom--pinned .apoio form input {
+  background: #949697;
+}
+
+.site-header.headroom--not-top.headroom--pinned .logo img{
+	width: 50%;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+
+}
+
+.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu{
+	padding: 14px 0;
+
+}
+
+.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu li .sub-menu{
+	  top: 39px;
+	  border-top: 6px solid #fff;
+}
+
+.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu li a{
+	font-size: 14px;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu li:hover{
+	background: #F47D31;
+}
+.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu li:hover .sub-menu{
+	background: #F47D31;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+.site-header.headroom--not-top.headroom--pinned .menu-nav-menu-container .menu li:hover a{
+	color: #fff;
+}
+
+
+
+
+/********************** END OF HEADER *************************/
+/**************************************************************/
+
+
+/********************** HOME-SLIDER ***************************/
+/**************************************************************/
+
+.home-slider{
+	padding-top: 3px;
+}
+
+/********************** END OF HOME-SLIDER ********************/
+/**************************************************************/
+
+
+/*************************** POSTS ****************************/
+/**************************************************************/
+
+.posts{
+	padding: 50px 0;
+}
+
+.posts img{
+	width: 100%;
+	height: auto;
+}
+
+.posts .super-banner{
+	position: relative;
+}
+
+.posts .bt-banner{
+	text-align: center;
+	text-transform: uppercase;
+	color: #f7802c;
+	background: #58207b;
+	padding: 15px 65px;
+	position: absolute;
+	bottom: -27px;
+}
+
+.posts .bt-banner p{
+	margin: 0;
+	font-size: 12px;
+}
+
+.posts .post-content{
+	width: 50%;
+	float: left;
+	padding: 0 15px 15px 0;
+	position: relative;
+}
+.posts .post-content .post-image{
+	position: relative;
+}
+
+.posts .post-content .post-info{
+	position: absolute;
+	top: 10px;
+	text-align: center;
+  	width: 60%;
+}
+
+.posts .post-content:nth-child(2) .post-info, .posts .post-content:nth-child(4) .post-info{
+	  position: absolute;
+  text-align: center;
+  width: 60%;
+  top: inherit;
+  bottom: 25px;
+  left: 18%;
+}
+
+.posts .post-content:nth-child(2) .post-info h6{
+display: none;
+}
+
+.posts .post-content:nth-child(3) .post-info{
+	  position: absolute;
+  top: 80px;
+  text-align: center;
+  width: 60%;
+  right: 17px;
+}
+
+.posts .post-content .post-info h6{
+	margin: 0 0 10px 0;
+  	text-transform: uppercase;
+}
+
+.posts .post-content .post-info h3{
+	text-transform: uppercase;
+	margin: 0px 0 15px 0;
+}
+
+.posts .post-content .post-info p{
+	font-size: 16px;
+	font-family: 'Alegreya Sans', sans-serif;
+	margin: 0 0 21px 0;
+	font-weight: 500;
+}
+
+.posts .post-content .post-info a{
+	color: #58595b;
+}
+.posts .post-content .post-info .link{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #58595b;
+	background: #fff;
+	padding: 5px 15px;
+	border: 1px solid #000;
+}
+
+.posts .post-content .post-info .link:hover{
+	color: #fff;
+  	background: #58595b;
+}
+
+/*********************** END OF POSTS *************************/
+/**************************************************************/
+
+.box-padding .box{
+	background: #fff;
+  	border: 1px solid #000;
+  	padding: 30px 0;
+  	top: 25%;
+  	position: absolute;
+}
+.bt-local{
+	border: 1px solid #000;
+  padding: 10px 0;
+}
+
+.bt-local h6{
+	color: #000;
+	font-size: 14px;
+}
+
+.bt-local i{
+	float: left;
+	font-size: 24px;
+	color: #000;
+	border-right: 1px solid #ccc;
+	padding: 13px 20px;
+}
+
+.cep .title{
+	  text-align: initial;
+  text-transform: uppercase;
+}
+.cep .form{
+	position: relative;
+}
+.cep .form input{
+	background: #d1d3d4;
+	outline: 0;
+	border: none;
+	width: 100%;
+  padding: 8px 115px 8px 15px;
+	position: relative;
+}
+
+.cep .form  button{
+	position: absolute;
+	right: 5px;
+	top: 7px;
+	background: #fff;
+	border: 1px solid #000;
+	padding: 2px 15px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/*********************** NEWSLETTER ***************************/
+/**************************************************************/
+
+.newsletter{
+	padding: 50px 0 100px 0;
+}
+
+.newsletter .signature .title h6, .newsletter .socials .title h6{
+	text-transform: uppercase;
+}
+
+.newsletter .signature .mail{
+	position: relative;
+	width: 70%;
+}
+
+.newsletter .signature .mail input{
+	background: #d1d3d4;
+	outline: 0;
+	border: none;
+	width: 100%;
+	padding: 8px 94px 8px 15px;
+	position: relative;
+}
+
+.newsletter	.signature .mail button{
+	position: absolute;
+	right: 5px;
+	top: 7px;
+	background: #fff;
+	border: 1px solid #000;
+	padding: 2px 15px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+
+.newsletter .socials .socials-btn img{
+	border: 1px solid #000;
+	padding: 6px 6px;
+	margin-right: 10px;
+}
+
+/******************** END OF NEWSLETTER ***********************/
+/**************************************************************/
+
+
+/************************** FOOTER ****************************/
+/**************************************************************/
+
+footer{
+	background: url('images/footer/footer-1.png') no-repeat 748px 0 #f47d31;
+	padding: 50px 0 0 0;
+	background-size: 41%;
+}
+footer .title p{
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #fff;
+}
+
+footer .footer-top ul{
+	list-style: disc;
+	padding-left: 15px
+}
+
+footer .footer-top ul li{
+	font-size: 12px;
+	color: #fff;
+}
+
+footer .footer-top ul li a{
+	color: #fff;
+}
+footer .footer-top ul li:hover{
+	padding-left: 5px;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+footer .footer-top .sac .title{
+	display: block;
+	width: 100%;
+}
+
+footer .footer-top .sac .title p:nth-child(1){
+	display: block;
+ 	float: left;
+}
+
+footer .footer-top .sac .title p:nth-child(2){
+	display: block;
+ 	float: right;
+}
+
+footer .footer-top .sac a{
+	float: left;
+	background: #fff;
+	border: 1px solid #000;
+	padding: 5px 10px;
+	color: #000;
+}
+footer .footer-top .sac h6{
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: center;
+	margin: 0;
+}
+footer .footer-top .sac img{
+	display: block;
+	float: left;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 0px 5px 0 0;
+}
+
+footer .footer-bottom{
+	padding: 40px 0 0 0;
+}
+footer .footer-bottom .copyright{
+	display: block;
+	float: left;
+	font-size: 12px;
+	padding: 0 25px;
+	color: #fff;
+}
+
+footer .footer-bottom .realization{
+	display: block;
+	font-size: 8px;
+	float: right;
+	padding: 0 25px;
+}
+
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.map{
+	position: relative;
+}
+.mapa{
+	position: relative;
+}
+
+.content-overlay{
+	  background: rgba(249, 154, 92, 0.5);
+	  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
