@@ -75,3 +75,80 @@ function getCEP(endereco) {
 	});
 }
 
+jQuery(document).ready(function ($) {
+
+    var $navbar = $("header"),
+        y_pos = $navbar.offset().top,
+        height = $navbar.height();
+
+    $(document).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        //log('scrollTop: ' + scrollTop + '<br> y_pos: ' + y_pos);
+        if (scrollTop > y_pos + height) {
+            /*$navbar.removeClass('header-top');*/
+            $navbar.addClass("header-scroll").animate({ top: 0 });
+        } else if (scrollTop <= y_pos) {
+            $navbar.removeClass("header-scroll").clearQueue().animate({ top: "-100px" }, 0);
+            /*$navbar.addClass('navbar-absolute');*/
+        }
+    });
+
+    if (typeof $JssorSlider$ != "undefined") {
+
+        var options = {
+            $AutoPlay: true,                                   
+            $AutoPlayInterval: 4000,                           
+            $PauseOnHover: 1,                                  
+
+            $ArrowKeyNavigation: true,                         
+            $FillMode: 2,                                      
+            $SlideEasing: $JssorEasing$.$EaseOutQuint,         
+            $SlideDuration: 800,                               
+            $MinDragOffsetToSlide: 20,                         
+            //$SlideWidth: 600,                                
+            //$SlideHeight: 300,                               
+            $SlideSpacing: 0,                                  
+            $DisplayPieces: 1,                                 
+            $ParkingPosition: 0,                               
+            $UISearchMode: 1,                                  
+            $PlayOrientation: 1,                               
+            $DragOrientation: 1,                               
+          
+            $BulletNavigatorOptions: {                         
+                $Class: $JssorBulletNavigator$,                
+                $ChanceToShow: 2,                              
+                $AutoCenter: 1,                                
+                $Steps: 1,                                     
+                $Lanes: 1,                                     
+                $SpacingX: 8,                                  
+                $SpacingY: 8,                                  
+                $Orientation: 1,                               
+                $Scale: false                                  
+            },
+
+            $ArrowNavigatorOptions: {         
+                $Class: $JssorArrowNavigator$,
+                $ChanceToShow: 1,             
+                $AutoCenter: 2,               
+                $Steps: 1                     
+            }
+    };
+
+
+    $("#slider_top").css("display", "block");
+    var jssor_slider1 = new $JssorSlider$("slider_top", options);
+
+    function ScaleSlider() {
+        var bodyWidth = document.body.clientWidth;
+        if (bodyWidth)
+            jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+        else
+            window.setTimeout(ScaleSlider, 30);
+    }
+    ScaleSlider();
+
+    $(window).bind("load", ScaleSlider);
+    $(window).bind("resize", ScaleSlider);
+    $(window).bind("orientationchange", ScaleSlider);
+	}
+});
