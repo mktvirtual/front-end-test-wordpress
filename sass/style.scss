@@ -1,0 +1,267 @@
+/*
+Theme Name: Rafael Silvino
+Theme URI: http://facebook.com/rafaslide
+Description: Teste Front-End MKT Virtual
+Version: 1
+Author: Rafael Silvino
+Author URI: http://facebook.com/rafaslide
+*/
+
+@mixin basic-icon($width, $height) {
+	width: $width;
+	height: $height;
+	background-image: url('img/icons.png');
+	display: inline-table;
+	vertical-align: middle;
+}
+/* SPRITES */
+.barcode-white-icon {
+	@include basic-icon(20px, 12px); 
+	background-position: -8px -8px;
+}
+.barcode-black-icon {
+	@include basic-icon(20px, 12px); 
+	background-position: -33px -8px;
+}
+.facebook-icon {
+	@include basic-icon(24px, 24px); 
+	background-position: -6px -54px;
+}
+.youtube-icon {
+	@include basic-icon(24px, 24px); 
+	background-position: -38px -54px;
+}
+.instagram-icon {
+	@include basic-icon(24px, 24px); 
+	background-position: -6px -85px;
+}
+.pin-icon {
+	@include basic-icon(14px, 21px); 
+	background-position: -33px -26px;
+}
+
+/* VARIAVEIS */
+$font-size: 12px;
+$orange: #F47D31;
+$dark-orange: #C66223;
+
+
+/* STYLES */
+body {
+	width: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;	
+	font-size: 100%;
+}
+#top-bar {
+	font-size: $font-size;
+	padding: 8px;
+}
+#top-menu { 
+	li {
+		margin-right: 15px;
+	}
+	.input-wrapper {
+		background-color: $dark-orange;
+
+	}
+	/* Placeholder color fix */
+
+	::-webkit-input-placeholder { color: #eee;}
+	:-moz-placeholder { color: #eee;	}
+	::-moz-placeholder { color: #eee; }
+	:-ms-input-placeholder { color: #eee; }
+
+	input {
+		background-color: $dark-orange;
+		border: none;
+		font-size: $font-size;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		padding: 3px;
+
+	}
+}
+
+.central {
+	max-width: 1276px;
+	position: relative;
+	margin: 0 auto;
+
+}
+.col {
+	display: inline-table;
+}
+
+.text-right {
+	text-align: right;
+}
+.ul-horizontal-menu {
+	padding: 0;
+	list-style: none;
+}
+
+.ul-horizontal-menu li {
+	display: inline-block;
+}
+.ul-vertical-menu {
+	padding-left: 14px;
+}
+
+.menu-right {
+	position: absolute;
+	right: 0;
+}
+.content {
+	position: relative;
+	img {
+			}
+}
+.content.right {
+	display: inline-table;
+	vertical-align: top;
+	width: 66%;
+}
+
+.content.left {
+	float: left;
+	width: 33%;
+	.caption {
+		text-align: center;
+		color: $orange;
+		width: 100%;
+		height: 32px;
+		font-size: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: #58207B;
+	}
+}
+
+.content-in {
+	border: 7px solid #fff;
+
+}
+
+.right {
+	.content-in {
+		width: 49%;
+		display: inline-block;
+		padding-bottom: 49%;
+		position: relative;
+	}
+}
+
+#contact-info p {
+	font-size: $font-size;
+}
+#newsletter, #social-links {
+	display: inline-table;
+	vertical-align: top;
+
+}
+#newsletter {
+	width: 50%;
+}
+
+.orange {
+	background-color: $orange;
+	color: #fff;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+#map-canvas {
+	height: 350px;
+	background-image: url('img/mapa.png');
+	background-position: center center;
+}
+.social-icon {
+	border: 1px solid #555;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	padding: 12px;
+	margin-right: 20px;
+}
+.btn {
+	background-color: #fff;
+	border: 1px solid #58595b;
+	padding: 8px;
+	color: #58595b;
+	max-width: 175px;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: $font-size;
+	.icon {
+		border-right: 1px solid #d1d3d4;
+		display: inline-table;
+		vertical-align: middle;
+		padding: 3px;
+		padding-right: 10px;
+	}
+	.text {
+		display: inline-table;
+		vertical-align: middle;
+		line-height: 1em;
+		.inside	{
+			max-width: 123px;
+			display: inline-block;
+			text-align: center;
+		}
+		.pin {
+			max-width: 140px;
+		}
+
+	}
+}
+.post {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+
+	.btn {
+		margin: 0 auto;
+		padding: 6px;
+		color: #58595b;
+		max-width: 150px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.info {
+		position: absolute;
+		text-align: center;
+		bottom: 0;
+		left: 50%;
+		width: 60%;
+		margin-left: -30%;
+		margin-bottom: 25px;
+		color: #333132;
+		.excerpt {
+			font-family: 'Alegreya', sans-serif;
+			font-size: 12px;
+
+		}
+		h3 {
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: 400;
+
+		}
+		h4 {
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 12px;
+			color: #58595B;
+		}
+	}
+}
+footer, footer h3 {
+	font-size: $font-size;
+	font-weight: 300;
+}
