@@ -90,6 +90,33 @@ body {
     font-weight: 400;
     padding: 3px; }
 
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  z-index: 999999; }
+
+.header-scroll {
+  position: fixed; }
+  .header-scroll #top-bar {
+    background-color: #D1D3D4; }
+  .header-scroll img {
+    height: 30px; }
+  .header-scroll #top-menu .input-wrapper {
+    background-color: #a5a5a5; }
+  .header-scroll #top-menu input {
+    background-color: #a5a5a5; }
+  .header-scroll .menu {
+    padding: 5px;
+    height: 32px;
+    background-color: #F47D31;
+    color: #fff; }
+  .header-scroll #main-menu {
+    color: #fff;
+    margin: 8px;
+    font-size: 12px; }
+
 .central {
   max-width: 1276px;
   position: relative;
@@ -97,6 +124,12 @@ body {
 
 .col {
   display: inline-table; }
+
+.menu {
+  padding: 30px; }
+
+#main-menu li {
+  margin-left: 40px; }
 
 .text-right {
   text-align: right; }
@@ -126,6 +159,9 @@ body {
 .content.left {
   float: left;
   width: 33%; }
+  .content.left img {
+    width: 100%;
+    height: auto; }
   .content.left .caption {
     text-align: center;
     color: #F47D31;
@@ -137,8 +173,14 @@ body {
     bottom: 0;
     background-color: #58207B; }
 
-.content-in {
-  border: 7px solid #fff; }
+.c-2 .info {
+  width: 35% !important;
+  left: 80% !important; }
+
+.c-4 .info {
+  left: 30% !important;
+  top: 0;
+  width: 55% !important; }
 
 .right .content-in {
   width: 49%;
@@ -166,7 +208,28 @@ body {
 #map-canvas {
   height: 350px;
   background-image: url("img/mapa.png");
-  background-position: center center; }
+  background-position: center center;
+  width: 100%; }
+
+#google-maps {
+  position: relative; }
+
+.get-location {
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #555;
+  padding: 20px;
+  display: inline-table;
+  vertical-align: middle;
+  top: 50%;
+  margin-top: -60px; }
+
+.cep-search {
+  display: inline-block; }
+  .cep-search p {
+    margin: 0;
+    font-size: 12px; }
 
 .social-icon {
   border: 1px solid #555;
@@ -175,6 +238,28 @@ body {
   height: 24px;
   padding: 12px;
   margin-right: 20px; }
+
+#contact-info {
+  padding-top: 75px;
+  padding-bottom: 89px; }
+
+#txt-cep {
+  background-color: #D1D3D4;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  width: 100%; }
+
+.cep-search-inn {
+  position: relative;
+  max-width: 200px; }
+
+#btn-cep {
+  position: absolute;
+  right: -15px;
+  top: 4px;
+  padding: 5px;
+  vertical-align: middle; }
 
 .btn {
   background-color: #fff;
@@ -202,6 +287,9 @@ body {
     .btn .text .pin {
       max-width: 140px; }
 
+#btn-auto-local {
+  display: inline-block; }
+
 .post {
   position: absolute;
   left: 0;
@@ -215,6 +303,9 @@ body {
     max-width: 150px;
     padding-left: 0;
     padding-right: 0; }
+  .post img {
+    max-width: 100%;
+    height: auto; }
   .post .info {
     position: absolute;
     text-align: center;
@@ -224,13 +315,14 @@ body {
     margin-left: -30%;
     margin-bottom: 25px;
     color: #333132; }
-    .post .info .excerpt {
-      font-family: 'Alegreya', sans-serif;
-      font-size: 12px; }
+    .post .info .excerpt p {
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 16px; }
     .post .info h3 {
       text-transform: uppercase;
       font-size: 24px;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-bottom: 0; }
     .post .info h4 {
       text-transform: uppercase;
       font-weight: 400;

@@ -49,22 +49,33 @@
 		</div>
 	</div>
 	<div id="google-maps">
-		<div id="map-canvas"></div>
-	</div>
-	<input type="text" id="txt-cep" placeholder="CEP" />
-	<button id="btn-cep">PROCURAR</button>
-	
-	
-	<div class="btn" id="btn-auto-local">
-		<span class="icon">
-			<span class="pin-icon"></span>
-		</span>
-		<span class="text">
-			<div class="inside pin">
-				ACHAR MINHA LOCALIZAÇÃO AUTOMATICAMENTE
+		<div id="map-canvas">
+			<div class="get-location">
+			<div class="btn" id="btn-auto-local">
+				<span class="icon">
+					<span class="pin-icon"></span>
+				</span>
+				<span class="text">
+					<div class="inside pin">
+						ACHAR MINHA LOCALIZAÇÃO AUTOMATICAMENTE
+					</div>
+				</span>
+			</div>&nbsp;
+			<span>OU</span>
+			&nbsp;
+			<div class="cep-search">
+				<p>DIGITE O CEP DE ONDE VOCÊ ESTÁ</p>
+				<div class="cep-search-inn">
+					<input type="text" id="txt-cep" placeholder="CEP" />
+					<div class="btn" id="btn-cep">PROCURAR</div>
+				</div>
 			</div>
-		</span>
+		</div>
+		</div>
+
 	</div>
+	
+	
 	<div id="contact-info">
 		<div class="central">
 			<div id="newsletter">
