@@ -1,0 +1,295 @@
+	/*retirando as margens da pagina*/
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	/*menu superior fixo*/
+	.menu_fixo{
+		background-color: #f47d31;
+		margin: 0;
+		width: 100%;
+		display: block;
+	}
+	.menu_superior{
+		margin: 0 auto;
+		position: relative;
+		display: block;
+		width: 80%;
+	}
+	.menu_superior li{
+		display: inline-block;
+		list-style: none;
+		margin: 8px 8px 8px 0;
+	}
+	.menu_superior li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.menu_superior li a:hover{
+		color: #000;
+	}
+	/*Cabeçalho do site*/
+	.topo{
+		width: 100%;
+		display: block;
+		height: 497px;
+		background-image: url(../images/headers/circle.png);
+		background-repeat: no-repeat;
+		background-size: 100% 497px;
+		margin: 0;
+	}
+	/*tratando posição do logo*/
+	.logo{
+		left: 150px;
+		top: 100px;
+		position: absolute;
+	}
+	/*criando menu dinamico*/
+	.menu{
+		left: 750px; 
+		top: 100px;
+		position: absolute;
+	}
+	.menu a{
+		text-decoration: none;
+		color: #000;
+		font-size: 15px;
+		TEXT-TRANSFORM: uppercase;
+	}
+	.menu a:hover{
+		text-decoration: none;
+		color: #f47d31;
+		
+	}
+	.menu li{
+		display: inline-block;
+		margin-right: 10px;
+		list-style: none;
+	}
+	/*criando area de conteudo*/
+	.conteudo{
+		width: 70%;
+		margin: 0 auto;
+		position: relative;
+		top: 20px;
+	}
+	.conteudo_esquerda{
+		float: left;
+		width: 25%;
+	}
+	.conteudo_esquerda img{
+		width: 100%;
+		height: auto;
+	}
+	.conteudo_direita{
+		float: left;
+		width: 60%;
+		padding-left: 10px;
+		left: 20px;
+		position: relative;
+	}
+	.conteudo_direita img{
+		width: 100%;
+		height: auto;
+	}
+	.post{
+		position: relative;
+		width: 40%;
+		float: left;
+		margin-right: 40px;
+		margin-bottom: 22px;
+	}
+	.texto{
+		position: absolute;
+		left: 0;
+		top: 55px;
+		text-align: center;
+	}
+	.texto h1{
+		font-size: 18px;
+		text-shadow: 1px 1px 1px #fff;
+	}
+	.texto p{
+		font-size: 14px;
+		text-shadow: 1px 1px 1px #fff;
+	}
+	.texto a{
+		color: #000;
+		text-decoration: none;
+		position: relative;
+		top:10px;
+		padding: 5px;
+		background-color: #fff;
+	}
+	.texto a:hover{
+		padding: 5px;
+		background-color: #777;
+	}
+	.localizacao{
+		background-image: url(../images/home_02.gif);
+		width: 100%;
+		height: 320px;
+		top: 60px;
+		position: relative;
+	}
+	.busca_localizacao{
+		position: absolute;
+		top: 100px;
+		left: 400px;
+		background-color: #fff;
+		padding: 20px;
+		box-shadow: 2px 2px 2px #000;
+	}
+	.localizacao_esquerda{
+		float: left;
+	}
+	.localizacao_direita{
+		float: right;
+		margin-left: 20px;
+	}
+	.localizacao_direita input{
+		padding: 5px;
+	}
+	.social{
+		position: relative;
+		top: 200px;
+		height: 300px;
+	}
+	.social_esquerda{
+		float: left;
+		left: 250px;
+		position: absolute;
+		font-size: 15px;
+	}
+	.social_direita{
+		float: right;
+		right: 400px;
+		position: absolute;
+		font-size: 15px;
+	}
+	.social_direita li{
+		display: inline;
+		margin-right: 20px;
+	}
+	.clearfix{
+		clear: both;
+		position: static;
+	}
+	.social_esquerda input{
+		padding: 5px;
+	}
+	/*criando rodapé*/
+	.rodape{
+		width: 100%;
+		display: block;
+		top:60px;
+		height: 220px;
+		background-color: #f47d31;
+		position: relative;
+	}
+	/*tratando as opções da Loja*/
+	.loja{
+		float: left;
+		width: 20%;
+		position: relative;
+		top: 20px;
+		height: 220px;
+	}
+	.corpo_loja{
+		text-align: left;
+		width: 50%;
+		float: right;
+		display: block;
+	}
+	.corpo_loja label{
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+	}
+	.corpo_loja a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 12px;
+	}
+	.corpo_loja ul{
+		position: relative;
+		left: 15px;
+	}
+	.corpo_loja li{
+		color: #fff;
+	}
+	/*colocando texto de direitos autorais*/
+	.texto_rodape{
+		font-size: 10px;
+		color: #fff;
+		top: 40px;
+		left: 100px;
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	/*tratando as opções de atalhos*/
+	.atalhos{
+		float: left;
+		width: 20%;
+		position: relative;
+		top: 20px;
+	}
+	.corpo_atalho{
+		text-align: left;
+		width: 50%;
+		float: left;
+	}
+	.corpo_atalho label{
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+	}
+	.corpo_atalho a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 12px;
+	}
+	.corpo_atalho ul{
+		position: relative;
+		left: 15px;
+	}
+	.corpo_atalho li{
+		color: #fff;
+	}
+	/*tratando as opções de sac*/
+	.sac{
+		float: left;
+		width: 20%;
+		position: relative;
+		top: 20px;
+	}
+	.sac_esquerda{
+		float: left;
+		color: #fff;
+	}
+	.sac_direita{
+		float: right;
+		color:#fff;
+		right: 40px;
+		position: relative;
+	}
+	/*tratando o botão para imprimir novo boleto*/
+	.sac img{
+		position: relative;
+		top: 10px;
+	}
+	/*posicionando a imagem da direita*/
+	.rodape_imagem{
+		float: right;
+		width: 40%;
+	}
+	.rodape_imagem img{
+		height: 220px;
+		width: auto;
+	}
