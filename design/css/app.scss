@@ -1,0 +1,186 @@
+//////// Variaveis /////////
+$base-color: rgb(244,125,49);
+$base-contrast-color: rgb(255,255,255);
+$dark-contrast-color: darken( $base-contrast-color, 80% );
+$light-contrast-color: darken( $base-contrast-color, 20% );
+$details-color: rgb(88,32,123);
+
+@font-face {
+  font-family:'MKTteste';
+  src:url('./fonts/MKTteste.eot'); 
+  src:url('./fonts/MKTteste.eot?iefix') format('eot'), 
+  url('./fonts/MKTteste.woff') format('woff'), 
+  url('./fonts/MKTteste.ttf') format('truetype'), 
+  url('./fonts/MKTteste.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+html, body, h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+.alegreya { font-family: 'Alegreya Sans', sans-serif; }
+
+.row { max-width: 79.75rem; }
+
+h4 { font-size: 0.75em; text-transform: uppercase; }
+
+.whitespace { padding:50px 0 }
+@media only screen and (min-width : 56.25em) {
+  .whitespace { padding:110px 0 }
+}
+
+//////// UI ////////
+.campo-laranja { background-color: darken( $base-color, 15% ); height: 35px;
+  input[type="text"] { background-color: darken( $base-color, 15% ); height: 35px; box-shadow: inset 0 0px 0px rgba(0,0,0,0.1); padding-top: 5px; font-size: 1.3em; border:none; line-height: 1.2em }
+  input[type="text"]::placeholder { color: $base-contrast-color; font-size: 0.75em; padding-top: 0.1em; }
+  .bg { background-color: $light-contrast-color; padding: 10px!important; margin-bottom: 0; }
+  a { height: 30px; margin-bottom: 0; line-height: 1.8em!important; font-family: "MKTteste"; text-transform: lowercase; font-size: 1.2em; color: $base-contrast-color; border-left: 1px solid $base-contrast-color; padding-left: 15px; }
+  .small-3 { max-width: 64px;  }
+}
+
+.button, button{background-color:#fff;border:1px solid $dark-contrast-color!important;color:$dark-contrast-color; text-transform: uppercase; font-weight: bold; font-size: 0.75em; padding: 0.6rem 1rem 0.65rem;}
+button:hover,button:focus,.button:hover,.button:focus{background-color:$base-color;border:1px solid #fff;color:#fff}
+
+.label-campo-cinza { text-transform: uppercase; font-size: 0.75em; line-height: 4em; text-align: center; }
+@media only screen and (min-width: 40em) { 
+  .label-campo-cinza { text-align: left; }
+}
+.campo-cinza { max-width: 410px!important;
+  input[type="text"] { background-color: $light-contrast-color; height: 50px; box-shadow: inset 0 0px 0px rgba(0,0,0,0.1); padding-top: 5px; font-size: 1.3em; }
+  input[type="text"]::placeholder { color: $dark-contrast-color; font-size: 1em; padding-top: 0.1em; font-family: 'Alegreya Sans', sans-serif; }
+  .bg { background-color: $light-contrast-color; padding: 10px!important; margin-bottom: 0; }
+  a { height: 30px; margin-bottom: 0; line-height: 2.2em!important; }
+}
+
+.barcode { max-width: 185px; }
+.barcode::before { content: "b"; font-family: "MKTteste"; text-transform: lowercase; font-size: 1.6em; padding: 0.7em 0.5em; display: block; float: left; border-right: 1px solid; line-height: 0.1em;}
+
+.location {  }
+  @media only screen and (min-width: 40em) {
+    .location { margin: 22px 0; font-size: .8em !important; padding-left: 5px; }
+  }
+.location::before { content: "g"; font-family: "MKTteste"; text-transform: lowercase; font-size: 1.6em; padding: 0.7em 0.5em; display: block; float: left; border-right: 1px solid; line-height: 0.1em;}
+  @media only screen and (min-width: 40em) {
+    .location::before { line-height: 0.7em; margin-right: 14px;}
+  }
+
+//////// TOPBAR MOBILE ////////
+.top-bar{ background:$base-contrast-color;
+  .toggle-topbar.menu-icon a{ color:$base-color }
+}
+.top-bar .toggle-topbar.menu-icon a span::after{box-shadow:0 0px 0 1px $base-color,0 7px 0 1px $base-color,0 14px 0 1px $base-color}
+.top-bar.expanded .title-area { background:$base-contrast-color }
+.top-bar-section ul li { background:$base-contrast-color }  
+.top-bar-section ul li > a { color:$base-color }
+.top-bar-section li:not(.has-form) a:not(.button){font-family:'Montserrat',serif;}
+
+//////// TOPBAR ////////
+.barra-topo { background-color:$base-color; color: $base-contrast-color; height: 35px; position: absolute; z-index: 1; width: 100%;
+  input[type="text"], .button { margin: 0 }
+  ul { list-style-type: none; 
+    li { float: left; margin: 0 10px;
+      a { color: $base-contrast-color; }
+    }
+  }
+  .banner-logo { display: none; }
+  @media only screen and (min-width: 40em) {
+    .banner-logo { margin-top: 27px; display: block; }
+  }
+  .menu-item-14::before { content: "b"; font-family: "MKTteste"; text-transform: lowercase; font-size: 1.2em; padding: 0.7em 0.5em 0.7em 0; float: left; line-height: 0.1em; }
+  @media only screen and (min-width: 1024px) and (max-width: 1104px) {
+    .menu-item-16 { display: none; }
+  }
+}
+#menu-menu-sobre-o-banner-1 { float: right; margin-top: 30px;
+  li { margin: 0 20px; }
+  a { color: $dark-contrast-color; text-transform: uppercase; }
+}
+@media only screen and (min-width : 56.25em) {
+  #menu-menu-sobre-o-banner-1 { margin-top: 63px;}
+}
+#menu-barra-topo-laranja { margin: 4px 0 0 0; float: right;
+  a { font-size: 0.75em; }
+}
+
+//////// SLIDER ////////
+#slider { margin-top: 35px }
+@media only screen and (min-width: 40em) {
+  #slider { padding-top: 35px; margin-top: 0px }
+}
+
+//////// DINAMICO ////////
+#dinamico { padding-top: 20px; }
+  @media only screen and (min-width: 40em) {
+    #dinamico { padding-top: 40px; }
+  }
+.superbanner { padding-top: 223px; display: block; text-align: center; color: $base-color; margin-bottom: 20px;
+  span { background-color: $details-color; display: block; padding: 17px 0; }
+}
+  @media only screen and (min-width: 40em) {
+    .superbanner { padding-top: 400px; }
+  }
+  @media only screen and (min-width : 56.25em) {
+    .superbanner { padding-top: 761px; }
+  }
+.post-container { overflow: hidden; position: relative; }
+.post-foto { position: relative; }
+.text-holder { position: absolute; z-index: 2; max-height: 100%; max-width: 100%; text-align: center; width: 260px; height: 240px; background-color: rgba(250, 250, 250, 0.8); }
+.superior-esquerdo, .centro-inferior, .centro-direito { margin: auto; padding: 10%; top: 0; bottom: 0; left: 0; right: 0; }
+.post-category { color: $dark-contrast-color; text-transform: uppercase; font-size: 0.75em; line-height: 2.9em; }
+.post-name { color: $dark-contrast-color; text-transform: uppercase; font-weight: bold;
+  h3 { font-size: 1.4em; line-height: 1em; }  
+}
+.post-descript { color: $dark-contrast-color; font-size: 0.75em; line-height: 1.4em }
+@media only screen and (min-width: 40em) {
+  .text-holder { max-height: 185px; max-width: 190px; }
+  .superior-esquerdo, .centro-inferior, .centro-direito { bottom: 13; }
+  .post-name {
+    h3 { font-size: 1.5em; }
+  }
+  .post-descript {
+    p { display: none }
+  }
+}
+@media only screen and (min-width : 56.25em) {
+  .text-holder { width: 264px; height: 276px; background-color: rgba(250, 250, 250, 0.0); max-height: 100%; max-width: 100%; }
+  .superior-esquerdo { bottom: 50%; right: 50%; }
+  .centro-inferior { top: 34% }
+  .centro-direito { left: 37%; }
+  .post-descript {
+    p { display: block }
+  }
+}
+
+//////// GMAPS ////////
+#gmaps { border-top: 1px solid $light-contrast-color; border-bottom: 1px solid $light-contrast-color; position: relative; }
+  #map { height: 350px; }
+  .map-overlay { position: absolute; top: 5%; bottom: 5%; left: 5%; right: 5%; margin: auto; padding: 18px 0; background-color: rgb(255,255,255); border: 1px solid $dark-contrast-color; max-height: 230px; max-width: 610px; }
+  .span-tracos::before { content: ""; width: 40px; height: 1px; border-bottom: 1px solid $light-contrast-color; float: left; display: block; margin: 12px 15px 12px 0px; }
+  .span-tracos { text-align: center; text-transform: uppercase; float: left; }
+  .span-tracos::after { content: ""; width: 40px; height: 1px; border-bottom: 1px solid $light-contrast-color; float: right; display: block; margin: 12px 0px 12px 15px;  }
+@media only screen and (min-width: 40em) {
+  .map-overlay { max-height: 150px; }
+  .span-tracos::before { width: 1px; height: 24px; border-left: 1px solid $light-contrast-color; border-bottom: 0; margin: 0px 12px 15px 12px; }
+  .span-tracos::after { width: 1px; height: 24px; border-left: 1px solid $light-contrast-color; border-bottom: 0; margin: 15px 12px 0 12px;  }
+}
+
+//////// NEWSLETTER e SOCIAL ////////
+.social-icons { font-family: "MKTteste"; text-transform: lowercase; font-size: 1.4em; width: 50px; height: 50px; padding: 12px; }
+
+//////// FOOTER ////////
+footer { background-color:$base-color; color: $base-contrast-color; padding-top: 2em; padding-bottom: 1em;
+  h4 { color: $base-contrast-color; text-transform: uppercase;  }
+  ul { margin-bottom: 2em;
+    li { margin-left: 1em }
+  }
+  a { color: $base-contrast-color; font-size: 0.75em; }
+  .copyright{ font-size:0.7em; color: $base-contrast-color; }
+}
+
+
+@media only screen and (min-width : 56.25em) {
+  footer { padding-bottom: 0px}
+  #img-rodape { background-image: url(../img/img_rodape.png);display: block; padding: 241px 175px 60px 461px; margin-top: -32px;; min-width: 695px; margin-bottom: 0;
+    img { min-width: 59px; 
+    }
+  }
+}
