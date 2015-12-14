@@ -1,0 +1,475 @@
+/*
+Theme Name: Logo
+Description: Tema feito para o deste de Front-end Developer
+Version: 1.0
+*/
+@import "compass/utilities/sprites";
+@import '../images/sprite/*.png';
+@import '../bootstrap/css/bootstrap';
+@import '../bootstrap/font-awesome/scss/font-awesome';
+
+
+@import "_partials/mixins";
+@import "_partials/variables";
+@import "_partials/typography";
+
+body { 
+     padding-top: 19px; 
+     @media#{$mq-phone}{
+		padding-top: 0;
+	}
+}
+img{
+	max-width: 100%;
+}
+.navbar-sup{
+	// margin-top: 32px;
+	transition: all 0.3s ease;
+	background-color: $main-cor;
+	a{
+		color:#FFF;
+		transition: all 0.3s ease;
+	}
+}
+.fullscreen{
+	width: 100%;
+}
+.list-inline > li{
+	@media#{$mq-phone}{
+		display: block;
+	}
+}
+.navbar-sup{
+	ul{
+		margin: 0;
+	}
+}
+.navbar-header, .navbar-brand{
+	float: none;
+}
+.navbar-brand{
+	padding: 0;
+}
+.search-form{
+	margin:0;
+	background-color: $secondary-color;
+	label{
+		margin-bottom: 0;
+		padding: 5px;
+		.search-field{
+			background-color:$secondary-color;
+			color: #FFF;
+			border: medium none;
+			border-right: 1px solid;
+			width: 250px;
+			box-shadow: none;
+			border-radius: 0;
+			@media#{$mq-tablet}{
+				width: 100px;
+			}
+		}
+	}
+	.search-submit{
+	    background-color: $secondary-color;
+	    border: medium none;
+	    font-family: FontAwesome;
+	    padding: 5px 10px;
+	    color: #fff;
+	}
+}
+.fa-barcode{
+	margin-right: 5px;
+	border: 1px solid #fff;
+}
+.navbar-inf{
+	margin-top: 40px;
+	@media#{$mq-tablet}{
+		margin-top: 25px;
+	}
+	@media#{$mq-phone}{
+		margin-top: 5px;
+	}
+	ul{
+		margin-bottom: 0;
+		li{
+			padding-left:15px;
+			padding-right:15px;
+			display: inline-block;
+			list-style-type: none;
+			&:hover{
+				background-color:#FFF;
+			}
+			@media#{$mq-tablet}{
+				padding-left:10px;
+				padding-right:10px;
+			}
+			@media#{$mq-phone}{
+				display: block;
+			}
+		}
+	}
+}
+.dropdown{
+	.sub-menu{
+		background-color: #fff;
+	    display: none;
+	    left: 0;
+	    padding: 10px 0;
+	    width: 300px;
+	    position: absolute;
+	    background-position: top right;
+		min-height: 169px;
+		@media#{$mq-phone}{
+			left: 0;
+    		padding: 0;
+    		background-color: #fff;
+    		top: 0;
+    		position: relative;
+    		min-height: inherit;
+    		height: inherit;
+		}
+	    li{
+	    	display: block;
+	    	padding-top: 10px;
+	    	@media#{$mq-phone}{
+				padding-top: 0;
+			}
+	    	&:hover{
+	    		background-color: transparent;
+	    		a{
+					color: #C66224;
+	    		}
+	    	}
+	    }
+	    .cartao{
+    		background-color: #58595b;
+		    border-radius: 40px;
+		    bottom: -35px;
+		    color: #fff;
+		    height: 70px;
+		    left: 225px;
+		    position: absolute;
+		    width: 70px;
+		    padding: 24px 7px;
+		    &:hover{
+		    	background-color: #58595b;
+		    }
+		    @media#{$mq-phone}{
+				display: none;
+			}
+    	}
+	}
+	&:hover .sub-menu{
+		display: block;
+
+	}
+}
+.feminino.menu-item{
+	.sub-menu{
+		background-image: url(images/cat-feminino.jpg);
+		@media#{$mq-phone}{
+			background-image: none;
+		}
+	}
+}
+.masculino.menu-item{
+	.sub-menu{
+		background-image: url(images/cat-masculino.jpg);
+		@media#{$mq-phone}{
+			background-image: none;
+		}
+	}
+}
+.kids.menu-item{
+	.sub-menu{
+		background-image: url(images/cat-kids.jpg);
+		@media#{$mq-phone}{
+			background-image: none;
+		}
+	}
+}
+.navbar{
+	margin-top: 29px;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease;
+    @media#{$mq-phone}{
+		position: inherit;
+		margin-bottom: 0;
+	}
+}
+.slider{
+	position: relative;
+	margin-bottom: 30px;
+	.carousel-indicators{
+		bottom: 0;
+		li{
+			width: 5px;
+			height: 5px;
+		}
+	}
+	@include all-sprite-sprites;
+	.slider-btn{
+	    height: 28px;
+	    margin-top: -10px;
+	    width: 20px;
+    	left: 50%;
+    	display: inline-block;
+	    position: absolute;
+	    top: 50%;
+	    z-index: 5;
+	}
+}
+.home_box{
+	background-color: blue;
+	width: 100%;
+	height: 30px;
+}
+.superbanner_box{
+	padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    img{
+    	width: 100%;
+    }
+}
+.post_box{
+	padding-bottom: 20px;
+	position: relative;
+	text-align: center;
+	padding-left: 10px;
+    padding-right: 10px;
+    img{
+    	width: 100%;
+    }
+	.post_info{
+		width: 55%;
+		position: absolute;
+		span{
+			display: block;
+			&.category{
+				margin-bottom: 5px;
+				@media#{$mq-only-tablet}{
+					margin-bottom: 0;
+				}
+			}
+			&.title{
+				margin-bottom: 5px;
+				@media#{$mq-only-tablet}{
+					margin-bottom: 0;
+				}
+			}
+			&.excerpt{
+				margin-bottom: 10px;
+				@media#{$mq-only-tablet}{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.read_more{
+			background-color: #fff;
+			border: 1px solid #000;
+			padding: 5px 20px;
+			display: inline-block;
+			@media#{$mq-only-tablet}{
+				padding: 2px 15px;
+			}
+		}
+	}
+	
+}
+.adesao{
+	background-color: #58207B;
+	padding: 16px;
+}
+.navbar-toggle{
+	margin-top: 14px;
+}
+.localizacao{
+	background-image: url(images/mapa.jpg);
+	width: 100%;
+	background-position: center center;
+	background-attachment:fixed;
+	padding: 120px 0;
+	display: inline-block;
+	margin-top: 100px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	@media#{$mq-phone}{
+		background-image: none;
+		padding: 0;
+		border: none;
+		margin-top: 20px;
+	}
+	.box{
+		padding: 20px;
+		border: 1px solid #ccc;
+		background-color: #FFF;
+		.box_left{
+			padding: 5px;
+			@media#{$mq-tablet}{
+				padding: 0 0 20px;
+			}
+			.box_localizacao{
+				padding: 5px;
+				border: 1px solid #000;
+				display: inline-block;
+				margin-right: 30px;
+				@media#{$mq-tablet}{
+					margin-right: 0;
+				}
+				@media#{$mq-phone}{
+					width: 100%
+				}
+				.col_icon_map{
+					border-right: 1px solid #ccc;
+					padding: 3px 9px;
+					.icon-map-marker{
+						display: inline-block;		
+					}
+				}
+				p{
+					display: inline-block;
+					margin: 0;
+				}
+			}
+		}
+		.ou{
+			background-color: #fff;
+		    margin: 14px -7px;
+		    padding: 5px;
+		    position: absolute;
+		    z-index: 10;
+		    @media#{$mq-tablet}{
+				margin: 49px -53%;
+			}
+		}
+		.box_right{
+			border-left: 1px solid #ccc;
+			@media#{$mq-tablet}{
+				border-top: 1px solid #ccc;
+				border-left: none;
+			    color: #333132;
+			    padding-left: 0;
+			    padding-right: 0;
+			    padding-top: 20px;
+			}
+			p{
+
+			}
+			.cep-form{
+				background-color: #D2D3D5;
+				padding: 10px 5px;
+				margin: 0;
+				label{
+					width: 55%;
+					margin: 0;
+					@media#{$mq-phone}{
+						width: 55%;
+					}
+				}
+				.cep-field{
+					background-color: #D2D3D5;
+					color: #58595b;
+					border: none;
+					width: 100%;
+				}
+				.cep-submit{
+					border-radius: 0;
+					border: 1px solid #000;
+					padding: 5px 20px;
+					background-color: #fff;
+					float: right;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+.social{
+	margin: 100px auto;
+	@media#{$mq-phone}{
+		margin: 30px auto;
+	}
+	.row>div{
+		@media#{$mq-phone}{
+			margin: 10px auto;
+		}
+	}
+	.news-form{
+		background-color: #D2D3D5;
+		padding: 5px;
+		margin: 0;
+		width: 60%;
+		@media#{$mq-tablet}{
+			width: auto;
+		}
+		label{
+			width: 60%;
+			margin: 0;
+			@media#{$mq-tablet}{
+				width: 60%;
+			}
+		}
+		.news-field{
+			background-color: #D2D3D5;
+			color: #58595b;
+			border: none;
+			width: 100%;
+		}
+		.news-submit{
+			border-radius: 0;
+			border: 1px solid #000;
+			padding: 5px 20px;
+			background-color: #fff;
+			float: right;
+   			margin: 4px;
+		}
+	}
+	.list-inline{
+		li{
+			@media#{$mq-phone}{
+				display: inline-block;
+			}
+		}
+	}
+	.rede{
+		border: 1px solid #323031;
+	    height: 40px;
+	    padding: 6px 0;
+	    text-align: center;
+	    width: 40px;
+	}
+}
+footer{
+	background-color: #F57D31;
+	.footer_title{
+		margin-top: 50px;
+	}
+	li.widget{
+        ul{
+            padding-left: 15px;
+        }
+    }
+    .box_boleto{
+		padding: 5px;
+		border: 1px solid #000;
+		display: inline-block;
+		background-color: #FFF;
+		.col_barcode{
+			border-right: 1px solid #ccc;
+			padding: 5px 9px;
+			.fa-barcode{
+				border:1px solid #000;
+			}
+		}
+		p{
+			display: inline-block;
+			margin: 0;
+		}
+	}
+	small{
+		display: inline-block;
+		margin-top: 25px;
+	}
+}

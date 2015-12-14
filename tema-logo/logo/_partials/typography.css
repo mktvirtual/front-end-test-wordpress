@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'maven_problack';
+  src: url("fonts/mavenpro-black-webfont.eot");
+  src: url("fonts/mavenpro-black-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/mavenpro-black-webfont.woff2") format("woff2"), url("fonts/mavenpro-black-webfont.woff") format("woff"), url("fonts/mavenpro-black-webfont.ttf") format("truetype"), url("fonts/mavenpro-black-webfont.svg#maven_problack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'maven_probold';
+  src: url("fonts/mavenpro-bold-webfont.eot");
+  src: url("fonts/mavenpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/mavenpro-bold-webfont.woff2") format("woff2"), url("fonts/mavenpro-bold-webfont.woff") format("woff"), url("fonts/mavenpro-bold-webfont.ttf") format("truetype"), url("fonts/mavenpro-bold-webfont.svg#maven_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'maven_promedium';
+  src: url("fonts/mavenpro-medium-webfont.eot");
+  src: url("fonts/mavenpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/mavenpro-medium-webfont.woff2") format("woff2"), url("fonts/mavenpro-medium-webfont.woff") format("woff"), url("fonts/mavenpro-medium-webfont.ttf") format("truetype"), url("fonts/mavenpro-medium-webfont.svg#maven_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'maven_proregular';
+  src: url("fonts/mavenpro-regular-webfont.eot");
+  src: url("fonts/mavenpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/mavenpro-regular-webfont.woff2") format("woff2"), url("fonts/mavenpro-regular-webfont.woff") format("woff"), url("fonts/mavenpro-regular-webfont.ttf") format("truetype"), url("fonts/mavenpro-regular-webfont.svg#maven_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 60, ../sass/_partials/typography.scss */
+fontawesome-webfont.eot
+body {
+  font-family: maven_promedium;
+}
+
+/* line 65, ../sass/_partials/typography.scss */
+.navbar-sup {
+  font-family: maven_proregular;
+  font-size: 12px;
+}
+
+/* line 69, ../sass/_partials/typography.scss */
+.navbar-inf {
+  font-family: maven_proregular;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* line 73, ../sass/_partials/typography.scss */
+.navbar-inf a {
+  color: #000;
+}
+/* line 75, ../sass/_partials/typography.scss */
+.navbar-inf a:hover {
+  text-decoration: none;
+}
+
+/* line 81, ../sass/_partials/typography.scss */
+.dropdown .sub-menu {
+  font-family: maven_proregular;
+  font-size: 12px;
+  text-transform: none;
+}
+/* line 85, ../sass/_partials/typography.scss */
+.dropdown .sub-menu .cartao {
+  text-align: center;
+}
+/* line 87, ../sass/_partials/typography.scss */
+.dropdown .sub-menu .cartao a {
+  font-family: maven_proregular;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 105, ../sass/_partials/typography.scss */
+.localizacao .box .box_localizacao p {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: maven_probold;
+  font-size: 12px;
+  line-height: 12px;
+}
+/* line 113, ../sass/_partials/typography.scss */
+.localizacao .box .box_right {
+  text-transform: uppercase;
+  color: #333132;
+  padding-left: 30px;
+  padding-right: 0;
+}
+/* line 118, ../sass/_partials/typography.scss */
+.localizacao .box .box_right p {
+  font-family: maven_proregular;
+  font-size: 12px;
+  line-height: 10px;
+}
+/* line 124, ../sass/_partials/typography.scss */
+.localizacao .box .box_right .cep-form .cep-field {
+  font-family: maven_proregular;
+  color: #58595b;
+  font-size: 24px;
+  font-weight: 100;
+  padding-left: 15px;
+  line-height: 16px;
+}
+/* line 132, ../sass/_partials/typography.scss */
+.localizacao .box .box_right .cep-form .cep-submit {
+  text-transform: uppercase;
+  font-family: maven_probold;
+  font-size: 12px;
+}
+
+/* line 143, ../sass/_partials/typography.scss */
+.post_box span.category {
+  color: #58595b;
+  font-family: maven_proregular;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 149, ../sass/_partials/typography.scss */
+.post_box span.title {
+  color: #333132;
+  text-transform: uppercase;
+  font-family: maven_proregular;
+  font-size: 24px;
+  line-height: 24px;
+}
+@media (min-width: 767px) and (max-width: 800px) {
+  /* line 149, ../sass/_partials/typography.scss */
+  .post_box span.title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+/* line 160, ../sass/_partials/typography.scss */
+.post_box span.excerpt {
+  color: #333132;
+  font-family: maven_proregular;
+  font-size: 13px;
+  line-height: 13px;
+}
+@media (min-width: 767px) and (max-width: 800px) {
+  /* line 160, ../sass/_partials/typography.scss */
+  .post_box span.excerpt {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+/* line 171, ../sass/_partials/typography.scss */
+.post_box .read_more {
+  color: #58595b;
+  font-family: maven_probold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 178, ../sass/_partials/typography.scss */
+.adesao {
+  text-transform: uppercase;
+  text-align: center;
+  color: #f7802c;
+  font-family: maven_probold;
+  font-size: 12px;
+}
+
+/* line 186, ../sass/_partials/typography.scss */
+.social p {
+  font-family: maven_proregular;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 193, ../sass/_partials/typography.scss */
+.social .news-form label {
+  color: #58595b;
+  font-size: 24px;
+  font-family: maven_proregular;
+  font-weight: 100;
+}
+/* line 202, ../sass/_partials/typography.scss */
+.social .news-form .news-submit {
+  text-transform: uppercase;
+  font-family: maven_probold;
+  font-size: 12px;
+}
+/* line 209, ../sass/_partials/typography.scss */
+.social .rede i {
+  color: #323031;
+}
+
+/* line 216, ../sass/_partials/typography.scss */
+footer .footer_title {
+  font-family: maven_proregular;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 222, ../sass/_partials/typography.scss */
+footer li.widget {
+  list-style-type: none;
+  color: #FFF;
+}
+/* line 225, ../sass/_partials/typography.scss */
+footer li.widget a {
+  color: #FFF;
+  font-family: maven_proregular;
+  font-size: 12px;
+}
+/* line 231, ../sass/_partials/typography.scss */
+footer .box_boleto {
+  color: #58595b;
+  text-transform: uppercase;
+  font-family: maven_probold;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+/* line 239, ../sass/_partials/typography.scss */
+footer small {
+  font-family: maven_proregular;
+  font-size: 12px;
+  color: #fff;
+}
