@@ -1,0 +1,25 @@
+{
+  "name": "Teste MKT Virtual",
+  "version": "0.0.1",
+  "description": "Teste MKT Virtual",
+  "main": "main.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bower"
+  ],
+  "authors": [
+    "villani"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
