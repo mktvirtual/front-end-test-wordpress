@@ -1,0 +1,12 @@
+# Ignored folders
+bower_components/
+layout/
+node_modules/
+.sass-cache/
+
+
+# Ignored extensions
+*.lnk
+*.log
+*.sublime-project
+*.sublime-workspace

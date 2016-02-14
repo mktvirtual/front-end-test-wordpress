@@ -1,0 +1,22 @@
+/*=================================
+=            Variables            =
+=================================*/
+$assets-path: '../../assets/';
+
+$timer-standard:   .4s;
+$timer-very-rapid: $timer-standard * 0.25;
+$timer-rapid:      $timer-standard * 0.5;
+$timer-slow:       $timer-standard * 1.5;
+$timer-very-slow:  $timer-standard * 2;
+
+$color-orange: #f47d31;
+/*=====  End of Variables  ======*/
+
+
+/*===============================
+=            Imports            =
+===============================*/
+@import
+'compass/reset',
+'compass/css3';
+/*=====  End of Imports  ======*/

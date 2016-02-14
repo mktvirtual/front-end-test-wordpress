@@ -1,0 +1,28 @@
+{
+  "name": "mkt-virtual-theme",
+  "version": "1.0.0",
+  "description": "technical test for MKT Virtual",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "bower install && gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulovitorwd/front-end-test-wordpress.git"
+  },
+  "author": "Paulo Campos <paulovitorwd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulovitorwd/front-end-test-wordpress/issues"
+  },
+  "homepage": "https://github.com/paulovitorwd/front-end-test-wordpress#readme",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-jslint": "^0.2.2",
+    "jshint": "^2.9.1"
+  }
+}
