@@ -6,7 +6,6 @@
 var gulp        = require('gulp'),
     compass     = require('gulp-compass'),
     jshint      = require('gulp-jshint'),
-    jslint      = require('gulp-jslint'),
     browserSync = require('browser-sync').create();
 /*=====  End of Loaders  ======*/
 
@@ -44,7 +43,7 @@ gulp.task('watch', function () {
 
     gulp.watch(gulpFile,  ['notification']);
     gulp.watch(scssFiles, ['compass']);
-    gulp.watch(jsFiles,   ['qualitiy']);
+    gulp.watch(jsFiles,   ['jshint']);
 
     gulp.watch(htmlFiles).on('change', browserSync.reload);
     gulp.watch(jsFiles).on('change', browserSync.reload);
@@ -89,18 +88,9 @@ gulp.task('compass', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('qualitiy', function () {
+gulp.task('jshint', function () {
     return gulp.src(jsFiles)
         .pipe(jshint())
-        .pipe(jshint.reporter('default'))
-        .pipe(jslint({
-            browser: true,
-            devel: true,
-            global: ['$'],
-            node: true
-        }))
-        .on('error', function (error) {
-            console.error(String(error));
-        });
+        .pipe(jshint.reporter('default'));
 });
 /*=====  End of Config tasks  ======*/

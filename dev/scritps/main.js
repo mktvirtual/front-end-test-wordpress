@@ -1,5 +1,9 @@
 $(document).ready(function () {
     'use strict';
 
-    console.log('Starter');
+    /*=================================
+    =            Bootstrap            =
+    =================================*/
+    new Location();
+    /*=====  End of Bootstrap  ======*/
 });

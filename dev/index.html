@@ -122,14 +122,14 @@
 					</section>
 					<section>
 						<div class="location">
-							<button>
+							<button id="auto-location">
 								Achar minha localização automaticamente
 							</button>
 							<p>ou</p>
-							<form action="">
-								<label for="cep">Digite o CEP de onde você está</label>
-								<input type="cep" pattern="\d{5}-?\d{3}" id="cep" placeholder="CEP" required>
-								<input type="submit" value="Procurar">
+							<form>
+								<label for="cep-field">Digite o CEP de onde você está</label>
+								<input type="cep" pattern="\d{5}-?\d{3}" id="cep-field" placeholder="CEP" required>
+								<input type="button" value="Procurar" id="cep-button">
 							</form>
 						</div>
 					</section>
@@ -216,6 +216,7 @@
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- endbuild -->
 	<!-- build:js scritps/main.js -->
+	<script src="scritps/modules/location.js"></script>
 	<script src="scritps/main.js"></script>
 	<!-- endbuild -->
 	<!--============================

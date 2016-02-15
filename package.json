@@ -22,7 +22,6 @@
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-jshint": "^2.0.0",
-    "gulp-jslint": "^0.2.2",
     "jshint": "^2.9.1"
   }
 }
