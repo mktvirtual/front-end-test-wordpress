@@ -13,24 +13,52 @@ function Location() {
 	/*===============================
 	=            Methods            =
 	===============================*/
-	var getAddressWithCEP= function () {
+	var address = {};
+
+	var getAddressWithCEP = function () {
 		var service = 'http://apps.widenet.com.br/busca-cep/api/cep.json?code=' + cepField.val();
 
-		request(service);
+		request(service, callbackOnCEP);
 	};
 
 	var getAddressWithGeolocation = function () {
 		navigator.geolocation.getCurrentPosition(function (position) {
 			var service = 'http://nominatim.openstreetmap.org/reverse?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&format=json';
 
-			request(service);
+			request(service, callbackOnGeolocation);
 		});
 	};
 
-	var request = function (service) {
+	var callbackOnCEP = function (data) {
+		address = {
+			road   : data.address.split(' - ')[0],
+			suburb : data.district,
+			city   : data.city,
+			state  : data.state
+		};
+
+		showAddress();
+	};
+
+	var callbackOnGeolocation = function (data) {
+		address = {
+			road   : data.address.road,
+			suburb : data.address.suburb,
+			city   : data.address.city,
+			state  : data.address.state
+		};
+
+		showAddress();
+	};
+
+	var showAddress = function () {
+		alert('Endereço: ' + address.road + ', ' + address.suburb + ', ' + address.city + ' - ' + address.state);
+	};
+
+	var request = function (service, callback) {
 		$.ajax(service).
 		success(function (data) {
-			alert(JSON.stringify(data));
+			callback(data);
 		});
 	};
 	/*=====  End of Methods  ======*/
@@ -39,7 +67,7 @@ function Location() {
 	/*================================
 	=            Triggers            =
 	================================*/
-	cepButton.click(getAddressWithCEP);
 	autoLocation.click(getAddressWithGeolocation);
+	cepButton.click(getAddressWithCEP);
 	/*=====  End of Triggers  ======*/
 }
