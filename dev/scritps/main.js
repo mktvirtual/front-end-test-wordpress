@@ -4,6 +4,8 @@ $(document).ready(function () {
     /*=================================
     =            Bootstrap            =
     =================================*/
+    new Top();
+    new Menu();
     new Location();
     /*=====  End of Bootstrap  ======*/
 });

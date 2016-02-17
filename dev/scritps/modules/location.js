@@ -1,4 +1,4 @@
-function Location() {
+function Location () {
 	'use strict';
 
 	/*==================================

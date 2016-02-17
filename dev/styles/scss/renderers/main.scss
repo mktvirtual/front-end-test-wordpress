@@ -16,7 +16,17 @@ $color-orange: #f47d31;
 /*===============================
 =            Imports            =
 ===============================*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*=====  End of Imports  ======*/
+
+
+/*===============================
+=            Builder            =
+===============================*/
 @import
 'compass/reset',
-'compass/css3';
-/*=====  End of Imports  ======*/
+'compass/css3',
+'../app/modules/reset',
+'../app/modules/grid',
+'../app/base';
+/*=====  End of Builder  ======*/
