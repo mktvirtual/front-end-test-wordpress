@@ -56,8 +56,11 @@ function Location () {
 	};
 
 	var request = function (service, callback) {
-		$.ajax(service).
-		success(function (data) {
+		$.ajax(service)
+		.success(function (data) {
+			if(data.status === 0)
+				return alert('Endereço não encontrado!');
+
 			callback(data);
 		});
 	};

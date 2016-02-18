@@ -9,6 +9,7 @@
 	=            Styles            =
 	=============================-->
 	<!-- build:css style/main.css -->
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="styles/css/main.css">
 	<!-- endbuild -->
 	<!--============================
@@ -43,100 +44,122 @@
 				</nav>
 				<button id="arrow"></button>
 			</div>
-			<div class="container">
-				<h1>
-					<a href="#">
-						<img src="assets/imgs/logo.png" alt="Logo">
-					</a>
-				</h1>
-				<div id="menu" class="bars">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
+			<div class="middle">
+				<div class="container">
+					<h1>
+						<a href="#">
+							<img src="assets/imgs/logo.png" alt="Logo">
+						</a>
+					</h1>
+					<button id="menu">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</button>
+					<menu>
+						<nav class="container">
+							<ul>
+								<li>
+									<a href="#">Campanhas</a>
+								</li>
+								<li>
+									<a href="">Feminino</a>
+								</li>
+								<li>
+									<a href="">Masculino</a>
+								</li>
+								<li>
+									<a href="">Kids</a>
+								</li>
+								<li>
+									<a href="">Casa</a>
+								</li>
+								<li>
+									<a href="">Promoções</a>
+								</li>
+							</ul>
+						</nav>
+					</menu>
 				</div>
-				<menu>
-					<nav class="container">
-						<ul>
-							<li>
-								<a href="#">Campanhas</a>
-							</li>
-							<li>
-								<a href="">Feminino</a>
-							</li>
-							<li>
-								<a href="">Masculino</a>
-							</li>
-							<li>
-								<a href="">Kids</a>
-							</li>
-							<li>
-								<a href="">Casa</a>
-							</li>
-							<li>
-								<a href="">Promoções</a>
-							</li>
-						</ul>
-					</nav>
-				</menu>
+				<div id="banners">
+					<div>
+						<img src="database/banner-01.jpg" alt="">
+					</div>
+					<div>
+						<img src="database/banner-02.jpg" alt="">
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
 			<section class="container">
-				<aside>
+				<div class="posts content">
+					<div class="preview">
+						<img src="database/post-01.jpg" alt="">
+						<div class="info position-top-left">
+							<div class="itens">
+								<div class="category">Beleza</div>
+								<h3>Ruiva Fatal</h3>
+								<p>Que o ruivo é o tom do momento todo mundo sabe.</p>
+								<a href="#">Saiba mais</a>
+							</div>
+						</div>
+					</div>
+					<div class="preview">
+						<img src="database/post-02.jpg" alt="">
+						<div class="info position-bottom-center">
+							<div class="itens">
+								<div class="category"></div>
+								<h3>Promoção Bob Esponja</h3>
+								<p>Na compra de uma peça Bob Esponja, ganhe um brinde</p>
+								<a href="#">Continue Lendo</a>
+							</div>
+						</div>
+					</div>
+					<div class="preview">
+						<img src="database/post-03.jpg" alt="">
+						<div class="info position-center-right">
+							<div class="itens">
+								<div class="category">Moda Logo</div>
+								<h3>Paixão por jeans</h3>
+								<p>Versátil, combina com vários estilos diferentes</p>
+								<a href="#">Saiba mais</a>
+							</div>
+						</div>
+					</div>
+					<div class="preview">
+						<img src="database/post-04.jpg" alt="">
+						<div class="info position-bottom-center">
+							<div class="itens">
+								<div class="category">Beleza</div>
+								<h3>Poder instântaneo</h3>
+								<p>Batom vermelho deixa toda mulher poderosa.</p>
+								<a href="#">Saiba mais</a>
+							</div>
+						</div>
+					</div>				</div>
+				<aside class="sidebar">
 					<a href="#" class="featured">
 						<img src="database/sidebar.jpg" alt="">
 						<p>Preencha a proposta de adesão</p>
 					</a>
 				</aside>
-				<div class="content">
-					<div class="preview">
-						<img src="database/post-01.jpg" alt="">
-						<div class="info position-top-left">
-							<div class="category">Beleza</div>
-							<h3>Ruiva Fatal</h3>
-							<p>Que o ruivo é o tom do momento todo mundo sabe.</p>
-							<a href="#">Saiba mais</a>
-						</div>
-					</div>
-					<div class="preview">
-						<img src="database/post-02.jpg" alt="">
-						<div class="info position-bottom-container">
-							<div class="category"></div>
-							<h3>Promoção Bob Esponja</h3>
-							<p>Na compra de uma peça Bob Esponja, ganhe um brinde</p>
-							<a href="#">Continue Lendo</a>
-						</div>
-					</div>
-					<div class="preview">
-						<img src="database/post-03.jpg" alt="">
-						<div class="info position-container-right">
-							<div class="category">Moda Logo</div>
-							<h3>Paixão por jeans</h3>
-							<p>Versátil, combina com vários estilos diferentes</p>
-							<a href="#">Saiba mais</a>
-						</div>
-					</div>
-					<div class="preview">
-						<img src="database/post-04.jpg" alt="">
-						<div class="info position-top-left">
-							<div class="category">Beleza</div>
-							<h3>Poder instântaneo</h3>
-							<p>Batom vermelho deixa toda mulher poderosa.</p>
-							<a href="#">Saiba mais</a>
-						</div>
-					</div>				</div>
 			</section>
 			<section>
-				<div class="location">
-					<button id="auto-location">
-						Achar minha localização automaticamente
-					</button>
-					<p>ou</p>
-					<form>
-						<label for="cep-field">Digite o CEP de onde você está</label>
-						<input type="cep" pattern="\d{5}-?\d{3}" id="cep-field" placeholder="CEP" required>
-						<input type="button" value="Procurar" id="cep-button">
-					</form>
+				<div class="location container">
+					<div class="search">
+						<button id="auto-location">
+							Achar minha localização automaticamente
+						</button>
+						<p>ou</p>
+						<form>
+							<label for="cep-field">Digite o CEP de onde você está</label>
+							<fieldset>
+								<input type="text" pattern="\d{5}-?\d{3}" id="cep-field" placeholder="CEP" required>
+								<input type="button" value="Procurar" id="cep-button">
+							</fieldset>
+						</form>
+					</div>
 				</div>
 			</section>
 			<section>
@@ -218,11 +241,13 @@
 	=============================-->
 	<!-- build:js js/jquery.min.js -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 	<!-- endbuild -->
 	<!-- build:js scritps/main.js -->
-	<script src="scritps/modules/top.js"></script>
-	<script src="scritps/modules/menu.js"></script>
-	<script src="scritps/modules/location.js"></script>
+	<script src="scritps/components/top.js"></script>
+	<script src="scritps/components/menu.js"></script>
+	<script src="scritps/components/location.js"></script>
+	<script src="scritps/components/banners.js"></script>
 	<script src="scritps/main.js"></script>
 	<!-- endbuild -->
 	<!--============================

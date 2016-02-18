@@ -1,22 +1,31 @@
-function Menu () {
+function Banners () {
 	"use strict";
 
 	/*==================================
 	=            References            =
 	==================================*/
-	var menu = $("#menu"),
-		base = $("#base");
+	var banners = $("#banners");
 	/*=====  End of References  ======*/
 
 
 	/*===============================
 	=            Methods            =
 	===============================*/
-	var showMenu = function () {
-		if(base.hasClass("show-menu"))
-			return base.removeClass("show-menu");
+	this.pauseSlider = function () {
+		banners.slick("slickPause");
+	};
 
-		base.addClass("show-menu");
+	this.playSlider = function () {
+		banners.slick("slickPlay");
+	};
+
+	var settings = function () {
+		return {
+			adaptiveHeight : true,
+			autoplay    : true,
+			dots        : true,
+			mobileFirst : true
+		};
 	};
 	/*=====  End of Methods  ======*/
 
@@ -24,6 +33,6 @@ function Menu () {
 	/*================================
 	=            Triggers            =
 	================================*/
-	menu.click(showMenu);
+	banners.slick(settings());
 	/*=====  End of Triggers  ======*/
 }

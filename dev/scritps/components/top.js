@@ -13,6 +13,10 @@ function Top () {
 	/*===============================
 	=            Methods            =
 	===============================*/
+	this.removeHelping = function () {
+		top.removeClass("helping");
+	};
+
 	var lastScreenPosition = 0;
 
 	var checkScreenPosition = function () {
@@ -24,17 +28,14 @@ function Top () {
 		else
 			top.addClass("helping");
 
-
 		lastScreenPosition = w.scrollTop();
 	};
 
 	var changeTopPosition = function () {
-		top.removeClass("helping");
-
 		if(top.hasClass("opened"))
 			return top.removeClass("opened");
 
-		top.addClass("opened")
+		top.addClass("opened");
 	};
 	/*=====  End of Methods  ======*/
 

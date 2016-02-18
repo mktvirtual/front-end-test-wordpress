@@ -1,0 +1,39 @@
+#banners {
+	.slick-slide { overflow: hidden; }
+
+	.slick-arrow {
+		text-indent: 9999px;
+		background: rgba(black, .2);
+		width: 10%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 10;
+		pointer-events: none;
+
+		&:before {
+			content: '';
+			background: url(#{$assets-path}imgs/arrow.png) center center no-repeat;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			pointer-events: auto;
+		}
+
+		&.slick-next {
+			right: 0;
+
+			&:before { @include transform(rotate(180deg)); }
+		}
+	}
+
+	.slick-dots { display: none !important; }
+
+	img {
+		width: 200%;
+		height: auto;
+		margin-left: -50%;
+	}
+}
