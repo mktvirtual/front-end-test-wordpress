@@ -1,0 +1,55 @@
+.location {
+	font-size: 60%;
+	background: url(#{$assets-path}imgs/map.jpg) center center;
+	border: 1px solid lighten(black, 80%);
+	margin: 25px 0;
+
+	.search {
+		background: white;
+		padding: 10px;
+		border: 1px solid lighten(black, 80%);
+		margin: 60px 0;
+	}
+
+	.font-size      { font-size: 0.75em }
+	.text-transform { text-transform: uppercase; }
+
+	#auto-location {
+		@extend .font-size;
+		@extend .text-transform;
+		background: url(#{$assets-path}imgs/location.png) 6% center no-repeat;
+		width: 100%;
+		padding: 10px 10px 10px 40px;
+		border: 1px solid lighten(black, 40%);
+	}
+
+	p {
+		@extend .font-size;
+		@extend .text-transform;
+		color: lighten(black, 40%);
+		text-align: center;
+		margin: 20px 0;
+	}
+}
+
+@media (min-width: 650px) {
+	.location {
+		.search {
+			width: 600px;
+			margin: 60px auto;
+			@include display-flex(flex);
+			@include justify-content(space-around);
+		}
+
+		#auto-location {
+			width: 200px;
+			padding: 0 10px 0 40px;
+			margin: 10px 0;
+		}
+
+		p {
+			line-height: 29px;
+			margin: 20px;
+		}
+	}
+}

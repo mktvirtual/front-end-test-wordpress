@@ -1,0 +1,88 @@
+footer {
+	background: $color-orange;
+	padding: 20px 0;
+
+	.useful {
+		ul > li {
+			display: none;
+
+			+ li + li { display: block; }
+		}
+	}
+
+	.font-size   { font-size: 0.75em; }
+	.color-white { color: white; }
+	.uppercase   { text-transform: uppercase; }
+
+	p {
+		@extend .font-size;
+		@extend .color-white;
+		@extend .uppercase;
+
+		span { float: right; }
+	}
+
+	.bar-code {
+		@extend .font-size;
+		@extend .uppercase;
+		color: lighten(black, 40%);
+		text-align: center;
+		background: white url(#{$assets-path}imgs/black-bar-code.png) 6% center no-repeat;
+		width: 100%;
+		padding: 10px 10px 10px 40px;
+		border: 1px solid lighten(black, 40%);
+		margin: 40px 0;
+		display: block;
+	}
+
+	small {
+		@extend .color-white;
+		font-size: 0.5em;
+		text-align: center;
+		margin-top: 20px;
+		display: block;
+	}
+
+	.signature { color: lighten(black, 40%); }
+}
+
+@media (min-width: 768px) {
+	footer {
+		background: $color-orange url(#{$assets-path}imgs/featured.jpg) right top no-repeat;
+		background-size: auto 100%;
+		width: 100%;
+		padding: 20px 0;
+		display: table;
+
+		.useful {
+			float: left;
+
+			ul > li + li + li { display: block; }
+
+			small { margin-bottom: 20px; }
+		}
+
+		p span {
+			margin-left: 40px;
+			float: none;
+		}
+
+		.bar-code {
+			font-size: 0.5em;
+			width: 200px;
+			margin: 20px 0 40px;
+		}
+
+		small {
+			font-size: 0.5em;
+			text-align: left;
+			display: block;
+		}
+
+		.signature {
+			margin: 120px 60px 0;
+			float: right;
+		}
+	}
+
+}

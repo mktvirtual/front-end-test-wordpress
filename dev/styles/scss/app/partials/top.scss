@@ -2,7 +2,7 @@
 	background: $color-orange;
 	width: 100%;
 	position: fixed;
-	top: -268px;
+	top: -278px;
 	display: table;
 	z-index: 20;
 	@include transition($timer-standard);
@@ -12,11 +12,9 @@
 		z-index: 20;
 	}
 
-	ul { margin: -5px 0; }
-
 	li {
-		display: flex;
-		justify-content: center;
+		@include display-flex(flex);
+		@include justify-content(center);
 	}
 
 	a {
@@ -24,13 +22,15 @@
 		color: white;
 		padding: 10px 0;
 		display: block;
+
+		img { margin-right: 10px; }
 	}
 
 	form {
 		background: darken($color-orange, 15%);
 		width: 100%;
-		margin: 10px 0;
-		display: flex;
+		margin-top: 20px;
+		@include display-flex(flex);
 	}
 
 	input {
@@ -79,11 +79,25 @@
 		}
 	}
 
-	&.helping { top: -228px; }
+	&.helping { top: -238px; }
 
 	&.opened {
 		top: 0;
 
 		button:before { @include transform(rotate(-360deg)); }
+	}
+}
+
+@media (min-width: 992px) {
+	.top {
+		top: -164px;
+
+		ul {
+			@include display-flex(flex);
+			@include justify-content(space-between);
+		}
+
+		&.helping { top: -124px; }
+		&.opened  { top: 0; }
 	}
 }

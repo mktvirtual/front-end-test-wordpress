@@ -1,0 +1,58 @@
+.follow {
+	font-size: 60%;
+
+	.half { margin: 10px 0 40px 0; }
+
+	.social-media {
+		p {
+			font-size: 0.75em;
+			color: lighten(black, 40%);
+			text-transform: uppercase;
+			text-align: center;
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		ul {
+			margin-top: 10px;
+			@include display-flex(flex);
+			@include justify-content(center);
+		}
+		li { margin: 0 10px; }
+		a {
+			background: url(#{$assets-path}imgs/social-media.gif);
+			width: 49px;
+			height: 49px;
+			display: block;
+
+			&.youtube   { background-position: -49px 0; }
+			&.instagram { background-position: -98px 0; }
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.follow {
+		width: 100%;
+		display: table;
+
+		.half {
+			width: 50%;
+			float: left;
+
+			&:nth-of-type(1) form { width: 80% }
+		}
+
+		.social-media {
+			p {
+				text-align: left;
+				width: auto;
+				margin: 0;
+			}
+
+			ul { @include justify-content(flex-start); }
+
+			li { margin: 0 20px 0 0; }
+		}
+	}
+}

@@ -36,11 +36,13 @@
 }
 
 header {
+	background: white;
+
 	h1 {
 		height: 110px;
     	padding: 25px 0;
-		display: flex;
-		justify-content: center;
+		@include display-flex(flex);
+		@include justify-content(center);
 	}
 
 	#menu {
@@ -69,6 +71,7 @@ header {
 	menu {
 		background: transparentize(white, .2);
 		width: 100%;
+		overflow: hidden;
 		position: absolute;
 		top: 140px;
 		bottom: 0;

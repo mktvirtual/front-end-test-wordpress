@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-*, a { font-family: 'Montserrat', sans-serif; }
+*, a { font-family: 'Montserrat', sans-serif !important; }
 
 a { text-decoration: none; }
 
@@ -15,4 +15,6 @@ button {
 	outline: none;
 }
 
-button { cursor: pointer; }
+button,
+[type="submit"],
+[type="button"] { cursor: pointer; }
