@@ -86,7 +86,7 @@ header {
 			float: right;
 		}
 
-		li { margin-left: 110%; }
+		li { margin-left: 120%; }
 
 		@for $i from 1 through 10 {
 			li:nth-of-type(#{$i}) {

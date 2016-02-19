@@ -382,7 +382,7 @@ header menu ul {
   float: right;
 }
 header menu li {
-  margin-left: 110%;
+  margin-left: 120%;
 }
 header menu li:nth-of-type(1) {
   -moz-transition: 0.6s 0.1s;
