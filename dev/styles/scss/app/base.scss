@@ -1,7 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 #base {
 	font-size: 150%;
 	min-width: 320px;
 	@include user-select(none);
 }
 
-.wrapper {}
+@media (min-width: 992px) {
+	#base {
+		font-size: 100%;
+		@include user-select(auto);
+	}
+}

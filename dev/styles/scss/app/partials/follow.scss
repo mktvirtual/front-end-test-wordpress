@@ -1,3 +1,5 @@
+/**/
+/*----------  Follow  ----------*/
 .follow {
 	font-size: 60%;
 
@@ -56,3 +58,9 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.follow .half { margin-bottom: 65px; }
+}
+/*----------  Follow  ----------*/
+/**/

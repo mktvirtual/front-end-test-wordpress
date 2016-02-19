@@ -1,3 +1,5 @@
+/**/
+/*----------  Top  ----------*/
 .top {
 	background: $color-orange;
 	width: 100%;
@@ -90,14 +92,39 @@
 
 @media (min-width: 992px) {
 	.top {
-		top: -164px;
+		position: static;
 
-		ul {
-			@include display-flex(flex);
-			@include justify-content(space-between);
+		.container {
+			padding: 0 !important;
+			display: table;
 		}
 
-		&.helping { top: -124px; }
-		&.opened  { top: 0; }
+		nav { float: right; }
+		ul  { float: left; }
+
+		li {
+			margin-right: 20px;
+			@include display-flex(block);
+			float: left;
+		}
+
+		a {
+			line-height: 36px;
+			padding: 0;
+
+			&:hover { text-decoration: underline; }
+
+			img { margin-bottom: -3px; }
+		}
+
+		form {
+			width: 340px;
+			margin-top: 0;
+			float: left;
+		}
+
+		button { display: none; }
 	}
 }
+/*----------  Top  ----------*/
+/**/

@@ -1,3 +1,5 @@
+/**/
+/*----------  Location  ----------*/
 .location {
 	font-size: 60%;
 	background: url(#{$assets-path}imgs/map.jpg) center center;
@@ -53,3 +55,14 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.location {
+		font-size: 100%;
+		margin: 50px 0;
+
+		.search { margin: 114px auto; }
+	}
+}
+/*----------  Location  ----------*/
+/**/

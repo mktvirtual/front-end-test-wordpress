@@ -1,3 +1,5 @@
+/**/
+/*----------  Menu  ----------*/
 #base {
 	&.show-menu {
 		width: 100%;
@@ -72,7 +74,7 @@ header {
 		background: transparentize(white, .2);
 		width: 100%;
 		overflow: hidden;
-		position: absolute;
+		position: fixed;
 		top: 140px;
 		bottom: 0;
 		left: 0;
@@ -104,3 +106,68 @@ header {
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	#base {
+		&.show-menu {
+			position: static;
+
+			header menu li {
+				margin-left: 40px;
+
+				&:first-child { margin: 0; }
+			}
+		}
+	}
+
+	header {
+		.middle > .container {
+			position: absolute;
+			top: 36px;
+			right: 0;
+			left: 0;
+			z-index: 20;
+		}
+
+		h1 {
+			padding: 10px 0;
+			float: left;
+		}
+
+		#menu { display: none; }
+
+		menu {
+			background: transparent;
+			width: auto;
+			float: right;
+			position: static;
+			opacity: 1;
+			pointer-events: auto;
+
+			.container {
+				width: auto !important;
+				padding: 35px 0 !important;
+				display: table;
+			}
+
+			ul { width: auto; }
+
+			li {
+				margin: 0 0 0 40px;
+				float: left;
+
+				&:first-child { margin: 0; }
+			}
+
+			a {
+				color: lighten(black, 40%);
+				padding: 0;
+				@include transition($timer-rapid);
+
+				&:hover { color: black; }
+			}
+		}
+	}
+}
+/*----------  Menu  ----------*/
+/**/
