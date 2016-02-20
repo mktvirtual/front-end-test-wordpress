@@ -6,24 +6,29 @@
 var gulp        = require('gulp'),
     compass     = require('gulp-compass'),
     jshint      = require('gulp-jshint'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    usemin      = require('gulp-usemin'),
+    replace     = require('gulp-replace'),
+    runSequence = require('run-sequence');
 /*=====  End of Loaders  ======*/
 
 
 /*==================================
 =            References            =
 ==================================*/
-var dev  = './dev/',
+var dev     = 'dev/',
+    build = 'wordpress/wp-content/themes/mkt-virtual/',
 
     gulpFile       = 'gulpfile.js',
     htmlFiles      = dev + '**/*.html',
-    jsFiles        = dev + 'scritps/**/*.js',
-    scssFiles      = dev + 'styles/scss/**/*.scss',
-    renderersFiles = dev + 'styles/scss/renderers/**/*.scss',
-    cssFiles       = dev + 'styles/css/**/*.css',
+    imgFiles       = dev + 'imgs/**/*',
+    scriptFiles    = dev + 'scritps/**/*',
+    scssFiles      = dev + 'styles/scss/**/*',
+    renderersFiles = dev + 'styles/scss/renderers/**/*',
+    cssFiles       = dev + 'styles/css/**/*',
 
-    scssFolder  = dev + 'styles/scss/renderers',
-    cssFolder   = dev + 'styles/css';
+    scssFolder = dev + 'styles/scss/renderers',
+    cssFolder  = dev + 'styles/css';
 /*=====  End of References  ======*/
 
 
@@ -33,7 +38,7 @@ var dev  = './dev/',
 gulp.task('default', function () {
     console.log('======================================');
     console.log('                                      ');
-    console.log('          Use "$ gulp watch"          ');
+    console.log('      Use "$ gulp watch | build"      ');
     console.log('                                      ');
     console.log('======================================');
 });
@@ -41,12 +46,16 @@ gulp.task('default', function () {
 gulp.task('watch', function () {
     browserSync.init({ server: dev });
 
-    gulp.watch(gulpFile,  ['notification']);
-    gulp.watch(scssFiles, ['compass']);
-    gulp.watch(jsFiles,   ['jshint']);
+    gulp.watch(gulpFile,    ['notification']);
+    gulp.watch(scssFiles,   ['compass']);
+    gulp.watch(scriptFiles, ['jshint']);
 
     gulp.watch(htmlFiles).on('change', browserSync.reload);
-    gulp.watch(jsFiles).on('change', browserSync.reload);
+    gulp.watch(scriptFiles).on('change', browserSync.reload);
+});
+
+gulp.task('build', function () {
+    runSequence('copy', 'usemin', 'replace');
 });
 /*=====  End of Register tasks  ======*/
 
@@ -63,14 +72,7 @@ gulp.task('notification', function () {
 
     return gulp.src(gulpFile)
         .pipe(jshint({ node: true }))
-        .pipe(jshint.reporter('default'))
-        .pipe(jslint({
-            devel: true,
-            node: true
-        }))
-        .on('error', function (error) {
-            console.error(String(error));
-        });
+        .pipe(jshint.reporter('default'));
 });
 
 gulp.task('compass', function () {
@@ -89,8 +91,28 @@ gulp.task('compass', function () {
 });
 
 gulp.task('jshint', function () {
-    return gulp.src(jsFiles)
+    return gulp.src(scriptFiles)
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
+});
+
+gulp.task('copy', function () {
+    gulp.src(imgFiles)
+        .pipe(gulp.dest(build + 'imgs'));
+
+    gulp.src(scriptFiles)
+        .pipe(gulp.dest(build + 'scripts'));
+});
+
+gulp.task('usemin', function () {
+    return gulp.src(htmlFiles)
+        .pipe(usemin())
+        .pipe(gulp.dest(build));
+});
+
+gulp.task('replace', function () {
+    return gulp.src(build + 'style.css')
+        .pipe(replace(/..\/..\/imgs\//g, 'imgs/'))
+        .pipe(gulp.dest(build));
 });
 /*=====  End of Config tasks  ======*/

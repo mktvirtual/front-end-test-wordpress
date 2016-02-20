@@ -1,6 +1,8 @@
 /**/
 /*----------  Wrapper  ----------*/
 .wrapper {
+	padding: 40px 0 !important;
+
 	.posts {
 		font-size: 75%;
 		margin: -10px;
@@ -105,6 +107,7 @@
 			@extend .text-shadow;
 			@extend .space;
 			font-size: 1em;
+			font-family: 'Alegreya Sans', serif !important;
 		}
 
 		a {
@@ -168,8 +171,16 @@
 		@include align-items(stretch);
 
 		.posts {
+			font-size: 100%;
 			width: 66%;
 			float: right;
+
+			.info .text-shadow {
+				text-shadow:  1px  1px transparent,
+							 -1px -1px transparent,
+							  1px -1px transparent,
+							 -1px  1px transparent;
+			}
 		}
 		.sidebar {
 			width: 33%;

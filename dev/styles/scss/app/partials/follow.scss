@@ -22,7 +22,7 @@
 		}
 		li { margin: 0 10px; }
 		a {
-			background: url(#{$assets-path}imgs/social-media.gif);
+			background: url(#{$imgs-path}social-media.gif);
 			width: 49px;
 			height: 49px;
 			display: block;
@@ -39,13 +39,22 @@
 		display: table;
 
 		.half {
-			width: 50%;
+			width: 60%;
 			float: left;
 
-			&:nth-of-type(1) form { width: 80% }
+			form {
+				width: 60%;
+
+				input[type="email"] {
+					font-family: 'Alegreya Sans', serif !important;
+					text-transform:  none;
+				}
+			}
 		}
 
 		.social-media {
+			width: 40%;
+
 			p {
 				text-align: left;
 				width: auto;
@@ -60,7 +69,11 @@
 }
 
 @media (min-width: 992px) {
-	.follow .half { margin-bottom: 65px; }
+	.follow {
+		font-size: 100%;
+
+		.half { margin-bottom: 65px; }
+	}
 }
 /*----------  Follow  ----------*/
 /**/

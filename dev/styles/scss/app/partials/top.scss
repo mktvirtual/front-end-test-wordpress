@@ -46,7 +46,7 @@
 		}
 
 		&[type="submit"] {
-			background: url(#{$assets-path}imgs/search.png) center center no-repeat;
+			background: url(#{$imgs-path}search.png) center center no-repeat;
 			width: 36px;
 			height: 24px;
 			border-left: 1px solid white;
@@ -99,7 +99,10 @@
 			display: table;
 		}
 
-		nav { float: right; }
+		nav {
+			@include display-flex(flex);
+			@include justify-content(flex-end);
+		}
 		ul  { float: left; }
 
 		li {

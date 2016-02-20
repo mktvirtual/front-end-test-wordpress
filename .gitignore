@@ -1,7 +1,7 @@
 # Ignored folders
 bower_components/
-layout/
 node_modules/
+wordpress/
 .sass-cache/
 
 

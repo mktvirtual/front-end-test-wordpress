@@ -34,6 +34,7 @@ Text Domain: mkt-virtual
 =            Compass            =
 ===============================*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -98,6 +99,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #base {
   font-size: 150%;
   min-width: 320px;
+  overflow: hidden;
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -286,7 +288,7 @@ button,
   flex: 1 1 auto;
 }
 .top input[type="submit"] {
-  background: url(../../assets/imgs/search.png) center center no-repeat;
+  background: url(../../imgs/search.png) center center no-repeat;
   width: 36px;
   height: 24px;
   border-left: 1px solid white;
@@ -345,7 +347,10 @@ button,
     display: table;
   }
   .top nav {
-    float: right;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
   }
   .top ul {
     float: left;
@@ -647,7 +652,7 @@ header menu a {
 }
 #banners .slick-arrow:before {
   content: '';
-  background: url(../../assets/imgs/arrow.png) center center no-repeat;
+  background: url(../../imgs/arrow.png) center center no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -724,6 +729,9 @@ header menu a {
 /**/
 /**/
 /*----------  Wrapper  ----------*/
+.wrapper {
+  padding: 40px 0 !important;
+}
 .wrapper .posts {
   font-size: 75%;
   margin: -10px;
@@ -829,6 +837,7 @@ header menu a {
 }
 .wrapper .posts p {
   font-size: 1em;
+  font-family: 'Alegreya Sans', serif !important;
 }
 .wrapper .posts a {
   font-size: 0.75em;
@@ -885,8 +894,12 @@ header menu a {
     align-items: stretch;
   }
   .wrapper .posts {
+    font-size: 100%;
     width: 66%;
     float: right;
+  }
+  .wrapper .posts .info .text-shadow, .wrapper .posts .info .category, .wrapper .posts .info h3, .wrapper .posts .info p {
+    text-shadow: 1px  1px transparent, -1px -1px transparent, 1px -1px transparent, -1px  1px transparent;
   }
   .wrapper .sidebar {
     width: 33%;
@@ -907,7 +920,7 @@ header menu a {
 /*----------  Location  ----------*/
 .location {
   font-size: 60%;
-  background: url(../../assets/imgs/map.jpg) center center;
+  background: url(../../imgs/map.jpg) center center;
   border: 1px solid #cccccc;
   margin: 25px 0;
 }
@@ -924,7 +937,7 @@ header menu a {
   text-transform: uppercase;
 }
 .location #auto-location {
-  background: url(../../assets/imgs/location.png) 6% center no-repeat;
+  background: url(../../imgs/location.png) 6% center no-repeat;
   width: 100%;
   padding: 10px 10px 10px 40px;
   border: 1px solid #666666;
@@ -992,7 +1005,7 @@ header menu a {
   margin: 0 10px;
 }
 .follow .social-media a {
-  background: url(../../assets/imgs/social-media.gif);
+  background: url(../../imgs/social-media.gif);
   width: 49px;
   height: 49px;
   display: block;
@@ -1010,11 +1023,18 @@ header menu a {
     display: table;
   }
   .follow .half {
-    width: 50%;
+    width: 60%;
     float: left;
   }
-  .follow .half:nth-of-type(1) form {
-    width: 80%;
+  .follow .half form {
+    width: 60%;
+  }
+  .follow .half form input[type="email"] {
+    font-family: 'Alegreya Sans', serif !important;
+    text-transform: none;
+  }
+  .follow .social-media {
+    width: 40%;
   }
   .follow .social-media p {
     text-align: left;
@@ -1030,6 +1050,9 @@ header menu a {
   }
 }
 @media (min-width: 992px) {
+  .follow {
+    font-size: 100%;
+  }
   .follow .half {
     margin-bottom: 65px;
   }
@@ -1063,7 +1086,7 @@ footer p span {
 footer .bar-code {
   color: #666666;
   text-align: center;
-  background: white url(../../assets/imgs/black-bar-code.png) 6% center no-repeat;
+  background: white url(../../imgs/black-bar-code.png) 6% center no-repeat;
   width: 100%;
   padding: 10px 10px 10px 40px;
   border: 1px solid #666666;
@@ -1072,9 +1095,13 @@ footer .bar-code {
 }
 footer small {
   font-size: 0.5em;
+  font-family: 'Alegreya Sans', serif !important;
   text-align: center;
   margin-top: 20px;
   display: block;
+}
+footer .featured img {
+  display: none;
 }
 footer .signature {
   color: #666666;
@@ -1082,20 +1109,25 @@ footer .signature {
 
 @media (min-width: 768px) {
   footer {
-    background: #f47d31 url(../../assets/imgs/featured.jpg) right top no-repeat;
-    background-size: auto 100%;
     width: 100%;
+    height: 206px;
     padding: 20px 0;
     display: table;
   }
+  footer .container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
   footer .useful {
-    float: left;
+    width: 50%;
   }
   footer .useful ul > li + li + li {
     display: block;
   }
   footer .useful small {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   footer p span {
     margin-left: 40px;
@@ -1103,17 +1135,96 @@ footer .signature {
   }
   footer .bar-code {
     font-size: 0.5em;
-    width: 200px;
+    width: 170px;
     margin: 20px 0 40px;
   }
   footer small {
-    font-size: 0.5em;
+    font-size: 0.75em;
     text-align: left;
     display: block;
   }
+  footer .featured {
+    width: 50%;
+    position: relative;
+  }
+  footer .featured img {
+    width: auto;
+    height: 206px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    display: block;
+  }
   footer .signature {
-    margin-top: 120px;
-    float: right;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    background-position: 200% top;
+    font-size: 100%;
+    height: 323px;
+  }
+  footer .useful {
+    width: 60%;
+  }
+  footer .useful ul {
+    display: table;
+  }
+  footer .useful ul > li {
+    margin-right: 40px;
+    float: left;
+    display: block;
+  }
+  footer .useful ul > li:last-child {
+    margin-right: 0;
+  }
+  footer .useful ul > li ul,
+  footer .useful ul > li li {
+    margin: 10px 0 0 0;
+    float: none;
+  }
+  footer .useful ul > li ul a,
+  footer .useful ul > li li a {
+    font-size: 0.75em;
+    color: white;
+  }
+  footer .useful ul > li ul a:hover,
+  footer .useful ul > li li a:hover {
+    text-decoration: underline;
+  }
+  footer .useful small {
+    margin-top: 80px;
+  }
+  footer .bar-code {
+    font-size: 0.75em;
+  }
+  footer .featured {
+    width: 40%;
+  }
+  footer .featured img {
+    height: 323px;
+    right: auto;
+    left: 0;
+  }
+  footer .signature {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    top: 205px;
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  footer .featured img {
+    left: -40px;
+  }
+  footer .signature {
+    background: transparent;
+    top: 210px;
+    right: 0;
   }
 }
 /*----------  Footer  ----------*/

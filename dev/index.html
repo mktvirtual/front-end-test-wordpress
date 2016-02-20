@@ -8,8 +8,10 @@
 	<!--============================
 	=            Styles            =
 	=============================-->
-	<!-- build:css style/main.css -->
+	<!-- build:css libs/slick.css -->
 	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+	<!-- endbuild -->
+	<!-- build:css style.css -->
 	<link rel="stylesheet" href="styles/css/main.css">
 	<!-- endbuild -->
 	<!--============================
@@ -27,7 +29,7 @@
 								<a href="#">Peça seu cartão</a>
 							</li>
 							<li>
-								<a href="#"><img src="assets/imgs/white-bar-code.png" alt="">Solicite a 2ª via do cartão</a>
+								<a href="#"><img src="imgs/white-bar-code.png" alt="">Solicite a 2ª via do cartão</a>
 							</li>
 							<li>
 								<a href="#">Encontre uma loja</a>
@@ -48,7 +50,7 @@
 				<div class="container">
 					<h1>
 						<a href="#">
-							<img src="assets/imgs/logo.png" alt="Logo">
+							<img src="imgs/logo.png" alt="Logo">
 						</a>
 					</h1>
 					<button id="menu">
@@ -83,10 +85,10 @@
 				</div>
 				<div id="banners">
 					<div>
-						<img src="database/banner-01.jpg" alt="">
+						<img src="imgs/banner-01.jpg" alt="">
 					</div>
 					<div>
-						<img src="database/banner-02.jpg" alt="">
+						<img src="imgs/banner-02.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -138,10 +140,11 @@
 									<a href="#">Saiba mais</a>
 								</div>
 							</div>
-						</div>				</div>
+						</div>
+					</div>
 					<aside class="sidebar">
 						<a href="#">
-							<img src="database/sidebar.jpg" alt="">
+							<img src="imgs/sidebar.jpg" alt="">
 							<p>Preencha a proposta de adesão</p>
 						</a>
 					</aside>
@@ -196,7 +199,7 @@
 		</main>
 		<footer>
 			<div class="container">
-				<div class="useful">
+				<div class="useful half">
 					<ul>
 						<li>
 							<p>Lojas logo</p>
@@ -242,7 +245,10 @@
 					</ul>
 					<small>2015. Lojas Logo. Todos os direitos reservados</small>
 				</div>
-				<small class="signature">mkt virtual</small>
+				<div class="featured half">
+					<img src="imgs/featured.jpg" alt="">
+					<small class="signature">mkt virtual</small>
+				</div>
 			</div>
 		</footer>
 	</div>
@@ -250,17 +256,17 @@
 	<!--============================
 	=            Sripts            =
 	=============================-->
-	<!-- build:js js/jquery.min.js -->
+	<!-- build:js libs/jquery.min.js -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- endbuild -->
+	<!-- build:js libs/slick.min.js -->
 	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 	<!-- endbuild -->
-	<!-- build:js scritps/main.js -->
-	<script src="scritps/components/top.js"></script>
-	<script src="scritps/components/menu.js"></script>
-	<script src="scritps/components/location.js"></script>
-	<script src="scritps/components/banners.js"></script>
-	<script src="scritps/main.js"></script>
-	<!-- endbuild -->
+	<script src="scripts/components/top.js"></script>
+	<script src="scripts/components/menu.js"></script>
+	<script src="scripts/components/location.js"></script>
+	<script src="scripts/components/banners.js"></script>
+	<script src="scripts/main.js"></script>
 	<!--============================
 	=            Sripts            =
 	=============================-->

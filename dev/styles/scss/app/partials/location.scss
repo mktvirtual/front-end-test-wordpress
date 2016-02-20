@@ -2,7 +2,7 @@
 /*----------  Location  ----------*/
 .location {
 	font-size: 60%;
-	background: url(#{$assets-path}imgs/map.jpg) center center;
+	background: url(#{$imgs-path}map.jpg) center center;
 	border: 1px solid lighten(black, 80%);
 	margin: 25px 0;
 
@@ -19,7 +19,7 @@
 	#auto-location {
 		@extend .font-size;
 		@extend .text-transform;
-		background: url(#{$assets-path}imgs/location.png) 6% center no-repeat;
+		background: url(#{$imgs-path}location.png) 6% center no-repeat;
 		width: 100%;
 		padding: 10px 10px 10px 40px;
 		border: 1px solid lighten(black, 40%);

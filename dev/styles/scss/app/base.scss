@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 
 #base {
 	font-size: 150%;
 	min-width: 320px;
+	overflow: hidden;
 	@include user-select(none);
 }
 

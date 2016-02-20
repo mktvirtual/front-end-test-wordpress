@@ -17,7 +17,7 @@
 
 		&:before {
 			content: '';
-			background: url(#{$assets-path}imgs/arrow.png) center center no-repeat;
+			background: url(#{$imgs-path}arrow.png) center center no-repeat;
 			position: absolute;
 			top: 0;
 			right: 0;
