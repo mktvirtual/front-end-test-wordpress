@@ -1,0 +1,24 @@
+/**/
+/*----------  Reset  ----------*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+*, a { font-family: 'Montserrat', sans-serif !important; }
+
+a { text-decoration: none; }
+
+input,
+button {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+button,
+[type="submit"],
+[type="button"] { cursor: pointer; }
+/*----------  Reset  ----------*/
+/**/

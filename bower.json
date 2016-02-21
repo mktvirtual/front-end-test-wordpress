@@ -1,0 +1,26 @@
+{
+  "name": "mkt-virtual-theme",
+  "description": "technical test for MKT Virtual",
+  "main": "gulpfile.js",
+  "authors": [
+    "Paulo Campos <paulovitorwd@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/paulovitorwd/front-end-test-wordpress",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "dev/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "slick-carousel": "~1.5.9"
+  }
+}

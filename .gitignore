@@ -1,0 +1,13 @@
+# Ignored folders
+bower_components/
+node_modules/
+wordpress/
+.sass-cache/
+
+
+# Ignored extensions
+*.docx
+*.lnk
+*.log
+*.sublime-project
+*.sublime-workspace

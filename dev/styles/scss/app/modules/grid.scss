@@ -1,0 +1,21 @@
+/**/
+/*----------  Grid  ----------*/
+.container {
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding: 15px !important;
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px !important;
+	}
+}
+/*----------  Grid  ----------*/
+/**/

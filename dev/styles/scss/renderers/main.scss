@@ -1,0 +1,77 @@
+/*
+Theme Name: MKT Virtual
+Theme URI: https://github.com/paulovitorwd/front-end-test-wordpress
+Description: Tema teste criado para a empresa MKT Virtual
+Author: Paulo Campos
+Author URI: http://paulofrontend.com.br/
+Version: 1.0.0
+Text Domain: mkt-virtual
+*/
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Compass
+ *   1.1 - Reset
+ *   1.2 - CSS3
+ * 2.0 - Base
+ * 3.0 - Modules
+ *   3.1 - Reset
+ *   3.2 - Grid
+ *   3.3 - Variables
+ * 4.0 - Components
+ *   4.1 - Sender
+ * 5.0 - Partials
+ *   5.0 - Top
+ *   5.1 - Menu
+ *   5.2 - Banners
+ *   5.3 - Wrapper
+ *   5.4 - Location
+ *   5.5 - Follow
+ *   5.6 - Footer
+ *   5.7 - Footer
+ */
+
+/*===============================
+=            Compass            =
+===============================*/
+@import
+'compass/reset',
+'compass/css3';
+/*=====  End of Compass  ======*/
+/**/
+/*============================
+=            Base            =
+============================*/
+@import
+'../app/base';
+/*=====  End of Base  ======*/
+/**/
+/*===============================
+=            Modules            =
+===============================*/
+@import
+'../app/modules/reset',
+'../app/modules/grid',
+'../app/modules/variables';
+/*=====  End of Modules  ======*/
+/**/
+/*==================================
+=            Components            =
+==================================*/
+@import
+'../app/components/sender';
+/*=====  End of Components  ======*/
+/**/
+/*================================
+=            Partials            =
+================================*/
+@import
+'../app/partials/top',
+'../app/partials/menu',
+'../app/partials/banners',
+'../app/partials/wrapper',
+'../app/partials/location',
+'../app/partials/follow',
+'../app/partials/footer';
+/*=====  End of Partials  ======*/
