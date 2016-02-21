@@ -1171,6 +1171,9 @@ footer .signature {
     width: 60%;
   }
   footer .useful ul {
+    list-style: inside disc;
+  }
+  footer .useful ul {
     display: table;
   }
   footer .useful ul > li {
@@ -1183,6 +1186,7 @@ footer .signature {
   }
   footer .useful ul > li ul,
   footer .useful ul > li li {
+    list-style: inside disc !important;
     margin: 10px 0 0 0;
     float: none;
   }

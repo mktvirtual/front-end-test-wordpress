@@ -117,6 +117,8 @@ footer {
 		.useful {
 			width: 60%;
 
+			ul { list-style: inside disc; }
+
 			ul {
 				display: table;
 
@@ -129,6 +131,7 @@ footer {
 
 					ul,
 					li {
+						list-style: inside disc !important;
 						margin: 10px 0 0 0;
 						float: none;
 
