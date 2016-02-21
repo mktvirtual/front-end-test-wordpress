@@ -16,13 +16,14 @@ var gulp        = require('gulp'),
 /*==================================
 =            References            =
 ==================================*/
-var dev     = 'dev/',
+var dev   = 'dev/',
     build = 'wordpress/wp-content/themes/mkt-virtual/',
+    dist  = 'dist/',
 
     gulpFile       = 'gulpfile.js',
     htmlFiles      = dev + '**/*.html',
     imgFiles       = dev + 'imgs/**/*',
-    scriptFiles    = dev + 'scritps/**/*',
+    scriptFiles    = dev + 'scripts/**/*',
     scssFiles      = dev + 'styles/scss/**/*',
     renderersFiles = dev + 'styles/scss/renderers/**/*',
     cssFiles       = dev + 'styles/css/**/*',
@@ -38,7 +39,7 @@ var dev     = 'dev/',
 gulp.task('default', function () {
     console.log('======================================');
     console.log('                                      ');
-    console.log('      Use "$ gulp watch | build"      ');
+    console.log('  Use "$ gulp watch | build | dist"   ');
     console.log('                                      ');
     console.log('======================================');
 });
@@ -56,6 +57,10 @@ gulp.task('watch', function () {
 
 gulp.task('build', function () {
     runSequence('copy', 'usemin', 'replace');
+});
+
+gulp.task('dist', function () {
+    runSequence('finish');
 });
 /*=====  End of Register tasks  ======*/
 
@@ -114,5 +119,13 @@ gulp.task('replace', function () {
     return gulp.src(build + 'style.css')
         .pipe(replace(/..\/..\/imgs\//g, 'imgs/'))
         .pipe(gulp.dest(build));
+});
+
+gulp.task('finish', function () {
+    gulp.src(build + '**/*')
+        .pipe(gulp.dest(dist + 'themes/mkt-virtual'));
+
+    gulp.src('wordpress/wp-content/uploads/**/*')
+        .pipe(gulp.dest(dist + 'uploads'));
 });
 /*=====  End of Config tasks  ======*/
