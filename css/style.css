@@ -18,20 +18,31 @@
     font-family: MavenPro-Regular;
     src: url(../fonts/MavenPro-Regular.ttf);
 }
+
+#panel-01 {
+	background: #58207B;
+    height:30em;
+	position:absolute;
+	opacity:0.8;
+	bottom:100%;
+	width:100%;
+	display:none;
+    font-family:garamond,times-new-roman,serif;
+}
+
 /* SLIDE CAROUSEL */
 .carousel-container-edit{
 	margin:0;
 	padding:0;
 }
-.carousel-edit{
-	position:absolute !important;
-	display:block !important;
-}
+
 /* MENU SLIDE */
 .nav-edit-slide{
-	position:relative;
+	position:absolute;
+	z-index:99 !important;
 	width:70%;
-	top:0px;
+	top:5%;
+	left:15%;
 	background:transparent;
 	border:none;
 }
@@ -43,10 +54,10 @@
 .nav-top{
 	background:#F47D31;
 	height:28px;
+	width:100%;
 }
 .nav-top nav{
-	position:relative;
-	left:26%;
+	padding-left:30%;
 }
 .nav-top nav ul{
 	list-style-type:none;
@@ -73,7 +84,7 @@
 .search-nav-top input[type="search"]{
 	background:#C66223;
 	height:29px;
-	width:90%;
+	width:85%;
 	font-family: MavenPro-Medium, sans-serif;
 	font-size:12px;
 	color:#ffffff;
@@ -85,7 +96,7 @@
 	margin-left:0px;
 	height:18px;
 	border-left:1px solid #fff;
-	width:7%;
+	width:10%;
 	padding-left:3px;
 	font-size:11px;
 	color:#ffffff;
@@ -96,4 +107,162 @@
 	color:#FFF;
 	padding-left:13px;
 }
+/* CENTER BAR */
+.center-bar-imgs{
+	margin-top:20px;
+}
+.col-fix-pd{
+	padding:0px 20px 20px 0px !important; 
+	position:relative !important; 
+	top:0px !important;
+}
+.legend-img-center{
+	position:absolute !important; 
+	top:0px;
+}
+/* -- legend -- */
 
+.legend-img-center.box-01{
+	margin:20px;
+	text-align:center;
+	font-size:11px;
+	width:55%;
+}
+.legend-img-center.box-02{
+	margin:20px;
+	text-align:center;
+	font-size:12px;
+	margin:10px 0px 0px 0px;
+	width:50%;
+	top:47% !important;
+	left:22%;
+}
+.legend-img-center.box-03{
+	margin:20px;
+	text-align:center;
+	font-size:12px;
+	margin:10px 0px 0px 0px;
+	width:60%;
+	top:20% !important;
+	left:35%;
+}
+.legend-img-center.box-04{
+	background:#58207B;
+	bottom:0px;
+	top:93.5%;
+	height:50px;
+	width:95% !important;
+	text-align:center;
+	padding-top:5px;
+}
+.legend-img-center.box-04 a{
+	background:transparent;
+	border:none;
+	text-decoration:none;
+	color:#F47D31;
+	font-size:12px;
+}
+.legend-img-center.box-04 a:hover{
+	background:transparent !important;
+}
+.legend-img-center span{
+	font-family: MavenPro-Bold, sans-serif;
+	color:#666;
+	font-weight:bold;
+}
+.legend-img-center h4{
+	font-family: MavenPro-Bold, sans-serif;
+	color:#333;
+	font-size:20px;
+}
+.legend-img-center p{
+	font-family: MavenPro-Regular;
+	color:#333;
+}
+.legend-img-center a{
+	font-family: MavenPro-Regular;
+	color:#333;
+	background:#FFF;
+	border:1px solid #333;
+	position:relative;
+	top:10px;
+	padding:5px 15px 5px 15px;
+	font-family: MavenPro-Black;
+	color:#666;
+	text-decoration:none;
+}
+.legend-img-center a:hover{
+	background:#f3f3f3;
+}
+
+/* LOCATION MAP */
+.location-map{
+	height:300px;
+	margin:0; 
+	padding:0px;
+	margin-top:20px;
+	background-color:#000;
+	background: url(../imgs/map.jpg) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.box-cep{
+	width:30%;
+	background:#FFF;
+	height:30%;
+	position:relative;
+	top:30%;
+	border:1px solid #dedede;
+	margin: auto;
+}
+.button-location{
+	background:#fff;
+	border:1px solid #333;
+	font-size:10px;
+	height:50px;
+	margin-top:10px;
+	font-family: MavenPro-Black;
+	color:CCC;
+}
+.button-location .col-md-2 i {
+	font-size:25px;
+	padding-right:10px;
+	margin-top:8px;
+	border-right:1px solid #dedede;
+}
+.box-cep .col-md-6 span{
+	font-family: MavenPro-Regular;
+	font-weight:bold;
+	width:100%;
+	color:#757374;
+	font-size:10px;
+	clear: both;
+}
+.box-cep .col-md-6{
+	padding-top:10px;
+}
+.box-cep .col-md-6 form{
+	width:100%;
+	background:#ccc;
+}
+.box-cep .col-md-6 form input[type="text"]{
+	background:#ccc;
+	border:none;
+	height:40px;
+	width:45%;
+}
+.box-cep .col-md-6 form input[type="text"]::-webkit-input-placeholder{ 
+	font-family: MavenPro-Bold;
+	padding-left:10px;
+	color:#757374;
+}
+.box-cep .col-md-6 form input[type="submit"]{
+	background:#FFF;
+	border:1px solid #333;
+	font-family: MavenPro-Black;
+	padding:4px 12px 4px 12px;
+	font-size:11px;
+	color:#757374;
+	margin-left:10px;
+	
+}
