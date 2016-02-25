@@ -1,3 +1,6 @@
+## Atualização
+ Layout CSS completo, apenas faltando passar para o wordpress e criar os bancos.
+
 Front-End Test - Home WordPress
 ========================
 
