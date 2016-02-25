@@ -1,0 +1,278 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Simple Image Widget"
+msgstr ""
+
+#. Short description.
+msgid "A simple widget that makes it a breeze to add images to your sidebars."
+msgstr ""
+
+#. Screenshot description.
+msgid "A new image widget."
+msgstr ""
+
+#. Screenshot description.
+msgid "The widget after selecting an image."
+msgstr ""
+
+#. Found in description header.
+msgid "Additional Resources"
+msgstr ""
+
+#. Found in description header.
+msgid "Translation Credits"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"https://wordpress.org/support/view/plugin-reviews/simple-image-widget#postform\">Write a review</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"https://github.com/cedaro/simple-image-widget\">Contribute on GitHub</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"https://twitter.com/cedaroco\">Follow @cedaroco</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.cedaro.com/?utm_source=wordpress.org&amp;utm_medium=link&amp;utm_content=simple-image-widget-readme&amp;utm_campaign=plugins\">Visit Cedaro</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Dutch (nl_NL) - Ronald de Caluwé [4.2.2]"
+msgstr ""
+
+#. Found in description list item.
+msgid "Finnish (fi) - Tomi Mäenpää [v4.1.1]"
+msgstr ""
+
+#. Found in description list item.
+msgid "French (fr_FR) - Alexandre Sadowski [v4.0.1]"
+msgstr ""
+
+#. Found in description list item.
+msgid "Japanese (ja) - Fumito Mizuno [v4.2.0]"
+msgstr ""
+
+#. Found in description list item.
+msgid "Serbo-Croation (sr_RS) - <a href=\"http://www.webhostinghub.com/\">Borisa Djuraskovic</a> [v4.1.2]"
+msgstr ""
+
+#. Found in description list item.
+msgid "Hebrew (he_IL) - <a href=\"https://www.GenerateWP.com/\">Rami Yushuvaev</a> [v4.3.0]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Simple Image Widget is what the name implies -- the easiest way to add images to your sidebars. Display advertisements, calls-to-action, or even build a slider based on image widgets."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Despite its simplicity, Simple Image Widget is built with extensibility in mind, making it super easy to spin off new image-based widgets, or customize the widget ouput using the available template hierarchy."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Install just like most other plugins. <a href=\"http://codex.wordpress.org/Managing_Plugins#Installing_Plugins\">Check out the codex</a> if you have any questions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Transferred to <a href=\"http://www.cedaro.com/\">Cedaro</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show media extensions in the post finder modal."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Dutch translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a PHP 5.2 incompatibility that prevented the correct image from showing on the front-end."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a debug notice when searching for attachments in the new find posts modal."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added functionality to search for posts to link images to."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Japanese translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the method for generating cache keys. Should provide better support for the_widget() and similar methods."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Deprecated the method for flushing a single widget instance from the cache."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Serbo-Croation translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Finnish translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Prevent a notice about non-existent title when adding a widget in the Customizer in debug mode."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to hide widget fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a field to insert HTML classes on the text link. Hidden by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed \"the_content\" filter from widget text to prevent other plugins from appending content."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Renamed /scripts to /js and /styles to /css."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved handling of fields that have been removed in child widgets."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed the reference to the widget's parent class to prevent an error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Allow more HTML tags in the text field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated customizer support and prevent cache poisoning."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added French translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New template system to make it easier to override the output."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Restructured to make it more intuitive for developers to extend the widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved legacy support into a separate class that hooks into the widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Works with the Widget Customizer added in WordPress 3.9."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved compatibility with plugins like Page Builder by SiteOrigin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a slash preventing custom translations from loading."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Dropped the text domain from custom translation filenames."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Loading the text domain earlier so the widget title and description can be filtered."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor code formatting updates."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed PHP class name formatting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added 'link_open' and 'link_close' args to the $instance when rendering the widget display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a 'simple-image' CSS class to the image wrapper."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Implemented feature for opening links in a new tab/window."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug preventing links in legacy widgets to not work."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed the main plugin file for the previous version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Complete rewrite with new media manager support."
+msgstr ""
+
+#. Found in faq header.
+msgid "Is there a way to filter the widget output?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I add alt text to images in the widget?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I center the widget?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I remove the width and height attributes?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "<code>{theme}/simple-image-widget/{sidebar_id}_widget.php</code>"
+msgstr ""
+
+#. Found in faq list item.
+msgid "<code>{theme}/simple-image-widget/widget.php</code>"
+msgstr ""
+
+#. Found in faq list item.
+msgid "<code>{plugin}/templates/widget.php</code>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Absolutely. Changing the output can be done a few different ways, but the most common alternatives involve using the \"<code>simple_image_widget_output</code>\" filter or overriding the template in your theme."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To use the template method, copy \"<code>widget.php</code>\" from the \"<code>/templates</code>\" directory in the plugin to a \"<code>/simple-image-widget</code>\" directory in your theme. Then update as you wish. It's also possible to create a custom template specific to each sidebar in your theme using the following default template hierarchy:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<em>Always use a <a href=\"https://codex.wordpress.org/Child_Themes\">child theme</a> to make changes if you acquired your theme from a third-party and you expect it to be updated. Otherwise, you run the risk of losing your customizations.</em>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "When selecting an image in the media modal (the popup to select images), the right sidebar will be titled \"Attachment Details\" and contains a field for entering alt text. After entering your alt text, click the \"Update Image\" button to use the selected image in your widget. Most browsers don't show the alt text, so you'll need to view the HTML source to make sure it exists."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The widget can be centered using CSS. Custom CSS should be added a child theme or using a plugin like <a href=\"https://wordpress.org/plugins/simple-custom-css/\">Simple Custom CSS</a> or <a href=\"https://wordpress.org/plugins/jetpack/\">Jetpack</a>. The following snippet will center the contents of the widget:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The widget uses the core function <code>wp_get_attachment_image()</code> to display the image and it would be more trouble than it's worth to remove those attributes. Some basic CSS will typically allow you to make the image responsive if necessary:"
+msgstr ""
