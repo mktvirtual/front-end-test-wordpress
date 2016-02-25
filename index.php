@@ -2,62 +2,17 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home - MKT Virtual</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
-	<style type="text/css">
-	.navbar-edit-fixed{
-		position:fixed;
-		top:0;
-		left:0;
-		background:#F47D31;
-		width:100%;
-		padding-right:15%;
-		padding-left:15%;
-		border-bottom-left-radius:50px;
-		border-bottom-right-radius:50px;
-		-webkit-transition: all 0.5s ease-out;
-		-moz-transition: all 0.5s ease-out;
-		-o-transition: all 0.5s ease-out;
-		transition: all 0.5s ease-out;
-	}
-	.navbar-edit-fixed img{
-		width:40%;
-	}
-	.navbar-edit-fixed a{
-		color:#FFF !important;
-	}
-	.navbar-edit-absolute{
-		position:absolute;
-		top:5%;
-	}
-	</style>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('#button-01').click(function(){
-			$('#panel-01').slideToggle('slow');
-		});
-		
-	});
-	$(document).ready(function() {
-		$(window).bind('scroll', function () {
-			if ($(window).scrollTop() > 500) {
-				$('.nav-edit-slide').removeClass("navbar-edit-absolute").addClass("navbar-edit-fixed");
-			} else {
-				$('.nav-edit-slide').removeClass("navbar-edit-fixed").addClass("navbar-edit-absolute");
-			}
-		});
-	});
-	</script>
 	<body>
 		<header>
 			<!-- TOP MENU -->
-			<div class="container-fluid nav-top">
+			<div class="container-fluid nav-top hidden-xs">
 				<nav>
 					<ul>
 						<li>
@@ -95,7 +50,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<a class="navbar-brand" href="#">
-								<img src="imgs/logo.png" alt="Logo MKTVirtual" width="90%" class="img-responsive"/>
+								<img src="img/logo.png" alt="Logo MKTVirtual" width="90%" class="img-responsive"/>
 							</a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
@@ -119,16 +74,16 @@
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="imgs/top-banner-01.jpg" alt="Legenda 01" width="100%" class="img-responsive">
+							<img src="img/top-banner-01.jpg" alt="Legenda 01" width="100%" class="img-responsive">
 						</div>
 						<div class="item">
-							<img src="imgs/top-banner-01.jpg" alt="Legenda 02" width="100%" class="img-responsive">
+							<img src="img/top-banner-01.jpg" alt="Legenda 02" width="100%" class="img-responsive">
 						</div>
 						<div class="item">
-							<img src="imgs/top-banner-01.jpg" alt="Legenda 03" width="100%" class="img-responsive">
+							<img src="img/top-banner-01.jpg" alt="Legenda 03" width="100%" class="img-responsive">
 						</div>
 						<div class="item">
-							<img src="imgs/top-banner-01.jpg" alt="Legenda 04" width="100%" class="img-responsive">
+							<img src="img/top-banner-01.jpg" alt="Legenda 04" width="100%" class="img-responsive">
 						</div>
 					</div>
 
@@ -144,51 +99,48 @@
 			</div>
 		</header>
 		<div class="container center-bar-imgs">
-			<div class="col-md-4" style="padding:0px;">
-				<img src="imgs/center-img-01.jpg" alt="Legenda 01" width="95%" class="img-responsive"/>
-				<div class="legend-img-center box-04">
-					<a id="button-01">PREENCHA A PROPOSTA DE ADESÃO</a>
+			<div class=" col-fix-pd col-xs-12 col-md-4">
+				<img src="img/center-img-01.jpg" alt="Legenda 01" width="100%" class="img-responsive"/>
+				<div id="button-01" class="legend-img-center box-04">
+					<a>PREENCHA A PROPOSTA DE ADESÃO</a>
 					<div id="panel-01">
-						<br />
-						<p>Now you see me!</p>
+						<p>Formulario para preenchimento</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-8" style="padding:0px;">
-				<div class="col-fix-pd col-md-6">
-					<img src="imgs/center-img-05.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
-					 <div class="legend-img-center box-01">
-						<span>BELEZA</span>
-						<h4>RUIVA FATAL</h4>
-						<p>Que o ruivo é o tom do momento todo mundo sabe.</p>
-						<a href="#">SAIBA MAIS</a>
-					</div>
+			<div class="col-fix-pd col-xs-6 col-md-4">
+				<img src="img/center-img-05.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
+				<div class="legend-img-center box-01">
+					<span>BELEZA</span>
+					<h4>RUIVA FATAL</h4>
+					<p>Que o ruivo é o tom do momento todo mundo sabe.</p>
+					<a href="#">SAIBA MAIS</a>
 				</div>
-				<div class="col-fix-pd col-md-6">
-					<img src="imgs/center-img-04.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
-					 <div class="legend-img-center box-02">
-						<h4>PROMOÇÃO BOB ESPONJA</h3>
-						<p>Na compra de uma peça Bob Esponja, ganhe um brinde.</p>
-						<a href="#">CONTINUE LENDO</a>
-					</div>
+			</div>
+			<div class="col-fix-pd col-xs-6 col-md-4">
+				<img src="img/center-img-04.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
+				<div class="legend-img-center box-02">
+					<h4>PROMOÇÃO BOB ESPONJA</h3>
+					<p>Na compra de uma peça Bob Esponja, ganhe um brinde.</p>
+					<a href="#">CONTINUE LENDO</a>
 				</div>
-				<div class="col-fix-pd col-md-6">
-					<img src="imgs/center-img-03.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
-					 <div class="legend-img-center box-03">
-						<span>MODA LOGO</span>
-						<h4>PAIXÃO POR JEANS</h3>
-						<p>Versátil, combina com vários estilos diferentes.</p>
-						<a href="#">SAIBA MAIS</a>
-					</div>
+			</div>
+			<div class="col-fix-pd col-xs-6 col-md-4">
+				<img src="img/center-img-03.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
+				<div class="legend-img-center box-03">
+					<span>MODA LOGO</span>
+					<h4>PAIXÃO POR JEANS</h3>
+					<p>Versátil, combina com vários estilos diferentes.</p>
+					<a href="#">SAIBA MAIS</a>
 				</div>
-				<div class="col-fix-pd col-md-6">
-					<img src="imgs/center-img-02.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
-					 <div class="legend-img-center box-02">
-						<span>BELEZA</span>
-						<h4>PODER INSTANTÂNEO</h3>
-						<p>Batom vermelho deixa toda mulher poderosa.</p>
-						<a href="#">SAIBA MAIS</a>
-					</div>
+			</div>
+			<div class="col-fix-pd col-xs-6 col-md-4">
+				<img src="img/center-img-02.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
+				<div class="legend-img-center box-02">
+					<span>BELEZA</span>
+					<h4>PODER INSTANTÂNEO</h3>
+					<p>Batom vermelho deixa toda mulher poderosa.</p>
+					<a href="#">SAIBA MAIS</a>
 				</div>
 			</div>
 		</div>
@@ -204,17 +156,75 @@
 						</div>
 					</button>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 input-box-01">
 					<span>DIGITE O CEP DE ONDE VOCÊ ESTÁ</span>
 					<form action="" method="get" id="searchForm">
-						<input type="text" name="cep" id="cep" placeholder="CEP"/>
+						<input type="text" name="cep" id="cepMask" placeholder="CEP"/>
 						<input type="submit" name="submit" value="PROCURAR"/>
 					</form>
 				</div>
 			</div>
 		</div>
-		<br/><br/><br/><br/>
-		
+		<div class="container social-bar">
+			<div class="col-md-6 input-box-01">
+				<span>ASSINE A NEWSLETTER DO LOGO</span>
+				<form action="" method="get" id="newsletterForm">
+					<input type="text" name="newsletter" id="newsletter" placeholder="Seu email"/>
+					<input type="submit" name="submit" value="ENVIAR"/>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<span>SIGA LOJAS LOGO NAS REDES SOCIAIS</span>
+				<ul class="social-buttons">
+					<li><a href="#" alt="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" alt="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+					<li><a href="#" alt="Instagram"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<footer class="container-fluid all-footer">
+			<div class="container">
+				<div class="col-md-2">
+					<h4>LOJAS LOGO</h4>
+					<ul>
+						<li>Sobre</li>
+						<li>Lojas</li>
+						<li>Trabalhe Conosco</li>
+						<li>Contato</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4>LISTA DE ATALHOS</h4>
+					<ul>
+						<li>Portal do Colaborador</li>
+						<li>Promoções</li>
+						<li>Cartão do Cliente</li>
+						<li>Cadastre-se</li>
+						<li>Blog</li>
+					</ul>
+				</div>
+				<div class="col-md-2-5">
+					<h4>SAC LOJA LOGO <span>0800-701-0316</span></h4>
+					<button class="button-location btn-02">
+						<div class="col-md-2">
+							<i class="fa fa-barcode"></i>
+						</div>
+						<div class="col-md-10">
+							<span>SOLICITAR 2º VIA BOLETO</span>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-5 img-footer"> 
+					<img src="img/footer.jpg" alt="footer" width="100%" class="img-responsive"/> 
+				</div>
+				<div class="col-md-12 copyright-footer">
+					<h6>2015. Lojas Logo. Todos direitos reservados.</h6>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.maskedinput.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
