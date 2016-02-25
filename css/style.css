@@ -286,6 +286,9 @@ input:focus {
 	margin-top:10px;
 	font-family: MavenPro-Black;
 }
+.button-location:hover{
+	background:#f3f3f3;
+}
 .button-location .col-md-2 i {
 	font-size:25px;
 	padding-right:10px;
@@ -389,14 +392,53 @@ input:focus {
 /* ------------------------------------------------------------- 
 ---------------------R E S P O N S I V E -----------------------
 ----------------------------------------------------------------
-*/     
-@media (max-width: 767px) {
+*/    
+@media (min-width: 1200px) and (max-width: 1500px) { 
+	.box-cep{
+		width:40%;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+	.nav-top nav{
+		padding-left:10%;
+	}
 	.box-01, .box-03,
 	.box-02{
 		font-size:7px !important;
 	}
 	.nav-edit-slide img{
 		width:40% !important;
+	}
+	.nav-edit-slide ul li a{
+		font-size:10px;
+		color:#FFF !important;
+	}
+	/* BOX */
+	.legend-img-center.box-04{
+		top:90%;
+		width:93.777% !important;
+		text-align:center;
+		padding-top:5px;
+	}
+	/* location */
+	.box-cep{
+		width:80%;
+	}
+	.input-box-01 form input[type="text"]{
+		width:75%;
+		margin-bottom:5px;
+	}
+}
+@media (max-width: 1024px) {
+	.box-01, .box-03,
+	.box-02{
+		font-size:7px !important;
+	}
+	.nav-edit-slide img{
+		width:40% !important;
+	}
+	.nav-edit-slide ul li a{
+		color:#FFF !important;
 	}
 	.nav-edit-slide,
 	.navbar-edit-absolute{
@@ -411,9 +453,69 @@ input:focus {
 		transition: padding 1s;
 		margin-bottom: 0 !important;
 	}
-	
 	.navbar-edit-absolute img{
 		width:40% !important;
 	}
-	
+	/* BOX */
+	.legend-img-center.box-04{
+		top:95%;
+		width:97% !important;
+		text-align:center;
+		padding-top:5px;
+	}
+	/* location */
+	.box-cep{
+		width:30%;
+		background:#FFF;
+		height:80%;
+		position:relative;
+		top:10%;
+		border:1px solid #dedede;
+		margin: auto;
+	}
+	.button-location{
+		font-size:10px;
+		height:90px;
+		margin-top:10px;
+		font-family: MavenPro-Black;
+	}
+	.button-location .col-md-2 i {
+		font-size:25px;
+		margin-top:4px;
+		border-right:none;
+	}
+	.btn-02{
+		width:170px;
+		padding-right:20px;
+	}
+	.btn-02 i { 
+		left:10px;
+	}
+	.btn-02 span{
+		position:absolute;
+		left:0px;
+		
+	}
+	/* footer */
+	.img-footer{
+		left:0px;
+		margin:0; padding:0;
+	}
+	.copyright-footer{
+		margin-top:20px;
+		text-align:center;
+	}
+	.input-box-01{
+		margin-bottom:20px;
+	}
+	.input-box-01 form input[type="text"]{
+		width:100%;
+		margin-bottom:5px;
+	}
+	.input-box-01 form input[type="submit"]{
+		width:90%;
+		margin-bottom:10px;
+		margin-left:10px;
+		
+	}
 }

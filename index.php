@@ -12,7 +12,7 @@
 	<body>
 		<header>
 			<!-- TOP MENU -->
-			<div class="container-fluid nav-top hidden-xs">
+			<div class="container-fluid nav-top hidden-xs hidden-sm">
 				<nav>
 					<ul>
 						<li>
@@ -146,7 +146,7 @@
 		</div>
 		<div class="container-fluid location-map">
 			<div class="box-cep">
-				<div class="col-md-6">
+				<div class="col-sm-6 col-md-6">
 					<button class="button-location" name="teste2" id="teste2">
 						<div class="col-md-2">
 							<i class="fa fa-map-marker"></i> 
@@ -156,7 +156,7 @@
 						</div>
 					</button>
 				</div>
-				<div class="col-md-6 input-box-01">
+				<div class="col-sm-6 col-md-6 input-box-01">
 					<span>DIGITE O CEP DE ONDE VOCÊ ESTÁ</span>
 					<form action="" method="get" id="searchForm">
 						<input type="text" name="cep" id="cepMask" placeholder="CEP"/>
@@ -166,14 +166,14 @@
 			</div>
 		</div>
 		<div class="container social-bar">
-			<div class="col-md-6 input-box-01">
+			<div class="col-xs-8 col-sm-8 col-md-6 input-box-01">
 				<span>ASSINE A NEWSLETTER DO LOGO</span>
 				<form action="" method="get" id="newsletterForm">
 					<input type="text" name="newsletter" id="newsletter" placeholder="Seu email"/>
 					<input type="submit" name="submit" value="ENVIAR"/>
 				</form>
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-4 col-sm-4 col-md-6">
 				<span>SIGA LOJAS LOGO NAS REDES SOCIAIS</span>
 				<ul class="social-buttons">
 					<li><a href="#" alt="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -184,7 +184,7 @@
 		</div>
 		<footer class="container-fluid all-footer">
 			<div class="container">
-				<div class="col-md-2">
+				<div class="col-xs-4 col-sm-4 col-md-2">
 					<h4>LOJAS LOGO</h4>
 					<ul>
 						<li>Sobre</li>
@@ -193,7 +193,7 @@
 						<li>Contato</li>
 					</ul>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-4 col-sm-4 col-md-2">
 					<h4>LISTA DE ATALHOS</h4>
 					<ul>
 						<li>Portal do Colaborador</li>
@@ -203,21 +203,21 @@
 						<li>Blog</li>
 					</ul>
 				</div>
-				<div class="col-md-2-5">
+				<div class="col-xs-4 col-sm-4 col-md-2-5">
 					<h4>SAC LOJA LOGO <span>0800-701-0316</span></h4>
 					<button class="button-location btn-02">
-						<div class="col-md-2">
+						<div class="col-xs-6 col-md-2">
 							<i class="fa fa-barcode"></i>
 						</div>
-						<div class="col-md-10">
+						<div class="col-xs-6 col-md-10">
 							<span>SOLICITAR 2º VIA BOLETO</span>
 						</div>
 					</button>
 				</div>
-				<div class="col-md-5 img-footer"> 
+				<div class="col-xs-12 col-sm-12 col-md-5 img-footer hidden-xs hidden-sm"> 
 					<img src="img/footer.jpg" alt="footer" width="100%" class="img-responsive"/> 
 				</div>
-				<div class="col-md-12 copyright-footer">
+				<div class="col-xs-12 col-sm-12 col-md-12 copyright-footer">
 					<h6>2015. Lojas Logo. Todos direitos reservados.</h6>
 				</div>
 			</div>
