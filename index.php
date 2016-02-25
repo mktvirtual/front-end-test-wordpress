@@ -105,16 +105,16 @@
 			</div>
 		</header>
 		<div class="container center-bar-imgs">
-			<div class=" col-fix-pd col-xs-12 col-md-4">
+			<div class="col-fix-pd col-xs-12 col-md-4 hidden-xs">
 				<img src="img/center-img-01.jpg" alt="Legenda 01" width="100%" class="img-responsive"/>
-				<div id="button-01" class="legend-img-center box-04">
+				<div id="button-01" class="legend-img-center box-04 hidden-xs">
 					<a>PREENCHA A PROPOSTA DE ADESÃO</a>
 					<div id="panel-01">
 						<p>Formulario para preenchimento</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-fix-pd col-xs-6 col-md-4">
+			<div class="col-fix-pd col-xs-12 col-md-4">
 				<img src="img/center-img-05.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
 				<div class="legend-img-center box-01">
 					<span>BELEZA</span>
@@ -123,7 +123,7 @@
 					<a href="#">SAIBA MAIS</a>
 				</div>
 			</div>
-			<div class="col-fix-pd col-xs-6 col-md-4">
+			<div class="col-fix-pd col-xs-12 col-md-4">
 				<img src="img/center-img-04.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
 				<div class="legend-img-center box-02">
 					<h4>PROMOÇÃO BOB ESPONJA</h3>
@@ -131,7 +131,7 @@
 					<a href="#">CONTINUE LENDO</a>
 				</div>
 			</div>
-			<div class="col-fix-pd col-xs-6 col-md-4">
+			<div class="col-fix-pd col-xs-12 col-md-4">
 				<img src="img/center-img-03.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
 				<div class="legend-img-center box-03">
 					<span>MODA LOGO</span>
@@ -140,7 +140,7 @@
 					<a href="#">SAIBA MAIS</a>
 				</div>
 			</div>
-			<div class="col-fix-pd col-xs-6 col-md-4">
+			<div class="col-fix-pd col-xs-12 col-md-4">
 				<img src="img/center-img-02.jpg" alt="Legenda 01"  width="100%" class="img-responsive"/>
 				<div class="legend-img-center box-02">
 					<span>BELEZA</span>
@@ -152,7 +152,7 @@
 		</div>
 		<div class="container-fluid location-map">
 			<div class="box-cep">
-				<div class="col-sm-6 col-md-6">
+				<div class="col-xs-12 col-sm-6 col-md-6">
 					<button class="button-location" name="teste2" id="teste2">
 						<div class="col-md-2">
 							<i class="fa fa-map-marker"></i> 
@@ -162,7 +162,7 @@
 						</div>
 					</button>
 				</div>
-				<div class="col-sm-6 col-md-6 input-box-01">
+				<div class="col-xs-12 col-sm-6 col-md-6 input-box-01">
 					<span>DIGITE O CEP DE ONDE VOCÊ ESTÁ</span>
 					<form action="" method="get" id="searchForm">
 						<input type="text" name="cep" id="cepMask" placeholder="CEP"/>
@@ -172,14 +172,14 @@
 			</div>
 		</div>
 		<div class="container social-bar">
-			<div class="col-xs-8 col-sm-8 col-md-6 input-box-01">
+			<div class="col-xs-12 col-sm-8 col-md-6 input-box-01">
 				<span>ASSINE A NEWSLETTER DO LOGO</span>
 				<form action="" method="get" id="newsletterForm">
 					<input type="text" name="newsletter" id="newsletter" placeholder="Seu email"/>
 					<input type="submit" name="submit" value="ENVIAR"/>
 				</form>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-6">
+			<div class="col-xs-12 col-sm-4 col-md-6">
 				<span>SIGA LOJAS LOGO NAS REDES SOCIAIS</span>
 				<ul class="social-buttons">
 					<li><a href="#" alt="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -190,7 +190,7 @@
 		</div>
 		<footer class="container-fluid all-footer">
 			<div class="container">
-				<div class="col-xs-4 col-sm-4 col-md-2">
+				<div class="col-xs-6 col-sm-4 col-md-2">
 					<h4>LOJAS LOGO</h4>
 					<ul>
 						<li>Sobre</li>
@@ -199,7 +199,7 @@
 						<li>Contato</li>
 					</ul>
 				</div>
-				<div class="col-xs-4 col-sm-4 col-md-2">
+				<div class="col-xs-6 col-sm-4 col-md-2">
 					<h4>LISTA DE ATALHOS</h4>
 					<ul>
 						<li>Portal do Colaborador</li>
