@@ -1,0 +1,332 @@
+﻿/* 
+Theme Name: Teste da mkt
+Theme URI: 
+Author: Vitor Hugo Borges Yugulis
+Author URI: site do autor
+Description: Teste para mkt. Um site responsivo, utilizando wordpress, HTML5, CSS3, JQUERY e um pouquinho de PHP. Obrigado pela oportunidade, Christian.
+Version: 1.0.3
+License: Todas as imagens são da Wizards of the Coast
+License 
+*/
+
+
+
+/*Conteudo cabecalho*/
+
+.site-header {
+  font-family: arial;
+  background-color: #222;
+  width: 100%;
+    color: #ccc;
+    top: 0;
+    left: 0;
+    
+}
+
+.site-header button{
+  font-size: 1.0em;
+}
+
+.logotopo{height:100px; width:100%;}
+
+.site-header input{text-align: center; margin-bottom: 5%;margin-left: 18%; padding:6%; width: 100px;background-color:#222; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+
+.site-header button{margin-left:3%;background-color:#222; cursor:pointer; color:#fff; border-radius:10px; padding:;}
+
+/*cabecalho2*/
+.container
+{
+  width: 100%;
+    height: 400px;
+    margin:0;
+    top: 60px;
+    left: 0;
+    background-image: url('m3.jpg');
+    background-size: cover;
+
+}
+
+
+/*navegação principal main-nav (menu)*/
+
+
+.btn-menu{ width: 56px; height: 56px; float: right; text-align: center; color: #222;
+border-radius: 56px ; background-image:url('menu.gif'); background-size: cover; cursor: pointer;}
+
+.menu {display: none;width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left:0;}
+
+.btn-close{font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 1% 3%; font-family: 'Open Sans', sans-serif;}
+
+.menu ul {list-style-type: none; width: 100%; float: left; text-align: left;}
+
+.menu li{ padding: 1.5%;}
+
+.menu li a{text-decoration: none; font-size: 1.5em; color: #fff; padding: 1.0%  1%; }
+
+.menu li a:hover {
+  background: #222;
+
+}
+
+/*Conteudo principal*/
+
+.novidades{
+  width: 100%;
+  float: left;
+  margin:0;
+  font-size: 1.2em;
+  text-align: justify;
+
+}
+
+.novidades a:hover{color:#999900;}
+
+.innerjace img{
+  width:100%;
+  margin-top: 3%;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 1.5%;
+}
+.innerzendikar img{
+  width:100%;
+  margin-top: 3%;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 1.5%;
+}
+.innerkozilek img{
+  width:100%;
+  margin-top: 3%;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 1.5%;
+}
+
+
+.innerjace a{font-size: 1.5em; text-decoration: none; color: #3366cc;}
+.innerzendikar a{font-size: 1.5em; text-decoration: none; color: #669999;}
+.innerkozilek a{font-size: 1.5em; text-decoration: none; color: #ff4d4d;}
+
+/*mapa*/
+
+#map_canvas{width:100%; height:200px;}
+
+/*newsletter*/
+
+.newsletter {float:left; text-align:center; width:100%; background: url('nissa.jpg'); background-size:cover; border-top: 2px solid #fff; border-radius: 5px;}
+.newsletter h3 {font-size:1.5em; color:#fff; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+.newsletter h2{font-size:1.0em; color:#fff; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+.newsletter input {text-align:center; width: 90%; height:40px; background-color:transparent; color:#fff; border-radius: 1px solid rgba(255,255,255, 0.5);}
+.newsletter button{ margin-top: 3%; width: 90%; height:40px;  background-color:transparent; cursor:pointer; color:#fff; border-radius: 1px solid rgba(255,255,255, 0.5);}
+.icones{width:100%;}
+.icones img{width:10%; margin-top:3%; margin-bottom: 5%;}
+
+/*rodape*/
+
+.rodape{text-align:center;float: left; width:100%; height:150px; background: url('rodape.jpg'); background-size: cover; border-top: 2px solid #fff; border-radius: 5px;}
+.rodape p{color:#fff; font-size: 0.7em;}
+
+/*************************************************************************************
+*****************A partir daqui tudo foi sendo ajustado conforme a tela for aumentando
+para que todos os itens do site estejam ajustados de forma correta. Responsivos.*****
+************************/
+
+/*Para resolucoes maiores que 445px*/
+
+@media screen and (min-width: 445px){
+
+  /*cabecalho*/
+.site-header {
+  float:left;
+  font-family: arial;
+  background-color: #222;
+  height:100px;
+  width: 100%;
+    color: #ccc;
+    top: 0;
+    left: 0;
+}
+
+.container
+{
+  float:left;
+  width: 100%;
+  height: 400px;
+  margin:0;
+  top: 60px;
+  left: 0;
+  background-image: url('m3.jpg');
+  background-size: cover;
+
+}
+
+.logotopo{float: left; height:100px; width:20%;}
+
+.site-header input{ float: left;text-align: center; margin-top: 5%; margin-bottom: 10%;margin-left: 20%; padding:4%; width: 100px;background-color:#222; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+
+.site-header button{ float: left;margin-left:3%; margin-top: 7%; margin-bottom: 13%; background-color:#222; cursor:pointer; color:#fff; border-radius:10px; padding:;}
+
+/*rodape*/
+
+.rodape p{color:#fff; font-size: 0.9em;}
+
+}
+
+/*para maiores de 580px*/
+@media screen and (min-width: 580px){
+  /*cabecalho*/
+  .logotopo{float: left; height:100px; width:20%;}
+
+  .site-header input{ float: left;text-align: center; margin-top: 20px; margin-bottom: 0%;margin-left: 35%; padding:3%; width: 100px;background-color:#222; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+
+  .site-header button{ float: left;margin-left:3%; margin-top: 35px; margin-bottom: 0%; background-color:#222; cursor:pointer; color:#fff; border-radius:10px; padding:;}
+ /*newsletter*/
+  .newsletter input {width: 50%; height:40px; background-color:transparent; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+  .newsletter button{ margin-top: 3%; width: 20%; height:40px;  background-color:transparent; cursor:pointer; color:#222; border-radius:5px;}
+  .icones{width:100%;}
+  .icones img{width:10%; margin-top:3%; margin-bottom: 5%;}
+ /*rodape*/
+  .rodape{text-align:center;float: left; width:100%; height:200px; background: url('rodape.jpg'); background-size: cover; border-top: 2px solid #fff; border-radius: 5px;}
+  .rodape p{color:#fff; font-size: 0.9em;}
+}
+
+/*para maiores de 780px*/
+@media screen and (min-width: 780px){
+   /*cabecalho*/
+  .logotopo{float: left; height:100px; width:20%;}
+
+  .site-header input{ float: left;text-align: center; margin-top: 20px; margin-bottom: 0%;margin-left: 45%; padding:2%; width: 100px;background-color:#222; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+
+  .site-header button{ float: left;margin-left:3%; margin-top: 30px; margin-bottom: 0%; background-color:#222; cursor:pointer; color:#fff; border-radius:10px; padding:;}
+ /*conteudo, ajustando a posição pra telas maiores*/
+  .innerjace{
+    float: left;
+    width: 56%;
+  }
+
+  .innerzendikar{
+    float:right;
+    width: 43%;
+
+  }
+
+  .innerkozilek img{height:350px;}
+
+  #map_canvas{width:100%; height:250px;}
+
+   /*newsletter*/
+
+  .newsletter input {width: 50%; height:40px; background-color:transparent; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+  .newsletter button{ margin-top: 3%; width: 10%; height:40px;  background-color:transparent;; cursor:pointer; color:#222; border-radius:5px;}
+  .icones{width:100%;}
+  .icones img{width:3%; margin-top:3%; margin-bottom: 5%;}
+
+   /*rodape*/
+
+  .rodape{text-align:center;float: left; width:100%; height:300px; background: url('rodape.jpg'); background-size: cover; border-top: 2px solid #fff; border-radius: 5px;}
+  .rodape p{color:#fff; font-size: 1.1em;}
+}
+
+/*para resolucoes maiores que 1075px*/
+@media screen and (min-width: 1075px){
+
+    /*cabecalho*/
+.site-header {
+  float:left;
+  font-family: arial;
+  background-color: #222;
+  height:120px;
+  width: 100%;
+    color: #ccc;
+    top: 0;
+    left: 0;
+}
+
+.container
+{
+  float:left;
+  width: 100%;
+  height: 400px;
+  margin:0;
+  top: 60px;
+  left: 0;
+  background-image: url('m3.jpg');
+  background-size: cover;
+
+}
+
+.logotopo{float: left;height:150px; width:20%;}
+
+.site-header input{ float: left;text-align: center; margin-top: 20px; margin-bottom: 0%;margin-left: 55%; padding:2%; width: 100px;background-color:#222; color:#fff; border-radius:5px; border: 1px solid rgba(255,255,255, 0.2);}
+
+.site-header button{ float: left;margin-left:3%;background-color:#222; cursor:pointer; color:#fff; border-radius:10px; margin-top:35px;}
+
+ /*menu. A partir daqui o menu se torna horizontal*/
+    .btn-menu {display:none;}
+    .btn-close {display: none;}
+
+    .menu{
+        float:left;
+        font-family: 'Open Sans', sans-serif;
+        display: block !important;
+        position: static;
+        background-color: transparent;
+        text-align: center;
+        font-weight: 500;
+
+
+    }
+
+    .menu ul{
+
+        margin: 0;
+        display: inline; /*mostra o menu horizontalmente ao inves de verticalmente*/
+    }
+
+    .menu li{
+
+        float:left;
+        list-style: none;
+        color: #222;
+        display: inline-block;
+        padding: 15px; 
+        
+    }
+
+    .menu li a {padding:0;text-decoration: none; font-size: 1.0em; color: #222; display: block;}
+
+    .menu li a:hover{
+        color: #ccccff;/*corzinha quando coloca o mouse em cima*/
+        border: none;
+    }
+
+ /*conteudo. Ajustando novamente pra telas maiores*/
+  .innerjace{
+    float: left;
+    width: 42%;
+    margin-left:10%;
+  }
+
+  .innerzendikar{
+    float:right;
+    width: 33%;
+    margin-right:10%;
+  }
+
+  .innerkozilek {text-align:center; width:70% ; margin-right:10%; margin-left:15%;}
+
+  .innerkozilek img{width:70% ;height:350px; margin-right:10%; margin-left:15%;}
+
+/*Mapa. Ajustando pra resolucoes maiores*/
+  #map_canvas{width:100%; height:300px;}
+
+  /*rodape*/
+
+  .rodape{text-align:center;float: left; width:100%; height:500px; background: url('rodape.jpg'); background-size: cover; border-top: 2px solid #fff; border-radius: 5px;}
+  .rodape p{ padding:10%;color:#fff; font-size: 1.5em;}
+
+}
