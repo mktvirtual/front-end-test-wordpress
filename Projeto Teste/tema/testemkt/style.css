@@ -1,0 +1,171 @@
+/*
+Theme Name: TesteMtk
+Theme URI:
+Description: teste para avaliação de conhecimentos técnicos em web.
+Author: Murillo
+Author URI:
+*/
+
+/*=========== RESET ============*/
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'PT Sans Narrow', sans-serif;}
+
+body {background-color: #fff;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+/*===========ALTERAR COR DO PLACEHOLDER==============*/
+#buscar-input::-webkit-input-placeholder { /* WebKit browsers */
+color: #fff;
+}
+#buscar-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #fff;
+}
+#buscar-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #fff;
+}
+#buscar-input:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #fff;
+}
+
+/*===========CONTAINER==========*/
+.container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+
+/*===========HELPERS==========*/
+.radius {border-radius: 7px;}
+
+/*CABECALHO*/
+.cabecalho {background: #FF8C00;}
+.cabecalho a {display: none; font-size: 1em; color: #fff; float: right; margin-right: 5%; margin-top: 0.6%;}
+#buscar {width: 10%; float: right; font-size: 1em; background: #CC6633; color: #fff; padding: 12px;}
+.cabecalho input {width: 80%; font-size: 1em; padding: 10px; background: #CC6633; color: #fff;}
+
+/* MENU */
+.btn-menu {width: 10%; float: left; height: 40px; text-align: center; color: #fff; cursor: pointer;
+background:  #CC6633;}
+.menu {display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+#btn-close {font-size: 1.5em; color:  #fff; float:  right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul {width: 100%; float: left; text-align: center;}
+.menu li {padding: 0.5%;}
+.menu li a {font-size: 1.5em; color: #fff;}
+
+/* BANNER */
+.logo {font-size: 2.3em; border: 2px; border-color: #CC6633; outline: none; box-sizing: border-box;
+font-family: 'Lobster', sans-serif; color: #fff; float: left;}
+.banner {background: url(http://treinarmkt.16mb.com/wp-content/uploads/2016/03/mulher.png) no-repeat left top; height: 200px; background-size: cover;}
+
+/* SERVIÇOS */
+.servico {width: 100%; background-color: #fff; text-align: left; margin-bottom: 3px;}
+.servico img {border-radius: 4px 4px 4px 4px;}
+.inner {padding: 7%;}
+.inner a {font-size:  1.5em; color: #130400; font-weight: 700;}
+.inner p {margin-top: 6%; color: #130400; line-height: 1.5em;}
+#saiba {margin-top: 350px; margin-left: 10px; position: absolute; cursor: pointer; border-radius: 2px; font-size: 1em; padding: 4px; background: #fff; border-style: double;}
+#saiba:hover {background: rgb(255,50,50); color: #fff; border-radius: 2px;}
+
+/*MAPA*/
+.mapa {background: url(http://treinarmkt.16mb.com/wp-content/uploads/2016/03/mapa.png) no-repeat; height: 300px;}
+
+/* NEWSLETTER */
+.newsletter {height: relative;}
+.newsletter h2 {font-size: 1.3em; font-weight: 500; padding: 3%; margin-top: 20px;}
+.newsletter input {background: #C8C8C8 ; width: 80%; font-size: 1.5em; margin-left: 3%; color: #fff; padding: 2%;}
+.icone a {font-size: 2.5em; color: #130400; margin-right: 3%;}
+.icone a:hover {color: rgb(255,50,50);}
+.social-icons a {font-size: 2.5em; color: #130400; margin-right: 3%;  margin-left: 3%;}
+.social-icons a:last-child {margin-right: 5;}
+.social-icons a:hover {color: rgb(255,50,50);}
+
+/* RODAPE */
+.rodape {display: table; background: #CC6633; height: relative;}
+.conteudo {float: left; font-size: 1em; margin-left: 15%; width: 20%; text-align: left; color: #fff;}
+.segundo-conteudo {margin-left: 50%; text-align: left; color: #fff; width: 40%;}
+.conteudo ul {list-style-type: circle;}
+.segundo-conteudo ul {list-style-type: circle;}
+.conteudo li a {color: #fff;}
+.segundo-conteudo li a {color: #fff;}
+.conteudo li a:hover {color: #200000;}
+.segundo-conteudo li a:hover {color: #200000;}
+.sac {color: #fff; float: left; margin-top: 5%; margin-left: 15%;}
+.copyright {margin-left: 15%; margin-top: 5%; float: left; color: #fff; font-size: 0.8em;}
+
+/*===============MOBILE FIRST============== BREAKPOINTS */
+
+/*SMARTPHONES*/
+@media screen and (min-width: 200px) {
+	#saiba {margin-top: 80%; font-size: 0.7em;}
+.cabecalho {heigth: 60px;}
+}	
+@media screen and (min-width: 480px) {
+	.newsletter h2 {font-size: 2em;}
+	.servico{width: 49%; float: left; margin-right: 2%;}
+	.servico:nth-child(2){margin-right: 0;}
+	.servico:nth-child(3){margin-right: 0;}
+	.servico:nth-child(4){margin-right: 2%;}
+	.servico:nth-child(5){margin-right: 0;}
+	#saiba {margin-top: 38%; font-size: 0.6em;}
+}	
+
+/*TABLETS*/
+@media screen and (min-width: 768px) {
+	.servico{width: 49%; float: left; margin-right: 2%;}
+	.servico:nth-child(2){margin-right: 0;}
+	.servico:nth-child(3){margin-right: 0;}
+	.servico:nth-child(4){margin-right: 2%;}
+	.servico:nth-child(5){margin-right: 0;}
+	.newsletter {height: 200px;}
+	.newsletter h2 {width: 100%; font-size: 1.5em;}
+	.newsletter input {width: 230px; margin-left: 2%; margin-top: 2%; font-size: 1.5em;}
+	.icone {float: left; font-size: 1em;}
+	.social-icons {float: right;}
+	.logo {font-size: 3em;}
+	.banner {height: 600px;}
+	.rodape {background: url(http://treinarmkt.16mb.com/wp-content/uploads/2016/03/rodape.png) no-repeat left top; height: 300px; background-size: cover;}
+	.conteudo {margin-left: 10%; width: 10%}
+	.segundo-conteudo {margin-left: 30%; width: 20%;}
+	.sac {margin-left: 10%;}
+	#saiba {margin-top: 38%; font-size: 0.7em;}
+}
+
+/*MEDIUM - TABLETS e PCS*/
+@media screen and (min-width: 960px) {
+	.servico {width: 32%;}
+	.servico:nth-child(2){margin-right: 2%;}
+	.servico:nth-child(3){margin-right: 0;}
+	.servico:nth-child(4){margin-right: 2%;}
+	.servico:nth-child(5){margin-right: 0;}
+	.newsletter {height: 200px;}
+	.newsletter h2 {width: 100%}
+	.newsletter input {width: 230px; margin-left: 2%; margin-top: 2%; font-size: 1.5em;}
+	.icone {float: left; margin-left: 10%;}
+	.social-icons {float: right; margin-right: 10%;}
+	.logo {font-size: 3em;}
+	.banner {height: 600px; background-size: cover;}
+	.conteudo {margin-left: 10%;}
+	.segundo-conteudo {margin-left: 30%;}
+	.sac {margin-left: 10%; text-align: left; color: #fff;}
+	.cabecalho a {display: table; font-size: 0.86em;}
+	.cabecalho input {float: right; width: 20%;}
+	#buscar {margin-right: 5%; width: 4%;}
+	.cabecalho {height: 40px;}
+}
+
+/*LARGE - PCS - widescreen*/
+@media screen and (min-width: 960px) {
+	.btn-menu {display: none;}
+	#btn-close {display: none;}
+	#assine {display: none;}
+	#loja {display: none;}
+	#boleto2 {display: none;}
+	#boleto {display: inline;}
+	#cartao {display: none;}
+	.menu {width: auto; height: 56px; line-height: 56px; float: right; background: none;
+	display: block !important; position: static;}
+	.menu li {padding: 0; float: left; margin-top: 10px;}
+	.menu li a {color: #130400; float-size: 1em; padding: 15px;}
+	.menu li a:hover {border: none; color: #da6709;}
+	.cabecalho a {font-size: 0.9em;}
+	#saiba {margin-top: 25%;}
+	#buscar {margin-right: 5%; width: 4%;}
+}
