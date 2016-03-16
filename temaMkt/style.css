@@ -1,0 +1,652 @@
+﻿/* 
+Theme Name: MKT Virtual LOGO
+Theme URI: 
+Author: Vitor Hugo Borges Yugulis
+Author URI: site do autor
+Description: Teste para mkt. Um site responsivo, utilizando wordpress, HTML5, CSS3, JQUERY e um pouquinho de PHP. Obrigado pela oportunidade, Christian.
+Version: 1.0.0
+License: Todas as imagens foram adquiridas da internet
+License 
+*/
+
+*{padding: 0; margin: 0; font-family: 'PT Sans', sans-serif;}
+body{background-color:#f5f5f5;}
+header{ background-color: #ff751a; width:100%;height:30px; position: fixed;}
+
+/*menu cabecalho******************************************************************************************************************
+**************************************************************************************************************************************/
+.cabecalho{
+	height:30px; 
+	text-align: center; 
+	float:right;
+	position: relative;
+	left:-50%;
+
+}
+.cabecalho a{text-decoration: none; color:#fff; font-size: 1em;}
+.cabecalho ul{list-style: none; list-style-type: none; position:relative; left:50%; margin-top: 4px;}
+.cabecalho li{
+	display:inline; 
+	float:left; 
+	position:relative;
+	width:auto; 
+	margin-right:20px;
+}
+.cabecalho li a{
+
+	text-decoration: none;
+	display:block;
+	float:left;
+	height:30px;
+	line-height:20px;
+}
+
+.cabecalho li:hover a{
+	opacity: 0.6;
+	color: #fff;
+}
+
+.icon{
+	opacity: 0.4;
+	border-left: 1px solid #ccc;
+	background-color: #222;
+	color:#ccc;
+	cursor: pointer;
+}
+
+#btnbuscar{
+	opacity: 0.4;
+	text-align: center;
+	background-color: #222;
+	color:#ccc;
+	border: 0px;
+}
+
+
+
+/*conteudos responsivos escondidos******************************************************************************************************************
+**************************************************************************************************************************************/
+/*btn cabecalho*/
+
+
+.container-btn{
+	width:100%;
+	display:none;
+}
+
+.btn-nav{
+	height:40px;
+	width: 40px;
+
+}
+/*btn menu*/
+
+.container-btnmenu{
+	display:none;
+	width:100%;
+	height:60px;
+}
+
+.btn-menu{
+	height:45px;
+	width: 45px;
+
+}
+
+.main-menumobile{
+	display:none;
+}
+
+.nav-menumobile{
+	display: none;
+}
+
+.nav-img img{
+display:none;	
+}
+
+.footermobile{
+	display:none;
+	}
+
+/*navegação principal******************************************************************************************************************
+**************************************************************************************************************************************/
+
+.nav-menu{
+margin-top:30px;
+float:right;
+height:550px;
+width:100%;
+background: url('mulher.png');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.nav-menu a{text-decoration: none; font-size: 1.2em; color:#222;}
+.nav-menu ul{list-style: none;}
+.nav-menu li{
+	float:right;
+	margin-top:40px;
+	display:inline;  
+
+	margin-right:20px;	
+}
+
+.nav-menu li:hover a{
+	opacity: 0.6;
+	color: #ff751a;
+	font-weight: bold;
+}
+
+.nav-menu img{
+	position: relative;
+	text-align: left;
+	margin-top:0px;
+	margin-left: 10%;
+	width:15%;
+}
+
+.nav-menu li:first-child{
+
+	margin-right:10%;
+}
+
+/*conteudo principal************************************************************************************************************************************
+********************************************************************************************************************************************************/
+
+.main {
+	float: left;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:3%;
+	margin-bottom: 10%;
+	width:80%;
+
+}
+
+.conteudo-superior{
+	width:100%;
+	margin-bottom: 0;
+}
+
+aside img{
+	float:left;
+	width:30%;
+	height:100%;
+	cursor:pointer;
+}
+
+.artigo1 img{
+	float:left;
+	width:30%;
+	margin-left: 2%;
+	margin-bottom: 1%;
+	cursor:pointer;
+	
+}
+
+.artigo2 img{
+	float:left;
+	width:30%;
+	margin-bottom: 1%;
+	margin-left: 2%;
+	cursor:pointer;
+}
+
+.conteudo-inferior{
+
+	width:100%;
+	margin-left: 2%;
+}
+
+.artigo3 img{
+	float:left;
+	width:30%;
+	height: 98%;
+	margin-left:2%;
+	margin-right:1%;
+	cursor:pointer;
+}
+
+.artigo4 img{
+	float:left;
+	width:30%;
+	height: 98%;
+	margin-left: 1%;
+	cursor:pointer;
+}
+
+/********************************MAPA**********************************************/	
+
+#map_canvas{float: left;width:100%; height:320px;   margin: 0;}
+
+/*NEWSLETTER************************************************************************************************************************************
+	********************************************************************************************************************************************************/
+
+	footer{text-align: center; width: 100%; }
+
+	.newsletter{
+		float: left;
+		margin-top: 5%;
+		width:100%;
+		background-color: #f2f2f2;
+	}
+	.nws-email{
+		float:left;
+		width: 40%;
+
+	}
+	.nws-email h1{
+		margin-bottom: 6%;
+		font-size: 1.5em;
+		margin-top:6%;
+	}
+
+
+	.nws-email input{
+		text-align: center; width: 40%; height:40px; background-color:#ccc; color:#fff; border: 1px solid rgba(0,0,0, 0.2); margin-bottom: 12%;
+	}
+
+	.icones{float:left; width:40%;text-align:center; margin-top:3%}
+	.icones img{width:10%; margin-top:3%; margin-bottom: 5%; margin-right:2%; margin-left:2%; border: 2px solid black;}
+	.icones img:hover{border:2px solid #ff751a; }
+
+
+	/*RODAPE************************************************************************************************************************************
+	********************************************************************************************************************************************************/
+	.footermobile{
+		display:none;
+	}
+	.footer{
+		width:100%;
+		display:block;
+	}
+
+	.footer-corpo{
+		background: url('rodape.png');
+		background-size: cover;
+		text-align: left;
+		float: left;
+		display:block;
+		width:100%;
+		font-size:0.8em;
+		height:250px;
+		color:#fff;
+	}
+
+	.footer-corpo h2{
+		font-size: 1em;
+	}
+
+	.footer-corpo ul{
+		margin-top: 6%;
+		margin-left: 12%;
+		width:60%;
+	}
+	.footer-corpo li{
+
+	}
+	.footer-corpo li:before{
+		color:white;
+	}
+	.footer-corpo a{
+		text-decoration: none;
+		color:#fff;
+	}
+	.footer-corpo a:hover{
+		opacity: 0.9;
+		color:#ccc;
+	}
+
+
+	.footer-esquerdo{
+		float: left;
+		width:20%;
+	}
+
+	.footer-central{
+		float: left;
+		width:20%;
+	}
+
+	.footer-direito{
+		margin-top: 1%;
+		float: left;
+		width:20%;
+	}
+
+	.footer-inferior{
+		margin-left: 1%;
+		float: left;
+		width:99%;
+	}
+
+	
+
+
+/*Programação responsiva a partir daqui******************************************************************************************************************
+**************************************************************************************************************************************/
+@media screen and (max-width: 1000px){
+
+/*cabecalho******************************************************************************************************************
+**************************************************************************************************************************************/
+	header{
+		height:170px;
+		display: none;
+		position:relative;
+	}
+
+	.nav-expandido{
+		display: block;
+	}
+	.cabecalho
+	{
+		height:170px;
+		width:100%;
+	}
+		
+	.cabecalho ul{
+		display: block;
+		width:100%;
+		border: 1px solid #222;
+		padding: 0;
+	margin-left: 0;
+	}
+
+	.cabecalho li{
+		text-align:center;
+		border: 1px solid #222;
+		width:100%;
+	}
+
+	.cabecalho li a{
+		font-size:1em;
+		height:39px;
+		line-height:40px;
+		width:100%;
+	}
+
+	.cabecalho input{
+		display:none;
+	}
+
+	/*botao de navegacao******************************************************************************************************************
+	**************************************************************************************************************************************/
+	.container-btn{
+		display: block;
+		height:40px;
+		width:100%;
+		background-color: #ff751a;
+		text-align:center;
+
+	}
+	.btn-nav{
+		display:block;
+		float: left;
+		background: url('btnmenu.png');
+		background-size: cover;
+		border-radius: 12px;
+		cursor:pointer;
+	}
+
+	.icon{
+		opacity: 0.4;
+		border-left: 1px solid #ccc;
+		background-color: #222;
+		color:#ccc;
+		cursor:pointer;
+	}
+
+	#btnbuscar{
+		height:20px;
+		opacity: 0.4;
+		text-align: center;
+		margin-top:10px;
+		width:40%;
+		background-color: #222;
+		color:#ccc;
+		border: 0px;
+	}
+
+	.hidebtnbuscar{
+		margin-top:-9999px;
+	}
+
+	/*menu******************************************************************************************************************
+	**************************************************************************************************************************************/
+
+	/*botoes*/
+	.container-btnmenu{
+		display: block;
+	}
+
+	.container-btnmenu img{
+		width:40%;
+		height:60px;
+		
+	}
+
+	.btn-menu{
+		background:url('btnmenu.png');
+		background-size: cover;
+		font-size:4em;
+		color:#ff751a;
+		float:right;
+		border-radius: 12px;
+		background-color: #222; 
+		margin-top: 7px;
+		margin-right: 4%;
+		cursor:pointer;
+	}
+
+	/*menu*/
+	.container-btnmenu{
+		background-color: #333;
+	}
+	.main-menu{
+		display:none;
+	}
+
+	.nav-expandidomenu{
+		display: block;
+	}
+
+	.main-menumobile{
+		display:none;
+		width:100%;
+		text-align: center;
+	}
+
+	.nav-menumobile{
+		display:block;
+		width: 100%;
+	}
+
+	.nav-menumobile ul{
+		display:block;
+		width:100%;
+		background-color:#333;
+		border: 1px solid #222;
+
+
+	}
+
+	.nav-menumobile li{
+		border: 1px solid #222;
+	}
+
+	.nav-menumobile li a{
+		text-decoration: none;
+		font-size:1em;
+		height:40px;
+		line-height:40px;
+		width:100%;
+		color:#ff751a;
+
+	}
+
+	.nav-img{
+		float: left;
+		display:block;
+		width:100%;
+		width:100%;
+	}
+
+	.nav-img img{
+		display: block;
+		float: left;
+		width:100%;
+		height:100%;
+	}
+
+	/*conteudo principal************************************************************************************************************************************
+	********************************************************************************************************************************************************/
+
+	.main {
+		position:relative;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top:8%;
+		margin-bottom: 10%;
+		width:98%;
+	}
+
+	.conteudo-superior{
+		width:100%;
+		margin-bottom: 0;
+	}
+
+	aside img{
+		width:47%;
+		height:100%;
+		cursor:pointer;
+	}
+
+	.artigo1 img{
+		float:left;
+		width:48%;
+		margin-left: 3%;
+		height:100%;
+		cursor:pointer;
+	}
+
+	.artigo2 img{
+		height:100%;
+		width:48%;
+		margin-left: 3%;
+		cursor:pointer;
+	}
+
+	.conteudo-inferior{
+		width:100%;
+		height:200px;
+		margin-left:0;
+	}
+
+	.artigo3 img{
+		width:47%;
+		margin-left:0%;
+		margin-right:2%;
+		cursor:pointer;
+	}
+
+	.artigo4 img{
+		width:47%;
+		margin-left: 1%;
+		cursor:pointer;
+	}
+
+	/*NEWSLETTER************************************************************************************************************************************
+	********************************************************************************************************************************************************/
+
+
+
+	#map_canvas{position: relative;width:100%; height:200px;   margin: 0; transform: inherit !important;}
+
+	footer{text-align: center; width: 100%; }
+
+	.newsletter{
+		margin-top: 2%;
+		width:100%;
+		background-color: #f2f2f2;
+	}
+	.nws-email{
+		width: 100%;
+
+	}
+	.nws-email h1, .icones h1{
+		margin-bottom: 1%;
+		font-size: 1.0em;
+		margin-top:1%;
+	}
+
+
+	.nws-email input{
+		margin-bottom:1%; text-align: center; width: 60%; height:40px; background-color:#ccc; color:#fff; border: 1px solid rgba(0,0,0, 0.2)
+	}
+
+	.icones{ width:100%;text-align:center; }
+	.icones img{width:7%; margin-top:1%; margin-bottom: 1%; margin-right:2%; margin-left:2%; border: 2px solid black;}
+	.icones img:hover{border:2px solid #ff751a; }
+
+	/*RODAPE************************************************************************************************************************************
+	********************************************************************************************************************************************************/
+	.footer{
+		display:none;
+	}
+
+	.footermobile{
+		float: left;
+		display:block;
+		background-color: #ff751a;
+		width:100%;
+		font-size:0.8em;
+	}
+
+	.footermobile ul{
+		
+		margin-left: 4%;
+		width: 96%;
+		text-decoration: none;
+		list-style-type: none;
+
+	}
+
+	.footermobile li, h2{
+		margin-top: 10px;
+		font-size:1.1em;
+	}
+
+	.footermobile ul li {
+		text-align:center;
+		color: white;
+		list-style-type: none;
+	}
+
+	.footermobile a{
+		font-style: none;
+		text-decoration: none;
+		color: white;
+	}
+
+	.footermobile a:hover{cursor:pointer;}
+
+	.footermobile li a:last-child{
+		font-size:0.7em;
+	}
+
+
+	#boleto a{
+		list-style-type: none;
+		text-align: center;
+		color:#222;
+		font-size:1em;
+		width:80%;
+		background-color: #f2f2f2;
+		border: 2px solid #222;
+	}
+
+
+
+}
+
