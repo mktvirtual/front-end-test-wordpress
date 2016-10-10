@@ -1,0 +1,223 @@
+/* Header
+   ========================================================================== */
+.header
+	z-index 10
+	position absolute
+	top 0
+	left 0
+	width 100%
+	transition all .3s ease
+	+above(1024px)
+		max-width 100%		
+	&--scrollup
+		+above(1024px)
+			.header
+				position fixed
+				&__orange-bar
+					background-color white-gray
+					a
+						color gray
+					&__search
+						&__input
+							background-color gray-dark2
+						&__btn
+							background-color gray-dark2
+				&__brand
+					background-color white
+					&__logo
+						max-width 124px
+						margin 16px 0 17px 0
+					&__navegation
+						margin 21px 0 0 88px
+	&--scrolldown
+		+above(1024px)	
+			.header
+				position fixed
+				top -36px
+				&__brand
+					background-color white
+					&__logo
+						max-width 124px
+						margin 16px 0 17px 0
+					&__navegation
+						margin 21px 0 0 88px
+	&__orange-bar
+		background-color orange
+		padding 8px 0
+		+above(1024px)
+			height 35px
+			padding 0
+		&__links
+			@extend .large-8
+			@extend .small-2
+			@extend .columns
+			padding-top 8px
+			+above(1024px)
+				padding-top 0
+			+above(1280px)
+				padding-left 231px
+				margin-left 106px
+		&__content
+			z-index 5
+			position absolute
+			left -100%
+			top 54px
+			width 100%
+			padding 0 10px
+			background-color orange-dark
+			transition all .3s ease
+			+above(1024px)
+				position relative
+				top 0
+				left 0
+				width initial
+				padding 0
+				background-color transparent
+			&--show
+				left 0
+				+above(1024px)
+					display block
+			li
+				list-style none
+				margin-right 15px
+				+above(1024px)
+					display inline-block
+				&:last-child
+					margin-right 0
+			a
+				font-family 'Montserrat', sans-serif
+				font-size em(12px)
+				color white
+				display inline-block
+				padding 8px 0 12px 0
+				width 100%
+				+above(1024px)
+					width auto
+				&:hover
+					text-decoration underline
+				+above(1024px)
+					padding 10px 0 11px
+		&__info
+			sprite($info_icon)
+			transition all .3s ease
+			+above(1024px)
+				display none
+			&--close
+				sprite($close_icon)
+		&__search
+			@extend .large-3
+			@extend .small-10
+			@extend .columns
+			padding-top: 2px
+			+above(1024px)
+				padding-top: 0
+			&__input
+				width 85%
+				float left
+				font-family 'Montserrat', sans-serif
+				font-size em(12px)
+				color white
+				padding 10px 0 10px 11px			
+				background-color orange-dark
+				+placeholder()
+					color white
+				+above(1024px)
+					width 70%
+				+above(1280px)
+					width 87%				
+			&__btn
+				position relative
+				background-color orange-dark
+				sprite($search_icon)
+	&__brand
+		width 100%
+		&__logo
+			@extend .large-2		
+			@extend .small-6		
+			@extend .columns
+			margin-top 29px
+		&__navegation
+			@extend .large-10
+			@extend .small-6
+			@extend .columns
+			margin-top 29px
+			+above(1024px)
+				margin-top 40px
+				text-align right
+			.menu-item-has-children--active
+				background-color white			
+			& > .menu
+				+below(1024px)
+					position fixed
+					left -100%
+					top 0
+					width 100%
+					max-width 300px
+					height 100%
+					padding-top 20px
+					background-color white
+					transition all .3s ease
+					&--show
+						left 0
+						+above(1024px)
+							display initial
+				& > li 
+					list-style none
+					position relative
+					display block
+					+above(1024px)
+						display inline-block
+					& > a
+						font-family 'Montserrat', sans-serif
+						font-size em(16px)
+						color gray
+						text-transform uppercase
+						padding 8px 10px
+						display: block
+						&:hover
+							background-color white
+				.sub-menu					
+					padding 17px 0
+					text-align left
+					background-color white-gray
+					display none
+					+above(1024px)
+						position absolute
+						width 291px
+						top 27px
+						background-color white
+					&--active
+						display block
+					li
+						margin-bottom 5px
+						list-style none
+						&:last-child
+							margin-bottom 0
+					a
+						font-family 'Montserrat', sans-serif
+						color gray
+						font-size em(14px)
+						padding 0 0 0 23px	
+						+above(1024px)	
+							font-size em(14px)			
+						&:hover
+							text-decoration underline
+			&__btn
+				position relative
+				width 47px
+				height 47px
+				float right
+				background-color orange
+				+above(1024px)
+					display none
+				span
+					position absolute
+					top 11px
+					left 5px
+					width 80%
+					height 5px
+					background-color white
+					&:nth-child(2)
+						top 21px
+					&:nth-child(3)
+						top 31px

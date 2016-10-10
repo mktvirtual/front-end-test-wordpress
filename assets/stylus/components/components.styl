@@ -1,0 +1,38 @@
+/* Components
+   ========================================================================== */
+.btn
+	display inline-block
+	font-family 'Montserrat', sans-serif
+	font-size em(12px)
+	font-weight 800
+	color gray
+	text-align center
+	text-transform uppercase
+	border 1px solid gray
+	padding 8px 10px
+	background-color white
+	transition all .5s ease
+	&:hover
+		background-color gray
+		border-colro white
+		color white
+.input
+	font-family 'Alegreya Sans', sans-serif
+	font-size em(24px)
+	color gray
+	font-weight 400
+	background-color white-gray
+	text-transform uppercase
+	padding 12px 0 8px 20px
+	+placeholder()
+		color gray
+.label
+	margin-bottom 11px
+	display block
+	font-family 'Montserrat', sans-serif
+	font-weight 400
+	font-size em(12px)
+	text-transform uppercase
+.mkt-virtual
+	float right
+	sprite($mkt_ass)
