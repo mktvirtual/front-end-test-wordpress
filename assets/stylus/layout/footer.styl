@@ -1,0 +1,85 @@
+/* Footer
+   ========================================================================== */
+.footer
+	width 100%
+	padding 60px 0 26px 0
+	background-color orange
+	+above(1024px)
+		background-image url('../images/bg/footer_bg.jpg')
+		background-repeat no-repeat
+		background-position 100% 0 
+	&__brand
+		@extend .large-3
+		@extend .medium-4
+		@extend .small-12
+		@extend .columns
+		span
+			margin-bottom 20px
+			font-family 'Montserrat', sans-serif
+			font-size em(12px)
+			color white
+			text-transform uppercase
+			margin-right 30px
+			&:nth-of-type(2n)
+				margin-right 0
+	&__nav
+		@extend .large-2
+		@extend .medium-4
+		@extend .small-12
+		@extend .columns
+		margin-bottom 25px
+		+above(1024px)
+			margin-bottom 0
+		li
+			margin 0 0 7px 14px
+			color white
+			& > a
+				font-family 'Montserrat', sans-serif
+				font-size em(12px)
+				color white
+				&:hover
+					text-decoration underline
+		span
+			margin-bottom 10px
+			display inline-block
+			font-family 'Montserrat', sans-serif
+			font-size em(12px)
+			color white
+			text-transform uppercase
+			+above(1024px)
+				margin-bottom 10px
+	&__segunda-via
+		@extend .btn
+		position relative
+		width 185px
+		margin-top 20px
+		padding-left 61px
+		&:before
+			sprite($boleto_gray)
+			position absolute
+			content ""
+			left 9px
+			top 50%
+			margin-top -6px
+		&:after
+			position absolute
+			left 40px
+			top 50%
+			margin-top -10.5px
+			width 1px
+			height 21px
+			content ""
+			background-color white-gray	
+		&:hover
+			&:before
+				sprite($boleto_white)
+	&__copyright
+		@extend .large-12
+		@extend .medium-12
+		@extend .small-12
+		@extend .columns
+		margin-top 60px
+		p
+			font-family 'Alegreya Sans', sans-serif
+			font-size em(12px)
+			color white
