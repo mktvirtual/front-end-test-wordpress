@@ -1,0 +1,133 @@
+//
+// Helpers
+// 1. fonts
+// 2. Center, horizontal and vertical
+// 3. Resets
+// 4. mixins
+// 5. placeholders
+// 6. Animations
+// 7. hidden
+//
+// ===============================================================
+
+
+@mixin alegreya() {
+  font-family: "Alegreya", sans-serif;
+  font-weigth: 400;
+}
+
+@mixin montserrat() {
+	font-family: 'Montserrat', sans-serif;
+  font-weigth: 400;
+}
+
+
+// 1. Center Absolute, horizontal and vertical
+
+@mixin column( $pos ) {
+  @if $pos == small {
+		width: 30%;
+    max-width: 355px;
+  }
+
+  @else if $pos == large {
+    width: 65%;
+    max-width: 725px;
+    font-size: 15px;
+  }
+
+}
+
+// 5. placeholders
+//--------------------------------
+
+%style-separator {
+	content: "";
+	left: 0;
+	right: 0;
+	height: 15px;
+	width: 1px;
+	display: inline-block;
+	background-color: #b3b3b3;
+	position: absolute;
+	margin: auto;
+}
+
+%display-flex {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin centeringAbsolute( $pos ) {
+  @if $pos == horizontal {
+	  position: absolute;
+	  left: 	0;
+	  right:  0;
+	  margin: auto;
+  }
+
+  @else if $pos == vertical {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  margin: auto;
+  }
+
+  @else if $pos == full {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 	0;
+	  right:  0;
+	  margin: auto;
+  }
+
+  @else {
+  	position: absolute;
+  }
+
+}
+
+@function z-helper($name) {
+  @if index($z-index, $name) {
+     @return (length($z-index) - index($z-index, $name)) + 1;
+  } @else {
+    @return null;
+  }
+}
+$z-index: (
+    "search-mobile",
+    "header",
+    "panel-map"
+);
+
+
+
+
+// 7. helpers hidden
+//--------------------------------
+@media(max-width: 750px) {
+	.hidden-mobile {
+		display: none;
+	}
+}
+@media(min-width: 751px) {
+	.hidden-desktop {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+.map {
+  position: relative;
+  .panel-map {
+    @include centeringAbsolute(full)
+    width: 550px;
+    background-color: #FFF;
+    padding: 20px;
+    z-index: z-helper('panel-map');
+    max-height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ada8a8;
+  }
+  .wrapper-button {
+    float: left;
+  }
+  .btn-2x {
+    height: 50px;
+    width: 190px;
+    padding: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 12px;
+  }
+  .pin-map {
+    width: 30px;
+    text-align: center;
+    border-right: 1px solid #DDD;
+    padding-right: 15px;
+    display: inline-block;
+    float: left;
+  }
+  .btn-localization {
+    font-size: 11px;
+    text-align: center;
+    color: #545151;
+    text-decoration: none;
+    padding: 0px;
+    float: left;
+    width: 120px;
+  }
+
+  .form-map {
+    position: relative;
+    width: 280px;
+    float: left;
+    margin: 0 auto;
+    .input-default {
+      width: 100%;
+    }
+    .submit {
+      right: 5px;
+      bottom: 0;
+    }
+  }
+  #map {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media(max-width: 600px) {
+  .map {
+    #map {
+      height: 400px;
+    }
+    .panel-map {
+      margin: auto;
+      width: 90%;
+      max-height: 290px;
+    }
+    .wrapper-button {
+      display: block;
+      margin: auto;
+    }
+    .separator {
+      width: 80px;
+      font-size: 12px;
+      text-align: center;
+      display: block;
+      margin: auto;
+      flex: 1 100%;
+    }
+    .form-map {
+      float: none;
+      width: 280px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+.main-content {
+  margin: 30px auto;
+}
+.super-banner {
+  position: relative;
+  img { width: 100%; }
+  .btn-super-banner {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #58207b;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    color: #f7802c;
+  }
+}
+.card-super-banner {
+  width: 100%;
+  position: relative;
+}
+
+@media(max-width: 600px) {
+  .card-super-banner {
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+
+
+
+

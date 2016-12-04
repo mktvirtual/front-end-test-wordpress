@@ -1,0 +1,58 @@
+.newsletter {
+  width: 30%;
+}
+.top-footer {
+  padding: 4em 0;
+
+  .flex-container {
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.social-network {
+  width: 50%;
+  .title {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #6C6565;
+  }
+}
+.social-item {
+    border: 1px solid #717171;
+    padding: 5px 10px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.3em;
+  .item {
+    color: #383434;
+  }
+}
+
+@media(max-width: 600px) {
+  .newsletter {
+    width: 100%;
+  }
+  .top-footer {
+    padding: 0;
+  }
+  .social-network {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

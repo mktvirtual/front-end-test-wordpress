@@ -1,0 +1,16 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+  margin-top: -8em;
+  z-index: 1;
+  img {
+    width: 100%;
+  }
+}
+
+@media(min-width: 900px) {
+  .slider {
+    height: 30em;
+    margin-top: -12em;
+  }
+}
