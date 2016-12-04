@@ -1,0 +1,115 @@
+.search {
+	border: 0;
+	padding: 5px 10px;
+}
+.form-group {
+	position: relative;
+}
+.form-map {
+	legend {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #6C6565;
+  }
+}
+
+
+// base styles search default
+// =============================
+
+.search{
+	.wrapper{
+		position: relative;
+	}
+	.search-input {
+		color: #FFF;
+		padding: 5px 10px;
+		border: 0;
+		width: 100%;
+		height: 35px;
+		background-color: transparent;
+	}
+	.search-button{
+	  padding: 9px;
+	  background-color: transparent;
+	  position: absolute;
+	  right: 0px;
+	  top: -5px;
+	  font-size: 1rem;
+	  color: #FFF;
+	}
+	.icon {
+    border-left: 2px solid #FFF;
+    padding-left: 10px;
+    color: #FFF;
+  }
+}
+
+.input-default {
+	width: 100%;
+	padding: 5px 10px;
+	height: 4em;
+	background-color: #d1d3d4;
+	border: 0;
+	text-transform: uppercase;
+	color: #777;
+}
+
+.btn-primary {
+	bottom: 0;
+	height: 25px;
+	background-color: #FFF;
+	border: 1px solid #5A5353;
+	padding: 3px 20px;
+	width: 120px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	.item {
+		color: #262222;
+		font-size: 13px;
+		display: block;
+	}
+}
+.btn-submit {
+	@include centeringAbsolute(vertical);
+}
+.form-group {
+	.btn-submit{
+		right: 5px;
+	}
+}
+
+.separator {
+	position: relative;
+	width: 30px;
+	font-size: 12px;
+	text-align: center;
+	color: #686060;
+
+	&:before {
+		@extend %style-separator;
+		top: -20px;
+	}
+	&:after {
+		@extend %style-separator;
+		bottom: -20px;
+	}
+}
+
+
+//  Global styles for the entire link that contains a link
+// =================================
+
+.item-link {
+  color: inherit;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+

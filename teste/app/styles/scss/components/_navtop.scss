@@ -1,0 +1,41 @@
+.nav-top {
+  background-color: #f47d31;
+  position: relative;
+  z-index: 10;
+  .flex-container {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navtop-list {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 11px;
+    margin-right: 10px;
+    > .item {
+      color: #FFF;
+      padding: $spacing-unit-small;
+      display: inline-block;
+    }
+  }
+  .search-desktop {
+    width: 17em;
+    padding: 0;
+    .search-input {
+      background-color: #B75D22;
+    }
+  }
+}
+@media(min-width: 700px) and (max-width: 900px) {
+  .nav-top .search-desktop {
+      width: 18%;
+  }
+}
+@media(max-width: 600px) {
+  .nav-top {
+    display: none;
+  }
+}
+
+
+

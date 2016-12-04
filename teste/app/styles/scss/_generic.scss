@@ -1,0 +1,81 @@
+// reset
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @include montserrat();
+  overflow-x: hidden;
+}
+a  {
+  text-decoration: none;
+}
+
+// remover grid system
+html {
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+button,
+fieldset {
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  @extend %display-flex;
+}
+
+// column main content
+// ----------------------------
+
+.column-large {
+  width: 65%;
+  max-width: 725px;
+
+  @media(min-width: 1200px) {
+    margin-left: 25px;
+  }
+}
+.column-small {
+  width: 30%;
+  max-width: 355px;
+}
+@media(max-width: 500px) {
+  .column-small {
+    margin: 0 auto;
+  }
+}
+@media(max-width: 884px) {
+  .column-small,
+  .column-large {
+    width: 100%;
+  }
+  .super-banner {
+    order: 2;
+  }
+  .posts-featured {
+    order: 1;
+  }
+}
+
+
+
+
+
+
+
+

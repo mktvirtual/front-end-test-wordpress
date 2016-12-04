@@ -1,0 +1,110 @@
+//
+// featured content
+// 1. cards
+// 2. media query elements
+
+
+// 1 cards
+// --------------------------
+
+.main-content {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.posts-featured {
+  @extend %display-flex;
+  justify-content: center;
+
+  .post-title,
+  .excerpt {
+    margin-bottom: 10px;
+  }
+  .excerpt {
+    font-size: 13px;
+    color: #333132;
+    @include alegreya();
+  }
+  .post-title {
+    font-size: 17px;
+    color: #333132;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  .card{
+    width: 270px;
+    position: relative;
+
+    .content,
+    .content.bottom {
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+      left: 0;
+      width: 180px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .content.topLeft {
+      top: 20px;
+      left: 20px;
+      right: auto;
+      width: 180px;
+      margin: 0 auto;
+    }
+    .content.bottomRight {
+      bottom: 60px;
+      right: 20px;
+      left: auto;
+      width: 160px;
+      margin: 0 auto;
+    }
+  }
+  .image-featured {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+// 1 media query componets
+// --------------------------
+
+@media(max-width: 600px) {
+  .posts-featured .card {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media(max-width: 1199px) {
+  .posts-featured {
+    .card{
+      margin: 0 10px 10px 10px;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .posts-featured {
+    justify-content: space-between;
+    .card {
+      width: 350px;
+      margin-bottom: 20px;
+      &:nth-child(even) {
+        margin-left: 25px;
+      }
+    }
+  }
+  .main-content {
+    margin: 30px auto;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+
+
+
