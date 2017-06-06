@@ -1,0 +1,184 @@
+
+
+@media (max-width: 1024px){
+
+
+
+	.header-mobile{
+		.logo-header{
+			figure{
+				width: 80px;
+				padding: 10px 0;
+			}
+		}
+
+
+		.drop-trigger{
+			i{
+				right:10px
+			}
+		}
+
+		.menu-list  {
+			height: 100vh;
+			top: 69px;
+			width:100%;
+			>.menu-item{
+				>.menu-link{
+					padding:20px 0;
+				}
+			}
+		}
+
+	}
+
+
+
+
+	.dicas-home--list{
+		min-height: 420px;
+		padding:20px 10%;
+	}
+	
+	.dicas-home--item{
+		margin-bottom:20px;
+	}
+
+	.dicas-home--figure{
+		padding:0 10%;
+	}
+
+
+	.main-footer{
+		background: $color-1;
+		.button-find-map{
+			>a{
+				padding:10px;
+				background:#fff;
+				&:hover{
+					background:#000;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 768px){
+
+	[class*=product][class*="--item"]:not(:first-child) .product--content{
+		width:100%;
+	}
+
+
+	.title--main{
+		border-bottom: 1px solid $color-1;
+		text-align: center;
+		&:before,
+		&:after{
+			display:none;
+		}
+	}
+
+	.dicas-home--list{
+		min-height: 420px;
+		padding:30px 2%;
+	}
+
+	.dicas-home--figure{
+		padding:0 2%;
+	}
+
+
+	.fb-icon-footer{
+		order:1;
+	}
+	.logo-footer{
+		order:2;
+	}
+
+}
+
+
+@media (max-width: 735px){
+	[class*=product][class*="-destaque"] .product--item {
+		width:calc(50% - 20px);
+	}
+	[class*=product][class*="--list"] {
+		max-height: 1040px
+	}
+	[class*=product][class*="--img"] {
+		margin-bottom: 7px;
+	}
+	[class*=product][class*="--content"] {
+		width: 124px;
+		>p,
+		>strong,
+		>span{
+			display: none;
+		}
+
+	}
+	[class*=product][class*="--item"]:not(:first-child) .product--content>h3 {
+		@include fontSize(16px); 
+	}
+
+	[class*=product][class*="--item"]:last-child .product--content,
+	[class*=product][class*="--item"]:nth-child(3) .product--content,
+	[class*=product][class*="--item"]:nth-child(2) .product--content{
+		left:0;
+	}
+
+}
+
+
+@media (max-width: 568px){
+	
+
+	[class*=product][class*="--list"] {
+		max-height: 730px
+	}
+
+
+
+	.title--main{
+		@include fontSize(40px);
+	}
+
+	.sy-box {
+		display: none;
+	}
+	.mobile-slider{
+		width:100%;
+		display:block;
+		img{
+			width:100%;
+		}
+	}
+
+
+	.main-footer{
+		.button-find-map{
+			>a{
+				margin: 0;
+				max-width: 100%;
+				width: 100%;
+				margin-top: 30px;
+			}
+		}
+	}
+
+}
+
+
+
+@media (max-width: 375px){
+
+
+	[class*=product][class*="--list"] {
+		max-height: 550px;
+	}
+
+}
+
+

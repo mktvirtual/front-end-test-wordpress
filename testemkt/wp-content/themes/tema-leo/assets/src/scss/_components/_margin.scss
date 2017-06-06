@@ -1,0 +1,20 @@
+/*MARGIN*/
+
+        @for $i from 1 through 10 {
+            .mg-#{$i * 10} {
+                margin: $i * 10px;
+            }
+            .mg-#{$i * 10}--left {
+                margin-left: $i * 10px;
+            }
+            .mg-#{$i * 10}--right {
+                margin-right: $i * 10px;
+            }
+            .mg-#{$i * 10}--top {
+                margin-top: $i * 10px;
+            }
+            .mg-#{$i * 10}--bottom {
+                margin-bottom: $i * 10px;
+            }
+        }
+

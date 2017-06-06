@@ -1,0 +1,313 @@
+/**
+ *
+ * slippry v1.4.0 - Responsive content slider for jQuery
+ * http://slippry.com
+ *
+ * Authors: Lukas Jakob Hafner - @saftsaak
+ *          Thomas Hurd - @SeenNotHurd
+ *
+ * Copyright 2016, booncon oy - http://booncon.com
+ *
+ *
+ * Released under the MIT license - http://opensource.org/licenses/MIT
+ */
+
+$color_high: #f47d31 !default;     // highlight colour
+$color_gray: #ccc !default;        // neutral colour
+$controls_size: 2.8em !default;    // size of the next/ prev buttons
+$pager_size: 1.2em !default;       // size of the pager bubbles
+$trans_ease: ease !default;        // easing for the transitions
+$mobile_break: 600px !default;     // breakpoint to use some special mobile styling
+$spinner_url: '../image/sy-loader.gif' !default;
+$arrows_url: '../image/arrows.png' !default;
+
+@mixin animation ($animation) {
+	animation-name: $animation;
+	animation-fill-mode: forwards;
+}
+
+/* kenBurns animations, very basic */
+@keyframes left-right {
+	0% {
+		transform: translateY(-20%) translateX(-10%);
+	}
+	100% {
+		transform: translateY(0%) translateX(10%);
+	}
+}
+@keyframes right-left {
+	0% {
+		transform: translateY(0%) translateX(10%);
+	}
+	100% {
+		transform: translateY(-20%) translateX(-10%);
+	}
+}
+
+/* added to the original element calling slippry */
+.sy-box {
+	z-index:0;
+	margin-top:-148px;
+	margin-bottom: 60px;
+	&.sy-loading {
+		.sy-slides-wrap, .sy-pager {
+			visibility: hidden;
+		}
+		background: url($spinner_url) 50% 50% no-repeat;
+		background-size: 32px;
+		min-height: 40px;
+
+	}
+}
+/* element that wraps the slides */
+.sy-slides-wrap {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	&:hover {
+		.sy-controls {
+			display: block;
+		}
+	}
+}
+/* element that crops the visible area to the slides */
+.sy-slides-crop {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+/* list containing the slides */
+.sy-list {
+	&.horizontal {
+		transition: left $trans_ease;
+	}
+	&.vertical {
+		transition: top $trans_ease;
+	}
+	width: 100%;
+	height: 100vh;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+/* single slide */
+.sy-slide {
+	position: absolute;
+	height: 100vh;
+	z-index: 2;
+	&.kenburns {
+		width: 140%;
+		left: -20%;
+		&.useCSS {
+			&.sy-ken {
+				&:nth-child(1n) {
+					@include animation(left-right);
+				}
+				&:nth-child(2n) {
+					@include animation(right-left);
+				}
+			}
+			transition-property: opacity;
+		}
+	}
+	&.sy-active {
+		z-index: 3;
+	}
+	> img { // with one image as content -> full size
+		margin: 0;
+		padding: 0;
+		display: block;
+		height: 100vh;
+		border: 0;
+	}
+	> a { // styling for link on whole slide
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 100%;
+		> img { // with one image as content -> full size
+			margin: 0;
+			padding: 0;
+			display: block;
+			border: 0;
+			height: 100vh;
+		}
+	}
+}
+/* next/ prev buttons, with arrows and clickable area a lot larger than the visible buttons */
+.sy-controls {
+	display: block;
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	li {
+		position: absolute;
+		width: 10%;
+		min-width: $controls_size * 1.5;
+		height: 100%;
+		z-index: 33;
+		&.sy-prev {
+			left: 0;
+			top: 0;
+			a {
+				&:after {
+					background-position: -5% 0;
+				}
+			}
+		}
+		&.sy-next {
+			right: 0;
+			top: 0;
+			a {
+				&:after {
+					background-position: 105% 0;
+				}
+			}
+		}
+		a {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: block;
+			text-indent: -9999px;
+			&:link, &:visited {
+				opacity: 0.4;
+			}
+			&:hover, &:focus {
+				opacity: 0.8;
+				outline: none;
+			}
+			&:after {
+				content: "";
+				background-image: url($arrows_url);
+				background-repeat: no-repeat;
+				background-size: cover;
+				text-align: center;
+				text-indent: 0;
+				line-height: $controls_size;
+				color: #111;
+				font-weight: 800;
+				position: absolute;
+				width: $controls_size;
+				height: $controls_size;
+				left: 50%;
+				top: 50%;
+				margin-top: -$controls_size / 2;
+				margin-left: -$controls_size / 2;
+				border-radius: 50%;
+			}
+		}
+	}
+	@media only screen and (max-device-width : $mobile_break) {
+		display: block;
+		$controls_size: $controls_size / 2;
+		li {
+			min-width: $controls_size * 1.5;
+			a {
+				&:after {
+					width: $controls_size;
+					height: $controls_size;
+					margin-top: -$controls_size / 2;
+					margin-left: -$controls_size / 2;
+				}
+			}
+		}
+
+	}
+}
+/* captions, styled fo the overlay variant */
+.sy-caption-wrap {
+	position: absolute;
+	bottom: 0;
+	z-index: 12;
+	left: 0;
+	width:100%;
+	.sy-caption {
+		position: relative;
+		width:100%;
+		left: 0;
+		background-color: rgba(229, 90, 160, 0.61);
+		color: #fff;
+		padding: 40px;
+		a{
+			text-decoration:none;
+		}
+		h2{
+			font-size:26px;
+			text-transform:uppercase;
+			display:block;
+			margin-bottom:10px;
+		}
+		p{
+			font-size:22px;
+		}
+	}
+	@media only screen and (max-device-width : $mobile_break), screen and (max-width : $mobile_break) {
+		.sy-caption {
+			left: 0;
+			bottom:0;
+			padding: 0;
+			font-size: 0.92em;
+			border-radius: 0;
+			h2{
+				margin-bottom:0;
+				font-size:17px;
+				text-align:center;
+				padding:10px 0;
+			}
+			p{
+				display:none;
+			}
+		}
+	}
+}
+/* pager bubbles */
+.sy-pager {
+	clear: both;
+	display: block;
+	width: 100%;
+	margin: -60px 0 0 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	li {
+		display: inline-block;
+		width: $pager_size;
+		height: $pager_size;
+		margin: 0 1em 0 0;
+		border-radius: 50%;
+		&.sy-active {
+			a {
+				background-color: #fff;
+			}
+		}
+		a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			text-indent: -9999px;
+			border: 1px solid #fff;
+			&:link, &:visited {
+				opacity: 1.0;
+			}
+			&:hover, &:focus {
+				opacity: 0.6;
+			}
+			background-size: 2em;
+			border-radius: 50%;
+		}
+	}
+}
+/* element to "keep/ fill" the space of the content, gets intrinsic height via js */
+.sy-filler {
+	width: 100%;
+	&.ready {
+		transition: padding 600ms ease;
+	}
+}

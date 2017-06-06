@@ -1,0 +1,15 @@
+/* RESET */
+
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+a{
+	transition:linear 0.2s all;
+}
+
