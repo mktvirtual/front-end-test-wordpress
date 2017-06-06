@@ -1,0 +1,23 @@
+/* RESPONSIVE */
+
+@each $tag in $tag-responsive {
+    @media (max-width:nth($width-responsive, index($tag-responsive, $tag))) {
+        [class*="flex-grid"] {
+            > .col,
+            > [class*="col-"],
+            > :not(.col):not([class*="col-"]) {
+                &[class*="is-#{$tag}"] {
+                    flex: 1 1 100%;
+                    width: 100%;
+                    max-width: 100%;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+        [class*="responsive-text--#{$tag}"] {
+            text-align:center;
+        }
+    }
+}
+

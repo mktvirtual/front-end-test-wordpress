@@ -1,0 +1,30 @@
+/************************************************** GRID *****************************/
+    $wrapper: 1170; //MAX-WIDTH WRAPPER
+    $grid-columns: 12; //NUMBER OF COLUMNS
+    $tag-responsive: "xs" "sm" "md" "lg" "xl"; //TAGS FOR RESPONSIVE
+    $width-responsive: 368px 568px 768px 1024px 1280px; //WIDTH FOR RESPONSIVE
+
+
+/************************************************** TYPOGRAPHY *****************************/
+$base-font: 	'Maven Pro', sans-serif;
+$variant-font: '', cursive;
+
+
+/************************************************** COLORS *********************************/
+//Default colors
+$color-1: #f47d31;
+$color-2: #c66223;
+
+
+
+/************************************************** CONVERT TO REM *********************************/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+      
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}

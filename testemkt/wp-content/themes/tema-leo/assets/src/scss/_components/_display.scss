@@ -1,0 +1,9 @@
+
+    @each $tag in $tag-responsive {
+        @media (max-width:nth($width-responsive, index($tag-responsive, $tag))) {
+            .hidden--#{$tag},
+            .hidden--#{$tag}[class*="flex-grid"] {
+                display: none;
+            }
+        }
+    }

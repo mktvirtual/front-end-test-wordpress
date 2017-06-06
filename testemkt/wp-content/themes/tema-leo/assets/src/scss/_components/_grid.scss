@@ -1,0 +1,134 @@
+/*GRID*/
+
+        .wrapper {
+            margin: auto;
+            width: 95%;
+            max-width: $wrapper*1px;
+        }
+        [class*="flex-grid"] {
+            display: flex;
+            
+            &:not(.col):not([class*="col-"]) {
+                flex-basis: 100%;
+            }
+            &:not([class*="valign-"]) {
+                align-items: stretch;
+            }
+            &:not([class*="--col"]):not([class*="--row"]) {
+                flex-direction: row;
+            }
+            &[class*="--wrap"]:not([class*="--wrap-rev"]) {
+                flex-wrap: wrap;
+            }
+            &[class*="--row-rev"] {
+                flex-direction: row-reverse;
+            }
+            &[class*="--wrap-rev"] {
+                flex-wrap: wrap-reverse;
+            }
+            &[class*="--col"]:not([class*="--col-rev"]) {
+                flex-direction: column;
+            }
+            &[class*="--col-rev"] {
+                flex-direction: column-reverse;
+            }
+            
+            //ALIGN
+            &.halign {
+                &-left {
+                    justify-content: flex-start;
+                }
+                &-center {
+                    justify-content: center;
+                }
+                &-right {
+                    justify-content: flex-end;
+                }
+                &-between {
+                    justify-content: space-between;
+                }
+                &-around {
+                    justify-content: space-around;
+                }
+            }
+            &.valign {
+                &-top {
+                    align-items: flex-start;
+                }
+                &-middle {
+                    align-items: center;
+                }
+                &-baseline {
+                    align-items: baseline;
+                }
+                &-bottom {
+                    align-items: flex-end;
+                }
+            }
+            &.calign {
+                &-top {
+                    align-content: flex-start;
+                }
+                &-middle {
+                    align-content: center;
+                }
+                &-baseline {
+                    align-content: baseline;
+                }
+                &-bottom {
+                    align-content: flex-end;
+                }
+            }
+            .self {
+                &-top {
+                    align-self: flex-start;
+                }
+                &-middle {
+                    align-self: center;
+                }
+                &-bottom {
+                    align-self: flex-end;
+                }
+                &-stretch {
+                    align-self: stretch;
+                }
+                &-baseline {
+                    align-self: baseline;
+                }
+            }
+            
+            //COLS
+            @for $i from 1 through $grid-columns {
+                @if $i == 1 {
+                    //FLEX GRID ROW
+                    &:not([class*="--col"]) {
+                        > .col {
+                            flex: 1;
+                        }
+                    }
+                    //FLEX GRID COLUMN
+                    &[class*="--col"] {
+                        > .col {
+                            flex: 1 0 auto;
+                        }
+                    }
+                    > .col {
+                        max-width: 100%;
+                    }
+                        
+                }
+                //WIDTHS
+                .col-#{$i} {
+                    flex: 1 0 calc((100% / #{$grid-columns}) * #{$i});
+                    width: calc((100% / #{$grid-columns}) * #{$i});
+                    max-width: calc((100% / #{$grid-columns}) * #{$i});
+                }
+            }
+            
+            //COL DEFAULT
+            > :not([class*="col-"]):not(.col) {
+                flex: 0 0 auto;
+            }
+        }
+
+/* /GRID*/
