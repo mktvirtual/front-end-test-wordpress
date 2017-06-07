@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body, main{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    margin-top: -11px;
+    color: #333132;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.padding{
+    padding: 0 3em;
+}
+
+.font2 {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.btn {
+    @include transition;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: white;
+    border: thin solid #58595b;
+    color: #58595b;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    font-weight: bold;
+    font-size: 12px;
+    &:hover{
+        background: #58595b;
+        color: white;
+    }
+    &.icon-left{
+        padding-left: 10px;
+        i{
+            float: left;
+            border-right: thin solid $cinza-claro;
+            padding-right: 10px;
+            margin: 3px 5px;
+        }
+    } 
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.input-btn {
+    background: #D1D2D3;
+    padding: .5em;
+    input {
+        max-width: calc(100% - 110px);
+        border: none;
+        background: none;
+        font-size: 24px;
+    }
+}

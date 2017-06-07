@@ -1,0 +1,135 @@
+$apoio-height: 35px;
+#apoio{
+    @include transition;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 5;
+    background: $laranja;
+    &, & .row{
+        height: $apoio-height;
+        font-size: 12px;
+    }
+    ul.menu{
+        color: inherit;
+        list-style: none;
+        li{
+            a{
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                height: $apoio-height;
+                line-height: $apoio-height;
+                &:hover{
+                    background: $laranja-escuro;
+                }
+                padding: 0 10px;
+                @include transition;
+            }
+            display: inline-block;
+            img{
+                vertical-align: middle;
+                margin: 0 5px;
+            }
+        }
+    }
+    .busca{
+        display: inline-block;
+        height: $apoio-height;
+        margin: 0;
+        background: $laranja-escuro;
+        input{
+            font-size: 12px;
+            height: $apoio-height;
+            background: none;
+            border: none;
+            padding-left: 10px;
+            color: white;
+            @include placeholder{
+                color: white;
+            }
+            width: 380px;
+            max-width: 15vw;
+        }
+        .submit{
+            display: inline-block;
+            vertical-align: middle;
+            width: $apoio-height;
+            border-left: thin solid white;
+            i{
+                padding: 0 10px;
+            }
+        }
+    }
+    
+    #mini-busca{
+        display: none;
+        color: white;
+        padding: 5px;
+        line-height: $apoio-height;
+        @include breakpoint(md){
+            display: flex;
+        }
+        input{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(50%);
+            position: absolute;
+            @include transition;
+            border: none;
+            color: white;
+            height: 30px;
+            padding-left: 10px;
+            background: $laranja-escuro;
+            @include placeholder{
+                color: white;
+            }
+        }
+        &:hover, &:focus, &:active{
+            input{
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    $apoio-shrink-height: 30px;
+    &.shrink{
+        background: #d1d3d4;
+        color: #58595b;
+        &, & .row{
+            max-height: $apoio-shrink-height;
+        }
+        ul.menu{
+            li{
+                a{
+                    color: #58595b;
+                    height: $apoio-shrink-height;
+                    line-height: $apoio-shrink-height;
+                    &:hover{
+                        background: #949697;
+                    }
+                }
+            }
+        }
+        .busca{
+            background: #949697;
+            &, & input{
+                height: $apoio-shrink-height;
+            }
+        }
+        #mini-busca {
+            color: #949697;
+            input{
+                background: #949697;
+                height: $apoio-shrink-height;
+            }
+        }
+    }
+    
+    
+    &.hide{
+        max-height: 0;
+    }
+}

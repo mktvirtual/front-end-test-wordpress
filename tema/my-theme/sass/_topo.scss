@@ -1,0 +1,101 @@
+#topo{
+    position: fixed;
+    width: 100vw;
+    margin: 30px auto;
+    top: 35px;
+    z-index: 5;
+    @include transition;
+    .logo img{
+        max-height: 58px;
+        @include transition;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    .menu{
+        list-style: none;
+        & > li{
+            @include transition;
+            display: inline-block;
+            margin: 0 20px;
+            & > a{
+                text-transform: uppercase;
+                line-height: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+            }
+            &:hover{
+                background: white;
+                & .submenu{
+                    transform: scaleY(1);
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            .submenu{
+                @include transition;
+                transform: scaleY(0);
+                opacity: 0;
+                transform-origin: top center;
+                visibility: hidden;
+                display: flex;
+                margin: 0;
+                background: white;
+                position: absolute;
+                font-size: 12px;
+                text-transform: none;
+                ul{
+                    list-style: none;
+                    li{
+                        &:first-child{
+                            margin-top: 10px;
+                        }
+                        @include transition;
+                        line-height: 30px;
+                        &:hover{
+                            a{
+                                color: $laranja;
+                            }
+                        }
+                        
+                    }
+                }
+                .cartao{
+                    height: 60px;
+                    width: 60px;
+                    background: #58595b;
+                    position: absolute;
+                    right: 15px;
+                    bottom: -30px;
+                    border-radius: 50%;
+                    color: white;
+                    text-transform: uppercase;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    &.shrink{
+        top: 30px;
+        margin: 0;
+        background: white;
+        .menu > li{
+            &:hover > a{
+                color: $laranja;
+            }
+        }
+        .logo img{
+            max-height: 35px;
+        }
+        &.top{
+            top: 0;
+        }
+    }
+}

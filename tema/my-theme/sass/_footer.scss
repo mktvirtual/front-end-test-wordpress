@@ -1,0 +1,38 @@
+footer{
+    background: $laranja;
+    color: white;
+    overflow: hidden;
+    padding-bottom: 50px;
+    .container{
+        margin-top: 50px;
+        @include breakpoint(sm){
+            margin-top: 5px;
+        }
+        #footer-img{
+            margin-right: -175px;
+        }
+        #links-footer{
+            padding-top: 60px;
+            @include breakpoint(sm){
+                padding-top: 5px;
+            }
+            p{
+                font-size: 12px;
+                text-align: left;
+                margin-bottom: 1em;
+                @include breakpoint(sm){
+                    text-align: center;
+                }
+            }
+            ul{
+                padding: 0;
+                text-align: left;
+                font-size: 12px;
+                line-height: 2em;
+                @include breakpoint(sm){
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

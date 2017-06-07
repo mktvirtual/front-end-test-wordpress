@@ -1,0 +1,19 @@
+#redes-sociais{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+    & > div{
+        display: inline-block;
+        a.btn{
+            color: #333132;
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            padding: 0;
+            &:hover{
+                color: white;
+                background: #333132;
+            }
+        }
+    }
+}
