@@ -745,11 +745,10 @@ section{
 .mapa_caixa{
 	margin: 0 auto;
 	margin-top:10%;
-	display:block;
 	width:50%;
 	height:32%;
-	border: 1px solid #999;
-	background-color: #fff;
+	border:0;
+	background: transparent;
 }
 .mapa_caixa_divisor{
 	display:none;
@@ -862,8 +861,8 @@ footer{
 	display:block;
 	width:50%;
 	height:32%;
-	border: 1px solid #999;
-	background-color: #fff;
+	border: 0;
+	background: transparent;
 }
 .mapa_caixa_divisor{
 	display:none;
@@ -981,8 +980,8 @@ body{
 	display:block;
 	width:85%;
 	height:32%;
-	border: 1px solid #999;
-	background-color: #fff;
+	border: 0;
+	background: transparent;
 }
 .mapa_caixa_divisor{
 	display:none;
