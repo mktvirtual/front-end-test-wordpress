@@ -1,0 +1,15 @@
+Projeto
+
+Resoluções
+
+320 pixel – Smartphones no formato retrato
+480 pixel – Smartphones no formato paisagem
+768 pixel – Tablets no formato retrato
+960 pixel – Tablets no formato paisagem e alguns monitores mais antigos
+1200 pixel – Desktops com monitores widescreen
+
+Banco de dados
+Mkt
+Usuário: ed@sitedoed.com.br
+senha: Z%IrNrwgX#l*98q%b5
+e-mail utilizado: ed@sitedoed
