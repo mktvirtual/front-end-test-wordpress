@@ -1,0 +1,1044 @@
+/*
+Theme Name: Mkt Test
+Author: Ed Olivera
+Author URI: http://sitedoed.com.br
+Version 1.0
+*/
+
+
+html, body{
+	margin: 0 auto;
+	width:100%;
+	padding:0;
+t	background-color:#f47d31;
+}
+h3{
+	font-weight:bold;
+	color: #3333;
+}
+h4{
+	color: #505050;
+}
+/*Rack*/
+::-webkit-input-placeholder {
+   color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+:-ms-input-placeholder {  
+   color: white;  
+}
+/*Rack*/
+.container{
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.central{
+	margin: 0 auto;
+	width: 90%;
+}
+.rebaixador{
+	height:95%;
+	width:100%;
+	display:block;
+	float:left;
+}
+
+.menu_sup{
+	background-color:#f47d31;
+	height:40px;
+	width:100%;
+	color: red;
+}
+.menu_sup_btn{
+	line-height:280%;
+	display:block;
+}
+.menu_sup_btn img{
+	padding-left:1em;
+	padding-right:1em;
+}
+.search_box{
+	background-color: #c66223;
+	width:316px;
+	border:none;
+	height:40px;
+	color: white;
+	float:left;
+	padding-left:0.5em;
+}
+.search_input{
+	background-color: #c66223;
+	color:white;
+	width:265px;
+	height:40px;
+	border:none;
+	float:left;
+}
+
+.search_button{ 
+	height: 30px;  
+	width:30px;
+	border-left: #fff 1px solid; 
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	margin:5px auto; 
+	float: left; 
+	background: url("../images/lupa.png") no-repeat right; 
+	cursor: pointer; 
+}
+.menu_sup a{
+	padding:0.5em;
+	font-family:Montserrat, Arial, Helvetica, Sans-serif;
+	color: #fff;
+	font-size:0.75em;
+	text-decoration:none;
+}
+.menu_sup a:hover{
+	color: #333;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	float:left;
+}
+.menu_slider{
+	display:block;
+	position:absolute;
+	background:transparent;
+	border:none;
+}
+.menu_slider::before { 
+    content: "LOGO";
+	float:left;
+    color: #f47d31;
+	font-family:Montserrat, Arial, Helvetica, Sans-serif;
+    font-weight: bold;
+	font-size:3em;
+	text-shadow:#fff 1px -1px, #fff -1px 1px, #fff 1px 1px, #000 -1px -1px
+}
+.menu_slider ul{
+	margin-top:2em;
+	margin-left:40%;
+}
+.menu_slider a{
+	font-size:1.5em;
+	color: black;
+	padding-left:1em;
+}
+.nav_slider{
+	display: block;
+	width: 100%;
+} 
+.nav_slider a:hover{
+	color: red;
+	background-color: blue;
+} 
+.nav_slider li:hover{
+	color: red;
+	background-color: blue;
+} 
+aside{
+	background-image: url("../images/aside.jpg");
+	background-repeat: no-repeat;
+	height:845px;
+	width:100%;
+}
+aside .purple{
+	height:4em;
+	width:100%;
+	display:block;
+	float:left;
+	background-color:purple;
+	color: orange;
+	font-size:0.75em;
+	font-weight: bold;
+	text-align: center;
+	padding:10px;
+}
+.section_cima1{
+	background-image: url("../images/section_cima1.jpg");
+	height:411px;
+}
+.section_cima2{
+	background-image: url("../images/section_cima2.jpg");
+	height:411px;
+	text-align:center;
+}
+.section_baixo1{
+	background-image: url("../images/section_baixo1.jpg");
+	height:411px;
+	text-indent:20%;
+	text-align:center;
+}
+.section_baixo2{
+	background-image: url("../images/section_baixo2.jpg");
+	height:411px;
+	text-align:center;
+}
+article{
+	text-align: center;
+	text-indent:5%;
+}
+article button{
+	margin-left:40%;
+}
+.btn:hover{
+	background-color:#999;
+	color:#fff;
+	border: 1px solid white;
+}
+.article1{
+	margin-top:2em;
+	display:inline-table;
+}
+.article2{
+	margin-top:14em;
+	display:inline-table;
+}
+.article3{
+	margin-top:10em;
+	margin-left:2em;
+	display:inline-table;
+}
+.article4{
+	margin-top:14em;
+	display:inline-table;
+}
+.btn{
+	display:block;
+	border: 1px solid black;
+	border-radius:0;
+	background-color: #fff;
+	font-weight:bold;
+	line-height:90%;
+}
+.btn:hover{
+	background-color:#999;
+	color:#fff;
+	border: 1px solid white;
+}
+.mapa{
+	margin-top:5em;
+	width:100%;
+	height:351px;
+	background-image: url("../images/mapa.jpg");
+	display: block;
+	float: left;
+	border: 1px solid #cccccc;
+}
+.mapa_caixa{
+	margin: 0 auto;
+	margin-top:10%;
+	display:block;
+	width:45%;
+	height:30%;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.mapa_caixa_divisor{
+	float:left;
+	padding:1.5em;
+	text-align:center;
+	height:100%;
+}
+.mapa_caixa_coluna{
+	float:left;
+	display:block;
+}
+.mapa_subcaixa{
+	width:auto;
+	background-color:#cccccc;
+}
+.mapa_subcaixa input{
+	float:left;
+}
+.mapa_subcaixa button{
+	margin:1em;
+	float:left;
+}
+.email_caixa{
+	height:4em;
+}
+.email_caixa input{
+		background-color:#cccccc;
+		border:none;
+		height:4em;
+}
+
+
+/*Rack*/
+.email_caixa ::-webkit-input-placeholder  {
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333;
+}
+.email_caixa  :-moz-placeholder { /* Firefox 18- */
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333; 
+}
+.email_caixa  ::-moz-placeholder .email_caixa {  /* Firefox 19+ */
+	text-indent:10%;
+	font-size:1.5em;  
+	color: #333;  
+}
+.email_caixa  :-ms-input-placeholder .email_caixa  {  
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333; 
+}
+/*Rack*/
+
+
+.mapa_btn{
+	line-height:90%;
+	margin-top:1.2em;
+}
+.prefooter{
+	width:100%;
+	height:50px;
+	background-color:white;
+	padding: 8em;
+}
+.redes_sociais{
+	border: 1px solid black;
+	float:left;
+	margin-left:1em;
+	cursor:pointer;
+}
+.segunda_via::before{
+	content: url("../images/cod_barras.jpg");
+	float:left;
+	line-height:300%;
+}
+.segunda_via{
+	width:16em;
+	height:4em;
+	color: #333;
+	line-height:150%;
+}
+footer{
+	padding-top:4em;
+	background-color:#f47d31;
+	background-image: url("../images/mesa.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 323px;
+	width:100%;
+	display:block;
+	float:left;
+	color: #fff;
+	margin-bottom:1px;
+}
+footer li{
+	list-style-type: circle;
+	color: #fff;
+	width:100%;
+	
+}
+footer a{
+	color:white;
+	font-size:0.85em;
+}
+footer a:hover{
+	color: black;
+	text-decoration:none;
+}
+footer .copyright{
+	margin-top:10em;
+	display:block;
+	float:left;
+	font-size:10px;
+}
+
+
+
+
+/* RESPONSIVO */
+
+/* 
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width:1200px){
+
+.navbar{
+	width:100%;
+}
+.nav_slider{
+	width:40%;
+	float:left;
+}
+.navbar-collapse{
+	width:100%;
+	overflow:hidden;
+}
+.menu_sup{
+	height:4em;
+	width:100%;
+	color: red;
+}
+.search_box{
+	width:100%;
+}
+.search_input{
+		width:80%;
+}
+.search_button{
+	width:30px;
+	height: 30px;  
+	border-left: #fff 1px solid; 
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	margin:5px auto; 
+	margin-right:10px;
+	float: right; 
+	background: url("../images/lupa.png") no-repeat right; 
+	cursor: pointer; 
+}
+aside{
+	margin:0 auto;
+	background-image: url("../images/aside.jpg");
+	background-repeat: no-repeat;
+	height:820px;
+	width:418px;
+}
+aside .purple{
+	height:4em;
+	width:100%;
+	display:block;
+	float:left;
+	background-color:purple;
+	color: orange;
+	font-size:0.75em;
+	font-weight: bold;
+	text-align: center;
+	padding:10px;
+}
+section{
+	margin:0 auto;
+	width:412px;
+}
+.section_baixo1{
+	background-image: url("../images/section_baixo1.jpg");
+	height:411px;
+	text-indent:10%;
+	text-align:center;
+}
+.central{
+	width:90%;
+}
+.mapa{
+	margin-top:5em;
+	width:100%;
+	height:351px;
+	background-image: url("../images/mapa.jpg");
+	display: block;
+	float: left;
+	border: 1px solid #cccccc;
+}
+.mapa_caixa{
+	margin: 0 auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+	height:40%;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.mapa_caixa_divisor{
+	float:left;
+	padding:1.5em;
+	text-align:center;
+	height:100%;
+}
+.mapa_caixa_coluna{
+	float:left;
+	display:block;
+}
+.mapa_subcaixa{
+	width:auto;
+	background-color:#cccccc;
+}
+.mapa_subcaixa input{
+	float:left;
+}
+.mapa_subcaixa button{
+	margin:1em;
+	float:left;
+}
+.email_caixa{
+	height:4em;
+}
+.email_caixa input{
+		background-color:#cccccc;
+		border:none;
+		height:4em;
+}
+
+
+/*Rack*/
+.email_caixa ::-webkit-input-placeholder  {
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333;
+}
+.email_caixa  :-moz-placeholder { /* Firefox 18- */
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333; 
+}
+.email_caixa  ::-moz-placeholder .email_caixa {  /* Firefox 19+ */
+	text-indent:10%;
+	font-size:1.5em;  
+	color: #333;  
+}
+.email_caixa  :-ms-input-placeholder .email_caixa  {  
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333; 
+}
+.prefooter{
+		margin-bottom:100px;
+}
+footer{
+	height:100%;
+}
+/*Rack*/
+}
+/* 
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width:960px){
+.navbar{
+	width:100%;
+}
+.nav_slider{
+	width:40%;
+	float:left;
+}
+.navbar-collapse{
+	width:100%;
+	overflow:hidden;
+}
+.menu_sup{
+	height:12em;
+	width:100%;
+	color: red;
+}
+.search_box{
+	width:100%;
+}
+.search_input{
+		width:80%;
+}
+.search_button{
+	width:30px;
+	height: 30px;  
+	border-left: #fff 1px solid; 
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	margin:5px auto; 
+	margin-right:10px;
+	float: right; 
+	background: url("../images/lupa.png") no-repeat right; 
+	cursor: pointer; 
+}
+aside{
+	margin:0 auto;
+	background-image: url("../images/aside.jpg");
+	background-repeat: no-repeat;
+	height:845px;
+	width:418px;
+}
+aside .purple{
+	height:4em;
+	width:100%;
+	display:block;
+	float:left;
+	background-color:purple;
+	color: orange;
+	font-size:0.75em;
+	font-weight: bold;
+	text-align: center;
+	padding:10px;
+}
+section{
+	margin:0 auto;
+	width:412px;
+}
+.section_baixo1{
+	background-image: url("../images/section_baixo1.jpg");
+	height:411px;
+	text-indent:10%;
+	text-align:center;
+}
+.central{
+	width:90%;
+}
+.mapa{
+	margin-top:5em;
+	width:100%;
+	height:351px;
+	background-image: url("../images/mapa.jpg");
+	display: block;
+	float: left;
+	border: 1px solid #cccccc;
+}
+.mapa_caixa{
+	margin: 0 auto;
+	margin-top:10%;
+	display:block;
+	width:80%;
+	height:40%;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.mapa_caixa_divisor{
+	float:left;
+	padding:1.5em;
+	text-align:center;
+	height:100%;
+}
+.mapa_caixa_coluna{
+	float:left;
+	display:block;
+}
+.mapa_subcaixa{
+	width:auto;
+	background-color:#cccccc;
+}
+.mapa_subcaixa input{
+	float:left;
+}
+.mapa_subcaixa button{
+	margin:1em;
+	float:left;
+}
+.email_caixa{
+	height:4em;
+}
+.email_caixa input{
+		background-color:#cccccc;
+		border:none;
+		height:4em;
+}
+
+
+/*Rack*/
+.email_caixa ::-webkit-input-placeholder  {
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333;
+}
+.email_caixa  :-moz-placeholder { /* Firefox 18- */
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333; 
+}
+.email_caixa  ::-moz-placeholder .email_caixa {  /* Firefox 19+ */
+	text-indent:10%;
+	font-size:1.5em;  
+	color: #333;  
+}
+.email_caixa  :-ms-input-placeholder .email_caixa  {  
+	text-indent:10%;
+	font-size:1.5em;
+	color: #333; 
+}
+.prefooter{
+		margin-bottom:100px;
+}
+footer{
+	height:100%;
+}
+/*Rack*/
+}
+/* 
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+
+
+/* 
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width:768px){
+.navbar{
+	width:100%;
+}
+.nav_slider{
+	width:40%;
+	float:left;
+}
+.navbar-collapse{
+	width:100%;
+	overflow:hidden;
+}
+.menu_sup{
+	height:12em;
+	width:100%;
+	color: red;
+}
+.search_box{
+	width:100%;
+}
+.search_input{
+		width:80%;
+}
+.search_button{
+	width:30px;
+	height: 30px;  
+	border-left: #fff 1px solid; 
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	margin:5px auto; 
+	margin-right:10px;
+	float: right; 
+	background: url("../images/lupa.png") no-repeat right; 
+	cursor: pointer; 
+}
+aside{
+	margin:0 auto;
+	background-image: url("../images/aside.jpg");
+	background-repeat: no-repeat;
+	height:845px;
+	width:418px;
+}
+aside .purple{
+	height:4em;
+	width:100%;
+	display:block;
+	float:left;
+	background-color:purple;
+	color: orange;
+	font-size:0.75em;
+	font-weight: bold;
+	text-align: center;
+	padding:10px;
+}
+section{
+	margin:0 auto;
+	width:412px;
+}
+.section_baixo1{
+	background-image: url("../images/section_baixo1.jpg");
+	height:411px;
+	text-indent:10%;
+	text-align:center;
+}
+.central{
+	width:90%;
+}
+.mapa li{
+	float:left;
+}
+.mapa_caixa{
+	margin: 0 auto;
+	margin-top:10%;
+	display:block;
+	width:50%;
+	height:32%;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.mapa_caixa_divisor{
+	display:none;
+}
+.mapa_caixa_coluna{
+	float:left;
+	display:block;
+}
+.email_caixa{
+	height:2em;
+}
+.email_caixa li{
+	display:none;
+}
+.email_caixa input{
+		background-color:#cccccc;
+		border:none;
+		height:2em;
+		width:40%;
+}
+.email_caixa .btn{
+	width:6em;
+	font-size:0.70em;
+}
+.assine{
+	display:none;
+}
+.mapa_subcaixa{
+	width:100%;
+	background-color:#cccccc;
+	display:none;
+	float:left;
+}
+.mapa_subcaixa input{
+	float:left;
+	width:6em;
+	margin-top:0.5em;
+}
+.mapa_subcaixa button{
+	margin:1em;
+	float:left;
+}
+.redes_sociais{
+	border: 1px solid black;
+	float:left;
+	margin-left:1em;
+	cursor:pointer;
+}
+.col-md-5 li{
+	font-size:1em;
+	float:left;
+	width:33%;
+}
+footer{
+	height:100%;
+}	
+/* 
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+	
+}
+/* 
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width:480px){
+.navbar{
+	width:100%;
+}
+.nav_slider{
+	width:40%;
+	float:left;
+}
+.navbar-collapse{
+	width:100%;
+	overflow:hidden;
+}
+.menu_sup{
+	height:12em;
+	width:100%;
+	color: red;
+}
+.search_box{
+	width:100%;
+}
+.search_input{
+		width:80%;
+}
+.search_button{
+	width:30px;
+	height: 30px;  
+	border-left: #fff 1px solid; 
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	margin:5px auto; 
+	margin-right:10px;
+	float: right; 
+	background: url("../images/lupa.png") no-repeat right; 
+	cursor: pointer; 
+}
+.central{
+	width:90%;
+}
+.mapa li{
+	float:left;
+}
+.mapa_caixa{
+	margin: 0 auto;
+	margin-top:10%;
+	display:block;
+	width:50%;
+	height:32%;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.mapa_caixa_divisor{
+	display:none;
+}
+.mapa_caixa_coluna{
+	float:left;
+	display:block;
+}
+.email_caixa{
+	height:2em;
+}
+.email_caixa li{
+	display:none;
+}
+.email_caixa input{
+		background-color:#cccccc;
+		border:none;
+		height:2em;
+		width:40%;
+}
+.email_caixa .btn{
+	width:6em;
+	font-size:0.70em;
+}
+.assine{
+	display:none;
+}
+.mapa_subcaixa{
+	width:100%;
+	background-color:#cccccc;
+	display:none;
+	float:left;
+}
+.mapa_subcaixa input{
+	float:left;
+	width:6em;
+	margin-top:0.5em;
+}
+.mapa_subcaixa button{
+	margin:1em;
+	float:left;
+}
+.redes_sociais{
+	border: 1px solid black;
+	float:left;
+	margin-left:1em;
+	cursor:pointer;
+}
+.col-md-5 li{
+	font-size:1em;
+	float:left;
+	width:33%;
+}
+footer{
+	height:100%;
+}
+/*480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+
+
+}
+/* 
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width:320px){
+body{
+	 overflow-x:hidden;
+}
+.navbar{
+	width:100%;
+}
+.nav_slider{
+	width:90%;
+	float:left;
+}
+.navbar-collapse{
+	width:100%;
+	overflow:hidden;
+}
+.menu_sup{
+	height:12em;
+	width:100%;
+	color: red;
+}
+.search_box{
+	width:100%;
+}
+.search_input{
+		width:80%;
+}
+.search_button{
+	width:30px;
+	height: 30px;  
+	border-left: #fff 1px solid; 
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	margin:5px auto; 
+	margin-right:10px;
+	float: right; 
+	background: url("../images/lupa.png") no-repeat right; 
+	cursor: pointer; 
+	
+	
+}
+.central{
+	width:90%;
+}
+.mapa li{
+	float:left;
+}
+.mapa_caixa{
+	margin: 0 auto;
+	margin-top:10%;
+	display:block;
+	width:85%;
+	height:32%;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.mapa_caixa_divisor{
+	display:none;
+}
+.mapa_caixa_coluna{
+	float:left;
+	display:block;
+}
+.email_caixa{
+	height:2em;
+}
+.email_caixa li{
+	display:none;
+}
+.email_caixa input{
+		background-color:#cccccc;
+		border:none;
+		height:2em;
+		width:40%;
+}
+.email_caixa .btn{
+	width:6em;
+	font-size:0.70em;
+}
+
+.assine{
+	display:none;
+}
+.mapa_subcaixa{
+	width:100%;
+	background-color:#cccccc;
+	display:none;
+	float:left;
+}
+.mapa_subcaixa input{
+	float:left;
+	width:6em;
+	margin-top:0.5em;
+}
+.mapa_subcaixa button{
+	margin:1em;
+	float:left;
+}
+.redes_sociais{
+	border: 1px solid black;
+	float:left;
+	margin-left:1em;
+	cursor:pointer;
+}
+.col-md-5 h6{
+	font-size:1em;
+	float:left;
+	width:100%;
+}
+footer{
+	height:100%;
+}
+
+}/*fechamento RESPONSIVO*/
