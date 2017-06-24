@@ -108,7 +108,7 @@
 
                 <!-- First-Slide -->
                 <div class="item active">
-                    <img src="images/banner.png" />
+                    <img src="images/banner.png" alt="" class="img-responsive"/>
                     <div class="carousel-caption kb_caption">
                     </div>
                 </div>
@@ -137,7 +137,6 @@
              </div>
             </div>                  
          </div>
-      </div>
       <div class="socc">
          <div class="container">
             <section class="gallery-info" id="gallery">
@@ -322,21 +321,6 @@
 <!-- for bootstrap working -->
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
 <!-- //here ends scrolling icon -->    
     
     
