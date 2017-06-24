@@ -101,7 +101,15 @@
                    
                </ul>
                 
-                <div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+              
+			
+        </div>
+             
+                        
+         </div>
+          
+          
+          <div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
 
             <!-- Wrapper-for-Slides -->
             <div class="carousel-inner" role="listbox">
@@ -132,11 +140,14 @@
                 <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-			
-        </div>
+             
+             
              </div>
-            </div>                  
-         </div>
+            </div>         
+          
+          
+          
+          
       <div class="socc">
          <div class="container">
             <section class="gallery-info" id="gallery">
@@ -196,9 +207,9 @@
 
       
       <fieldset>
+                       
                         <input  style="background:orange" type="text" id="txtEndereco" name="txtEndereco" placeholder="insira seu endereço" />
-                        <input  type="button" id="btnEndereco" name="btnEndereco" value="Mostrar no mapa" placeholder="Insira seu Endereço" />
-
+                                 <input  type="button" id="btnEndereco" name="btnEndereco" value="Localizar" placeholder="Insira seu Endereço" />
 
                         <div id="mapa" style="width: 100%; height: 500px" allowfullscreen></div>
       </fieldset>
@@ -316,15 +327,6 @@
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-</script>
-<!-- //end-smoth-scrolling -->
-<!-- for bootstrap working -->
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-<!-- //here ends scrolling icon -->    
-    
-    
-    
-    
+</script>    
    </body>
 </html>
