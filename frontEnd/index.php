@@ -1,21 +1,28 @@
-<!--
-   Author: W3layouts
-   Author URL: http://w3layouts.com
-   License: Creative Commons Attribution 3.0 Unported
-   License URL: http://creativecommons.org/licenses/by/3.0/
-   -->
+
 <!DOCTYPE HTML>
 <html>
    <head>
       <title>Front-End Jonas Gama</title>
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
       <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+       <link href="css/ken-burns.css" rel="stylesheet" type="text/css" media="all" />
+       <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+       <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="keywords" content="Responsivo, site, template, Bootstrap Web Template, Flat Web Templates, Andriod Compatible web template, 
          Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
       <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
       <script src="js/jquery.min.js"></script>
+      <!-- js -->
+   <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+   <script type="text/javascript" src="js/main.js"></script>
+   <script src="js/lightbox-plus-jquery.min.js"> </script>
+
+	
+       
+       
       <script>$(document).ready(function(c) {
          $('.alert-close').on('click', function(c){
          	$('.message').fadeOut('slow', function(c){
@@ -77,7 +84,7 @@
          <div class="container">
             <div class="header-bottom">
                <div class="logo">
-                  <a href="index.html"><img src="images/Logo.png" class="img-responsive" alt=""></a>
+                  <a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>                
                </div>
             </div>
             <div class="banner-info">
@@ -91,8 +98,44 @@
                   <li>
                   </li>
                   <div class="clearfix"> </div>
+                   
                </ul>
+                
+                <div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+
+            <!-- Wrapper-for-Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- First-Slide -->
+                <div class="item active">
+                    <img src="images/banner.png" />
+                    <div class="carousel-caption kb_caption">
+                    </div>
+                </div>
+
+                <!-- Second-Slide -->
+                <div class="item">
+                    <img src="images/Banner02.png" alt="" class="img-responsive" />
+                    <div class="carousel-caption kb_caption kb_caption_right">
+                    </div>
+                </div>
             </div>
+			
+            <!-- Left-Button -->
+            <a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right-Button -->
+            <a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+			
+        </div>
+             </div>
+            </div>                  
          </div>
       </div>
       <div class="socc">
@@ -112,10 +155,59 @@
       </div>
       <!-- socc -->
       <!-- become -->
-      <!-- map -->
-      <section class="map-w3" data-aos="zoom-in">
-         <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380510.6741687111!2d-88.01234121699822!3d41.83390417061058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1455598377120" style="border:0" allowfullscreen></iframe>
-      </section>
+      <!-- map --> 
+    
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" type="text/css" rel="stylesheet" />
+        <link href="css/estilo.css" type="text/css" rel="stylesheet" />
+
+    
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/mapa.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+
+<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-4361956-23']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]>
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+   
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3975826824217108"
+     data-ad-slot="9972424672"
+     data-ad-format="auto"></ins>
+
+    
+    
+  <form method="post" action="index.html">     
+
+      
+      <fieldset>
+                        <input  style="background:orange" type="text" id="txtEndereco" name="txtEndereco" placeholder="insira seu endereço" />
+                        <input  type="button" id="btnEndereco" name="btnEndereco" value="Mostrar no mapa" placeholder="Insira seu Endereço" />
+
+
+                        <div id="mapa" style="width: 100%; height: 500px" allowfullscreen></div>
+      </fieldset>
+            </form>
+
+
+    
+    
       <div class="footer-bottom">
          <div class="container">
             <p>ASSINE A NEWSLETTER DO LOGO<br><br>
@@ -169,5 +261,86 @@
          <br>
          <p>2015, Lojas Logo. Todos os direitos reservados.</p>
       </div>
+<!-- required-js-files-->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+								 <!--//required-js-files-->
+
+      <script type="text/javascript">
+					$(window).load(function() {
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: { 
+								portrait: { 
+									changePoint:480,
+									visibleItems: 1
+								}, 
+								landscape: { 
+									changePoint:640,
+									visibleItems:2
+								},
+								tablet: { 
+									changePoint:768,
+									visibleItems: 3
+								}
+							}
+						});
+						
+					});
+				</script>
+				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<!-- //js -->
+   <!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //end-smoth-scrolling -->
+<!-- for bootstrap working -->
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->    
+    
+    
+    
+    
    </body>
 </html>

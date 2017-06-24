@@ -379,7 +379,6 @@ float: right;
 }
 
 .banner {
- background:#ffffff url('../images/banner.png') no-repeat 6px 6px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
