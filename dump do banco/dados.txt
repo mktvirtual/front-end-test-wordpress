@@ -1,0 +1,7 @@
+banco: wordpress
+user: root
+pass: root
+
+user admin
+frontendmkt
+Cn#9uIBkGAW#ZVow5%
