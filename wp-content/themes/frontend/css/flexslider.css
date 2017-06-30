@@ -1,0 +1,242 @@
+/*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ * @package Palm Beach
+ */
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.zeeflex-container a:hover,
+.zeeflex-slider a:hover,
+.zeeflex-container a:focus,
+.zeeflex-slider a:focus {
+	outline: none;
+}
+.zeeslides,
+.zeeslides > li,
+.zeeflex-control-nav,
+.zeeflex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.zeeflex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.zeeflexslider {
+	margin: 0;
+	padding: 0;
+}
+.zeeflexslider .zeeslides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+.zeeflexslider .zeeslides img {
+	display: block;
+	width: 100%;
+}
+.zeeflexslider .zeeslides:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: "\0020";
+	line-height: 0;
+}
+html[xmlns] .zeeflexslider .zeeslides {
+	display: block;
+}
+* html .zeeflexslider .zeeslides {
+	height: 1%;
+}
+.no-js .zeeflexslider .zeeslides > li:first-child {
+	display: block;
+}
+
+/* ====================================================================================================================
+ * Palm Beach Slider Theme
+ * ====================================================================================================================*/
+
+.post-slider-container {
+	overflow: hidden;
+	margin: -1px 0 0;
+	width: 100%;
+}
+
+.post-slider-wrap {
+	position: relative;
+}
+
+.post-slider, .zeeflexslider .zeeslides {
+	zoom: 1;
+}
+
+.post-slider .zeeslide {
+	position: relative;
+}
+
+.zeeflex-viewport {
+	max-height: 2000px;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.post-slider .zeeslide .slide-post {
+	overflow: hidden;
+	width: 100%;
+}
+
+.post-slider .zeeslide .slide-post .header-title-image {
+	margin: 0;
+}
+
+.post-slider .zeeslide .header-title a:link,
+.post-slider .zeeslide .header-title a:visited {
+	color: #fff;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.post-slider .zeeslide .header-title a:hover,
+.post-slider .zeeslide .header-title a:active {
+	color: #ccc;
+}
+
+.post-slider-controls {
+	clear: left;
+}
+
+/* Direction Nav */
+.post-slider-controls .zeeflex-direction-nav {
+	*height: 0;
+}
+
+.post-slider-controls .zeeflex-direction-nav a {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	display: block;
+	margin: -80px 0 0;
+	width: 80px;
+	height: 120px;
+	text-align: left;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.post-slider-controls .zeeflex-direction-nav .zeeflex-prev {
+	left: 1em;
+}
+
+.post-slider-controls .zeeflex-direction-nav .zeeflex-next {
+	right: 1em;
+}
+
+.post-slider-controls .zeeflex-direction-nav a:before {
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+	vertical-align: text-bottom;
+	text-decoration: inherit;
+	text-shadow: 0 0 10px #000;
+	font: normal 90px Genericons;
+	opacity: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.post-slider-wrap:hover .post-slider-controls .zeeflex-direction-nav a:before {
+	opacity: 0.5;
+}
+
+.post-slider-controls .zeeflex-direction-nav a.zeeflex-next:before {
+	margin: 10px 0 0;
+	content: '\f431';
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+}
+
+.post-slider-controls .zeeflex-direction-nav a.zeeflex-prev:before {
+	margin: 15px 0 0 -5px;
+	content: '\f431';
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+}
+
+.post-slider-wrap:hover .post-slider-controls .zeeflex-direction-nav a:hover:before,
+.post-slider-controls .zeeflex-direction-nav a:hover:before {
+	text-decoration: none;
+	opacity: 1;
+}
+
+/* Control Nav */
+.post-slider-controls .zeeflex-control-nav {
+	position: absolute;
+	bottom: 1em;
+	z-index: 99;
+	width: 100%;
+	text-align: center;
+}
+
+.post-slider-controls .zeeflex-control-nav li {
+	display: inline-block;
+	*display: inline;
+	margin: 0 4px;
+	zoom: 1;
+}
+
+.post-slider-controls .zeeflex-control-nav li a {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background: rgba(255,255,255,0.5);
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.post-slider-controls .zeeflex-control-nav li a:hover {
+	background: rgba(255,255,255,0.7);
+}
+
+.post-slider-controls .zeeflex-control-nav li a.zeeflex-active {
+	background: rgba(255,255,255,0.9);
+	cursor: default;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 90em) {
+	.post-slider .zeeslide .header-title-wrap {
+		max-width: 85%;
+	}
+
+}
+
+@media only screen and (max-width: 60em) {
+	.post-slider .zeeslide .header-title-wrap {
+		max-width: 100%;
+	}
+
+	.post-slider-controls .zeeflex-direction-nav {
+		display: none;
+	}
+
+}
