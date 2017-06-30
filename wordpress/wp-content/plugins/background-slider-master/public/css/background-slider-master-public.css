@@ -1,0 +1,151 @@
+html,
+body {
+    height: 100%;
+}
+* {
+    outline: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #000;
+}
+#bsm-toolbar {
+    position: fixed;
+    z-index: 3;
+    right: 3%;
+    top: 3%;
+    padding: 5px;
+    width: 45px;
+}
+#bsm-toolbar img {
+    border: none;
+}
+#bsm-img-title {
+    position: fixed;
+    z-index: 3;
+    left: 10px;
+    top: 76px;
+    padding: 10px;
+    background: url(../assets/fs_img_g_bg.png);
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+#bsm-bg {
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+	z-index: -1;
+}
+.clone {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bsm-bgimg {
+    display: none;
+    -ms-interpolation-mode: bicubic;
+    max-width: none!important;
+}
+#bsm-preloader {
+    position: relative;
+    z-index: 3;
+    width: 32px;
+    padding: 20px;
+    top: 80px;
+    margin: auto;
+}
+#bsm-thumbnails-wrapper {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: url(../assets/empty.gif);
+    /* stupid ie needs a background value to understand hover area */
+}
+#bsm-outer-container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin: 40px auto 0;
+}
+#bsm-outer-container .thumbScroller {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#bsm-outer-container .thumbScroller,
+#bsm-outer-container .thumbScroller .container,
+#bsm-outer-container .thumbScroller .content {
+    height: inherit;
+}
+#bsm-outer-container .thumbScroller .container {
+    position: relative;
+    left: 0;
+    width: inherit;
+    padding: 0;
+    margin: 0;
+    max-width: none !important;
+}
+#bsm-outer-container .thumbScroller .content {
+    float: left;
+}
+#bsm-outer-container .thumbScroller .content div {
+    margin: 5px;
+    height: 100%;
+}
+#bsm-outer-container .thumbScroller img {
+    border: 5px solid #fff;
+}
+#bsm-outer-container .thumbScroller .content div a {
+    display: block;
+    padding: 5px;
+}
+
+.BSMnextImageBtn,
+.BSMprevImageBtn {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 49%;
+    margin: -25px 10px 0 10px;
+    z-index: 3;
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.BSMnextImageBtn:hover,
+.BSMprevImageBtn:hover {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.85;
+}
+.BSMnextImageBtn {
+    right: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+.BSMprevImageBtn {
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+@media only screen 
+    and (max-device-width: 640px), 
+    only screen and (max-device-width: 667px), 
+    only screen and (max-width: 480px)
+{ 
+	#bsm-outer-container {
+		display:none;
+	}
+}

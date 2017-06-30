@@ -1,0 +1,187 @@
+div#wp-master-info-panel {
+    margin: 15px;
+    padding: 10px;
+    background-color: gold;
+}
+div#wp-master-info-panel h3 {
+    margin: 10px;
+}
+div#wp-master-info-panel h4 {
+    margin: 10px;
+}
+div#wp-master-info-panel div.wp-master-info-section p {
+    font-size: 16px;
+		margin:5px;
+}
+div#wp-master-info-panel div.wp-master-info-section p a {
+	font-weight:bold;
+}
+div#wp-master-info-panel div.wp-master-promo-section {
+    padding: 15px;
+    background-color: blanchedalmond;
+    margin: 10px;
+}
+div#wp-master-info-panel div.wp-master-promo-section p {
+	margin: 5px 10px;
+}
+
+#bsm-images-container div {
+  display: inline-block;
+}
+
+/***Instructions Styles***/
+div#bsm-add-meida-instruction h3 {
+  padding-left: 0;
+}
+
+p.bsm-notice {
+	font-size: 1.2em;
+    background-color: #A2FFCA;
+    padding: 10px;
+    text-align: center;
+}
+
+p.bsm-warning{
+	font-size: 1.2em;
+    color: #3C3C3C;
+    display: none;
+    text-align: center;
+    background-color: #F7DAD2;
+    padding: 10px;
+    font-weight: bold;
+}
+/* jquery ui sortable style */
+#bsm-images-container { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+}
+
+#bsm-images-container li {
+	margin: 3px;
+    padding: 5px;
+    float: left;
+    font-size: 1em;
+    text-align: center;
+    background-color: #A1E8BF;
+}
+#bsm-images-container li.bsm-image-container {
+  width: 150px;
+  height: 190px;
+  position:relative;
+}
+#bsm-images-container li.bsm-image-container:hover {
+	cursor:move;
+}
+#bsm-images-container li.bsm-image-container img.bsm-thumbnail {
+  max-width: 100%;
+  height: 150px;
+}	
+#bsm-images-container li.bsm-image-container label {
+	font-size: 1em;
+    line-height: 1.2em;
+    height: 2.5em;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+#bsm-images-container li.bsm-image-container img.bsm-image-remove {
+	width:25px;
+	height:25px;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+#bsm-images-container li.bsm-image-container img.bsm-image-remove:hover {
+	cursor:pointer;	
+}
+#bsm-images-container li.bsm-image-container img.bsm-image-move {
+    width: 25px;
+    height: 25px;
+    position:absolute;
+	top:10px;
+	left:10px;
+}
+/*CSS Trick Clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* wp footer fix */
+#wpfooter {
+    position: relative !important;
+}
+
+/* Settings Page */
+.icanwp-promo {
+	background-color: orange;
+	padding: 5px 15px;
+	margin: 5px 15px 5px 0;
+	display: block;
+	color: #fff;
+}
+
+.icanwp-promo h3 { 
+	color:#fff;
+	font-size: 20px;
+}
+
+.icanwp-promo ul {
+	list-style: disc;
+	margin: 0 0 25px 25px;
+	font-size: 16px;
+}
+
+.icanwp-promo a.icanwp-action {
+	padding: 10px 30px;
+	background-color: #419841;
+	margin: 5px 24px 0 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #eee;
+	display: inline-block;
+}
+.icanwp-promo a.icanwp-action:hover {
+	box-shadow: none;
+	padding: 12px 32px;
+}
+.icanwp-promo a.icanwp-action-hot {
+	padding: 10px 30px;
+	background-color: #1027ce;
+	margin: 5px 24px 0 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #eee;
+	display: inline-block;
+}
+.icanwp-promo a.icanwp-action-hot:hover {
+	box-shadow: none;
+	padding: 12px 32px;
+}
+.icanwp-promo p.icanwp-desc {
+	font-size: 17px;
+	margin: 5px;
+}	
+
+.icanwp-promo p.icanwp-desc a.icanwp-promo-line {
+    color: #1116e8;
+    font-weight: bold;
+    font-style: italic;
+}
