@@ -1,0 +1,272 @@
+#ap-font-awesome-list{
+    margin-bottom: 10px 
+}
+#ap-font-awesome-list ul{
+    text-align: center; 
+    height: 300px; 
+    overflow-y:scroll; 
+    position: relative; 
+    border:1px solid #EEE; 
+    margin: 0
+}
+.ap-font-icon-selector{ 
+    background: #F6F6F6; 
+    padding: 10px;
+    border:1px solid #EEE; 
+    border-top:none;
+}
+#ap-font-awesome-list li{
+    width:60px;
+    height: 60px; 
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+}
+#ap-font-awesome-list li:hover, 
+#ap-font-awesome-list li.selected{
+	background: #F6F6F6;
+}
+#ap-font-awesome-list li .fa{
+	font-size: 32px;
+	line-height: 60px;
+	color:#000;
+	display: block;
+}
+.icon-receiver {
+    background: none repeat scroll 0 0 #f6f6f6;
+    display: block;
+    font-size: 32px;
+    text-align: center;
+}
+.icon-receiver .fa{
+    margin: 10px;
+}
+input.small-text[type="number"]{
+    width: 110px;
+    padding: 3px 5px;
+}
+.ap-font-icon-selector{
+    text-align: center;
+}
+.ap-font-icon-selector .button{
+    width: 80%;
+}
+.team-thumb{
+    width: 300px;
+    margin-top: 5px;
+}
+.widget-upload{
+    position: relative;
+    margin-bottom: 10px;
+}
+.widget-upload img{
+    border:1px solid #CCC;
+    padding: 4px;
+}
+
+.widget-upload .remove-image {
+    background: url("../images/ico-delete.png");
+    bottom: 4px;
+    display: block;
+    float: left;
+    height: 16px;
+    left: -4px;
+    padding: 0;
+    position: absolute;
+    text-indent: -9999px;
+    width: 16px;
+    cursor: pointer;
+}
+.sub-option img{ 
+    max-width: 100%;
+}
+.page-meta-box.form-table td{
+    padding: 5px 10px;
+}
+.hide-radio {
+    margin-bottom: 6px;
+    position: relative;
+    margin-right: 25px;
+    display: inline-block;
+}
+.hide-radio img, .hide-radio label {
+    display: block;
+}
+.hide-radio input[type="radio"] {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+}
+.hide-radio input[type="radio"] + label{
+    border:2px solid transparent;
+}
+.hide-radio input[type="radio"]:checked + label{
+    border:2px solid #CCC;
+}
+.page-banner-thumb{
+    max-width: 600px;
+    margin-top: 5px;
+}
+#upload-header-image{
+    width:460px; 
+}
+.ui-dialog.panels-admin-dialog.ui-widget .ui-dialog-content > *:last-child{
+    margin-bottom: 20px;
+}
+
+
+/* Switch CSS */
+.switch_options{
+    display: block;
+}
+.switch_options:before,
+.switch_options:after{
+    content:'.';
+    display:block;
+    overflow:hidden;
+    visibility:hidden;
+    font-size:0;
+    line-height:0;
+    width:0;
+    height:0;
+}
+.switch_options:after{
+	clear:both;
+}
+.switch_options span{
+    display: inline-block;
+    float: left;
+    padding: 4px 9px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+    border: 1px solid #aaa;
+    text-transform: uppercase;
+    line-height: 16px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+.switch_options span:first-of-type{
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+}
+.switch_options span:last-of-type{
+    border-radius: 0 2px 2px 0;
+    border-left: 0;
+}
+.switch_options span:hover{
+    background: #fafafa;
+}
+.switch_options span.selected{
+    background: #00b7ea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00b7ea 0%, #009ec3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b7ea), color-stop(100%,#009ec3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #00b7ea 0%,#009ec3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+    border-color: #0082A3;
+    color: #fff;
+}
+
+/*User stick note*/
+.user_sticky_note {
+   padding: 0px 10px 15px;
+   background: #EEE;
+   border-bottom: 1px solid #EEE;
+}
+
+h3.sticky_title {
+   font-size: 22px !important;
+   margin-top: 12px;
+   margin-bottom: 11px;
+}
+
+span.sticky_info_row {
+   display: block;
+   line-height: 23px;
+}
+
+label.row-element {
+   font-weight: bold;
+}
+
+.upgrade-pro{
+    background-color: #e24545;
+    color: #FFF !important;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 1;
+    display: block;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.sticky_info_row .button{
+    width: 100%;
+    margin: 2px 0;
+    text-align: center;
+}
+
+#customize-control-theme_info_more_theme span,
+#customize-control-theme_info_pro_theme span,
+#customize-control-theme_info_useful_plugins span
+{width: 100%; display: block;
+    text-align: center;}
+
+.admin-pro-feature-list li{
+ 
+    border-bottom: 1px solid #DBDBDB;
+    margin: 0;
+    padding: 10px 0px;
+    line-height: 1;
+}
+.admin-pro-feature-list li:before{
+     content: "\f345";
+    font: 400 20px/1 dashicons;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+ 
+ }
+.admin-pro-feature-list span{
+     display: inline-block;
+    width: 90%;
+    vertical-align: top;}
+.admin-pro-feature-list{
+    margin: 0 5px;
+}
+.buynow{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.ui-button{
+    height: 90px;
+    padding-top: 10px;
+    margin: 2px 0;
+    width: 48%;
+}
+.ui-state-active img{
+    background: #fafafa none repeat scroll 0 0;
+    border: 2px solid #999;
+    color: #23282d;
+}
+#customize-control-accesspress_background_image_pattern img, .customize-control-radioimage img {
+    width: 40%;
+    padding:10px;
+}
+
