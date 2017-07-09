@@ -1,0 +1,27 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+/* /FONTS */
+
+/*RESET CSS*/
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    vertical-align: baseline;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html, body {
+    height: 100%;
+    min-height: 100%;
+
+    //FLEXBOX IOS
+    width: 100%;
+}
+body {
+   font-size: 14px; 
+}
+/* /RESET CSS*/

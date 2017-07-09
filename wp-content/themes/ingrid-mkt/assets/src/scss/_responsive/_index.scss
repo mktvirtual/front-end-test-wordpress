@@ -1,0 +1,41 @@
+// MD
+@media screen and (max-width: 768px) {
+    .home {
+        .destaques {
+            .content {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+// SM
+@media screen and (max-width: 425px) {
+    .home {
+        .destaques {
+            &__lista {
+                align-items: flex-end;
+            }
+            .lista {
+                &__item {
+                    width: calc(50% - 20px);
+                }
+                &__figure {
+                    height: 100%;
+                }
+            }
+        }
+        .localizacao {
+            &__separador {
+                width: 100%;
+            }
+        }
+    }
+    .redes-sociais {
+        width: 100%;
+        margin: 20px 0;
+        &__lista {
+            justify-content: space-around;
+        }
+    }
+}
