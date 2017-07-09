@@ -1,0 +1,113 @@
+/* CLASSES */
+
+//DEFAULT
+.wrapper {
+    margin: auto;
+    max-width: 1124px;
+    width: 95%;
+}
+.flex-grid {
+    display: flex;  
+}
+.img-100 {
+    max-width: 100%;
+    width: 100%;
+}
+.open-show[data-active="false"] {
+    .open-show__content {
+        display: none;
+    }
+}
+// /DEFAULT
+
+// LINKS SIMPLE
+.link { 
+    color: #ffffff;
+    position: relative;
+    // ANIMATION
+    &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #FFF;
+        visibility: hidden;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: .25s linear;
+    }
+    &:hover:after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+// /LINKS SIMPLE
+
+// FORM
+.form {
+    &__box { 
+        flex-direction: column;
+        .titulo {
+            text-align: left;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: .9em;
+        }
+    }
+    &__inside {
+        background: #d1d3d4;
+        padding: 0 10px;
+    }
+    &__input {
+        background: #d1d3d4;
+    }
+}
+.bt-default {
+    padding: 5px 15px;
+    background: #fff;
+    border: 1px solid #3c3d3e;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: max-content;
+    margin: 8px auto;
+    transition: all .5s cubic-bezier(0.4,0,1,1);
+    cursor: pointer;
+    
+    &:hover {
+        background: #3c3d3e;
+        color: #ffffff;
+    }
+}
+// /FORM
+.box-default {
+    max-width: 250px;
+    margin-top: 10px;
+    padding: 0;
+    border: 1px solid #58595b;
+    color: #3c3d3e;
+    background: #ffffff;
+    transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    .fa {
+        margin: auto 0;
+        padding: 0;
+        border-right: 1px solid #b5b5b5;
+        font-size: 1.8em;
+    }
+    .text {
+        padding: 8px 0;
+        font-size: .8em;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    &:hover {
+        background: #3c3d3e;
+        color: #fff;
+    }
+}
+/* /CLASSES */
+

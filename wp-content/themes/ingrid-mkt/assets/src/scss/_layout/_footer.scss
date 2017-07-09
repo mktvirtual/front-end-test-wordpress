@@ -1,0 +1,27 @@
+// FOOTER
+.footer {
+    background-image: url(../images/background-footer.jpg);
+    background-color: #f57d31;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    margin-top: 80px;
+    padding: 30px 0;
+    
+    &__titulo {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    
+    &_item {
+        margin-bottom: 8px;
+    }
+    
+    &__link::before {
+        content: "•";
+        margin-right: 5px;
+    }
+}
+// /FOOTER

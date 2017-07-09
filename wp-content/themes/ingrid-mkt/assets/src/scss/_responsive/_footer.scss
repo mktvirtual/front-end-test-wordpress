@@ -1,0 +1,27 @@
+//MD
+@media screen and (max-width: 768px) { 
+    .footer {
+        background-image: none;
+        .between-md{
+            justify-content: space-between;
+        }
+    }
+}
+//SM
+@media screen and (max-width: 425px) { 
+    .footer {
+        .row {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__box {
+            margin-bottom: 20px;
+        }
+        &__titulo {
+            font-weight: bold;
+        }
+        &__link::before {
+            content: "";
+        }
+    }
+}

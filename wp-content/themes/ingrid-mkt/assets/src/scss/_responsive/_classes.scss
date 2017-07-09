@@ -1,0 +1,25 @@
+// MD
+@media screen and (max-width: 768px) { 
+    .hide-md {
+        display: none;
+    }
+    .wrap-md {
+        flex-wrap: wrap;
+    }
+}
+//SM
+@media screen and (max-width: 425px) {
+    .box-default {
+        margin: 10px auto;
+        & .fa, .text {
+            margin: auto;
+        }
+    }
+    .home__tag {
+        text-align: center;
+    }
+    .form__box {
+        display: block;
+        margin: 0 auto;
+    }
+}
