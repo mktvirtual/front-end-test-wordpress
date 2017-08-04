@@ -1,0 +1,385 @@
+/* Branding */
+.branding__container {
+
+    @extend .display-flex;
+    width: 100%;
+
+    .primary-navbar__wrapper & {
+      max-width: 85%;
+      width: auto;
+    }
+
+    .primary-navbar__wrapper.has-horizontal-menu & {
+      max-width: 33%;
+    }
+
+    @at-root .branding {
+        //@extend .display-flex;
+        padding-top: 0.425em;
+        padding-bottom: 0.425em;
+        overflow: hidden;
+
+        .navbar-brand-sitename span{
+          display: block;
+          white-space: normal;
+          //word-break: break-all;
+        }
+
+        .navbar-brand-sitename.czr-underline span{
+          position: relative;
+          padding-bottom: 0.25em;
+          margin-bottom: 5px;
+        }
+        .mobile-navbar__wrapper & {
+          max-width: calc( 100% - 100px );// can have the hamburger (50px) + the woocommerce cart next to it (50px)
+        }
+
+        .navbar-brand {
+            font-size: 2.4em;
+            line-height: 1.5em;
+            margin: 0;
+            vertical-align: middle;
+            display: inline-block;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+            white-space: nowrap;
+            max-width: 100%;
+            @at-root .navbar-brand img {
+              width: auto;
+              max-width: 100%;
+            }
+            + .header-tagline {
+              margin: 2px 0 0;
+            }
+        }
+        .header-tagline {
+            font-size: 0.9em;
+            line-height: normal;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin: 2/3*$base-line-height 0;
+
+        }
+        &.tagline-aside .header-tagline {
+            margin: 0 5px;
+            width: auto;
+        }
+        &.tagline-below .header-tagline {
+            padding-bottom: 0.25rem;
+        }
+    }
+
+
+    .branding,
+    .mobile-utils__wrapper {
+        @extend .display-flex;
+        flex-shrink: 1; //ie (10 at least) doesn't consider this as default while it should
+    }
+}
+
+
+.header-tagline {
+  font-style: italic;
+}
+
+// This styles the utils in desktop and mobiles
+.nav__utils {
+    @extend .display-flex;
+    flex-shrink: 0;
+    .utils {
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    li {
+        @extend .display-flex;
+    }
+
+    // utils li a centered aligned
+    @at-root .woocart.cart-contents, .desktop_search__link {
+        @extend .utils_links;
+    }
+
+     @at-root .woocart.cart-contents {
+        @include display-flex();
+        sup {
+            top: 0;
+        }
+    }
+}
+
+// Mobile stuff
+.mobile-search__container {
+    width: 100%;
+}
+.mobile-search__container .czr-form .form-group {
+    margin: 2/3 * $base-line-height-fixed 0 $base-line-height-fixed 0;
+    padding-bottom: $base-line-height;
+}
+.tc-header .mobile-search__container {
+    margin: 2*$base-line-height-fixed 0 $base-line-height-fixed 0;
+}
+
+.mobile-nav__container {
+  padding: 0;
+}
+
+
+/*
+* HEADER LAYOUTS
+*/
+
+
+.primary-navbar__wrapper {
+  // ensure the navbar elements do not wrap in a new line
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  .branding__container,
+  .primary-nav__utils li,
+  .primary-nav__wrapper,
+  .primary-nav__menu-wrapper {
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+  .primary-nav__wrapper {
+      margin: 0 -15px;
+  }
+
+  .primary-nav__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  }
+  .primary-nav__menu-wrapper {
+    width: 100%;
+  }
+  .primary-nav__nav {
+    flex-shrink: 1; //ie (10 at least) doesn't consider this as default while it should
+  }
+
+  .add-menu-button {
+    margin: 10px 0;
+  }
+}
+
+/*
+* LOGO CENTERED:
+*/
+//
+// IS VALID ONLY WHEN THE PRIMARY NAVBAR WRAPPER IS NOT STICKY
+// that's why is handled only with CSS
+//
+.logo_centered .primary-navbar__wrapper:not(.desktop-sticky),
+.logo_centered:not(.fixed-header-on) .primary-navbar__wrapper.desktop-sticky {
+
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+
+    .branding__container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .branding .navbar-brand {
+      margin: auto;
+      font-size: 2.25em;
+    }
+
+    .primary-nav__container {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            //     width: 66.666667%;
+            // max-width: 66.666667%;
+
+                flex-basis: auto
+    }
+
+
+    .navbar-toggleable-md {
+        width: auto !important;
+        -webkit-box-pack: center !important;
+        -webkit-justify-content: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
+    }
+
+    .navbar-toggleable-md .navbar-collapse {
+        width: auto;
+         -webkit-align-self: center !important;
+        -ms-flex-item-align: center !important;
+         -ms-grid-row-align: center !important;
+                 align-self: center !important;
+
+          -webkit-flex-basis: auto;
+     -ms-flex-preferred-size: auto;
+                  flex-basis: auto;
+
+        -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+    }
+}
+
+
+
+//
+// Revert header (not topbar) elements order when logo right
+//
+[class*=logo_right] {
+  .mobile-navbar__wrapper,
+  .primary-navbar__wrapper,
+  .branding__container,
+  .branding__container .flex-row,
+  .primary-nav__wrapper,
+  .nav__utils .utils {
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: row-reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important
+  }
+}
+
+
+/* EXPERIMENTAL */
+.tc-header {
+  position: relative;
+  z-index: 100;
+}
+.mobile-sticky,
+.desktop-sticky {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
+  -webkit-transition: -webkit-transform 0.35s ease-in-out, height 0.25s ease-in-out, background-color 0.45s ease-in-out;
+  -moz-transition: -moz-transform 0.35s ease-in-out, height 0.25s ease-in-out, background-color 0.45s ease-in-out;
+  -o-transition: -o-transform 0.35s ease-in-out, height 0.25s ease-in-out, background-color 0.45s ease-in-out;
+  transition: transform 0.35s ease-in-out, height 0.25s ease-in-out, background-color 0.45s ease-in-out;
+}
+
+
+.mobile-sticky .mobile-nav__nav {
+  position: absolute;
+  max-height: 90vh;
+  overflow: auto;
+  //shadow only when mobile menu is sticky.
+  @include box-shadow( 0px, 6px, 8px, rgba(120, 120, 120, 0.9), false, 0px );
+}
+
+.fixed-header-on .mobile-sticky,
+.fixed-header-on .desktop-sticky {
+  position: fixed;
+  z-index: 100;
+  /* background: rgba(255, 255, 255, 0.7); */
+  width: 100%;
+  top: 0;
+}
+
+// Shrink logo/title: for desktop only
+.sticky-brand-shrink-on .desktop-sticky {
+    //allow transition effect
+    .navbar-brand img,
+    .navbar-brand,
+    .header-tagline {
+        @include transition( all .35s );
+    }
+}
+
+.can-shrink-brand.sticky-brand-shrink-on .desktop-sticky {
+    //title ( and tagline )
+    .navbar-brand {
+        font-size: 1.4em;
+    }
+    .header-tagline {
+        font-size: 0.8em;
+    }
+
+    //logo
+    .navbar-brand img {
+        height: 30px!important;
+        width: auto!important;
+    }
+}
+
+
+.admin-bar .fixed-header-on {
+  @media screen and (min-width: 601px) and (max-width: 782px) {
+    .mobile-sticky, .desktop-sticky {
+      top: 46px;
+    }
+  }
+  @media screen and (min-width: 783px) {
+    .mobile-sticky, .desktop-sticky {
+      top: 32px;
+    }
+  }
+}
+
+
+
+//MOBILE HEADER
+.mobile-navbar__wrapper {
+  //LOGO DIMENSIONS ON MOBILE
+  .branding {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  }
+  .navbar-brand-sitelogo img {
+    max-height: 36px!important;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+
+  //MORE SPACE AT THE BOTTOM WHEN EXPANDED
+  .nav__menu-wrapper {
+     margin-bottom: 20px;
+  }
+
+  //When the site title is underlined, when need to adjust the vertical centering with this hard coded margin
+  .czr-underline span {
+    margin-bottom: 5px;
+  }
+}
+
+//@media screen and (min-width: 768px)
+@include media-breakpoint-up(md) {
+  .mobile-navbar__wrapper  {
+    .branding {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .navbar-brand-sitelogo img {
+      max-height: 45px!important;
+      max-width: 100%;
+    }
+  }
+}

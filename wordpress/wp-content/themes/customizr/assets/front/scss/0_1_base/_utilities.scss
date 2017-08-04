@@ -1,0 +1,176 @@
+.bg-transparent {
+  background: transparent
+}
+
+.m-t-05 {
+  margin-top: 0.5em
+}
+
+.hidden {
+  display: none !important;
+}
+
+.display-flex {
+  @include display-flex();
+}
+
+.inline-list {
+  list-style : none;
+  li {
+    display: inline-block;
+
+    & + li {
+      @if ( true == $is_rtl ) {
+        margin-right: $base-line-height;
+      }
+      @else {
+        margin-left: $base-line-height;
+      }
+    }
+  }
+  li:before { content: none }
+}
+.no-hover, .no-hover *,
+.is-scrolling, .is-scrolling * {
+  pointer-events: none;
+}
+.shadow {
+    @include box-shadow(0px, 2px, 2px, rgba(102, 102, 102, .08));
+}
+
+// JS IMAGE CENTERING
+img.h-centered {
+  width: auto!important;
+  max-width: none!important;
+  position: relative;
+  @if ( true == $is_rtl ) {
+    float: left;;
+  }
+}
+
+img.v-centered {
+  height: auto!important;
+  max-height: none!important;
+  vertical-align: top;
+  position: relative;
+  max-width: none!important;
+}
+
+.filter {
+  position: relative;
+  height: 100%;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 3;
+    content: "";
+  }
+}
+
+
+//vertical-alignment
+%vertical-align-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.czr-valign { @include czr-valign() }
+.czr-talign { @include czr-talign() }
+
+// Responsive ratios
+[class*=czr__r-w] {
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: "";
+  }
+
+  .czr__r-i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Various responsive ratios
+
+.czr__r-w16by9 {
+  @include czr__responsive-wrapper( 16, 9 );
+}
+
+.czr__r-wGR {
+  @include czr__responsive-wrapper( $golden, 1 );
+}
+
+.czr__r-w10by15 {
+  @include czr__responsive-wrapper( 10, 15 );
+}
+
+.czr__r-w4by3 {
+  @include czr__responsive-wrapper( 4, 3 );
+}
+
+.czr__r-w1by1 {
+  @include czr__responsive-wrapper( 1, 1 );
+}
+
+//TCT stays for TC thumb
+.czr__r-wTCT {
+  @include czr__responsive-wrapper( 270, 250 ); //default fp image size
+  max-width: 270px; // this actually depends on the thumb size
+  margin: 8px auto;
+  position: relative;
+  @include backface-visibility( hidden );
+  @include perspective( 1000px );
+  @include transform-style( preserve-3d );
+  img {
+    position: absolute;
+    @include transform( translate3d(0, 0, 0) );
+    //fix holder transform in ie11
+    &.tc-holder-img {
+      -ms-transform: none;
+    }
+    backface-visibility: hidden;
+    left: 0;
+    top: 0;
+  }
+  .grid__item > & {
+    z-index: -1;
+  }
+}
+
+.bottom-mask {
+  mask-image: linear-gradient(top,#000 70%,rgba(0,0,0,0) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(top,#000 70%,rgba(0,0,0,0) 100%);
+}
+
+//
+// Screenreaders
+//
+// Text meant only for screen readers
+.screen-reader-text, .sr-only {
+  @include sr-only();
+}
+.screen-reader-text, .sr-only-focusable {
+  @include sr-only-focusable();
+}

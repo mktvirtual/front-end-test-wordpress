@@ -1,0 +1,711 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Grid\n"
+"POT-Creation-Date: 2016-07-27 12:42+0600\n"
+"PO-Revision-Date: 2016-07-27 12:42+0600\n"
+"Last-Translator: \n"
+"Language-Team: pickplugins <support@pickplugins.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: includes\n"
+"X-Poedit-SearchPath-1: grid-items\n"
+
+#: grid-items/layer-content.php:89 grid-items/layer-content.php:152
+msgid "Read more."
+msgstr "Leggi di più"
+
+#: grid-items/layer-content.php:192
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: grid-items/layer-content.php:218
+msgid "No Comments"
+msgstr ""
+
+#: grid-items/layer-content.php:220
+msgid " Comments"
+msgstr ""
+
+#: grid-items/layer-content.php:222
+msgid "1 Comment"
+msgstr ""
+
+#: grid-items/layer-content.php:232
+msgid "Comments"
+msgstr ""
+
+#: grid-items/layer-content.php:245
+msgid "No comments yet"
+msgstr ""
+
+#: grid-items/layer-content.php:268
+msgid "No More comments"
+msgstr ""
+
+#: grid-items/layer-content.php:387
+msgid "Add to Cart"
+msgstr ""
+
+#: grid-items/nav-bottom.php:155 includes/class-functions.php:24
+msgid "Load more"
+msgstr "Caricare più"
+
+#: grid-items/nav-top-new.php:21 grid-items/nav-top.php:141
+msgid "Start typing..."
+msgstr ""
+
+#: grid-items/nav-top-new.php:47 grid-items/nav-top.php:25
+msgid "All"
+msgstr ""
+
+#: includes/class-settings.php:37
+msgid "Layout Editor"
+msgstr ""
+
+#: includes/class-settings.php:39
+msgid "Settings"
+msgstr ""
+
+#: includes/class-settings.php:41
+msgid "Help"
+msgstr ""
+
+#: includes/class-shortcodes.php:156 includes/class-shortcodes.php:328
+#: includes/functions.php:1565
+msgid "No Post found"
+msgstr "Nessun post trovato"
+
+#: includes/functions.php:87 includes/meta.php:773
+msgid "Shortcode"
+msgstr ""
+
+#: includes/functions.php:1508
+msgid "No more post"
+msgstr "Non più post"
+
+#: includes/menu/help.php:20 includes/menu/settings.php:52
+msgid " - Settings"
+msgstr ""
+
+#: includes/menu/help.php:32
+msgid "Help & support"
+msgstr ""
+
+#: includes/menu/help.php:39
+msgid "Need Help ?"
+msgstr ""
+
+#: includes/menu/help.php:40
+msgid ""
+"Feel free to contact with any issue for this plugin, Ask any question via "
+"forum"
+msgstr ""
+
+#: includes/menu/help.php:68
+msgid "Video Tutorial"
+msgstr ""
+
+#: includes/menu/help.php:69
+msgid ""
+"Please watch video tutorial, some features may not available in Free version."
+msgstr ""
+
+#: includes/menu/help.php:73
+msgid "How to install activate & license"
+msgstr ""
+
+#: includes/menu/help.php:80
+msgid "How to create Post Grid"
+msgstr ""
+
+#: includes/menu/help.php:87
+msgid "Post Grid - Query Post"
+msgstr ""
+
+#: includes/menu/help.php:94
+msgid "Post Grid - Grid Layout"
+msgstr ""
+
+#: includes/menu/help.php:102
+msgid "Post Grid - Navigations"
+msgstr ""
+
+#: includes/menu/help.php:110
+msgid "Post Grid - Layout Editor"
+msgstr ""
+
+#: includes/menu/help.php:118
+msgid "Post Grid - Settings"
+msgstr ""
+
+#: includes/menu/help.php:133
+msgid "Submit Reviews."
+msgstr ""
+
+#: includes/menu/help.php:134
+msgid ""
+"We are working hard to build some awesome plugins for you and spend thousand "
+"hour for plugins. we wish your three(3) minute by submitting five star "
+"reviews at wordpress.org. if you have any issue please submit at forum."
+msgstr ""
+
+#: includes/menu/help.php:144
+msgid "Please Share"
+msgstr ""
+
+#: includes/menu/help.php:145
+msgid "If you like this plugin please share with your social share network."
+msgstr ""
+
+#: includes/menu/help.php:172 includes/menu/layout-editor.php:496
+#: includes/menu/settings.php:174
+msgid "Save Changes"
+msgstr ""
+
+#: includes/menu/layout-editor.php:44 includes/menu/settings.php:34
+msgid "Changes Saved."
+msgstr ""
+
+#: includes/menu/layout-editor.php:54
+msgid " - Layout Editor"
+msgstr ""
+
+#: includes/menu/layout-editor.php:309
+msgid "CSS:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:326
+msgid "CSS Hover:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:343
+msgid "Character limit:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:357
+msgid "Link target:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:394
+msgid "Meta Key:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:415
+msgid "Wrapper:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:417
+#, php-format
+msgid ""
+"use %s where you want to repalce the meta value.<pre>&lt;div&gt;Before %s - "
+"%s After&lt;/div&gt;</pre>"
+msgstr ""
+
+#: includes/menu/layout-editor.php:440
+msgid "HTML:"
+msgstr ""
+
+#: includes/menu/layout-editor.php:456
+msgid "Read more text:"
+msgstr ""
+
+#: includes/menu/settings.php:63 includes/post-meta-settings.php:144
+msgid "Options"
+msgstr ""
+
+#: includes/menu/settings.php:70
+msgid "Reset Content Layouts"
+msgstr ""
+
+#: includes/menu/settings.php:71
+msgid ""
+"you can reset content layouts here, saved & customized layout will reset "
+"permanetly."
+msgstr ""
+
+#: includes/menu/settings.php:79
+msgid "Export Content Layouts"
+msgstr ""
+
+#: includes/menu/settings.php:80
+msgid ""
+"You can export content layouts here. please make a backup on your local "
+"mechine for future use."
+msgstr ""
+
+#: includes/menu/settings.php:82
+msgid "Export Layouts"
+msgstr ""
+
+#: includes/menu/settings.php:122
+msgid "Import Content Layouts"
+msgstr ""
+
+#: includes/menu/settings.php:123
+msgid "you can import content layouts here. please put serialized data."
+msgstr ""
+
+#: includes/menu/settings.php:125
+msgid "Import Layouts"
+msgstr ""
+
+#: includes/menu/settings.php:136
+msgid "Remove Content Layouts"
+msgstr ""
+
+#: includes/menu/settings.php:137
+msgid "you can remove content layouts here."
+msgstr ""
+
+#: includes/meta.php:16 includes/meta.php:18
+msgid "New Post Grid"
+msgstr ""
+
+#: includes/meta.php:17
+msgid "Edit Post Grid"
+msgstr ""
+
+#: includes/meta.php:19
+msgid "View Post Grid"
+msgstr ""
+
+#: includes/meta.php:20
+msgid "Search Post Grid"
+msgstr ""
+
+#: includes/meta.php:21
+msgid "Nothing found"
+msgstr ""
+
+#: includes/meta.php:22
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: includes/meta.php:60
+msgid "Post Grid Options"
+msgstr ""
+
+#: includes/meta.php:759
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/meta.php:760
+msgid "Query Post"
+msgstr ""
+
+#: includes/meta.php:761
+msgid "Layout"
+msgstr ""
+
+#: includes/meta.php:762
+msgid "Layout settings"
+msgstr ""
+
+#: includes/meta.php:763
+msgid "Navigations"
+msgstr ""
+
+#: includes/meta.php:764
+msgid "Custom Scripts"
+msgstr ""
+
+#: includes/meta.php:774
+msgid ""
+"Copy this shortcode and paste on page or post where you want to display post "
+"grid. <br />Use PHP code to your themes file to display post grid."
+msgstr ""
+
+#: includes/meta.php:778
+msgid "PHP Code:"
+msgstr ""
+
+#: includes/meta.php:787
+msgid "Post Types"
+msgstr ""
+
+#: includes/meta.php:788
+msgid ""
+"Select post types you want to query post , can be select multiple. <br /"
+">Hint: Ctrl + click to select mulitple"
+msgstr ""
+
+#: includes/meta.php:801
+msgid "Post Status"
+msgstr ""
+
+#: includes/meta.php:802
+msgid ""
+"Display post from following post status, <br />Hint: Ctrl + click to select "
+"mulitple"
+msgstr ""
+
+#: includes/meta.php:819
+msgid "Posts per page"
+msgstr ""
+
+#: includes/meta.php:820
+msgid ""
+"Number of post each pagination. -1 to display all. default is 10 if you left "
+"empty."
+msgstr ""
+
+#: includes/meta.php:826
+msgid "Offset"
+msgstr ""
+
+#: includes/meta.php:827
+msgid ""
+"Display posts from the n'th, if you set <b>Posts per page</b> to -1 will not "
+"work offset."
+msgstr ""
+
+#: includes/meta.php:834
+msgid "Exclude by post ID"
+msgstr ""
+
+#: includes/meta.php:835
+msgid "you can exclude post by ID, comma(,) separated"
+msgstr ""
+
+#: includes/meta.php:842
+msgid "Post query order"
+msgstr ""
+
+#: includes/meta.php:843
+msgid "Query order ascending or descending"
+msgstr ""
+
+#: includes/meta.php:854
+msgid "Post query orderby"
+msgstr ""
+
+#: includes/meta.php:855
+msgid "Query orderby parameter, can select multiple"
+msgstr ""
+
+#: includes/meta.php:858
+msgid "ID"
+msgstr ""
+
+#: includes/meta.php:859
+msgid "Date"
+msgstr ""
+
+#: includes/meta.php:860
+msgid "Random"
+msgstr ""
+
+#: includes/meta.php:861
+msgid "Comment Count"
+msgstr ""
+
+#: includes/meta.php:862
+msgid "Author"
+msgstr ""
+
+#: includes/meta.php:863
+msgid "Title"
+msgstr ""
+
+#: includes/meta.php:864
+msgid "Name"
+msgstr ""
+
+#: includes/meta.php:865
+msgid "Type"
+msgstr ""
+
+#: includes/meta.php:866
+msgid "Menu order"
+msgstr ""
+
+#: includes/meta.php:867
+msgid "Meta Value"
+msgstr ""
+
+#: includes/meta.php:868
+msgid "Meta Value(number)"
+msgstr ""
+
+#: includes/meta.php:880
+msgid "Search keyword"
+msgstr ""
+
+#: includes/meta.php:881
+msgid ""
+"Query post by search keyword, please follow the reference https://codex."
+"wordpress.org/Class_Reference/WP_Query#Search_Parameter"
+msgstr ""
+
+#: includes/meta.php:891
+msgid "Grid Layout"
+msgstr ""
+
+#: includes/meta.php:892
+msgid "Fancy style layouts."
+msgstr ""
+
+#: includes/meta.php:906
+msgid "Content Layout"
+msgstr ""
+
+#: includes/meta.php:907
+msgid "Choose your Content layout"
+msgstr ""
+
+#: includes/meta.php:1091
+msgid "Skins"
+msgstr ""
+
+#: includes/meta.php:1092
+msgid "Select grid Skins"
+msgstr ""
+
+#: includes/meta.php:1164
+msgid "Masonry enable"
+msgstr ""
+
+#: includes/meta.php:1165
+msgid "Enable masonry style grid"
+msgstr ""
+
+#: includes/meta.php:1167 includes/meta.php:1177 includes/meta.php:1360
+msgid "Yes"
+msgstr ""
+
+#: includes/meta.php:1168 includes/meta.php:1178 includes/meta.php:1361
+msgid "No"
+msgstr ""
+
+#: includes/meta.php:1174
+msgid "Lazy Load Enable"
+msgstr ""
+
+#: includes/meta.php:1175
+msgid "Gif animation when loading grid"
+msgstr ""
+
+#: includes/meta.php:1183
+msgid "Gif image source:"
+msgstr ""
+
+#: includes/meta.php:1225
+msgid "Grid Items Width"
+msgstr ""
+
+#: includes/meta.php:1226
+msgid "Grid item width for different device"
+msgstr ""
+
+#: includes/meta.php:1252
+msgid "Grid Items Background color"
+msgstr ""
+
+#: includes/meta.php:1253
+msgid "Grid item Background color"
+msgstr ""
+
+#: includes/meta.php:1256
+msgid "Fixed"
+msgstr ""
+
+#: includes/meta.php:1259
+msgid "Fixed Background color:"
+msgstr ""
+
+#: includes/meta.php:1265
+msgid "Grid Items Height"
+msgstr ""
+
+#: includes/meta.php:1266
+msgid "Grid item height"
+msgstr ""
+
+#: includes/meta.php:1267 includes/meta.php:1298
+msgid "Auto height"
+msgstr ""
+
+#: includes/meta.php:1268 includes/meta.php:1299
+msgid "Fixed height"
+msgstr ""
+
+#: includes/meta.php:1269 includes/meta.php:1300
+msgid "Max height"
+msgstr ""
+
+#: includes/meta.php:1283
+msgid "Grid Items Margin"
+msgstr ""
+
+#: includes/meta.php:1284
+msgid "Grid item margin"
+msgstr ""
+
+#: includes/meta.php:1296
+msgid "Media Height"
+msgstr ""
+
+#: includes/meta.php:1297
+msgid "Grid item media height"
+msgstr ""
+
+#: includes/meta.php:1323
+msgid "Featured Image size"
+msgstr ""
+
+#: includes/meta.php:1358
+msgid "Featured Image linked to post"
+msgstr ""
+
+#: includes/meta.php:1367
+msgid "Media source"
+msgstr ""
+
+#: includes/meta.php:1368
+msgid ""
+"Grid item media source <br />N.B. First gallery from content, First youtube "
+"video from content, First vimeo video from content, First MP3 from content, "
+"First SoundCloud from content will not retrive for \"page\""
+msgstr ""
+
+#: includes/meta.php:1433
+msgid "Grid Container options"
+msgstr ""
+
+#: includes/meta.php:1434
+msgid "Grid container "
+msgstr ""
+
+#: includes/meta.php:1491
+msgid "Grid Type"
+msgstr ""
+
+#: includes/meta.php:1492
+msgid "Select grid type."
+msgstr ""
+
+#: includes/meta.php:1689
+msgid "Navigation"
+msgstr ""
+
+#: includes/meta.php:1694
+msgid "Pagination."
+msgstr ""
+
+#: includes/meta.php:1702
+msgid "Search."
+msgstr ""
+
+#: includes/meta.php:1717
+msgid "Pagination"
+msgstr ""
+
+#: includes/meta.php:1719
+msgid "Max number of pagination, keep 0 (zero) for auto."
+msgstr ""
+
+#: includes/meta.php:1723
+msgid "Pagination Previous text"
+msgstr ""
+
+#: includes/meta.php:1727
+msgid "Pagination Next text"
+msgstr ""
+
+#: includes/meta.php:1730
+msgid "Pagination themes"
+msgstr ""
+
+#: includes/meta.php:1732
+msgid "Lite"
+msgstr ""
+
+#: includes/meta.php:1733
+msgid "Dark"
+msgstr ""
+
+#: includes/meta.php:1748
+msgid "Custom Js"
+msgstr ""
+
+#: includes/meta.php:1749
+msgid "Add your custom js"
+msgstr ""
+
+#: includes/meta.php:1757
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/meta.php:1758
+msgid "Add your custom CSS"
+msgstr ""
+
+#: includes/post-meta-settings.php:28
+msgid "Post Grid - Post Options"
+msgstr ""
+
+#: includes/post-meta-settings.php:147
+msgid "Font Awesome"
+msgstr ""
+
+#: includes/post-meta-settings.php:148
+msgid "Custom Media"
+msgstr ""
+
+#: includes/post-meta-settings.php:157
+msgid "Post Skin"
+msgstr ""
+
+#: includes/post-meta-settings.php:158
+msgid "Default skin for this post only"
+msgstr ""
+
+#: includes/post-meta-settings.php:191
+msgid "Custom thumbnail source"
+msgstr ""
+
+#: includes/post-meta-settings.php:206
+msgid "Font awesome icon ID"
+msgstr ""
+
+#: includes/post-meta-settings.php:207
+msgid ""
+"Font awesome icon id, ex: <b>fa-share-alt</b> , please check font awesome "
+"incon here <a href=\"http://fortawesome.github.io/Font-Awesome/icons/"
+"\">http://fortawesome.github.io/Font-Awesome/icons/</a>"
+msgstr ""
+
+#: includes/post-meta-settings.php:210
+msgid "Icon Color"
+msgstr ""
+
+#: includes/post-meta-settings.php:212
+msgid "Icon size"
+msgstr ""
+
+#: includes/post-meta-settings.php:223
+msgid "Custom youtube id"
+msgstr ""
+
+#: includes/post-meta-settings.php:227
+msgid "Custom vimeo id"
+msgstr ""
+
+#: includes/post-meta-settings.php:230
+msgid "Custom dailymotion id"
+msgstr ""
+
+#: includes/post-meta-settings.php:234
+msgid "Custom mp3 URL"
+msgstr ""
+
+#: includes/post-meta-settings.php:237
+msgid "Custom soundcloud ID"
+msgstr ""

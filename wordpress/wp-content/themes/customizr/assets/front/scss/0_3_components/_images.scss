@@ -1,0 +1,21 @@
+//the opacity of following images is set to 1 when centering is done
+//@see the js front czrapp.methods.JQPlugins::centerImages()
+.tc-grid-figure img,
+.widget-front .tc-thumbnail img,
+.fpc-widget-front .fp-thumb-wrapper img,
+.js-centering.entry-media__holder img,
+.js-centering.entry-media__wrapper img {
+  opacity:0;
+  -webkit-transition: opacity 0.35s ease;
+  -o-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
+  &.h-centered,
+  &.v-centered,
+  &.opacity-forced {
+    opacity:1
+  }
+  //in case js is disabled or there's an problem when centering the images, the following classes make sure opacity is set to 1
+  @at-root .no-js img { opacity:1!important; }
+}
+
+

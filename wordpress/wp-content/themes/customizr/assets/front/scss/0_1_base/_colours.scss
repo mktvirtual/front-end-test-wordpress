@@ -1,0 +1,51 @@
+
+
+//$skin                     : #B4B4B4;
+$skin                     : #5a5a5a;
+
+$skin-dark                : darken( $skin, 12% );
+$skin-light               : lighten( $skin, 15% );
+$skin-lightest            : lighten( $skin, 20% );
+
+$skin-link-color                : $skin;
+$skin-link-color-hover          : $skin-dark;
+$skin-lightest-color-shade-high : rgba($skin-lightest, 0.2);
+$skin-dark-color-shade-high     : rgba($skin-dark, 0.2);
+$skin-dark-color-shade-low      : rgba($skin-dark, 0.8);
+
+$alert         : #e74c3c;
+$black         : #313131;//#202020;
+$white         : #fff;
+
+//$body          : #666;
+$post-title    : #303133;
+$post-entry    : #444;
+
+$grey          : #777;//#aaa;//#B4B4B4;
+$grey-mid-light : #aaa;
+$grey-light    : #eceeef;
+$grey-lightest : #f7f8f9;
+$grey-dark     : #777;
+
+$hamburger-bg-color: darken($black, 10%);
+
+//$skin          : #076cf2;
+//$alert         : #e74c3c;
+//$black         : #273238;
+//$white         : #fff;
+
+//$grey          : #c9cacc;
+//$grey-light    : #eeeff1;
+//$grey-lightest : #F8F8F8;
+//$grey-dark     : #777;
+
+
+//$hamburger-bg-color: darken($black, 10%);
+
+// potential colours for skins
+//$skin_01       : #414b57;
+//$skin_02       : #323db0;
+//$skin_03       : #76c3c9;
+//$skin_04       : #a7cfe6;
+//$skin_05       : #284AFF;
+

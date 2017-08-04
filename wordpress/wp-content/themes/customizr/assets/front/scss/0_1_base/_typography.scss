@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+@import '../0_9_utils_calcs/modular-scale';
+
+//$baseFont     : "Poppins", sans-serif;
+$baseFont     : 'Source Sans Pro', Arial, sans-serif;
+
+$monotypeFont : 'Roboto Mono', monospace;
+$serviceFont  : "Roboto", sans-serif;
+
+
+$ms-base: 1em;
+$ms-ratio: 1.2;
+$ms-base-fixed: 15px;
+$body-base-ratio: 15/16; //<-was 1em when html was 15px
+
+$base-line-height: 1em * 1.25;
+$base-line-height-fixed: 15px * 1.25;
+
+
+$line-height:
+  1.5    20em,//line-height and viewport
+  1.65   40em;
+
+$ms-range:
+  0.833   20em,
+  $body-base-ratio  60em;
+
+// suspend modular scale respond
+//body {
+//  font-family: $baseFont;
+//  @include ms-respond(line-height, 1, $line-height, 1);
+//  @include ms-respond(font-size, 1 );
+//}
+
+// statically set body font-size and line-height
+body {
+  font-family: $baseFont;
+  line-height: 1.65;
+  font-size: $body-base-ratio * 1em;
+  color: #333;
+}
+
+
+$ms-range:
+  1   20em,
+  1.2 60em;
+
+$line-height:
+  1.4  20em,
+  1.75 40em;
+
+// suspend modular scale respond
+//@for $i from 1 through 6 {
+//  h#{$i} {
+//    @include ms-respond(font-size, ($i - 6) * -1);
+//  }
+//}
+
+// statically set headings font-sizes
+h1 {
+  font-size: 2.48832em;
+}
+
+h2 {
+  font-size: 2.0736em;
+}
+
+h3 {
+  font-size: 1.728em;
+}
+
+h4 {
+  font-size: 1.44em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+
+h6 {
+  font-size: 1em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  // @extend .thick;
+  position:relative;
+  font-weight: normal;
+  color: $post-title;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: $base-line-height;
+}
+
+h6 {
+  // @extend .semi-bold;
+  color:$grey ;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+//we don't use this
+//.display {
+//  @include ms-respond(font-size, 9);
+//}
+
+$line-height:
+  1.4    20em,
+  1.75   40em;
+
+$ms-range:
+  0.833   20em,
+  1  60em;
+
+blockquote p {
+  font-family: $baseFont;
+}
+.small, small {
+  font-size: ms(-1);
+}
+.demi-small {
+  font-size: 0.95em;
+}
+.thin {
+  font-weight: 300;
+}
+.normal {
+  font-weight: 400;
+}
+.semi-bold {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 600;
+}
+.thick, strong {
+  font-weight: 700;
+}
+
+.service-font {
+  font-family: $serviceFont;
+  letter-spacing: 1px;
+}
+.caps {
+  text-transform: uppercase;
+}
+.letter-spacing-075 {
+  letter-spacing: 0.075px;
+}
+.letter-spacing-05 {
+  letter-spacing: 0.5px;
+}
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+.italics {
+  font-style: italic;
+}
+.underline-thick {
+  border-bottom-color: $grey-lightest;
+  box-shadow: inset 0 -5px 0 $grey-lightest;
+}
+
+.underline {
+  text-decoration: underline
+}
+
+.big-text-10 {
+  font-size: 10em
+}
+
+// Responsive alignment (bs-inspired)
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-left   { text-align: left !important; }
+    .text#{$infix}-right  { text-align: right !important; }
+    .text#{$infix}-center { text-align: center !important; }
+  }
+}

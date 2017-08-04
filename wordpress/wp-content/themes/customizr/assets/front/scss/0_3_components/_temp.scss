@@ -1,0 +1,85 @@
+
+/* VARIOUS */
+
+.tc-thumbnail img {
+  width: 100%;
+}
+
+
+
+/* FLICKITY SLIDER  */
+
+.carousel-cell { width: 100%; overflow: hidden;}
+.carousel img { min-width: 100%;}
+
+
+// Patches
+
+
+.article-container .grid-container__alternate .entry-footer {
+  margin: 0;
+  margin-top: 2.5em;
+}
+
+//max-width: 991px
+@include media-breakpoint-down(md) {
+  .article-container .grid-container__alternate .entry-header {
+    margin-top: 0;
+  }
+}
+
+
+.entry-media__holder .post-type__icon i {
+    position: relative;
+}
+
+/* Some thumbnail container sizes ideas */
+.full-image .tc-thumbnail {
+  background: #B4B4B4 ;
+}
+[class*=grid-container__] .czr-carousel,
+[class*=grid-container__] .carousel-inner {
+  height: 100%;
+}
+
+[class*=grid-container__]:not(.grid-container__square-mini) .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+
+
+[class*=grid-container__] .tc-thumbnail .carousel-cell {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.css-centering.entry-media__holder img {
+  /* temporary CSS centering */
+  transform: translate(-50%, -50%); /* fallback for those browsers w/o translate3d transform property*/
+  transform: translate3d(-50%, -50%, 0);
+  top: 50%;
+  left: 50%;
+  position: relative;
+}
+
+// thanks flex
+.czr-center-sections,
+.czr-cover-sections {
+  align-items: center;
+
+}
+.czr-cover-sections > section {
+  @extend .display-flex;
+}
+
+// element to strech class needed
+.czr-cover-sections > .entry-media__holder {
+  align-self: stretch;
+}
+.no-thumb .czr-cover-sections .entry-media__holder {
+  align-self: center;
+}
+.no-thumb .czr-cover-sections .entry-media__wrapper {
+  margin: auto;
+}

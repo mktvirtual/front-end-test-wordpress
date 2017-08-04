@@ -1,0 +1,198 @@
+@mixin footer__skincolor($colour) {
+
+  $primary-color     : $colour;
+  $secondary-colour  : $grey;
+  $background        : invert($primary-color);
+  $background-dark   : darken($primary-color, 5%);
+  $border            : 0 transparent;
+
+
+
+  @if $primary-color == $white {
+    $secondary-colour : $grey;
+    $background       : $black;
+    $background-dark  : darken($black, 5%);
+    $border           : transparent;
+   }
+   @else if $primary-color == $black {
+     $secondary-colour : $grey;
+     $background       : $white;
+     $background-dark  : $grey-lightest;
+     $border           : $grey-light;
+   }
+
+  color: $primary-color;
+  background: $background;
+  border-top: 1px solid $border;
+  @if $primary-color == $white {
+      h1, h2, h3, h4, h5, h6 {
+        color: $primary-color;
+      }
+  }
+  a {
+    color: $secondary-colour;
+    &:hover, &:active, &:focus {
+      color: $primary-color;
+      &.btn {
+        background: transparent;
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .widget {
+      &:not(.widget_tag_cloud):not(.widget_shopping_cart) a { @include underlined(rgba($primary-color, 0.5), 1px ) }
+  }
+  .colophon__row {
+    background: $background-dark;
+    a {
+        display: initial;
+    }
+  }
+
+  .czr-form {
+    .form-group label {
+       color: $primary-color;
+    }
+     .form-group.in-focus label {
+       color: $secondary-color-light;
+     }
+     .form-control {
+       color: $primary-color;
+       border-color: $primary-color;
+     }
+  }
+}
+
+.footer__wrapper {
+  .footer-skin-dark  &  { @include footer__skincolor($white); }
+  .footer-skin-light &  { @include footer__skincolor($black); }
+  padding:0;
+  margin:0 auto;
+  font-size: 90%;
+
+  a {
+    display: inline-block;
+    position: relative;
+    width: auto;
+  }
+
+  .widget__wrapper {
+    padding-top: $base-line-height*3;
+    padding-bottom: $base-line-height*1.5;
+
+    @at-root .footer__wrapper h5 { @extend .semi-bold; }
+
+    @at-root .footer__wrapper .widget > h5  { margin-bottom: $base-line-height; }
+    @at-root .footer__wrapper .textwidget   { width:90% }
+    @at-root .footer__wrapper .about {
+      position:relative;
+      p {
+        display:inline-block;
+        position:relative;
+        width:80%;
+        float:left;
+        margin:0;
+      }
+      .branding__logo {
+        margin-right: $base-line-height*2;
+        float:left;
+        width:auto;
+        position:relative;
+        display:inline-block;
+        max-width:100px;
+        img {
+          max-height:60px;
+        }
+      }//.branding__logo
+    }//.about
+
+    @at-root .footer__wrapper .widget-contact-info-content {
+      p  {
+        line-height: 1.1em;
+      }
+    }
+
+
+    @include media-breakpoint-down(md) {
+      @at-root .footer__wrapper .widget  { padding: $base-line-height;  }
+    }
+  }//.widget__wrapper
+
+  .colophon__row {
+    margin:0;
+    padding-top: $base-line-height/2;
+    padding-bottom: $base-line-height/2;
+    font-size: ms(1);
+
+    @at-root .colophon__row {
+
+      .footer__credits {
+        @extend .small;
+        @extend .letter-spacing-1;
+        color: $grey;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 2em;
+        p {
+          margin: 0
+        }
+      }
+
+      .footer__credits,
+      .social-links {
+        margin:1em 0;
+      }
+    }
+  }//.colophon__row
+}//.footer__wrapper
+
+
+/* Welcome Note
+/* ------------------------------------ */
+#bottom-welcome-note {
+    bottom: -100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px 0;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    color: #fff;
+    display: block;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all, 0.45s ease-in-out;
+    -ms-transition: all, 0.45s ease-in-out;
+    -o-transition: all, 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+    font-size: 1.25em
+}
+#bottom-welcome-note h2 {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+#bottom-welcome-note a {
+  color: #fff;
+  text-decoration: underline;
+}
+#bottom-welcome-note p { line-height: 2em;}
+#bottom-welcome-note .note-content {
+  display: inline-block;
+  line-height: 20px;
+  width: 80%;
+}
+#bottom-welcome-note .fa:before {
+  top: 2px;
+  position: relative;
+  padding-left: 2px;
+}
+#bottom-welcome-note .close-note {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 31px;
+    cursor: pointer;
+}
