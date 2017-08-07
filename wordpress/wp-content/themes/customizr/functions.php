@@ -55,6 +55,7 @@ add_action( 'widgets_init', 'remove_a_widget_area', 11 );
 
 function add_estilos_e_scripts() {
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/front/js/script.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script( 'jquery.mask', get_template_directory_uri() . '/assets/front/js/jquery.mask.js', array ( 'jquery' ), 1.1, true);
 }
 add_action('widgets_init','add_estilos_e_scripts', 11 );
 
