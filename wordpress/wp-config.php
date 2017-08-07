@@ -23,7 +23,7 @@
 define('DB_NAME', 'mkt');
 
 /** MySQL database username */
-define('DB_USER', 'gmastersupreme');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', '');
