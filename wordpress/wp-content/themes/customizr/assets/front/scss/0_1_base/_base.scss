@@ -1,0 +1,169 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wp-caption,
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, button:focus { outline:0 }
+
+a {
+  transition: color ease 0.3s;
+}
+
+
+a {
+  text-decoration: none;
+  color: $skin-link-color;
+}
+a:hover,
+a:active,
+a.current-active {
+  text-decoration: none;
+  outline: none;
+}
+
+a img {
+  border: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: $skin-link-color-hover;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering:optimizelegibility;
+}
+
+ul, ol {
+  list-style: none;
+  li {
+    line-height: $base-line-height*1.5;
+  }
+}
+
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+
+}
+
+ul, ol {
+  margin: 0;
+  padding:0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $grey-light;
+  margin: 3.2em 0;
+  padding: 0;
+}
+
+strong {
+    font-weight:700;
+}
+
+dl dt {
+  overflow: hidden;
+
+  @if ( true == $is_rtl ) {
+    clear: right;
+    text-align: left;
+  }
+  @else {
+    clear: left;
+    text-align: right;
+  }
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+pre code, tt {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: inherit;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: $monotypeFont;
+}
+pre {
+  background: $grey-lightest;
+  padding: $base-line-height*2;
+  word-wrap: normal;
+  color: $black;
+  font-family: $monotypeFont !important;
+}
+
+figure { text-align: center; }
+figcaption { text-align:center; }
+
+// Highlight Color Customization
+
+::-moz-selection {
+  text-shadow: none;
+  background: $skin;
+  color: $white;
+}
+
+::selection {
+  text-shadow: none;
+  background: $skin;
+  color: $white;
+}
+
+img::selection {
+  background: transparent;
+
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.alignleft {
+  float: left;
+  margin: 0.375em 1.75em 1.75em 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0.375em 0 1.75em 1.75em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto 1.75em;
+}
+.m-t-6 {
+  margin-top: 6rem !important;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 3000px $grey-light inset !important;
+}
+
+embed, iframe, object, video {
+  max-width: 100%;
+}

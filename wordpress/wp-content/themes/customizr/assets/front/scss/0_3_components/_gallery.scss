@@ -1,0 +1,107 @@
+
+.gallery-item {
+  // do not style standard gallery
+  dt {
+    text-align: inherit;
+    &::before { content: none }
+    padding: 0.8rem;
+  }
+  dd.wp-caption-text {
+    padding: 0 0.8rem;
+    margin: 0;
+    &::before { content: none }
+  }
+  // do not style standard gallery
+}
+
+section[class^="post-"] .gallery.row {
+  margin-top: $base-line-height-fixed;
+  margin-bottom: $base-line-height-fixed;
+}
+
+
+//let's style only our gallery
+.czr-gallery {
+
+  .czr-gallery-icon {
+    overflow: hidden;
+    position: relative;
+
+    img {
+      display: block;
+
+
+      max-width: 100%;
+      width: 100%;
+
+      @at-root .czr-gallery-style .gallery-item {
+        img  {
+          @include transition(transform 0.3s ease-in-out);
+        }
+        &.hover img {
+          @include transform( scale(1.1) );
+        }
+      }
+
+    }
+
+  }
+
+  //
+  // Gallery needs a better implementation
+  //
+  @for $i from 1 through 9 {
+    &.gallery-columns-#{$i} {
+      .gallery-item {
+        //width: calc( (100% - #{$base-line-height} * (#{$i} - 1) ) / #{$i} );
+        width: percentage( 1 / $i );
+      }
+    }
+  }//for
+
+  @for $i from 4 through 9 {
+    &.gallery-columns-#{$i} {
+      @include media-breakpoint-down(md) {
+        .gallery-item {
+          //width: calc( (100% - #{$base-line-height} * (#{$i} - 1) ) / (#{$i} / 2)  );
+          width: percentage( 2 / $i );
+        }
+      }
+    }
+  }//for
+
+  @for $i from 1 through 3 {
+    &.gallery-columns-#{$i} {
+      @include media-breakpoint-down(xs) {
+        .gallery-item {
+          //width: calc( (100% - #{$base-line-height} * (#{$i} - 1) ) / (#{$i} / 2)  );
+          width: percentage( 2 / $i );
+        }
+      }
+    }
+  }//for
+
+  @for $i from 3 through 9 {
+    &.gallery-columns-#{$i} {
+      .gallery-item {
+        .post-action {
+          width:  $base-line-height * 9/$i;
+          height: $base-line-height * 9/$i;
+          top: $base-line-height - $i/10 ;
+          right: $base-line-height - $i/10 ;
+          a {
+            line-height: $base-line-height*9/$i;
+          }//a
+        }//.post-action
+      }//.gallery-item
+    }//.gallery-columns-#
+  }//for
+
+  @include media-breakpoint-down(sm) {
+    .gallery-item {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+

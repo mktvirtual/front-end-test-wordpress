@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- General styles, not used by all email clients -->
+        <style type="text/css" media="all">
+            a {
+                text-decoration: none;
+                color: #0088cc;
+            }
+        </style>
+    </head>
+    
+    <!-- KEEP THE TAMPLE SIMPLE: THOSE ARE SERVICE MESSAGES. -->
+    <body style="margin: 0;">
+        <!-- Top title with dark background #333, font color #fff, font size 32px -->
+        <table style="background-color: #333; width: 100%; color: #fff; font-size: 32px">
+            <tr>
+                <td style="padding: 25px; text-align: center">
+                    {blog_title}
+                </td>
+            </tr>
+        </table>
+
+        <!-- Main table 100% wide with background color #eee -->    
+        <table style="background-color: #eee; width: 100%;">
+            <tr>
+                <td align="center"  style="padding: 15px;">
+
+                    <!-- Content table with backgdound color #fff, width 500px -->
+                    <table style="background-color: #fff; max-width: 600px; width: 100%; border: 1px solid #ddd;">
+                        <tr>
+                            <td style="padding: 15px; font-size: 16px; font-family: sans-serif">
+                                <!-- The {message} tag is replaced with one of confirmation, welcome or goodbye messages -->
+                                <!-- Messages content can be configured on Newsletter List Building panels --> 
+
+                                {message}
+                                
+                                <!-- Signature if not already added to single messages (surround with <p>) -->
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>

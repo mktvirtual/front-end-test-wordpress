@@ -1,0 +1,181 @@
+
+#tc-page-wrap {
+  position: relative;
+  background: inherit;
+  z-index: 1;
+}
+
+#tc-page-wrap,
+#main-wrapper {
+  &::before, &::after {
+    display: table;
+    content: '';
+    line-height: 0
+  }
+}
+
+#main-wrapper,
+#content {
+  padding-bottom:$base-line-height*2;
+}
+
+.container[role="main"] {
+  margin-top: 2em;
+}
+
+
+
+
+//formatting
+ol {
+  counter-reset: item;
+  > li:before {
+    content: counters(item, ".") ".";
+    counter-increment: item;
+    padding-right: $base-line-height/2;
+  }
+}
+ul:not(.socials):not(.tags) {
+  .tc-content-inner & {
+    list-style: square inside;
+  }
+}
+ol, ul {
+  ol, ul {
+    @if ( true == $is_rtl ) {
+      margin-right: $base-line-height;
+    }
+    @else {
+      margin-left: $base-line-height;
+    }
+  }
+}
+
+
+table {
+  @extend %table-base;
+  &:not([id^=wp-calendar]):not(.ui-datepicker-calendar) {
+    @extend %table-style;
+  }
+}
+
+dl {
+  margin-bottom:  $base-line-height;
+  dt {
+    @if ( true == $is_rtl ) {
+      text-align: right;
+    }
+    @else {
+      text-align: left;
+    }
+    position: relative;
+    padding : $base-line-height $base-line-height $base-line-height/2 $base-line-height;
+    &::before {
+      content: "";
+      position: absolute;
+      width: $base-line-height;
+      height: 2px;
+      bottom: calc(#{$base-line-height} - 6px);
+      @if ( true == $is_rtl ) {
+        right: 0;
+      }
+      @else {
+        left: 0;
+      }
+      background: $black;
+    }
+  }
+  .wp-caption-dt::before { content: none }
+  dd {
+    @if ( true == $is_rtl ) {
+      padding-right: $base-line-height;
+    }
+    @else {
+      padding-left: $base-line-height;
+    }
+  }
+}
+
+
+/* featured pages*/
+.marketing {
+  margin-bottom: $base-line-height * 5;
+  margin-top: 0.5em;
+}
+.featured-page {
+  margin-top: 2em;
+  position: relative;
+  text-align:center;
+  font-size: 1.15em;
+  .czr-thumb-wrapper {
+    overflow: hidden;
+  }
+  .no-effect .czr-thumb-wrapper {
+    margin-bottom: $base-line-height*2
+  }
+
+  & img {
+    @include transform( translate3d(0 ,0, 0) );
+    backface-visibility: hidden;
+  }
+  .center-images-disabled & img {
+    // temporary CSS centering
+    @include transform( translate(-50%, -50%) ); // fallback for those browsers w/o translate3d transform property
+    @include transform( translate3d(-50%, -50%, 0) );
+    top: 50%;
+    left: 50%;
+  }
+  @at-root .fp-title,
+           .fp-button,
+    [class*=fp-text-] {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @at-root .fp-title {
+    line-height: $base-line-height;
+    margin-top : $base-line-height/2;
+    margin-bottom: $base-line-height;
+    word-break: break-word;
+    &::after {
+      content: "";
+      position: absolute;
+      width: $base-line-height;
+      background: $black;
+      height: 2px;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: $base-line-height/4 auto 0;
+      @include transition (all 0.6s ease);
+      @at-root .widget-front.hover & {
+        background: $grey-dark;
+        width: $base-line-height*2;
+      }
+    }
+  }
+
+  .btn-edit { margin: -1em 0 0 }
+
+  @at-root [class*=fp-text-] {
+    margin: $base-line-height*1.2 auto;
+    color: $grey-dark;
+  }
+
+  @at-root .fp-button {
+    display: inline-block;
+    padding: 0;
+    .btn-more {
+      margin-bottom: $base-line-height
+    }
+  }
+
+
+
+  & .widget-front.hover {
+    color: $grey-dark;
+  }
+}
+
+

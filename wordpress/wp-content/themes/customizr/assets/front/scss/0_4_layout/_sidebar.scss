@@ -1,0 +1,149 @@
+
+@media screen and (min-width: 480px) and (max-width: 667px) {
+//what and why
+  .sidebar {
+    padding: 0 $base-line-height*2;
+  }
+}
+
+.widget-area {
+  .widget {
+    margin-bottom: $base-line-height*2;
+    li:not(:last-of-type) {
+      margin-bottom: $base-line-height/2
+    }
+    li::before {
+      content: none
+    }
+    @at-root .widget-area a {
+      display: inline-block;
+      color: $grey;
+    }
+    @at-root .widget-area .widget:not(.widget_shopping_cart) a:not(.btn):not(.social-icon) {
+      @include underlined_nocolor( 1px )
+    }
+
+  }
+
+  .social-block {
+      margin-bottom: $base-line-height;
+      .socials {
+        font-size: $base-line-height;
+      }
+  }//.social-block
+
+}
+
+.sidebar {
+  @extend .demi-small;
+  .widget:first-child .widget-title {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .widget-title {
+    @extend .caps;
+    @extend .letter-spacing-2;
+    position: relative;
+    margin: $base-line-height 0;
+    padding: $base-line-height 0;
+    font-size: 1.1em;
+    &::after {
+      content: "";
+      position: absolute;
+      width: $base-line-height*4;
+      height:2px;
+      bottom:0;
+      @if ( true == $is_rtl ) {
+        right: 0;
+      }
+      @else {
+        left: 0;
+      }
+    }
+  }
+
+  .widget_search input[type="text"] {
+    border-bottom-color: $black;
+  }
+}
+
+.widget_recent_comments {
+  @extend .bold;
+  .comment-author-link { color: $grey; @extend .thin }
+}
+
+.widget_categories {
+  @extend .caps;
+  @extend .bold;
+  @extend .letter-spacing-1;
+}
+
+.widget_calendar {
+  table {
+    width: 100%;
+    caption, thead  th {
+      text-align: inherit;
+    }
+	}
+  thead tr, tbody tr { border-bottom-width: 1px; border-bottom-style: solid }
+  thead tr {  border-width: 2px; @extend .small; @extend .service-font }
+  td { padding:$base-line-height/2 0 }
+  caption, tfoot {
+    padding: $base-line-height/2 0;
+    color: $grey;
+    @extend .caps;
+    @extend .small;
+    @extend .bold;
+    @extend .letter-spacing-1;
+    text-align: left;
+    caption-side: top;
+  }
+}
+
+
+//@media screen and (min-width: 768px)
+@include media-breakpoint-up(md) {
+  @if ( true == $is_rtl ) {
+
+      .tc-sidebar.right  {
+        padding-right: $base-line-height*2;
+      }
+      .tc-sidebar.left {
+        padding-left: $base-line-height*2;
+
+      }
+
+      .tc-sidebar.text-md-left {
+        ol, ul {
+          ol, ul {
+            margin-left: $base-line-height;
+          }
+        }
+        .widget-title::after {
+          left:0;
+          right:auto;
+        }
+      }
+  }
+  @else {
+
+      .tc-sidebar.left  {
+        padding-right: $base-line-height*2;
+      }
+      .tc-sidebar.right {
+        padding-left: $base-line-height*2;
+      }
+
+      .tc-sidebar.text-md-right {
+        ol, ul {
+          ol, ul {
+            margin-right: $base-line-height;
+          }
+        }
+        .widget-title::after {
+          right:0;
+          left:auto;
+        }
+      }
+  }
+}

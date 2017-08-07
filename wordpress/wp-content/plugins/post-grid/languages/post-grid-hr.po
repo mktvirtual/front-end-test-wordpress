@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Grid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-20 11:24+0600\n"
+"PO-Revision-Date: 2017-07-20 11:24+0600\n"
+"Last-Translator: wordpress <hrvoje.kunovic@gmail.com>\n"
+"Language-Team: Croatian (Croatia)\n"
+"Language: hr_HR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n"
+"%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: includes\n"
+"X-Poedit-SearchPath-1: grid-items\n"
+
+#: grid-items/layer-content.php:89 grid-items/layer-content.php:152
+msgid "Read more."
+msgstr "Pročitajte dalje"
+
+#: grid-items/layer-content.php:192
+#, php-format
+msgid "View all posts in %s"
+msgstr "Prikaži sve objave u %s"
+
+#: grid-items/layer-content.php:218
+msgid "No Comments"
+msgstr "Nema komentara"
+
+#: grid-items/layer-content.php:220
+msgid " Comments"
+msgstr "Komentari"
+
+#: grid-items/layer-content.php:222
+msgid "1 Comment"
+msgstr "1 komentar"
+
+#: grid-items/layer-content.php:232
+msgid "Comments"
+msgstr "Komentari"
+
+#: grid-items/layer-content.php:245
+msgid "No comments yet"
+msgstr "Još nema komentara."
+
+#: grid-items/layer-content.php:268
+msgid "No More comments"
+msgstr "Nema više objava"
+
+#: grid-items/layer-content.php:387
+msgid "Add to Cart"
+msgstr "Dodajte u košaricu"
+
+#: grid-items/nav-top-new.php:23
+msgid "Start typing..."
+msgstr "Počnite pisati ..."
+
+#: grid-items/nav-top-new.php:49
+msgid "All"
+msgstr "Prikaži sve objave u %s"
+
+#: includes/class-functions.php:24
+msgid "Load more"
+msgstr "Učitaj više"
+
+#: includes/class-settings.php:37
+msgid "Layout Editor"
+msgstr "Urednik izgleda"
+
+#: includes/class-settings.php:39
+msgid "Settings"
+msgstr "Postavke"
+
+#: includes/class-settings.php:41
+msgid "Help"
+msgstr "Pomoć"
+
+#: includes/class-shortcodes.php:156 includes/functions.php:1368
+msgid "No Post found"
+msgstr "Nema pronađenih postova"
+
+#: includes/functions.php:23 includes/meta.php:792
+msgid "Shortcode"
+msgstr "Kratki kôd (Shortcode)"
+
+#: includes/functions.php:1310
+msgid "No more post"
+msgstr "Nema više postova"
+
+#: includes/menu/help.php:20 includes/menu/settings.php:22
+msgid " - Settings"
+msgstr "- Postavke"
+
+#: includes/menu/help.php:32
+msgid "Help & support"
+msgstr "Pomoć i podrška"
+
+#: includes/menu/help.php:39
+msgid "Need Help ?"
+msgstr "Trebaš pomoć?"
+
+#: includes/menu/help.php:40
+msgid ""
+"Feel free to contact with any issue for this plugin, Ask any question via "
+"forum"
+msgstr ""
+"Slobodno se obratite s bilo kojim pitanjem za ovaj dodatak, postavite sva "
+"pitanja putem foruma."
+
+#: includes/menu/help.php:68
+msgid "Video Tutorial"
+msgstr "Video vodič (tutorial)"
+
+#: includes/menu/help.php:69
+msgid ""
+"Please watch video tutorial, some features may not available in Free version."
+msgstr ""
+"Pogledajte video tutorial, neke značajke možda nisu dostupne u besplatnoj "
+"verziji."
+
+#: includes/menu/help.php:73
+msgid "How to install activate & license"
+msgstr "Kako instalirati, aktivacija i licenca"
+
+#: includes/menu/help.php:80
+msgid "How to create Post Grid"
+msgstr "Kako izraditi Post Grid"
+
+#: includes/menu/help.php:87
+msgid "Post Grid - Query Post"
+msgstr "Post Grid - Kreiranje upita"
+
+#: includes/menu/help.php:94
+msgid "Post Grid - Grid Layout"
+msgstr "Post Grid - Izgled"
+
+#: includes/menu/help.php:102
+msgid "Post Grid - Navigations"
+msgstr "Post Grid - Navigacija"
+
+#: includes/menu/help.php:110
+msgid "Post Grid - Layout Editor"
+msgstr "Post Grid - Uređivanje izgleda"
+
+#: includes/menu/help.php:118
+msgid "Post Grid - Settings"
+msgstr "Post Grid - Postavke"
+
+#: includes/menu/help.php:133
+msgid "Submit Reviews."
+msgstr "Pošaljite recenzije."
+
+#: includes/menu/help.php:134
+msgid ""
+"We are working hard to build some awesome plugins for you and spend thousand "
+"hour for plugins. we wish your three(3) minute by submitting five star "
+"reviews at wordpress.org. if you have any issue please submit at forum."
+msgstr ""
+"Naporno radimo na stvaranju nekih fantastičnih dodataka i potrošimo na "
+"tisuće sati na to. Molimo Vaših tri (3) minute za slanje recenzije s pet "
+"zvjezdica na wordpress.org. Ako imate bilo kakav problem, pošaljite na "
+"forumu."
+
+#: includes/menu/help.php:144
+msgid "Please Share"
+msgstr "Molimo podijelite"
+
+#: includes/menu/help.php:145
+msgid "If you like this plugin please share with your social share network."
+msgstr "Ako vam se sviđa ovaj dodatak, podijelite na svojoj društvenoj mreži."
+
+#: includes/menu/help.php:172 includes/menu/layout-editor.php:515
+msgid "Save Changes"
+msgstr "Spremi promjene"
+
+#: includes/menu/layout-editor.php:50
+msgid "Changes Saved."
+msgstr "Promjene spremljene."
+
+#: includes/menu/layout-editor.php:56
+msgid "Something is not right."
+msgstr ""
+
+#: includes/menu/layout-editor.php:70
+msgid " - Layout Editor"
+msgstr "- Urednik izgleda"
+
+#: includes/menu/layout-editor.php:325
+msgid "CSS:"
+msgstr "CSS:"
+
+#: includes/menu/layout-editor.php:342
+msgid "CSS Hover:"
+msgstr "CSS Hover:"
+
+#: includes/menu/layout-editor.php:359
+msgid "Character limit:"
+msgstr "Ograničenje znakova:"
+
+#: includes/menu/layout-editor.php:373
+msgid "Link target:"
+msgstr "Ciljanje veze:"
+
+#: includes/menu/layout-editor.php:410
+msgid "Meta Key:"
+msgstr "Meta Key:"
+
+#: includes/menu/layout-editor.php:431
+msgid "Wrapper:"
+msgstr "Omotač (wrapper):"
+
+#: includes/menu/layout-editor.php:433
+#, php-format
+msgid ""
+"use %s where you want to repalce the meta value.<pre>&lt;div&gt;Before %s - "
+"%s After&lt;/div&gt;</pre>"
+msgstr ""
+"Koristite %s  gdje želite zamijeniti meta vrijednost. <pre>&lt;div&gt;Prije"
+"%s - %s Nakon&lt;/div&gt;</pre>"
+
+#: includes/menu/layout-editor.php:456
+msgid "HTML:"
+msgstr "HTML:"
+
+#: includes/menu/layout-editor.php:472
+msgid "Read more text:"
+msgstr "Pročitajte dalje"
+
+#: includes/menu/settings.php:27 includes/post-meta-settings.php:144
+msgid "Options"
+msgstr "Opcije"
+
+#: includes/menu/settings.php:34
+msgid "Reset Content Layouts"
+msgstr "Resetiraj izglede sadržaja"
+
+#: includes/menu/settings.php:35
+msgid ""
+"you can reset content layouts here, saved & customized layout will reset "
+"permanetly."
+msgstr ""
+"Ovdje možete resetirati izglede sadržaja, a spremljeni i prilagođeni izgled "
+"trajno će se resetirati."
+
+#: includes/menu/settings.php:42
+msgid "Export Content Layouts"
+msgstr "Izvoz izgleda sadržaja"
+
+#: includes/menu/settings.php:43
+msgid ""
+"You can export content layouts here. please make a backup on your local "
+"mechine for future use."
+msgstr ""
+"Ovdje možete izvesti postavke sadržaja. Napravite sigurnosnu kopiju na "
+"svojem lokalnom uređaju za buduću uporabu."
+
+#: includes/menu/settings.php:45
+msgid "Export Layouts"
+msgstr "Izvezite izglede"
+
+#: includes/menu/settings.php:94
+msgid "Remove Content Layouts"
+msgstr "Uklonite izglede sadržaja."
+
+#: includes/menu/settings.php:95
+msgid "you can remove content layouts here."
+msgstr "Ovdje možete ukloniti izglede sadržaja."
+
+#: includes/meta.php:16 includes/meta.php:18
+msgid "New Post Grid"
+msgstr "Novi Post Grid"
+
+#: includes/meta.php:17
+msgid "Edit Post Grid"
+msgstr "Uredi Post Grid"
+
+#: includes/meta.php:19
+msgid "View Post Grid"
+msgstr "Pogledaj Post Grid"
+
+#: includes/meta.php:20
+msgid "Search Post Grid"
+msgstr "Pretraži Post Grid"
+
+#: includes/meta.php:21
+msgid "Nothing found"
+msgstr "Ništa nije nađeno"
+
+#: includes/meta.php:22
+msgid "Nothing found in Trash"
+msgstr "Ništa nije nađeno u smeću"
+
+#: includes/meta.php:60
+msgid "Post Grid Options"
+msgstr " Post Grid opcije"
+
+#: includes/meta.php:778
+msgid "Shortcodes"
+msgstr "Shortcode-ovi"
+
+#: includes/meta.php:779
+msgid "Query Post"
+msgstr "Upit za post"
+
+#: includes/meta.php:780
+msgid "Layout"
+msgstr "Izgled"
+
+#: includes/meta.php:781
+msgid "Layout settings"
+msgstr "Postavke izgleda"
+
+#: includes/meta.php:782
+msgid "Navigations"
+msgstr "Navigacije"
+
+#: includes/meta.php:783
+msgid "Custom Scripts"
+msgstr "Prilagođene skripte"
+
+#: includes/meta.php:793
+msgid ""
+"Copy this shortcode and paste on page or post where you want to display post "
+"grid. <br />Use PHP code to your themes file to display post grid."
+msgstr ""
+"Kopirajte ovaj kratki kôd i zalijepite na stranicu ili post na kojem želite "
+"prikazati post Grid. <br /> Koristite PHP kod za datoteku teme za prikaz "
+"post grida."
+
+#: includes/meta.php:797
+msgid "PHP Code:"
+msgstr "PHP Kod:"
+
+#: includes/meta.php:806
+msgid "Post Types"
+msgstr "Tip posta"
+
+#: includes/meta.php:807
+msgid ""
+"Select post types you want to query post , can be select multiple. <br /"
+">Hint: Ctrl + click to select mulitple"
+msgstr ""
+"Odaberite vrstu posta koji želite postaviti u  upit, a možete odabrati više. "
+"<br /> Savjet: Ctrl + kliknite za odabir mulitple"
+
+#: includes/meta.php:820
+msgid "Taxonomy & Terms (Categories)"
+msgstr ""
+
+#: includes/meta.php:821
+#, fuzzy
+#| msgid ""
+#| "Display post from following post status, <br />Hint: Ctrl + click to "
+#| "select mulitple"
+msgid "Select categories. <br />Hint: Ctrl + click to select mulitple"
+msgstr ""
+"Prikaži post iz sljedećeg postnog statusa, <br /> Savjet: Ctrl + klik da "
+"biste odabrali više"
+
+#: includes/meta.php:834
+msgid "Terms relation"
+msgstr ""
+
+#: includes/meta.php:840
+msgid "Taxonomy relation"
+msgstr ""
+
+#: includes/meta.php:856
+msgid "Post Status"
+msgstr "Status posta"
+
+#: includes/meta.php:857
+msgid ""
+"Display post from following post status, <br />Hint: Ctrl + click to select "
+"mulitple"
+msgstr ""
+"Prikaži post iz sljedećeg postnog statusa, <br /> Savjet: Ctrl + klik da "
+"biste odabrali više"
+
+#: includes/meta.php:874
+msgid "Posts per page"
+msgstr "Postovi po stranici"
+
+#: includes/meta.php:875
+msgid ""
+"Number of post each pagination. -1 to display all. default is 10 if you left "
+"empty."
+msgstr ""
+"Broj postova na svakoj stranici. -1 za prikaz svih. Zadano je 10 ako ste "
+"ostavili prazno."
+
+#: includes/meta.php:881
+msgid "Offset"
+msgstr "Ofset"
+
+#: includes/meta.php:882
+msgid ""
+"Display posts from the n'th, if you set <b>Posts per page</b> to -1 will not "
+"work offset."
+msgstr ""
+"Prikaži postove iz n-tog, ako postavite <b> Postovi po stranici </ b> na -1, "
+"ofset neće se raditi."
+
+#: includes/meta.php:889
+msgid "Exclude by post ID"
+msgstr "Isključi prema ID-u posta"
+
+#: includes/meta.php:890
+msgid "you can exclude post by ID, comma(,) separated"
+msgstr "Možete izuzeti post po ID-u, zarezom (,) odvojenim"
+
+#: includes/meta.php:897
+msgid "Post query order"
+msgstr "Redoslijed upita"
+
+#: includes/meta.php:898
+msgid "Query order ascending or descending"
+msgstr "Redoslijed upita uzlazno ili silazno"
+
+#: includes/meta.php:909
+msgid "Post query orderby"
+msgstr "Redoslijed upita prema"
+
+#: includes/meta.php:910
+msgid "Query orderby parameter, can select multiple"
+msgstr "Parameri redoslijeda upita, možete odabrati više"
+
+#: includes/meta.php:913
+msgid "ID"
+msgstr "ID"
+
+#: includes/meta.php:914
+msgid "Date"
+msgstr "Datum"
+
+#: includes/meta.php:915
+msgid "Random"
+msgstr "Nasumično"
+
+#: includes/meta.php:916
+msgid "Comment Count"
+msgstr "Broj komentara"
+
+#: includes/meta.php:917
+msgid "Author"
+msgstr "Autor"
+
+#: includes/meta.php:918
+msgid "Title"
+msgstr "Naslov"
+
+#: includes/meta.php:919
+msgid "Name"
+msgstr "Ime"
+
+#: includes/meta.php:920
+msgid "Type"
+msgstr "Tip"
+
+#: includes/meta.php:921
+msgid "Menu order"
+msgstr "Redoslijed menua"
+
+#: includes/meta.php:922
+msgid "Meta Value"
+msgstr "Meta vrijednost"
+
+#: includes/meta.php:923
+msgid "Meta Value(number)"
+msgstr "Meta vrijednost (broj)"
+
+#: includes/meta.php:935
+msgid "Search keyword"
+msgstr "Traži ključnu riječ"
+
+#: includes/meta.php:936
+msgid ""
+"Query post by search keyword, please follow the reference https://codex."
+"wordpress.org/Class_Reference/WP_Query#Search_Parameter"
+msgstr ""
+"Postavljanje upita po ključnoj riječi za pretraživanje, slijedite referencu "
+"https://codex.wordpress.org/Class_Reference/WP_Query#Search_Parameter"
+
+#: includes/meta.php:946
+msgid "Grid Layout"
+msgstr "Izgled grida"
+
+#: includes/meta.php:947
+msgid "Fancy style layouts."
+msgstr "Bogatiji stil izgleda."
+
+#: includes/meta.php:961
+msgid "Content Layout"
+msgstr "Izgled sadržaja"
+
+#: includes/meta.php:962
+msgid "Choose your Content layout"
+msgstr "Odaberite svoj izgled sadržaja"
+
+#: includes/meta.php:1146
+msgid "Skins"
+msgstr "Omotači"
+
+#: includes/meta.php:1147
+msgid "Select grid Skins"
+msgstr "Odaberi grid skine"
+
+#: includes/meta.php:1219
+msgid "Masonry enable"
+msgstr "Masonry omogućen"
+
+#: includes/meta.php:1220
+msgid "Enable masonry style grid"
+msgstr "Omogući masonry grid stil"
+
+#: includes/meta.php:1222 includes/meta.php:1232 includes/meta.php:1415
+msgid "Yes"
+msgstr "Da"
+
+#: includes/meta.php:1223 includes/meta.php:1233 includes/meta.php:1416
+msgid "No"
+msgstr "Ne"
+
+#: includes/meta.php:1229
+msgid "Lazy Load Enable"
+msgstr "Omogući Lazy Load"
+
+#: includes/meta.php:1230
+msgid "Gif animation when loading grid"
+msgstr "Gif animacija pri učitavanju grida"
+
+#: includes/meta.php:1238
+msgid "Gif image source:"
+msgstr "Izvor gif-a:"
+
+#: includes/meta.php:1280
+msgid "Grid Items Width"
+msgstr "Širina stavki grida"
+
+#: includes/meta.php:1281
+msgid "Grid item width for different device"
+msgstr "Širina stavki grida za različite uređaje"
+
+#: includes/meta.php:1307
+msgid "Grid Items Background color"
+msgstr "Pozadinska boja stavki grida"
+
+#: includes/meta.php:1308
+msgid "Grid item Background color"
+msgstr "Pozadinska boja stavke grida"
+
+#: includes/meta.php:1311
+msgid "Fixed"
+msgstr "Fiksno"
+
+#: includes/meta.php:1314
+msgid "Fixed Background color:"
+msgstr "Fiksna pozadinska boja:"
+
+#: includes/meta.php:1320
+msgid "Grid Items Height"
+msgstr "Visina stavki grida"
+
+#: includes/meta.php:1321
+msgid "Grid item height"
+msgstr "Visina stavke grida"
+
+#: includes/meta.php:1322 includes/meta.php:1353
+msgid "Auto height"
+msgstr "Auto visina"
+
+#: includes/meta.php:1323 includes/meta.php:1354
+msgid "Fixed height"
+msgstr "Fiksna visina"
+
+#: includes/meta.php:1324 includes/meta.php:1355
+msgid "Max height"
+msgstr "Maks. visina"
+
+#: includes/meta.php:1338
+msgid "Grid Items Margin"
+msgstr "Margina stavki grida"
+
+#: includes/meta.php:1339
+msgid "Grid item margin"
+msgstr "Margina stavke grida"
+
+#: includes/meta.php:1351
+msgid "Media Height"
+msgstr "Visina medija"
+
+#: includes/meta.php:1352
+msgid "Grid item media height"
+msgstr "Visina medijskih stavki grida"
+
+#: includes/meta.php:1378
+msgid "Featured Image size"
+msgstr "Veličina istaknutih slika"
+
+#: includes/meta.php:1413
+msgid "Featured Image linked to post"
+msgstr "Istaknuta slika povezana s postom"
+
+#: includes/meta.php:1422
+msgid "Media source"
+msgstr "Izvor medija"
+
+#: includes/meta.php:1423
+msgid ""
+"Grid item media source <br />N.B. First gallery from content, First youtube "
+"video from content, First vimeo video from content, First MP3 from content, "
+"First SoundCloud from content will not retrive for \"page\""
+msgstr ""
+"Izvor medija stavki retka <br /> N.B. Prva galerija iz sadržaja, Prvi "
+"YouTube video iz sadržaja, Prvi video vimeo iz sadržaja, Prvi MP3 iz "
+"sadržaja, First SoundCloud iz sadržaja neće se zauzeti za \"stranicu\""
+
+#: includes/meta.php:1488
+msgid "Grid Container options"
+msgstr "Mogućnosti grid kontejnera"
+
+#: includes/meta.php:1489
+msgid "Grid container "
+msgstr "Grid kontejner"
+
+#: includes/meta.php:1546
+msgid "Grid Type"
+msgstr "Tip grida"
+
+#: includes/meta.php:1547
+msgid "Select grid type."
+msgstr "Odaberi tip grida."
+
+#: includes/meta.php:1744
+msgid "Navigation"
+msgstr "Navigacija"
+
+#: includes/meta.php:1749
+msgid "Pagination."
+msgstr "Paginacija"
+
+#: includes/meta.php:1757
+msgid "Search."
+msgstr "Pretraži"
+
+#: includes/meta.php:1772
+msgid "Pagination"
+msgstr "Paginacija"
+
+#: includes/meta.php:1774
+msgid "Max number of pagination, keep 0 (zero) for auto."
+msgstr "Maksimalni broj paginacija, zadržite 0 (nula) za automatski."
+
+#: includes/meta.php:1778
+msgid "Pagination Previous text"
+msgstr "Paginacija Previous tekst"
+
+#: includes/meta.php:1782
+msgid "Pagination Next text"
+msgstr "Paginacija Next tekst"
+
+#: includes/meta.php:1785
+msgid "Pagination themes"
+msgstr "Teme paginacija"
+
+#: includes/meta.php:1787
+msgid "Lite"
+msgstr "Svijetli"
+
+#: includes/meta.php:1788
+msgid "Dark"
+msgstr "Tamni"
+
+#: includes/meta.php:1803
+msgid "Custom Js"
+msgstr "Prilagođeni JS"
+
+#: includes/meta.php:1804
+msgid "Add your custom js"
+msgstr "Dodajte prilagođeni JS"
+
+#: includes/meta.php:1812
+msgid "Custom CSS"
+msgstr "Prilagođeni CSS"
+
+#: includes/meta.php:1813
+msgid "Add your custom CSS"
+msgstr "Dodajte prilagođeni CSS"
+
+#: includes/post-meta-settings.php:28
+msgid "Post Grid - Post Options"
+msgstr "Post Grid - Mogućnosti posta"
+
+#: includes/post-meta-settings.php:147
+msgid "Font Awesome"
+msgstr "Font Awesome"
+
+#: includes/post-meta-settings.php:148
+msgid "Custom Media"
+msgstr "Prilagođeni mediji"
+
+#: includes/post-meta-settings.php:157
+msgid "Post Skin"
+msgstr "Post Skin"
+
+#: includes/post-meta-settings.php:158
+msgid "Default skin for this post only"
+msgstr "Zadani skin samo za ovaj post"
+
+#: includes/post-meta-settings.php:191
+msgid "Custom thumbnail source"
+msgstr "Izvor prilagođenih sličica"
+
+#: includes/post-meta-settings.php:206
+msgid "Font awesome icon ID"
+msgstr "Font Awesome ID ikone"
+
+#: includes/post-meta-settings.php:207
+msgid ""
+"Font awesome icon id, ex: <b>fa-share-alt</b> , please check font awesome "
+"incon here <a href=\"http://fortawesome.github.io/Font-Awesome/icons/"
+"\">http://fortawesome.github.io/Font-Awesome/icons/</a>"
+msgstr ""
+"Imidž  font Awesom ikone, primjer: <b> fa-share-alt </ b>, molimo vas da "
+"provjerite veličinu fonta Awesome ovdje <a href=\"http://fortawesome.github."
+"io/Font-Awesome/icons/\"> http : //fortawesome.github.io/Font-Awesome/icons/ "
+"</a>"
+
+#: includes/post-meta-settings.php:210
+msgid "Icon Color"
+msgstr "Boja ikone"
+
+#: includes/post-meta-settings.php:212
+msgid "Icon size"
+msgstr "Veličina ikone"
+
+#: includes/post-meta-settings.php:223
+msgid "Custom youtube id"
+msgstr "Prilagođeni YouTube ID"
+
+#: includes/post-meta-settings.php:227
+msgid "Custom vimeo id"
+msgstr "Prilagođeni Vimeo ID"
+
+#: includes/post-meta-settings.php:230
+msgid "Custom dailymotion id"
+msgstr "Prilagođeni dailymotion ID"
+
+#: includes/post-meta-settings.php:234
+msgid "Custom mp3 URL"
+msgstr "Prilagođeni mp3 ID"
+
+#: includes/post-meta-settings.php:237
+msgid "Custom soundcloud ID"
+msgstr "Prilagođeni soundcloud ID"
+
+#~ msgid "Import Content Layouts"
+#~ msgstr "Uvezite izglede sadržaja."
+
+#~ msgid "you can import content layouts here. please put serialized data."
+#~ msgstr ""
+#~ "Ovdje možete uvesti izglede sadržaja. Molimo stavite serijske podatke."
+
+#~ msgid "Import Layouts"
+#~ msgstr "Uvezite izglede"

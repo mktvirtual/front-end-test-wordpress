@@ -1,0 +1,112 @@
+//definitions
+%skin-dark-color {
+  color: $skin-dark
+}
+%skin-dark-background-color {
+  background-color: $skin-dark;
+}
+
+//header top border
+.tc-header.border-top {
+  border-color: $skin;
+}
+
+.post-info a:not(.btn) {
+    &:hover {
+      color: $skin-link-color-hover;
+      span::after, span::before {
+        @extend %skin-dark-background-color;
+      }
+    }
+}
+
+//All grids Icons
+
+//specific for classical
+.grid-container__classic .post-type__icon {
+    //SKINNED
+    background-color: $skin-link-color;
+    .icn-format {
+      color: $skin-link-color-hover;
+    }
+    &:hover {
+      @extend %skin-dark-background-color;
+    }
+}
+
+.post-type__icon {
+    &:hover {
+      .icn-format {
+        color: $skin-link-color;
+      }
+    }
+}
+
+//Post list titles
+[class*="grid-container__"] .hover .entry-title a {
+  color: $skin-link-color-hover;
+  &::after {
+    @extend %skin-dark-background-color;
+  }
+}
+[class*="grid-container__"] .entry-title a:hover {
+  color: $skin-link-color;
+  &::after {
+    @extend %skin-dark-background-color;
+  }
+}
+
+//Grid classic with border bottom
+.grid-container__classic.tc-grid-border .grid__item {
+  border-color: $skin-dark;
+}
+
+//sidebar widget underline
+.sidebar .widget-title::after {
+  @extend %skin-dark-background-color;
+}
+
+//Widget areas
+.widget-area {
+    a:not(.btn):hover {
+      color: $skin-link-color-hover;
+    }
+    .widget:not(.widget_shopping_cart) a:not(.btn):before {
+      @extend %skin-dark-background-color;
+    }
+}
+
+.pagination {
+  color: $skin-dark;
+}
+
+
+//link format
+a.czr-format-link {
+  &:hover,
+  .format-link.hover & {
+    color: $skin-link-color-hover;
+  }
+  &::before {
+    @extend %skin-dark-background-color;
+  }
+}
+
+//comments and active tabs underline
+.comment-author a::before,
+.comment-link::before {
+  @extend %skin-dark-background-color;
+}
+
+
+.tabs .nav-link {
+
+      &:hover, &.active, &.active:hover, &.active:focus {
+        @extend %skin-dark-color;
+      }
+
+      &.active::before {
+        @extend %skin-dark-background-color;
+      }
+
+}

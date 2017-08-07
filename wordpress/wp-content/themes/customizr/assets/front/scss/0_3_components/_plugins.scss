@@ -1,0 +1,170 @@
+//
+// Woocommerce
+//
+
+.woocommerce {
+
+  //buttons
+  #respond input#submit,
+  input#submit,
+  input.button,
+  a.button,
+  .button.add_to_cart_button,
+  input#submit.alt.disabled,
+  input.button.alt.disabled,
+  button.button.alt.disabled,
+  a.button.alt.disabled,
+  input#submit.alt,
+  input.button.alt,
+  a.button.alt,
+  button.button.alt {
+    @extend %btn_base;
+  }
+
+  #respond input#submit,
+  input#submit,
+  input.button,
+  a.button,
+  .button.add_to_cart_button {
+    @extend .btn-skin;
+  }
+
+
+
+  input#submit[class*=alt],
+  input.button[class*=alt],
+  a.button[class*=alt],
+  button.button[class*=alt] {
+    @extend .btn-skin-dark;
+  }
+
+  input#submit.alt.disabled,
+  input.button.alt.disabled,
+  button.button.alt.disabled,
+  a.button.alt.disabled {
+    @extend .btn-skin-dark;
+  }
+
+  //fix circular on sale labels over woocommerce thumbs
+  span.onsale {
+    @include box-sizing( content-box );
+  }
+
+
+  form .form-row-wide {
+    width: 100%;
+    float: left;
+  }
+
+  section.up-sells,
+  section.related {
+    clear: both;
+  }
+
+  //cols conflicting with bootstrap
+  @at-root .woocommerce #content [class*=col],
+            #content .woocommerce [class*=col] {
+    max-width: none;
+  }
+
+  //fix flex gallery item displaying numbers before
+  @at-root .woocommerce-product-gallery ol li:before {
+    content: none;
+  }
+}
+
+
+//table
+#add_payment_method .cart-collaterals .cart_totals table,
+.woocommerce-cart .cart-collaterals .cart_totals table,
+.woocommerce-checkout .cart-collaterals .cart_totals table,
+.woocommerce table.shop_table {
+    @extend %table-base;
+    @extend %table-style;
+}
+
+
+// WooCart
+.nav__woocart {
+  position: relative;
+  .product_list_widget {
+    min-height: 3em;
+    max-height: 30vh;
+    overflow-y: auto;
+    .mCustomScrollBox {
+      min-height: inherit;
+    }
+  }
+  ul li {
+    display: block !important;
+    width: 100%;
+    padding: $base-line-height/2 !important;
+    margin-left: 0 !important;
+    white-space: normal;
+    position: relative;
+    &::before {
+      content: none !important;
+    }
+  }
+  .widget_shopping_cart {
+    min-width: 320px;
+    max-width: 50vw;
+    li,
+    p.buttons,
+    p.total {
+      padding: 1em $base-line-height;
+
+    }
+    li a {
+      padding: 0;
+      margin: 0;
+      white-space: normal;
+      display: block !important;
+      &::before {
+        content: none !important;
+      }
+    }
+
+    p.buttons,
+    p.total {
+      margin: 0 $base-line-height/2;
+      text-align: center;
+      .button {
+        display: block !important;
+        padding: 1em 15px;
+         &:nth-child(odd) {
+            margin-bottom: .6180469716em;
+        }
+      }
+    }
+    .product_list_widget li a.remove {
+      position: relative;
+      float: left;
+      top: auto;
+      display: block;
+      line-height: 1.15;
+      left: -.25em;
+      z-index: 9;
+    }
+    .product_list_widget img {
+      margin-left: 1em;
+      float: right;
+    }
+  }
+}
+//force fpu background to white if fpu bg set to default color
+//TODO: change default color for czr4 in FPU
+.fpc-container[data-bgcolor="#fafafa"] {
+  background-color: #fff !important;
+  .fpc-widget-front .czr-link-mask {
+    border-color: #fff !important;
+  }
+}
+//when in #content reset fpc-containet padding and its row child margin for a better alignment
+#content[class*=col-] > .fpc-container {
+  padding: 0;
+  margin: 0 -15px;
+  > row {
+    margin: 0;
+  }
+}
