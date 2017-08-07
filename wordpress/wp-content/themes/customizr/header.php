@@ -46,14 +46,6 @@ if ( apply_filters( 'czr_ms', false ) ) {
   				//CZR_header_main::$instance->tc_logo_title_display(), CZR_header_main::$instance->czr_fn_tagline_display(), CZR_header_main::$instance->czr_fn_navbar_display()
   				do_action( '__header' );
   			?>
-		<script>
-			var $ = jQuery;
-			console.log("fi");
-			$(function(){
-				alert("foi");
-			});
-		</script>
-
   		</header>
   		<?php
   		 	//This hook is used for the slider : CZR_slider::$instance->czr_fn_slider_display()

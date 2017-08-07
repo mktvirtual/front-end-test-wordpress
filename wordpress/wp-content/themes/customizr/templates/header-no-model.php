@@ -41,4 +41,3 @@
         //will fire do_action( '__after_header' )
       ?>
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<?php echo do_shortcode("[metaslider id=55]");?>
