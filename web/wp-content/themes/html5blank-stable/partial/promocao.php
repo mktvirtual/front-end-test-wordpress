@@ -2,7 +2,7 @@
 $promocao =  new WP_Query(
     array(
         'post_type' => 'promocao',
-        'orderby' => 'DESC',
+        'orderby' => 'id',
         'post_status' => 'publish',
         'post_per_page' => 4 
     )
@@ -24,6 +24,9 @@ if($promocao->have_posts()) :
                     <li>
                         <div class="promocao-content" style="background-image: url('<?php echo $imagem;  ?>') ">
                             <div class="txt-dinamico <?php echo get_field('txt_align', $promocao->ID); ?>">
+                            <small>
+                                <?php get_the_category($promocao->ID); ?>
+                            </small>
                                 <h3>
                                     <?php the_title(); ?>
                                 </h3>

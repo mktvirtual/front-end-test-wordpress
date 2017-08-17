@@ -9,9 +9,9 @@
     $sliderTotal = $slider->found_posts;
     $bullets = '';
     $isActiveBullet = false;
-    $bulletClass = $isActiveBullet ? 'active' : '';
+    $bulletClass = $isActiveBullet ? 'active' : ' ';
     for($i=0; $i < $sliderTotal; $i++ ){
-        if($i == 0) $isActiveBullet = true;
+        if($i == 0) $bulletClass = true;
 
         $bullets .= '<li data-target="#carouselExampleIndicators" data-slide-to="'.$i.'" class="'.$bulletClass.' bullets"></li>';
     }

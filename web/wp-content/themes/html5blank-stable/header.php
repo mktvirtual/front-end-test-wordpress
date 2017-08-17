@@ -34,10 +34,16 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 				<section><!-- Fixed navbar -->
-					<nav class="navbar navbar-default fixed-top" role="navigation">
+				
+					<nav class="navbar navbar-default navbar-fixed-top fixed-top" role="navigation">
 							<div class="navbar-header">
 								<div class="container">
 									<div class="row container navbar-container">
+										<div class="col-md-2 logo-small" style="display: none;">
+											<figure title=" Logo"  id="brand" class="navbar-brand " >
+												<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="Logo Brand"  />
+											</figure>
+										</div>
 											<div class="col-md-7">
 												<div id="nav" class=""  >
 													<?php html5blank_nav(); ?>
@@ -49,7 +55,7 @@
 														<span class="icon-bar"></span>
 												</button>
 											</div>
-											<div class="col-md-5">
+											<div class="col-md-5 busca">
 												<div class="box-busca">
 															<?php get_template_part('searchform'); ?>
 														</div>
@@ -59,13 +65,20 @@
 									</div>
 								</div>
 							</div>
-							<div class="container">
-								<a class="navbar-brand page-scroll" href="#page-top" dir="ltr" title="Logo Brand">
+							<div class="container logo">
+
+							<div class="col-md-4">
+								<figure title=" Logo"  id="brand" class=" navbar-brand " style="">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Brand" />
-								</a> 
-								<figure title=" Logo"  id="brand" style="display: none;">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="Ferracini Brand"  />
 								</figure>
+							</div>
+								<div class="col-md-8">
+
+									<div  class="nav-extra"  >
+										<?php html5blank_nav_extra(); ?>
+											
+									</div>
+								</div>
 							</div>
 
 						</nav><!-- /.navbar -->
