@@ -1,0 +1,681 @@
+/*
+	Theme Name: LP Theme
+	Theme URI: http://
+	Description: WordPress Theme
+	Version: 1.0.0
+	Author: Agência Bowie (Patricia Poltts)
+	Author URI: github.com/poltts
+	Tags: Custom Theme, HTML5, CSS3
+
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*{
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	overflow-x: hidden;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+/* .container{
+	width: 925px;
+	padding: 0px;
+	margin: 0px auto;
+}
+*/
+.container-fluid{ 
+	padding: 0px; 
+	margin: 0px auto;
+} 
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+h1{
+	font-family: inherit;
+	color: #661577;
+	font-size: 24px;
+	font-weight: bold;
+}
+h2{
+	font-family: inherit;
+	color: #661577;
+	font-size: 22px;
+	font-weight: normal;
+}
+h3{
+	font-family: inherit;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+}
+h4{
+	font-family: inherit;
+	color: #fff;
+	font-size: 28px;
+	font-weight: normal;
+}
+p > span{ font-weight: bold; }
+[class^="btn"] button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+
+}
+[class^="btn"] > button:hover{
+		background: rgba(255,255,255,.4);
+		transition: background-color all ease .4s;
+			  -webkit-transition: background-color ease .4s;
+			  -moz-transition: background-color ease .3s;
+				-o-transition:  background-color ease .3s;
+}
+/* header */
+header{
+	width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+header > section{
+	width: 100%;
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	height: 70px;
+}
+header  h1{
+	text-align: right;
+	letter-spacing: 1px;
+}
+header figure{
+	margin: 15px auto;
+	width: 150px;
+	height: 35px;
+	text-align: left;
+
+}
+header img.titulo{
+	    width: 70%;
+    height: auto;
+    margin: 6px 0;
+}
+header figure > img{
+	width: 100%;
+	height: 100%;
+}
+main{
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+}
+
+main > section{
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+main > section:nth-child(2){ top: 821px; }
+main > section:nth-child(3){ top: 1180px; }
+main > section:nth-child(4){ top: 1660px; }
+main > section:nth-child(5){ top: 2726px; }
+main > section > div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+/* seções */
+.dados{
+	background: url('img/bg1.png') no-repeat;
+	background-size: 100% 820px;
+	height: auto;
+}
+	.dados h3{
+		margin: 15px 0px 0px 0px;
+	}
+	.dados p{
+		color: #fff;
+		text-align: center;
+		font-size: 14px;
+		width: 80%;
+		margin: 5px auto;
+	}
+	.dados h3 > span{
+		font-weight: bold;
+	}
+	.dados .indices{
+		background: rgba(157,33,137,.8);
+		width: 401px;
+		height: auto;
+		min-height: 540px;
+		margin: 5px auto 0px auto;
+		padding: 5px;
+		border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+	}
+		.dados .indice-itens.maps{ margin: 5px auto;}
+		.dados .indice-itens{
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px solid #ba5da5;
+			margin: 17px 0px;
+			font-weight: bold;
+			
+		}
+		.dados .indice-itens select{
+			background: none;
+			color:#ccc;
+			border:none;
+			outline:none;
+			display: inline-block;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance: none;
+			cursor:pointer;
+			margin-bottom: 5px;
+			width: 85%;
+		}
+		.dados .indice-itens p{
+			font-size: 14px;
+			margin: 0 auto;
+			padding: 0;
+			text-align: center;
+			color: #fff;
+		}
+		.dados .indice-itens ul > p{
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: #fff;
+		}
+		.dados .indice-itens.half ul{
+			width: 49%;
+			float: left;
+			border-bottom: none;
+		}
+		.dados .indice-itens.half{
+			height: 128px;
+		}
+		.dados .indice-itens.half ul:first-child{
+			border-right: 1px solid #ba5da5;
+		}
+		.dados .indice-itens ul{
+			display: inline-block;
+			width: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		.dados .indice-itens ul li{
+			display: inline-block;
+			width: auto;
+			height: auto;
+			margin: 0 18px 0 0px;
+			padding: 0 0 20px 0;
+			list-style-type: none;
+			color: #fff;
+		}
+		.dados .indice-itens ul li:last-child{ margin-right: 0px; }
+		.dados .indice-itens ul li > p{
+			width: 100%;
+			font-size: 28px;
+		}
+		.dados .indice-itens ul li > span{
+			display: inline;
+			font-size: 12px;
+		}
+	.dados .embaixadores{
+		position: absolute;
+		z-index: 5;
+		background: purple;
+		width: 100%;
+	}
+.form{
+	background: url('img/bg2.png') no-repeat;
+	background-size: 100% 360px;
+	height: 360px;
+}
+	.form h2{
+		width: 70%;
+		margin: 52px auto 0 auto;
+	}
+	.form h2 > span{ font-weight: bold; }
+	
+
+.video{
+	background: url('img/bg3.png') no-repeat;
+	background-size: 100% 480px;
+	height: 480px;
+}
+
+.video .col-md-4{ padding-right: 0px; }
+.video .box-txt{
+	margin: 60px 0 0 0;
+	text-align: right;
+}
+.video .box-txt h4{
+	line-height: 53px;
+	font-size: 38px;
+	margin: 0px;
+	padding: 0px;
+}
+.video .box-txt p{
+	line-height: 32px;
+	font-size: 24px;
+	margin: 25px 0 0 0;
+	padding: 0px;
+	color: #fff;
+}
+.video .box-video{
+	margin: 60px 0 0 0;
+	text-align: left;
+	width: 598px;
+	height: 360px;
+}
+.video .box-video > iframe{
+	width: 100%;
+	height: 100%;
+}
+.video .box-txt span{ font-weight: bold; }
+.infos{
+	background: url('img/bg4.png');
+	background-size: 100% 100%;
+	height: 1097px;
+	color: #661577;
+}
+.infos .btn-destaque{
+	margin: 8px auto;
+}
+.infos p{
+	font-size: 22px;
+	margin: 15px 0;
+	padding: 0;
+}
+.infos .box-info{
+	border: 1px solid #d3c3d6;
+	background: #fff;
+	margin: 0 auto 10px auto;
+	padding: 13px 0 0 13px;
+	width: 80%;
+	height: 135px;
+		border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+}
+.infos .row div:last-child .box-info{
+	margin-bottom: 0px;
+}
+.infos .box-info figure{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+.infos .box-info figure img{
+	width: 100%;
+	height: 100%;
+}
+.infos .box-info p{
+	float: left;
+	width: auto;
+	margin: 0px 0 0 18px;
+	text-align: left;
+}
+.infos .box-info small{
+	font-size: 14px;
+	float: left;
+	width: auto;
+	margin: 2px 0 0 22px;
+	text-align: left;
+	max-width: 80%;
+}
+
+.infos  .row div:nth-child(3) .box-info{
+	padding: 13px 13px 0 0;
+}
+.infos  .row div:nth-child(3) .box-info figure{
+	float: right;
+}
+.infos .row div:nth-child(3) .box-info p{
+	float: right;
+	margin: 8px 22px 0 0;
+	text-align: right !important;
+}
+.infos .row div:nth-child(3) .box-info small {
+	margin: 16px 22px 0 0;
+	float: right;
+	text-align: right !important;
+}
+.infos form {margin: 20px auto 0px auto; }
+.infos form  fieldset label{
+	width: 95% !important;
+}
+.infos form  fieldset label span{
+	float: right; 
+}
+.infos form  fieldset label input{
+	width: 95%;
+}
+.infos form  fieldset label input[type="radio"]{
+	float: left;
+	width: 10%;
+	margin-left: 6px;
+}
+.infos form  fieldset label input[type="radio"] + span{
+	float: left;
+	margin: 15px 15px 0 12px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.infos form  fieldset >  .btn-form{ 
+	text-align: center;
+	margin: 10px auto !important;
+	float: none !important;
+}
+.infos form  fieldset label textarea{
+	width:88%;
+	float: left;
+	margin: 0 auto;
+}
+.infos form p{
+	width: 100%;
+	margin: 13px 0 5px 0;
+	font-size: 16px;
+	float: left;
+}
+.infos form label select{
+			background: #fff;
+			color: inherit;
+			border:none;
+			outline:none;
+			display: inline-block;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance: none;
+			cursor:pointer;
+			margin-bottom: 5px;
+			width: 95%;
+			height: 40px;
+			padding: 0 0 0 10px;
+			border: 1px solid #d3c3d6;
+			border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+}
+.sobre-nos{
+	background: url('img/bg5.png') no-repeat;
+	background-size: 100% 400px;
+	height: 400px;
+}
+.sobre-nos p{
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+}
+.sobre-nos .row div:first-child p{ margin: 45px 0 0 0; }
+.sobre-nos .row div:nth-child(3) p{ 
+	margin: 87px 0 0 0; 
+	font-size: 33px;
+}
+.sobre-nos figure{
+	margin: 50px auto 0px auto;
+	width: 340px;
+	height: 88px;
+}
+.sobre-nos figure > img{
+	width: 100%;
+	height: 100%;
+}
+.btn-destaque{
+	margin: 24px 0px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+	.btn-destaque > a > button{
+		border: none;
+		font-size: 24px;
+		font-weight: bold;
+		color: #fff;
+		width: 50%;
+		margin: 0px auto;
+		background: #f65cd2;
+		padding: 25px 0px;
+	}
+
+.msg{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 2800px;
+    left: 0;
+    margin: 0 auto;
+    z-index: 999;
+    top: 0;
+    text-align: center;
+    background: rgba(0,0,0,.7);
+}
+.msg > .form-sucesso{
+	background: #32133a;
+    text-align: center;
+    margin: 10% auto;
+    color: #fff;
+    padding: 20px;
+    width: 50%;
+	
+}
+.msg .btn-close{
+	margin: 5px 0px;
+	text-align: center;
+	width: 100%;
+		border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+}
+.msg .btn-close > button{
+	background: #f65cd2;
+	text-align: center;
+	margin: 0px auto;
+	color: #fff;
+	width: 100px;
+    height: 30px;
+}
+	form{
+		width: 60%;
+		margin: 35px auto 0px auto;
+	}
+	form > fieldset{
+		margin: 0px;
+		padding: 0px;
+		border: none;
+		text-align: center;
+	}
+	form > fieldset:last-child{ margin-top: 17px; }
+	 form > fieldset label{
+		font-weight: normal;
+		width: 40%;
+		margin: 10px 10px 0px 0px; 
+	}
+	 form > fieldset:first-child label:last-child{
+		width: 15%;
+		margin-right: 0px;
+	}
+	 form > fieldset:last-child label{
+		width: 72%;
+		float: left;
+	}
+	form > fieldset input,
+	form > fieldset textarea{
+		width: 100%;
+		border: 1px solid #d3c3d6;
+		color: #999;
+		padding: 0px 0px 0px 10px;
+		border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+	}
+	form > fieldset input{
+		height: 40px;
+		font-weight: normal;
+	}
+	 form > fieldset textarea{
+		height: 70px;
+		padding-top: 10px; 
+	}
+	form > fieldset .btn-form{
+		width: 26.2%;
+		text-align: left;
+		float: left;
+		margin: 10px 0 0 0;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	form > fieldset .btn-form >button{
+		background: #661577;
+		height: 71px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fff;
+		width: 100%;
+	}
+
+	footer{
+		width: 100%;
+		height: 50px;
+		background: #32133a;
+		text-align: center;
+		position: relative;
+		top: 3158px;
+		bottom: 0px;
+	}
+	footer ul{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		margin: 16px 0 0 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	footer ul li{
+		display: inline-block;
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		color: #fff;
+		font-size: 14px;
+	}
+	footer ul li a{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	@media all and(min-width: 1024px){
+		header{ width: 100% !important; }
+		.container{ width: 680px; }
+	}
+	@media all and (min-width: 544px){ 
+
+		main > section:nth-child(2){ top: 821px; }
+		main > section:nth-child(3){ top: 1180px; }
+		main > section:nth-child(4){ top: 1660px; }
+		main > section:nth-child(5){ top: 2726px; }
+
+		.dados{
+			background: url('img/bg1-mobile.png');
+		}
+		.form{
+			background: url('img/bg2-mobile.png');
+		}
+		h1{
+			font-size: 20px;
+			margin: 12px 0px 0px 0px;
+		}
+		.dados h3{ margin-top: 20px;}
+		.dados .mapa{ display: none !important; }
+		.dados .indices{
+			width: 290px;
+			margin-top: 5px;
+			margin-bottom: 25px;
+			min-height: 442px;
+		}
+		.form h2{
+			margin-top: 10px;
+			font-size: 16px;
+		}
+		.form form{
+			width: 100%;
+			margin-top: 10px;
+		}
+		.form form > fieldset label{
+			width: 100%;
+			margin-top: 5px;
+		}
+		.form form > fieldset label:nth-child(2){
+			float: left;
+			width: 78%;
+		}
+		.form form > fieldset:first-child label:last-child{
+			width: 20%;
+			float: right;
+		}
+		.form form > fieldset:last-child{
+			width: 100%;
+		}
+		.form form > fieldset:last-child label{
+			width: 100%;
+		}
+		.video{
+			background: url('img/bg3-mobile.png') no-repeat;
+		}
+		.video .box-txt h4{
+			text-align: center;
+			font-size: 24px;
+			line-height: normal;
+		}
+		.video .box-txt p{
+			text-align: center;
+			font-size: 18px;
+			line-height: normal;
+			margin-top: 15px;
+
+		}
+		.video .box-txt{margin: 10px auto;}
+		.video .box-video{
+			width: 100%;
+			margin: 0 auto;
+			height: 200px;
+		}
+
+		.btn-destaque{ margin: 0px; }
+		.btn-destaque > a > button{ 
+			width: 100%;
+			font-size: 20px; 
+		}
+		br{display: none;}
+	}
