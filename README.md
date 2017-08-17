@@ -16,3 +16,14 @@ Aqui temos um projeto para você nos mostrar todo o seu conhecimento para desenv
 Se você ainda não passou pela fase de entrevista, [cadastre seu currículo aqui](http://www.mktvirtual.com.br/carreira/).
 
 ### Estamos torcendo por você! Supreenda-nos!
+
+Rodar Test
+==========
+
+#Configuração
+- Editar Configurações banco de dados no wp-config-sample e renomear (Manter prefixo tabela)
+- Fazer a instação local
+- Mudar no config tema para html5 template
+- Exportar base de dados
+- Rodar
+ 
