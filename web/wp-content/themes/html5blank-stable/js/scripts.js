@@ -7,20 +7,29 @@
 		// DOM ready, take it away
 
 		$(window).scrollTop(0);
-		$(".slide ol > li:first-child").addClass('active');
+		$(".wpgmza_sl_radius_div wpgmza-clearfix").hide();
 		$(window).scroll(function() {
 			if ($(".navbar").offset().top > 35) {
 				$(".navbar-fixed-top").addClass("top-nav-collapse"); 
 				$(".logo").hide();
 				$(".logo-small").show();
-				$(".busca").removeClass('col-md-5');
-				$(".busca").addClass('col-md-3');
-			} else {
+				// $(".busca").removeClass('col-md-5');
+				// $(".busca").addClass('col-md-3');
+				$(".main-nav").hide();
+				$(".busca").hide();
+				$(".nav-extra-bottom").hide();
+				$(".nav-extra").show();
+			}
+			 else {
 				$(".navbar-fixed-top").removeClass("top-nav-collapse");  
 				$(".logo").show();
 				$(".logo-small").hide();
-				$(".busca").removeClass('col-md-3');
-				$(".busca").addClass('col-md-2');
+				$(".main-nav").show();
+				$(".busca").show();
+				$(".busca").removeClass('col-md-2');
+				$(".busca").addClass('col-md-5');
+				$(".nav-extra").hide();
+				$(".nav-extra-bottom").show();
 			}
 		});
 		

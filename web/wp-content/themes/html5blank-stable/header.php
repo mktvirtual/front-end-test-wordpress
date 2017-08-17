@@ -39,12 +39,16 @@
 							<div class="navbar-header">
 								<div class="container">
 									<div class="row container navbar-container">
+
 										<div class="col-md-2 logo-small" style="display: none;">
 											<figure title=" Logo"  id="brand" class="navbar-brand " >
 												<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="Logo Brand"  />
 											</figure>
 										</div>
-											<div class="col-md-7">
+										<div  class="col-md-10 nav-extra"  style="display: none;">
+											<?php html5blank_nav_extra(); ?>
+										</div>
+											<div class="col-md-7 main-nav">
 												<div id="nav" class=""  >
 													<?php html5blank_nav(); ?>
 												</div>
@@ -66,17 +70,14 @@
 								</div>
 							</div>
 							<div class="container logo">
-
-							<div class="col-md-4">
-								<figure title=" Logo"  id="brand" class=" navbar-brand " style="">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Brand" />
-								</figure>
-							</div>
+								<div class="col-md-4">
+									<figure title=" Logo"  id="brand" class=" navbar-brand " style="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Brand" />
+									</figure>
+								</div>
 								<div class="col-md-8">
-
-									<div  class="nav-extra"  >
+									<div  class="nav-extra-bottom"  >
 										<?php html5blank_nav_extra(); ?>
-											
 									</div>
 								</div>
 							</div>

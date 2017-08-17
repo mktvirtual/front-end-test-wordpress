@@ -4,14 +4,22 @@
 		<!-- /wrapper -->			
 		<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
+				<div class="container">
+					<div class="col-md-4">
+						<?php html5blank_nav_footer(); ?>
+					</div>
+					<div class="col-md-4">
+						<?php html5blank_nav_atalhos(); ?>
+						
+					</div>
+					<div class="col-md-4">
+						<!-- copyright -->
+						<p class="copyright">
+							&copy; <?php echo date('Y'); ?>, <?php bloginfo('name'); ?>. Todos os direitos reservados.
+						</p>
+						<!-- /copyright -->
+					</div>
+				</div>
 			</footer>
 			<!-- /footer -->
 

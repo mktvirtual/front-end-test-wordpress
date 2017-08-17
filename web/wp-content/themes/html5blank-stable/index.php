@@ -6,6 +6,11 @@
 			<?php get_template_part('partial/promocao'); ?>
 		</section>
 		<!-- /section -->
+		<section>
+			<div class="box-widgets-2">
+				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+			</div>
+		</section>
 	</main>
 
 
