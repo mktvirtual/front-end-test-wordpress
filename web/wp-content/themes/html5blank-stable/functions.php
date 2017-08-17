@@ -369,6 +369,7 @@ add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comment
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_slider'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_promocao'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -418,7 +419,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
+// CUSTOM POST SLIDER
 function create_post_type_slider()
 {
     register_taxonomy_for_object_type('category', 'slider'); // Register Taxonomies for Category
@@ -426,7 +427,7 @@ function create_post_type_slider()
     register_post_type('slider', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Slider Custom Itens', 'slider'), // Rename these to suit
+            'name' => __('Sliders', 'slider'), // Rename these to suit
             'singular_name' => __('Slider Custom Item', 'slider'),
             'add_new' => __('Add New', 'slider'),
             'add_new_item' => __('Add New Slider Custom Item', 'slider'),
@@ -438,6 +439,43 @@ function create_post_type_slider()
             'search_items' => __('Search Slider Custom Item', 'slider'),
             'not_found' => __('No Slider Custom Item found', 'slider'),
             'not_found_in_trash' => __('No Slider Custom Item found in Trash', 'slider')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+// CUSTOM POST PROMOÇÕES
+function create_post_type_promocao()
+{
+    register_taxonomy_for_object_type('category', 'promocao'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'promocao');
+    register_post_type('promocao', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Promoções', 'promocao'), // Rename these to suit
+            'singular_name' => __('Promoção Custom Item', 'promocao'),
+            'add_new' => __('Add New', 'slider'),
+            'add_new_item' => __('Add New Promoção Custom Item', 'promocao'),
+            'edit' => __('Edit', 'promocao'),
+            'edit_item' => __('Edit Promoção Custom Item', 'promocao'),
+            'new_item' => __('New Promoção Custom Item', 'promocao'),
+            'view' => __('View Promoção Custom Item', 'promocao'),
+            'view_item' => __('View Promoção Custom Item', 'promocao'),
+            'search_items' => __('Search Promoção Custom Item', 'promocao'),
+            'not_found' => __('No Promoção Custom Item found', 'promocao'),
+            'not_found_in_trash' => __('No Promoção Custom Item found in Trash', 'promocao')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

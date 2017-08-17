@@ -18,8 +18,7 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="<?php echo get_template_directory_uri(); ?>/css/full-slider.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet"> 
+		<link href="<?php echo get_template_directory_uri(); ?>/css/full-slider.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900|Montserrat:400,400i,700,700i" rel="stylesheet"> 
 		<?php wp_head(); ?>
 		<script>
         // conditionizr.com
@@ -73,8 +72,8 @@
 				</section>
 			</header>
 			<section>
-				<?php get_template_part('./partial','slider'); ?>
+				<?php get_template_part('partial/slider'); ?>
 			</section>
 			<!-- /header -->
 		<!-- wrapper -->
-		<div class="wrapper container">
+		<div class="container">
