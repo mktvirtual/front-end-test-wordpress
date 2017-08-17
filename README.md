@@ -25,5 +25,9 @@ Rodar Test
 - Fazer a instação local
 - Mudar no config tema para html5 template
 - Exportar base de dados
-- Rodar
+
+#Rodar
+- Abrir pasta web no terminal e rodar codigo abaixo:
+<code>php -S localhost:8080</code>
+
  
