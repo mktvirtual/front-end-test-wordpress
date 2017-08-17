@@ -80,13 +80,36 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '<ul class="nav navbar-nav">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)
 	);
 }
 
+function html5blank_nav_extra()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'extra-menu',
+		'menu'            => '',
+		'container'       => 'div',
+		'container_class' => 'menu-{menu slug}-container',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '<ul>%3$s</ul>',
+		'depth'           => 0,
+		'walker'          => ''
+		)
+	);
+}
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {
@@ -345,7 +368,7 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_slider'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -396,25 +419,25 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+function create_post_type_slider()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_taxonomy_for_object_type('category', 'slider'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'slider');
+    register_post_type('slider', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('Slider Custom Itens', 'slider'), // Rename these to suit
+            'singular_name' => __('Slider Custom Item', 'slider'),
+            'add_new' => __('Add New', 'slider'),
+            'add_new_item' => __('Add New Slider Custom Item', 'slider'),
+            'edit' => __('Edit', 'slider'),
+            'edit_item' => __('Edit Slider Custom Item', 'slider'),
+            'new_item' => __('New Slider Custom Item', 'slider'),
+            'view' => __('View Slider Custom Item', 'slider'),
+            'view_item' => __('View Slider Custom Item', 'slider'),
+            'search_items' => __('Search Slider Custom Item', 'slider'),
+            'not_found' => __('No Slider Custom Item found', 'slider'),
+            'not_found_in_trash' => __('No Slider Custom Item found in Trash', 'slider')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

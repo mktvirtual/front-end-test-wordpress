@@ -26,5 +26,12 @@
 		ga('send', 'pageview');
 		</script>
 
+		
+    <!-- Bootstrap core JavaScript -->
+		<script src="<?php echo get_template_directory_uri(); ?>/vendor/jquery/jquery.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.easing.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/vendor/popper/popper.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/vendor/bootstrap/js/bootstrap.min.js"></script>
+
 	</body>
 </html>
