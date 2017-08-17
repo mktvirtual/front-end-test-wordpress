@@ -392,18 +392,9 @@ main{ margin: 20px 0px;}
 \*------------------------------------*/
 
 @media only screen and (min-width:320px) {
-	.box-busca{ display: none; }
-	.logo{ display: none !important; }
-	.nav-extra-bottom{ display: none; }
-	.navbar-container{ display: none; }
-	.logo-small{ display: block !important;}
+
 }
 @media only screen and (min-width:480px) {
-	.box-busca{ display: none; }
-	.logo{ display: none !important; }
-	.nav-extra-bottom{ display: none; }
-	.navbar-container{ display: none; }
-	.logo-small{ display: block !important;}
 
 }
 @media only screen and (min-width:768px) {
@@ -416,7 +407,7 @@ main{ margin: 20px 0px;}
 
 }
 @media only screen and (min-width:1280px) {
-
+	
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
