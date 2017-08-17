@@ -23,6 +23,7 @@ Rodar Test
 #Configuração
 - Editar Configurações banco de dados no wp-config-sample e renomear (Manter prefixo tabela)
 - Fazer a instação local
+- Ativar plugins
 - Mudar no config tema para html5 template
 - Exportar base de dados
 
