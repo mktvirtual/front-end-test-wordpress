@@ -31,12 +31,12 @@ if($promocao->have_posts()) :
                             <div class="txt-dinamico <?php echo get_field('txt_align', $promocao->ID); ?>">
                             <span class="category">
                                 <?php echo $categoryName; ?>
-                </span>
+                            </span>
                                 <h3>
                                     <?php the_title(); ?>
                                 </h3>
                                 <p><?php echo get_field('desc', $promocao->ID); ?></p>
-                                <div class="btn-promo">
+                                <div class="btn-default">
                                     <button><?php echo get_field('txt_btn', $promocao->ID); ?></button>
                                 </div>
                             </div>

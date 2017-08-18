@@ -1,24 +1,21 @@
 
-
 		</div>
 		<!-- /wrapper -->			
 		<!-- footer -->
 			<footer class="footer" role="contentinfo">
 				<div class="container">
-					<div class="col-md-4">
-						<?php html5blank_nav_footer(); ?>
+					<div class="row">
+					<div class="col-sm-4 col-md-6">
+						<div class="menu">
+							<span>Footer Link</span>
+							<?php html5blank_nav_footer(); ?> 
+						</div>
+						<div class="menu">
+							<span>Footer Link</span>
+							<?php html5blank_nav_footer_atalhos(); ?>
+						</div>
 					</div>
-					<div class="col-md-4">
-						<?php html5blank_nav_atalhos(); ?>
-						
-					</div>
-					<div class="col-md-4">
-						<!-- copyright -->
-						<p class="copyright">
-							&copy; <?php echo date('Y'); ?>, <?php bloginfo('name'); ?>. Todos os direitos reservados.
-						</p>
-						<!-- /copyright -->
-					</div>
+					
 				</div>
 			</footer>
 			<!-- /footer -->

@@ -141,7 +141,7 @@ function html5blank_nav_footer_atalhos()
 	wp_nav_menu(
 	array(
 		'theme_location'  => '',
-		'menu'            => 'Footer Atalhos',
+		'menu'            => 'Atalhos',
 		'container'       => 'div',
 		'container_class' => 'footer-atalho',
 		'container_id'    => '',

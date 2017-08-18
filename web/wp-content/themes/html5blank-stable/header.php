@@ -2,7 +2,8 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>
+		</title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
@@ -39,27 +40,23 @@
 							<div class="navbar-header">
 								<div class="container">
 									<div class="row container navbar-container">
-
-										<div class="col-md-2 logo-small" style="display: none;">
+										<div class="col-sm-1 col-md-2 logo-small" style="display: none;">
 											<figure title=" Logo"  id="brand" class="navbar-brand " >
 												<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="Logo Brand"  />
 											</figure>
+											<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-brand " aria-controls="navbar-brand " aria-expanded="false" aria-label="Toggle navigation">
+											<span class="navbar-toggler-icon"></span>
+										</button>
 										</div>
-										<div  class="col-md-10 nav-extra"  style="display: none;">
+										<div  class="col-sm-12 col-md-10 nav-extra"  style="display: none;">
 											<?php html5blank_nav_extra(); ?>
 										</div>
-											<div class="col-md-7 main-nav">
-												<div id="nav" class=""  >
+											<div class="col-sm-12 col-md-7 main-nav">
+												<div id="nav" class=" navbar-collapse"  id="navbar-brand ">
 													<?php html5blank_nav(); ?>
 												</div>
-												<button type="button" class="navbar-toggle menu-button collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded-"false" aria-controls="navbar" style="display: none;">
-														<span class="sr-only">Toggle navigation</span>
-														<span class="icon-bar"></span>
-														<span class="icon-bar"></span>
-														<span class="icon-bar"></span>
-												</button>
 											</div>
-											<div class="col-md-5 busca">
+											<div class="col-sm-12 col-md-5 busca">
 												<div class="box-busca">
 															<?php get_template_part('searchform'); ?>
 														</div>
@@ -70,12 +67,12 @@
 								</div>
 							</div>
 							<div class="container logo">
-								<div class="col-md-4">
-									<figure title=" Logo"  id="brand" class=" navbar-brand " style="">
+								<div class="col-sm-12 col-md-4">
+									<figure title=" Logo"  id="brand" class="navbar-brand " style="">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Brand" />
 									</figure>
 								</div>
-								<div class="col-md-8">
+								<div class="col-sm-12 col-md-8">
 									<div  class="nav-extra-bottom"  >
 										<?php html5blank_nav_extra(); ?>
 									</div>

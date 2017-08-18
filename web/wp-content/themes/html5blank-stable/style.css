@@ -29,7 +29,7 @@
 html {
 	font-size:62.5%;
 }
-body { 
+body {
 	color:#444;
 	font-family: 'Maven Pro', sans-serif;
 	font-weight: 400;
@@ -122,7 +122,7 @@ nav .navbar-header{
 	list-style-type: none;
 	position: absolute;
 	top: 0px;
-} 
+}
 nav .navbar-header ul{
 	font-family: 'Montserrat', sans-serif;
 	margin: 0px;
@@ -168,7 +168,7 @@ nav .navbar-header .box-busca > form > input{
 }
 nav .navbar-header .box-busca > form > button{
 	border: none;
-	color: #fff; 
+	color: #fff;
 	padding: 0px;
 	border-left: 1px solid #fff;
 	position: absolute;
@@ -182,7 +182,7 @@ nav .navbar-header .box-busca > form > button{
 }
 nav .nav-header-extra{
 	background: #fff;
-	
+
 }
 ul.menu-extra  {
 	font-weight: 800;
@@ -191,15 +191,13 @@ ul.menu-extra  {
 	padding: 0px;
 	display: inline-block;
     width: 100%;
-    height: auto; 
+    height: auto;
 }
  ul.menu-extra > li{
 	color: #333132;
 	list-style-type: none;
-	height: 10px;
 	padding: 14px 0px;
 	display: inline;
-	width: 18%;
 	font-weight: 400;
 	font-size: 16px;
 	margin: 0px 25px 0px 0px;
@@ -212,7 +210,7 @@ ul.menu-extra > li > a{
 }
 ul.menu-extra > li > a:hover{
 	text-decoration: none;
-	color: rgb(198,98,35); 
+	color: rgb(198,98,35);
 }
 .carousel.slide a.slider-icon > span{
 	width: 20px;
@@ -252,7 +250,7 @@ footer {
 	background-position: 85% 0px;
 	height: 325px;
 	position: relative;
-} 
+}
 footer p{
 	text-align: center;
 	color: #fff;
@@ -260,11 +258,80 @@ footer p{
 	position: absolute;
 	bottom: 50px;
 }
+footer .menu{
+	float: left;
+	width: 20%;
+	margin: 20px 10px 0px 0px;
+}
+footer .menu span{
+	display: inline-block;
+	color: #fff;
+}
+footer  .menu ul li{
+	list-style-type: circle !important;
+}
+footer .menu ul li a{
+	color: #fff;
+	font-family: inherit;
+	font-size: 12px;
+}
+.newsletter{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+.newsletter p{
+	color: #333132;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 800;
+}
+.newsletter form input{
+	width: 100%;
+	height: 49px;
+	background: #d1d3d4;
+	padding-left: 40px;
+	color: #58595b;
+	float: left;
+	border: none;
+}
+.newsletter form .btn-default{
+	position: absolute;
+	right: 0px;
+	width: 95px;
+	height: 46px;
+	top: 33px;
+	padding-top: 7px;
+	background: #d1d3d4;
+}
+
+.social-media{
+	width: auto;
+	height: auto;
+	position: relative;
+	margin: 0 0 0 200px;
+}
+.social-media p{
+	color: #333132;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 800;
+}
+.social-media a{
+	display: inline-block;
+	margin-right: 5px;
+}
+.social-media a img{
+	width: 49px;
+	height: 49px;
+}
 
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
-
+main > section{
+	margin: 100px auto;
+}
 .box-promocao ul{
 	display: inline-block;
 	width: 100%;
@@ -272,7 +339,7 @@ footer p{
 	margin: 0px;
 	padding: 0px;
 	clear: both;
-	
+
 }
 .box-promocao ul li{
 	width: 46%;
@@ -293,12 +360,12 @@ footer p{
 .box-promocao ul li .promocao-content .txt-dinamico{
 	width: 65%;
 }
-.box-promocao ul li .promocao-content .txt-dinamico.left{ 
-	float: left; 
+.box-promocao ul li .promocao-content .txt-dinamico.left{
+	float: left;
 	margin: 20px 0 0 20px;
 }
-.box-promocao ul li .promocao-content .txt-dinamico.right{ 
-	float: right; 
+.box-promocao ul li .promocao-content .txt-dinamico.right{
+	float: right;
 	margin: 228px 20px 0 0;
 }
 .box-promocao ul li .promocao-content .txt-dinamico h3{
@@ -329,12 +396,12 @@ footer p{
 	float: left;
 	width: 100%;
 }
-.btn-promo{
+.btn-default{
 	width: 100%;
 	height: 35px;
 	text-align: center;
 }
-.btn-promo > button{
+.btn-default > button{
 	background: #fff;
 	border: 1px solid #58595b;
 	color: #58595b;
@@ -350,23 +417,24 @@ footer p{
 	margin: 12px 0px;
 	padding: 0px;
 }
-.box-widgets-2 .wpgmza_widget{
+
+.sidebar-promocao{
+	background: url('img/main-promocoes-bg.png') top center no-repeat;
+	width: 100%;
+	height: 790px;
 	position: relative;
 }
-.box-widgets-2  .wpgmza_widget .wpgmza_sl_main_div{ 
-    background: #fff; 
+.sidebar-promocao > p{
+	position: absolute;
+	background: #58207b;
+	color: #f7802c;
+	height: 54px;
+    bottom: -61px;
+    padding: 17px 0px;
 	width: 100%;
-	padding: 2%;
-	background: transparent;
-}
-.box-widgets-2  .wpgmza_widget .wpgmza_sl_main_div,
-.box-widgets-2 .wpgmza_sl_query_div{ 
-	width: 50%;
-}
-.sidebar-promocao{
-	background: url('img/main-promocoes.png') top center no-repeat;
-	width: 100%;
-	height: 500px;
+	text-align: center;
+    font-size: 13px;
+    font-weight: 800;
 }
 .sidebar-widget ul, .sidebar-widget ul > li{
 	list-style-type: none;
@@ -374,6 +442,7 @@ footer p{
 ul{list-style-type: none; }
 ul li{list-style-type: none; }
 main{ margin: 20px 0px;}
+
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
@@ -383,7 +452,7 @@ main{ margin: 20px 0px;}
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-/* 
+/*
 
 
 
@@ -391,8 +460,34 @@ main{ margin: 20px 0px;}
     RESPONSIVE
 \*------------------------------------*/
 
-@media only screen and (min-width:320px) {
-
+@media only screen and (min-width:320px) and (max-width: 600px) {
+	.nav .navbar-header{ height: 37px;}
+	.navbar-brand{
+		margin-top: 55px;
+	}
+	.box-promocao ul li{
+		width: 100%;
+		margin-top: 80px;
+	}
+	.social-media{
+		width: 100%;
+		margin: 0px;
+	}
+	footer{
+		height: 479px;
+		background-position: 65% 100%;
+	}
+	footer .menu{
+		background: rgba(244,125,49, .2);
+		color: #d1d3d4;
+		width: 100%;
+	}
+	footer .menu > ul{
+		width: 100%;
+	}
+	footer .menu:last-of-type{
+		margin-top: 20px;
+	}
 }
 @media only screen and (min-width:480px) {
 
@@ -402,12 +497,15 @@ main{ margin: 20px 0px;}
 }
 @media only screen and (min-width:1024px) {
 
+	.navbar-header{
+		height: 55px;
+	}
 }
 @media only screen and (min-width:1140px) {
 
 }
 @media only screen and (min-width:1280px) {
-	
+
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {

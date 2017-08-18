@@ -7,7 +7,12 @@
 		// DOM ready, take it away
 
 		$(window).scrollTop(0);
-		$(".wpgmza_sl_radius_div wpgmza-clearfix").hide();
+		
+		console.log();
+		if($(window).width() >= 800){
+			$(".navbar-collapse").addClass('collapse');
+			$(".nav-extra-bottom").addClass('collapse');
+		}
 		$(window).scroll(function() {
 			if ($(".navbar").offset().top > 35) {
 				$(".navbar-fixed-top").addClass("top-nav-collapse"); 
@@ -26,8 +31,8 @@
 				$(".logo-small").hide();
 				$(".main-nav").show();
 				$(".busca").show();
-				$(".busca").removeClass('col-md-2');
-				$(".busca").addClass('col-md-5');
+				// $(".busca").removeClass('col-md-2');
+				// $(".busca").addClass('col-md-5');
 				$(".nav-extra").hide();
 				$(".nav-extra-bottom").show();
 			}
