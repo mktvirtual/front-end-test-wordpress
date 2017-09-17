@@ -1,0 +1,353 @@
+/*
+Theme Name: MKT TESTE
+Theme URI: 
+Description: Teste 
+Author: Lucas Rodrigues
+Author URI
+version:  1.0
+*/ 
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+/* PRIMEIRO MENU */
+
+.f-nav{
+	height: 25px;
+	background: rgb(244, 125, 49);
+}
+
+.f-nav>.links{
+	padding-right: 5px;
+}
+
+.f-nav ul{
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.f-nav ul>li{
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.f-nav ul>li>a{
+	color: #FFF;
+	font-size: 0.89em;
+}
+
+.f-nav ul>li>a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.f-nav>.form{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form input::placeholder{
+	color: #FFF;
+	font-size: 0.89em;
+}
+
+.form .search{
+	width: 100%;
+	height: 25px;
+	background: rgba(0,0,0,.3);
+	border: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #FFF;
+	font-size: 0.89em;
+}
+
+/* SEGUNDO MENU */
+
+.s-nav{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: none;
+	border: none;
+	border-radius: 0;
+}
+
+.main-logo{
+	color: #FFF;
+	font-size: 2em;
+	padding: 15px;
+}
+
+.main-logo:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.item-list>.link-list{
+	color: #FFF;
+}
+
+.item-list>.link-list:hover{
+	background: none;
+}
+
+/* SLIDE */ 
+.slide{
+	margin-bottom: 50px;
+}
+
+.carousel-control.right, .carousel-control.left{
+	background-image: none;
+}
+
+/* BODY-SITE */
+.anuncio{
+	background: url('https://www.saudeamesa.com.br/wp-content/uploads/2016/12/comer-frutas.jpg');
+	width: 100%;
+	height: 535px;
+	background-size: cover;
+}
+
+.link-anuncio{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.link-anuncio:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.box-anuncio{
+	background: #58207b;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	top: 485px;
+	padding-top: 17px;
+	text-align: center; 
+}
+
+.thumbnail{
+	background: none;
+	border: none;
+	padding: 15px;
+	font-weight: bold;
+}
+
+.thumb-margin{
+	margin-bottom: 35px;
+}
+
+.retina{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+
+.img-thumb{
+	width: 100%;
+	height: 250px;
+	background: url('https://i.pinimg.com/736x/e4/b2/74/e4b274817f5a0e80b65d0dee4685918c--make-up-hair-red-hair.jpg');
+	background-size: cover;
+}
+
+.text-thumb{
+	color: #FFF;
+}
+
+.text-thumb:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.map{
+	width: 100%;
+	height: 400px;
+	background: url('http://vertgalant.hotel-restaurant-paris.com/wp-content/uploads/sites/2/2015/02/google-map-bg.jpg') center;
+	background-size: cover;
+	box-shadow: 0px 0px 5px #777;
+}
+
+.box-map{
+	box-shadow: 0px 0px 5px #777;
+	padding: 15px;
+	position: relative;
+	top: 150px;
+	background: #FFF;
+}
+
+.btn-map{
+	border: 1px solid #555;
+	border-radius: 0;
+}
+
+.text-map--search{
+}
+
+.search-map{
+	border-radius: 0;
+	background: #999; 
+	height: 34px;
+	width: 100%;
+	display: block;
+	font-size: 1em;
+	padding: 6px 12px;
+	border: none;
+	color: #FFF;
+}
+
+.box-map form input::placeholder{
+	color: #FFF;
+}
+
+/* REDES */
+
+.redes{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.redes input::placeholder{
+	color:#FFF;
+}
+
+.input-ass{
+	background: #666;
+	color: #FFF;
+	border-radius: 0;
+	height: 45px;
+}
+
+.btn-email{
+	background: #FFF;
+	border-radius: 0;
+	border: 1px solid #FFF;
+	color: #555;
+	position: relative;
+	left: 85%;
+	top: -38px;
+	padding: 5px 15px; 
+}
+
+/* FOOTER */
+
+.footer{
+	background: rgb(244, 125, 49);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.title-box--footer{
+	color: #FFF;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.box-footer ul{
+	list-style: none;
+}
+
+.box-footer ul li a{
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+.box-footer ul li a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.direitos{
+	color: #FFF;
+}
+
+
+/* CSS RESPONSIVO */
+
+@media screen and (min-width: 0px) and (max-width: 300px) {
+	.f-nav{
+		display: none;
+	}
+	/* SEGUNDO MENU */
+	.s-nav{
+		position: relative;
+		top: 0px;
+		background: #FFF;
+		border-bottom: 3px solid rgb(244, 125, 49);
+	}
+
+	.navbar-header{
+		padding: 15px;
+	}
+
+	.main-logo{
+		color: #333;
+	}
+
+	.main-logo:hover{
+		color: #333;
+	}
+
+	.icon-responsive{
+		color: #333;
+		border: 1px solid #333;
+		border-radius: 3px; 
+		margin: 0;
+	}
+	.item-list>.link-list{
+		color: #333;
+	}
+	/* SLIDE */
+	.slide{
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+	.f-nav{
+		display: none;
+	}
+
+	/* SEGUNDO MENU */
+	.s-nav{
+		position: relative;
+		top: 0px;
+		background: #FFF;
+		border-bottom: 3px solid rgb(244, 125, 49);
+		margin-bottom: 0;
+	}
+
+	.navbar-header{
+		padding: 15px;
+	}
+
+	.main-logo{
+		color: #333;
+	}
+
+	.main-logo:hover{
+		color: #333;
+	}
+
+	.icon-responsive{
+		color: #333;
+		border: 1px solid #333;
+		border-radius: 3px; 
+		margin: 0;
+	}
+	.item-list>.link-list{
+		color: #333;
+	}
+}
