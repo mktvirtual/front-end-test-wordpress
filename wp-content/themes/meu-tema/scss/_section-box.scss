@@ -1,0 +1,161 @@
+#sell-box {
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.vertical-box {
+    height: 100%;
+    padding: 0 !important;
+}
+
+.adesao {
+    position: relative;
+    bottom: 36px;
+    background: purple;
+    color: #f47d31;
+    font-weight: bolder;
+    font-size: 0.7em;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.box-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 !important;
+    position: relative;
+    height: auto;
+    max-height: 600px;
+}
+
+.box-group .box {
+    width: 49.3%;
+    background: white;
+}
+
+.box-group .box:nth-child(1), .box-group .box:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+
+.boxes-container {
+    height: 100%;
+}
+
+.box {
+    height: 49%;
+}
+
+.box img {
+    opacity: 0.7;
+}
+
+.box .box-info {
+    position: relative;
+    bottom: 55%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.box .box-info p, span {
+    font-size: 0.7em;
+}
+
+.maps {
+    background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/maps-background-5.jpg');
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.maps .find-place {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border: 1px solid rgb(122, 120, 120);
+    height: 85px;
+    margin: 0 auto;
+    padding: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-transform: uppercase;
+    // Properties to center element vertically
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.maps .auto-location {
+    width: 50%;
+    background: #ccc;
+    padding: auto;
+    padding: 2% 10%;
+    margin-right: 8px;
+}
+
+.maps .location-by-zipcode {
+    width: 50%;
+    background: #ccc;
+    padding: 0 10px;
+}
+
+.social-networks {
+    text-transform: uppercase;
+}
+
+.social-networks .newsletter {
+    width: 60%;
+    padding-left: 14px;
+}
+
+
+.social-networks .newsletter button {
+    margin-top: 10px;
+}
+
+.social-networks .social-networks-links {
+    margin-top: 5px;
+    padding: 0;
+}
+
+ul.social-networks-links li a {
+    color: gray;
+    font-size: 2em;
+    padding: 8px 15px;
+    border: 1px solid gray;
+}
+
+
+@media screen and (max-width: 991px) {
+    .box .box-info {
+        bottom: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sell-box {
+        margin-top: -20px;
+    }
+
+    .vertical-box {
+        margin-bottom: 15px;
+    }
+
+    .box-group .box:nth-child(1), .box-group .box:nth-child(2) {
+        margin-bottom: 5px;
+    }
+
+    .box .box-info {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+

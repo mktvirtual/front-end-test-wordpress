@@ -1,0 +1,38 @@
+@import "_variables.scss";
+
+footer#footer {
+    background: $main-orange;
+    padding-top: 50px;
+    margin-top: 25px;
+}
+
+.menu-footer {
+    font-size: 0.8em;
+    color: white;
+}
+
+.menu-footer .footer-menu-title {
+    font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+ul.footer-menu {
+    list-style: disc;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.footer-menu li {
+    color: white;
+}
+
+.footer-menu a {
+    color: white;
+}
+
+@media screen and (max-width: 575px) {
+    ul.footer-menu {
+        list-style: none;
+    }
+}

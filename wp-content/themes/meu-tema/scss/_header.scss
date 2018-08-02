@@ -1,0 +1,113 @@
+@import "_variables.scss";
+
+#header {
+    min-height: 450px;
+}
+
+section#top-navigation {
+    position: relative;
+    height: auto;
+    z-index: 999;
+}
+
+.nav-container {
+    width: 100% !important;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.navbar-toggler-icon i {
+    color: white;
+    padding: 6px;
+    box-shadow: 2px 2px 20px black;
+}
+
+#banner {
+    position: absolute;
+    top: 0;
+    background: black;
+    width: 100%;
+    max-height: 450px;
+}
+
+#banner img {
+    min-height: 400px;
+    max-height: 450px;
+}
+
+#nav-header {
+    background: transparent;
+    z-index: 1000;
+}
+
+span.nav-brand {
+    font-size: 2.4em;
+    color: #f47d31;
+}
+
+ul.navbar-nav li a {
+    color: black !important;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.mini-header-container {
+    width: 100% !important;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.mini-header-links ul {
+    margin-bottom: 0;
+}
+
+.mini-header-links li {
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.mini-header-links a {
+    color: white;
+    transition: 0.4s;
+}
+
+.mini-header-links a:hover {
+    color: white;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.mini-header {
+    background: $main-orange;
+    padding-bottom: 0;
+    z-index: 1000;
+}
+
+.mini-header form input {
+    background: rgba(0,0,0,.3);
+    border: none;
+    width: 100%;
+}
+
+.mini-header form input::placeholder {
+    color: #fff;
+    font-weight: normal;
+    font-size: 0.7em;
+    padding-left: 6px;
+}
+
+
+// Responsive styles 
+
+@media screen and (max-width: 767px) {
+    .mini-header {
+        display: none;
+    }
+
+    .navbar-nav {
+        background: rgba(255,255,255,.6);
+        padding-left: 8px;
+    }
+}
