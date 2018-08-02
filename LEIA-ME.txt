@@ -1,0 +1,7 @@
+Os dados para acesso ao painel são:
+
+login: admin
+senha: 123456
+
+Se por acaso houver algum erro na exibição dos assets, principalmente font-awesome, utilize 127.0.0.1/ ao invés de localhost/
+Localhost estava ocasionando erros de CORS

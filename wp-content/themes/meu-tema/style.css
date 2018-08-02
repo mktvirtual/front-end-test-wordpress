@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/*
+Theme Name: Meu Tema
+Theme URI: localhost
+Author: Victor Costa
+Author URI: https://www.linkedin.com/in/victor-costa-dev/
+Description: Tema feito para fins didáticos, afim de demonstrar skills sobre a plataforma Wordpress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+#header {
+  min-height: 450px; }
+
+section#top-navigation {
+  position: relative;
+  height: auto;
+  z-index: 999; }
+
+.nav-container {
+  width: 100% !important;
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.navbar-toggler-icon i {
+  color: white;
+  padding: 6px;
+  box-shadow: 2px 2px 20px black; }
+
+#banner {
+  position: absolute;
+  top: 0;
+  background: black;
+  width: 100%;
+  max-height: 450px; }
+
+#banner img {
+  min-height: 400px;
+  max-height: 450px; }
+
+#nav-header {
+  background: transparent;
+  z-index: 1000; }
+
+span.nav-brand {
+  font-size: 2.4em;
+  color: #f47d31; }
+
+ul.navbar-nav li a {
+  color: black !important;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.mini-header-container {
+  width: 100% !important;
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.mini-header-links ul {
+  margin-bottom: 0; }
+
+.mini-header-links li {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-right: 5px; }
+
+.mini-header-links a {
+  color: white;
+  transition: 0.4s; }
+
+.mini-header-links a:hover {
+  color: white;
+  transform: scale(1.1);
+  text-decoration: underline; }
+
+.mini-header {
+  background: #f47d31;
+  padding-bottom: 0;
+  z-index: 1000; }
+
+.mini-header form input {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  width: 100%; }
+
+.mini-header form input::placeholder {
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.7em;
+  padding-left: 6px; }
+
+@media screen and (max-width: 767px) {
+  .mini-header {
+    display: none; }
+
+  .navbar-nav {
+    background: rgba(255, 255, 255, 0.6);
+    padding-left: 8px; } }
+#sell-box {
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 35px; }
+
+.vertical-box {
+  height: 100%;
+  padding: 0 !important; }
+
+.adesao {
+  position: relative;
+  bottom: 36px;
+  background: purple;
+  color: #f47d31;
+  font-weight: bolder;
+  font-size: 0.7em;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%; }
+
+.box-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 !important;
+  position: relative;
+  height: auto;
+  max-height: 600px; }
+
+.box-group .box {
+  width: 49.3%;
+  background: white; }
+
+.box-group .box:nth-child(1), .box-group .box:nth-child(2) {
+  margin-bottom: 10px; }
+
+.boxes-container {
+  height: 100%; }
+
+.box {
+  height: 49%; }
+
+.box img {
+  opacity: 0.7; }
+
+.box .box-info {
+  position: relative;
+  bottom: 55%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%;
+  margin: 0 auto; }
+
+.box .box-info p, span {
+  font-size: 0.7em; }
+
+.maps {
+  background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/maps-background-5.jpg");
+  background-size: cover;
+  height: 250px;
+  margin-bottom: 50px; }
+
+.maps .find-place {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border: 1px solid #7a7878;
+  height: 85px;
+  margin: 0 auto;
+  padding: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%); }
+
+.maps .auto-location {
+  width: 50%;
+  background: #ccc;
+  padding: auto;
+  padding: 2% 10%;
+  margin-right: 8px; }
+
+.maps .location-by-zipcode {
+  width: 50%;
+  background: #ccc;
+  padding: 0 10px; }
+
+.social-networks {
+  text-transform: uppercase; }
+
+.social-networks .newsletter {
+  width: 60%;
+  padding-left: 14px; }
+
+.social-networks .newsletter button {
+  margin-top: 10px; }
+
+.social-networks .social-networks-links {
+  margin-top: 5px;
+  padding: 0; }
+
+ul.social-networks-links li a {
+  color: gray;
+  font-size: 2em;
+  padding: 8px 15px;
+  border: 1px solid gray; }
+
+@media screen and (max-width: 991px) {
+  .box .box-info {
+    bottom: 70%; } }
+@media screen and (max-width: 767px) {
+  #sell-box {
+    margin-top: -20px; }
+
+  .vertical-box {
+    margin-bottom: 15px; }
+
+  .box-group .box:nth-child(1), .box-group .box:nth-child(2) {
+    margin-bottom: 5px; }
+
+  .box .box-info {
+    width: 100%;
+    padding: 0 15px; } }
+footer#footer {
+  background: #f47d31;
+  padding-top: 50px;
+  margin-top: 25px; }
+
+.menu-footer {
+  font-size: 0.8em;
+  color: white; }
+
+.menu-footer .footer-menu-title {
+  font-size: 1em;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+ul.footer-menu {
+  list-style: disc;
+  padding-left: 15px;
+  margin-top: 20px; }
+
+.footer-menu li {
+  color: white; }
+
+.footer-menu a {
+  color: white; }
+
+@media screen and (max-width: 575px) {
+  ul.footer-menu {
+    list-style: none; } }
+@font-face {
+  font-family: maven;
+  src: url("assets/fonts/MavenPro-Regular.ttf"); }
+html, body {
+  height: 100%; }
+
+.site-container {
+  min-height: 100%;
+  position: relative; }
+
+main#content {
+  height: auto; }
+
+.custom-input {
+  background: #ccc !important;
+  border-radius: 0px !important; }
+
+body {
+  font-family: maven !important; }
+
+.container-fluid {
+  padding: 0 !important; }
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%; }
+
+.btn-call-to-action {
+  border-radius: 0px !important;
+  border: 1.5px solid #343a40 !important;
+  font-weight: 600 !important;
+  font-size: 0.8em !important;
+  padding: 4px 20px !important;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */
